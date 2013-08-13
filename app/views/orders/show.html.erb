@@ -1,0 +1,32 @@
+<div id="product-list">
+  <h1>Order <%= @order.id %> Listing</h1>
+        <b>Name:</b> <%= @order.first_name %> <%= @order.last_name %> </br>
+        <b>Email:</b> <%= @order.email %></br>
+  </br>
+  <% order_price = 0.0 %>
+  <table cellpadding="5" cellspacing="0">
+  <% for line_item in @line_items %>
+    <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+      <td>
+        <%= line_item.quantity %> x <%= line_item.product.title %>
+      </td>
+      <td>
+        <%= number_to_currency(line_item.total_price, :precicion => 2, :unit => "&pound;" ) %>
+        <%= "#{line_item.total_price}" %>
+      </td>
+      <% order_price += line_item.total_price %>
+    </tr>
+  <% end %>
+    <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td>
+      <b>Total</b>
+    </td>
+    <td>
+      <b><%= number_to_currency(order_price, :unit => "&pound;" ) %> </b>
+    </td>
+    </tr>    
+  </table>
+</div>
+</br>
+
+<br />

@@ -1,0 +1,27 @@
+<h1>Listing torrents</h1>
+
+<table>
+  <tr>
+  <th>Filename</th>
+  <th>DES key</th>
+  <th>Active</th>
+  </tr>
+  
+<% for torrent in @torrents %>
+  <tr>
+    <td><%= torrent.file_name %></td>
+    <td><%= torrent.des_key %></td>
+    <td><%= torrent.active %></td>
+    <td><%= link_to 'Show', :action => 'show', :id => torrent %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => torrent %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => torrent }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @torrent_pages.current.previous } if @torrent_pages.current.previous %>
+<%= link_to 'Next page', { :page => @torrent_pages.current.next } if @torrent_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New torrent', :action => 'new' %>

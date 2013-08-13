@@ -1,0 +1,38 @@
+  <table height="122px">
+  <tr>
+  <td colspan="4">
+  <%=t :content_ready_video_1%> <%=t :content_ready_video_2%>:
+  </td>
+  <tr>
+  <td valign="middle" style="text-align: center">
+     <a href="http://www.apple.com/quicktime/download/" target="_blank"><img src="/images/qt7badge_getQTfreeDownload.gif" alt="QuickTime"  margin="10"  border="0"></a><br>
+     QuickTime Player
+  </td>
+  <td valign="middle" style="text-align: center">
+    <a href="http://www.getmiro.com/" target="_blank"><img src="/images/miro-button-grey-88X27.png" alt="Miro" margin="10"  border="0"></a><br>
+    Miro Platform
+  </td>
+  <td valign="middle" style="text-align: center">
+    <a href="http://www.zune.net/en-us/meetzune/software/redirect.aspx" target="_blank"><img src="/images/downloadzune162x30.gif" alt="Microsoft Zune" margin="10"  border="0"></a><br>
+    Direct Xbox 360 playback
+  </td>
+  <td valign="middle" style="text-align: center">
+    <a href="http://www.videolan.org/vlc/" target="_blank"><img src="/images/get_vlc.png" alt="VLC Player" margin="10"  border="0"></a><br>
+    VLC Player
+  </td>
+  </tr>
+  <% if @download.file_size_mb > 4000 %>
+      <tr>
+      <td colspan="4">
+      <%=t :content_ready_video_3_4gb_plus%>
+      </td>
+      </tr>
+  <% end %>
+  <% if @format.format_type == 1 %>
+      <tr>
+      <td colspan="4">
+        <%=t :content_ready_video_4_HD%>
+      </td>
+      </tr>
+  <% end %>
+  </table>

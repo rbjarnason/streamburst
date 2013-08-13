@@ -1,0 +1,42 @@
+<h1>Top DVMs</h1>
+
+<table>
+  <tr>
+	  <th>Title</th>
+	  <th>Token</th>
+	  <th>Exposures</th>
+	  <th>Orders</th>
+	  <th>Value Orders</th>
+	  <th>Closed Sales</th>
+	  <th>GBP</th>
+	  <th>USD</th>
+	  <th>EUR</th>
+	  <th>Owner</th>
+	  <th>Comment</th>
+	  </tr>
+
+<% for dvm in @top_dvms %>
+ <% order_info = dvm.get_order_info%>
+  <tr>
+  	<% if dvm.dvm_template %>
+    <td><%=dvm.dvm_template.title%></td>
+	<% else %>
+    <td>no template</td>
+	<% end %>
+    <td><%=dvm.token%></td>
+    <td align="right"><%=number_with_delimiter(dvm.exposure_count)%></td>
+    <td align="right"><%=number_with_delimiter(dvm.order_count)%></td>
+    <td align="right"><%=number_with_delimiter(dvm.value_order_count)%></td>
+    <td align="right"><%=number_with_precision(order_info[0], 0)%></td>
+    <td align="right"><%=number_with_precision(order_info[1], 2)%></td>
+    <td align="right"><%=number_with_precision(order_info[2], 2)%></td>
+    <td align="right"><%=number_with_precision(order_info[3], 2)%></td>
+  	<% if dvm.dvm_template %>
+    <td align="right"><%=dvm.user.email%></td>
+	<% else %>
+    <td>no user</td>
+	<% end %>
+    <td><%=dvm.comment%></td>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,37 @@
+<h1>Create Discount Voucher Range</h1>
+
+<%= form_tag( { :action => 'create_voucher_range' }, { :multipart => true }) %>
+
+<!--[form:discount_voucher]-->
+
+<p><label for="discount_range_name">Range Name</label><br/>
+<%= text_field 'discount_voucher', 'range_name'  %></p>
+
+<p><label for="discount_volume">Volume</label><br/>
+<%= text_field 'discount_voucher', 'volume'  %></p>
+
+<p><label for="product_program_id">Product Id</label><br/>
+<%= text_field 'discount_voucher', 'product_id'  %></p>
+
+<p><label for="price_class_price_eur">Price eur</label><br/>
+<%= text_field 'discount_voucher', 'discount_eur'  %></p>
+
+<p><label for="price_class_price_gbp">Price gbp</label><br/>
+<%= text_field 'discount_voucher', 'discount_gbp'  %></p>
+
+<p><label for="price_class_price_usd">Price usd</label><br/>
+<%= text_field 'discount_voucher', 'discount_usd'  %></p>
+
+<p><label for="price_class_price_isk">Price isk</label><br/>
+<%= text_field 'discount_voucher', 'discount_isk'  %></p>
+
+<p><label for="mailing_list">Mailing List</label><br/>
+<%= text_area 'discount_voucher', 'mailing_list'  %></p>
+
+<p><label for="send_email">Send email</label><br/>
+<select id="discount_voucher" name="send_email"><option value="false">False</option><option value="true">True</option></select></p>
+
+<!--[eoform:discount_voucher]-->
+
+  <%= submit_tag "Create Range" %>
+</form>

@@ -1,0 +1,1 @@
+page.replace_html("categories", :partial => 'shared/categories_selection') unless @brand.custom_products_list

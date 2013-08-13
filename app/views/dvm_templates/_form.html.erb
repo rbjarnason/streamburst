@@ -1,0 +1,76 @@
+<%= error_messages_for 'dvm_template' %>
+
+<!--[form:dvm_template]-->
+<p><label for="dvm_template_title">Title</label><br/>
+<%= text_field 'dvm_template', 'title'  %></p>
+
+<p><label for="dvm_template_title">Description</label><br/>
+<%= text_area 'dvm_template', 'description'  %></p>
+
+<p><label for="dvm_template_swf_url">Swf url</label><br/>
+<%= text_field 'dvm_template', 'swf_url'  %></p>
+
+<p><label for="dvm_template_image">Image</label><br/>
+<%= file_column_field 'dvm_template', 'image', :multipart => true  %></p>
+
+<p><label for="dvm_template_small_image">Small image</label><br/>
+<%= file_column_field 'dvm_template', 'small_image', :multipart => true %></p>
+
+<p><label for="dvm_template_large_click_image">Large click image</label><br/>
+<%= file_column_field 'dvm_template', 'large_click_image', :multipart => true %></p>
+
+<p><label for="dvm_template_feed_image">Feed image</label><br/>
+<%= file_column_field 'dvm_template', 'feed_image', :multipart => true %></p>
+
+<p><label for="dvm_template_weight">Weight</label><br/>
+<%= text_field 'dvm_template', 'weight'  %></p>
+
+<p><label for="dvm_template_width">Width</label><br/>
+<%= text_field 'dvm_template', 'width'  %></p>
+
+<p><label for="dvm_template_height">Height</label><br/>
+<%= text_field 'dvm_template', 'height'  %></p>
+
+<p><label for="dvm_template_public_access">Public Access</label><br/>
+<select id="dvm_template_public_access" name="dvm_template[public_access]">
+<option value="false" <%=@dvm_template.public_access ? "" : "selected"%>>False</option>
+<option value="true"  <%=@dvm_template.public_access ? "selected" : ""%>>True</option>
+</select></p>
+
+<p><label for="dvm_template_active">Active</label><br/>
+<select id="dvm_template_active" name="dvm_template[active]">
+<option value="false" <%=@dvm_template.active ? "" : "selected"%>>False</option>
+<option value="true"  <%=@dvm_template.active ? "selected" : ""%>>True</option>
+</select></p>
+
+<p><label for="dvm_template_global_brand_access">Global brand access</label><br/>
+<select id="dvm_template_global_brand_access" name="dvm_template[global_brand_access]">
+<option value="false" <%=@dvm_template.global_brand_access ? "" : "selected"%>>False</option>
+<option value="true"  <%=@dvm_template.global_brand_access ? "selected" : ""%>>True</option>
+</select></p>
+
+Single Parent Product:
+<p><label for="parent_product_id">Products</label><br/>
+  <select name="parent_product_id">
+       <option value="">- nil -</option>
+   <% @products.each do |product| %>
+       <option value="<%= product.id %>">
+         <%= product.title %>
+       </option>
+   <% end %>
+   </select>
+</p>
+
+
+<!--[eoform:dvm_template]-->
+Add Brand:
+<p><label for="set_brand_id">Brand</label><br/>
+  <select name="set_brand_id">
+       <option value="">- nil -</option>
+   <% @brands.each do |brand| %>
+       <option value="<%= brand.id %>">
+         <%= brand.name %>
+       </option>
+   <% end %>
+   </select>
+</p>

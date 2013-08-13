@@ -1,0 +1,22 @@
+<div id="help-footer-text">
+<br>
+Welcome to the <%=@brand.name %> demo and development website.  Please enter the demo password.  Later you will 
+be asked to create an account with your email address.
+<br>
+<br>
+<span class="sub-box-txt">
+  <% form_for :login do |login_form| %>
+   <table>
+    <tr>
+    <td><label for="password">Password:</label></td>
+    <td><%= login_form.password_field :password %></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><%= image_submit_tag "button_login_1.gif", :border => 0, :name => "login", :alt => "Login" %></td>
+    </tr>
+   </table>
+  <% end %>
+</span>
+</div>
+<p>

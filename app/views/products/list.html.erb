@@ -1,0 +1,53 @@
+<div id="product-list">
+  <h1>Product Listing</h1>
+
+  <table cellpadding="5" cellspacing="0">
+  <% for product in @products %>
+    <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+
+      <td>
+        <img class="list-image" src="<%= url_for_image_column product, "image", :name => "widescreenthumb", :absolute => true %>">
+      </td>
+
+      <td width="60%">
+        <span class="list-title"><%= h(product.title) %></span><br />
+        <%= h(truncate(product.description, :length=>80)) %>
+      </td>
+
+      <td width="15%">
+        <%= h(product.price_class.name) %><br />
+      </td>
+
+      <td class="list-actions">
+        <%= link_to 'Show', :action => 'show', :id => product %><br/>
+        <%= link_to 'Who bought', :controller => 'orders', :action => 'who_bought', :id => product %><br/>
+        <%= link_to 'Edit', :action => 'edit', :id => product %><br/>
+		<% if product.parent_flag %>
+        <%= link_to 'Childs', :action => 'manage_childs', :id => product %><br/>
+		<% else %>
+        <%= link_to 'Formats', :action => 'manage_formats', :id => product %><br/>
+		<% end %>
+        <%= link_to 'Categories', :action => 'manage_categories', :id => product %><br/>
+        <%= link_to 'Tags', :action => 'manage_tags', :id => product %><br/>
+        <%= link_to 'Destroy', { :action  => 'destroy', :id => product },
+                                 :confirm => "Are you sure?",
+                                 :post    => true %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+
+<%=  if @product_pages.current.previous 
+       link_to("Previous page", { :page => @product_pages.current.previous })
+     end
+%>
+
+<%= if @product_pages.current.next 
+      link_to("Next page", { :page => @product_pages.current.next })
+    end
+%>
+
+<br />
+
+<%= link_to 'New product', :action => 'new' %>

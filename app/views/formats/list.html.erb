@@ -1,0 +1,31 @@
+<h1>Listing formats</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  
+<% for format in @formats %>
+  <tr>
+    <td><%=format.id%></td>
+    <td><%=format.name%></td>
+    <td><%=format.format_type%></td>
+    <td><%= link_to 'Show', :action => 'show', :id => format %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => format %></td>
+    <td><%= link_to 'Duplicate', :action => 'duplicate', :id => format %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => format }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @format_pages.current.previous } if @format_pages.current.previous %>
+<%= link_to 'Next page', { :page => @format_pages.current.next } if @format_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New format', :action => 'new' %>

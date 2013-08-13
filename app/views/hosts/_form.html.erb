@@ -1,0 +1,19 @@
+<%= error_messages_for 'host' %>
+
+<!--[form:host]-->
+<p><label for="host_name">Name</label><br/>
+<%= text_field 'host', 'name'  %></p>
+<p><label for="ssl_port">SSL Port</label><br/>
+<%= text_field 'host', 'ssl_port'  %></p>
+
+Add Brand:
+<p><label for="brand">Brand</label><br/>
+  <select name="brand_id">
+   <% @brands.each do |brand| %>
+       <option value="<%= brand.id %>">
+         <%= brand.name %>
+       </option>
+   <% end %>
+   </select>
+</p>  
+<!--[eoform:host]-->

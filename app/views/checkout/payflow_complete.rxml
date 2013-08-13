@@ -1,0 +1,13 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.currency_code(@currency_code)
+if @payment_error
+  xml.payment_error(@payment_error)
+else
+  xml.complete do
+    xml.id(@order.id)
+    xml.email(@order.email)
+    xml.downloads_key(@order.downloads_key)
+  end
+end

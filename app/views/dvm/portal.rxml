@@ -1,0 +1,34 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.active_facebook_dvm_id(@user.active_facebook_dvm_id)
+xml.dvms do
+  for dvm in @dvms
+    xml.dvm do
+      xml.id(dvm.id)
+      xml.title(dvm.dvm_template.title)
+      xml.description(dvm.dvm_template.description)
+      if dvm.dvm_template.small_image
+        xml.small_image_url(url_for_image_column(dvm.dvm_template, "small_image", :name => "widescreen", :absolute => true))
+      end
+      xml.created(get_short_date(dvm.created_at))
+      xml.last_updated(get_short_date(dvm.updated_at))
+      xml.exposure_count(number_with_delimiter(dvm.exposure_count))
+      order_info = dvm.get_order_info
+      xml.completed_orders(number_with_delimiter(order_info[0]))
+      xml.total_gbp(number_with_precision(order_info[1], 2))
+      xml.total_usd(number_with_precision(order_info[2], 2)) 
+      xml.total_eur(number_with_precision(order_info[3], 2))
+      xml.affiliate_gbp(number_with_precision(order_info[4], 2))
+      xml.affiliate_usd(number_with_precision(order_info[5], 2))
+      xml.affiliate_eur(number_with_precision(order_info[6], 2))
+      xml.user_registrations(User.find_all_by_dvm_id(dvm.id).length)
+      xml.html_code(dvm.get_embed_code)
+      xml.html_js_code(dvm.get_js_embed_code)
+      xml.active_facebook(@user.active_facebook_dvm_id==dvm.id ? 1 : 0)
+      if @user.active_bebo_dvm_id
+        xml.active_bebo(@user.active_bebo_dvm_id==dvm.id ? 1 : 0)
+      end
+    end
+  end
+end

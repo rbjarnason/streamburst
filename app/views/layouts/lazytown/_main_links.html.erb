@@ -1,0 +1,15 @@
+<div class="main_links">
+          <% unless session[:user_id] %>
+            <a href="/users/login"><%=t :login%></a>  |  
+          <% end %>  
+           <a href="/delivery/my_downloads"><%=t :my_downloads%></a><!--  |  
+	   <% if session[:user_is_dvm_affiliate] %>
+	     <a href="/dvm/home"><%=t :my_dvms%></a>
+	   <% else %>
+	     <a href="/dvm/home"><%=t :dvm_signup%></a>
+	   <% end %>
+	   -->
+          <% if session[:user_id] %>
+             |  <a href="/users/logout"><%=t :logout%></a>
+          <% end %>  
+</div>

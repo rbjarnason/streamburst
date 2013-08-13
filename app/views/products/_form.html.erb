@@ -1,0 +1,117 @@
+<%= error_messages_for 'product' %>
+
+<!--[form:product]-->
+<p><label for="product_title">Title</label><br/>
+<%= text_field 'product', 'title'  %></p>
+
+<p><label for="product_short_title">Short Title</label><br/>
+<%= text_field 'product', 'short_title'  %></p>
+
+<p><label for="parent_flag">Parent Product Flag</label><br/>
+<select id="parent_flag" name="product[parent_flag]">
+<option value="false" <%= ' selected' unless @product.parent_flag %> >False</option>
+<option value="true" <%= ' selected' if @product.parent_flag %>>True</option>
+</select></p>
+
+<p><label for="direct_download">Direct Download</label><br/>
+<select id="direct_download" name="product[direct_download]">
+<option value="false" <%= ' selected' unless @product.direct_download %> >False</option>
+<option value="true" <%= ' selected' if @product.direct_download %>>True</option>
+</select></p>
+
+<p><label for="product_program_id">Program Id</label><br/>
+<%= text_field 'product', 'program_id'  %></p>
+
+<p><label for="help_id">Help Id</label><br/>
+<%= text_field 'product', 'help_id', "size" => 3 %></p>
+
+<p><label for="use_audio_watermarking">Use Audio Watermarking</label><br/>
+<select id="use_audio_watermarking" name="product[use_audio_watermarking]">
+<option value="false" <%= ' selected' unless @product.use_audio_watermarking %> >False</option><option value="true" <%= ' selected' if @product.use_audio_watermarking %>>True</option></select></p>
+
+<p><label for="use_video_watermarking">Use Video Watermarking</label><br/>
+<select id="use_video_watermarking" name="product[use_video_watermarking]">
+<option value="false" <%= ' selected' unless @product.use_video_watermarking %> >False</option><option value="true" <%= ' selected' if @product.use_video_watermarking %>>True</option></select></p>
+
+<p><label for="source_format">Source Format</label><br/>
+<%= text_field 'product', 'source_format', "size" => 10 %></p>
+
+<p><label for="master_filename">Master Filename</label><br/>
+<%= text_field 'product', 'master_filename', "size" => 25 %></p>
+
+<p><label for="watch_now_filename">Watch Now Filename</label><br/>
+<%= text_field 'product', 'watch_now_filename', "size" => 25 %></p>
+
+<p><label for="brand_id">Brand</label><br/>
+  <select name="product[brand_id]">
+   <% @brands.each do |brand| %>
+     <% if brand.id == @brand.id || @brand.global_brand_access %>
+       <option value="<%= brand.id %>" 
+         <%= ' selected' if brand.id == @product.brand_id %>>
+         <%= brand.name %>
+       </option>
+     <% end %>
+   <% end %>
+  </select></p>
+
+  <p><label for="company_id">Company</label><br/>
+    <select name="product[company_id]">
+    <% @companies.each do |company| %>
+       <option value="<%= company.id %>"
+          <%= ' selected' if company.id == @product.company_id %>>
+          <%= company.name %>
+        </option>
+      <% end %>
+   </select></p>
+
+<p><label for="price_class_id">Price Class</label><br/>
+  <select name="product[price_class_id]">
+   <% @price_classes.each do |price_class| %>
+       <option value="<%= price_class.id %>"
+         <%= ' selected' if price_class.id == @product.price_class_id %>>
+         <%= price_class.name %>
+       </option>
+   <% end %>
+   </select></p>  
+
+<p><label for="product_description">Description</label><br/>
+<%= text_area 'product', 'description'  %></p>
+
+<p><label for="product_image">Image</label><br/>
+<%= file_column_field 'product', 'image', :multipart => true %>
+
+<p><label for="product_dvm_image">DVM Image</label><br/>
+<%= file_column_field 'product', 'dvm_image', :multipart => true %>
+
+<p><label for="product_small_image">DVM Small Image</label><br/>
+<%= file_column_field 'product', 'small_image', :multipart => true %>
+
+<p><label for="product_flash_movie">Flash movie</label><br/>
+<%= file_column_field 'product', 'flash_movie', :multipart => true %>
+
+<p><label for="product_flv_preview_url">Dvm Preview Url</label><br/>
+<%= text_field 'product', 'flv_preview_url'  %></p>
+
+<p><label for="product_flv_preview_image">Dvm Preview Image</label><br/>
+<%= text_field 'product', 'flv_preview_image'  %></p>
+
+<p><label for="product_duration"><b>Duration</b></label><br/></p>
+<table><tr>
+  <td><b>Hours</b></td>
+  <td><b>Minutes</b></td>
+  <td><b>Seconds</b></td>
+</tr><tr>
+  <td><%= select_hour(get_hours(@product.duration), :prefix => "hour", :discard_type => true)%></td>
+  <td><%= select_minute(get_minutes(@product.duration), :prefix => "minute", :discard_type => true)%></td>
+  <td><%= select_second(get_seconds(@product.duration), :prefix => "second", :discard_type => true)%></td>
+</tr></table>
+
+<p><label for="product_discount_voucher_enabled">Discount Voucher Enabled</label><br/>
+<select id="product_discount_voucher_enabled" name="product[discount_voucher_enabled]">
+<option value="false" <%= ' selected' unless @product.discount_voucher_enabled %> >False</option><option value="true" <%= ' selected' if @product.discount_voucher_enabled %>>True</option></select></p>
+
+<p><label for="audio_only">Audio Only</label><br/>
+<select id="audio_only" name="product[audio_only]">
+<option value="false" <%= ' selected' unless @product.audio_only %> >False</option><option value="true" <%= ' selected' if @product.audio_only %>>True</option></select></p>
+
+<!--[eoform:product]-->

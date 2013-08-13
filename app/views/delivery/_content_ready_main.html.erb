@@ -1,0 +1,40 @@
+<div class="sub-box-txt">
+ <table>
+  <tr>
+    <td width="15%" align="center">
+      <img class="list-image-big" width="160" height="90" src="<%= url_for_image_column(@product, "image", :name => "widescreenthumb", :absolute => true)%>">         
+    </td>
+    <td width="30%" align="center">
+      <b><%= @product.title %></b> <br/><br/> <%= help(@format.help_id, { :image_file_name => get_product_format_image(@format.format_type), 
+                                                                          :image_size => "117x20" } ) %>
+    </td>
+    <td width="55%" align="center">
+      <table>
+        <tr height="40px">
+          <td colspan="2">
+           <div class="hack" style="text-align: left">
+            <b><div class="preparation_text" style="align=left" id='progresstext'><%=t :Ready_for_download%></div></b>
+           </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= image_tag("sb_waitBarSmall_finished.gif", :border => 0, :alt => t(:Ready)) %>
+          </td>
+          <td>
+            <b><span class="preparation_counter"  style="align=center" id="counter">0 <%=t :sec%></span></b>
+          </td>
+        </tr>
+        <tr height="45px">
+          <td width="55%">
+            <%= image_localized_tag("button_emailMeWhenReadyDisabled.png", :border => 0, :alt => t(:Email_me_when_ready)) %>
+          </td>
+          <td width="45%">
+            <a href="<%= protected_download_url(@download, @video_server_hostname) %>"><%= image_localized_tag("button_startDownload_1.png", :alt => t(:Start_Download), :border => 0) %></a>
+          </td>
+        </tr>
+        </table>
+     </td>
+  </tr>
+ </table>
+</div>

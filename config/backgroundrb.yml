@@ -1,0 +1,10 @@
+:host: video1.streamburst.net
+:port: 2172
+:worker_dir: lib/workers
+:rails_env: production
+:pool_size: 5
+:protocol: druby
+:acl:
+  :deny: all
+  :allow: localhost 127.0.0.1 85.234.152.32
+  :order: deny allow

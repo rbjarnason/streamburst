@@ -1,0 +1,134 @@
+#!/usr/bin/env ruby
+################################################################################
+#
+# Copyright (C) 2006 Peter J Jones (pjones@pmade.com)
+#
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+# 
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+# LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+# WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+################################################################################
+# This script will update your monit configuration file to monitor your
+# mongrel cluster by reading the mongrel cluster file and generating monit
+# check entries.  It places delimiters in the configuration file so that you
+# can run this script multiple times without generating duplicate entries.
+#
+# Run it like this:
+#
+#  mongrel_monit --mongrel=/path/to/mongrel/config.yml --monit=/path/to/monitrc
+#
+# You can edit the ERB template below to control the generated monit config.
+#
+TEMPLATE = <<EOT
+check process mongrel_<%= @port %> with pidfile <%= @pidfile %>
+  group mongrel
+  start program = "/usr/local/bin/<%= @start %>"
+  stop program = "/usr/local/bin/<%= @stop %>"
+
+  if failed host 127.0.0.1 port <%= @port %> protocol http
+    with timeout 10 seconds
+    then restart
+
+  if totalmem > 100 Mb then restart
+  if cpu is greater than 60% for 2 cycles then alert
+  #if cpu > 90% for 5 cycles then restart
+  #if loadavg(5min) greater than 10 for 8 cycles then restart
+  if 3 restarts within 5 cycles then timeout
+
+EOT
+################################################################################
+require 'erb'
+require 'optparse'
+require 'fileutils'
+require 'rubygems'
+require 'mongrel_cluster/init'
+################################################################################
+module Kernel
+  $commands = []
+
+  # Hack Kernel::` so that we can capture what mongrel_cluster does
+  def ` (cmd)
+    $commands << cmd
+    system(':') # to set $?
+  end
+
+  # Hack Kernel::puts to shut mongrel_cluster up
+  def puts (str)
+    true
+  end
+end
+################################################################################
+options = OptionParser.new
+
+options.on('--mongrel=FILE', 'Mongrel configuration file') do |o|
+  $mongrel_config = o
+end
+
+options.on('--monit=FILE', 'Monit configuration file') do |o|
+  $monit_config = o
+end
+
+options.parse!
+
+unless $mongrel_config and $monit_config
+  puts "please give --mongrel and --monit"
+  exit 1
+end
+################################################################################
+mongrel_config_data = YAML.load_file($mongrel_config)
+Dir.chdir(mongrel_config_data['cwd']) if mongrel_config_data['cwd']
+################################################################################
+# This is the only way to access the cmd that mongrel_cluster uses so that we
+# can keep things DRY
+start = Cluster::Start.new
+start.instance_variable_set(:@config_file, $mongrel_config)
+start.run
+start_commands = $commands.dup
+$commands.clear
+
+stop = Cluster::Stop.new
+stop.instance_variable_set(:@config_file, $mongrel_config)
+stop.run
+stop_commands = $commands.dup
+$commands.clear
+################################################################################
+template = ERB.new(TEMPLATE)
+config = ''
+
+0.upto(start_commands.length - 1) do |i|
+  @port = start_commands[i].match(/-p\s*(\d+)/)[1]
+  @pidfile = File.expand_path(start_commands[i].match(/-P\s*(\S+)/)[1])
+  @start = start_commands[i]
+  @stop = stop_commands[i]
+  config << template.result(binding)
+end
+################################################################################
+monit_config_data = File.open($monit_config) {|f| f.read}
+
+# TODO: if you have more than one cluster, this won't do
+banner_start = "#= Mongrel_Monit Config Start =#\n"
+banner_stop  = "#= Mongrel_Monit Config End =#\n"
+
+if monit_config_data.match(/#{banner_start}.*#{banner_stop}/m)
+  monit_config_data.sub!(/#{banner_start}.*#{banner_stop}/m, "#{banner_start}#{config}#{banner_stop}")
+else
+  monit_config_data << "#{banner_start}#{config}#{banner_stop}"
+end
+
+File.open($monit_config, 'w') {|f| f << monit_config_data}
+################################################################################

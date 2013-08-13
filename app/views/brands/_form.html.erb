@@ -1,0 +1,65 @@
+<%= error_messages_for 'brand' %>
+
+<!--[form:brand]-->
+<p><label for="brand_name">Name</label><br/>
+<%= text_field 'brand', 'name'  %></p>
+
+<p><label for="brand_weight">Weight</label><br/>
+<%= text_field 'brand', 'weight'  %></p>
+
+<p><label for="brand_help_id">Help Id</label><br/>
+<%= text_field 'brand', 'help_id'  %></p>
+
+<p><label for="brand_description">Description</label><br/>
+<%= text_area 'brand', 'description'  %></p>
+
+<p><label for="brand_dvm_main_help">Dvm Main Help</label><br/>
+<%= text_area 'brand', 'dvm_main_help'  %></p>
+
+<p><label for="brand_layout_name">Layout name</label><br/>
+<%= text_field 'brand', 'layout_name'  %></p>
+
+<p><label for="brand_admin_layout_name">Admin layout name</label><br/>
+<%= text_field 'brand', 'admin_layout_name'  %></p>
+
+<p><label for="brand_video_welcome_file">Video Welcome File</label><br/>
+<%= text_field 'brand', 'video_welcome_file'  %></p>
+
+<p><label for="brand_video_trailer_file">Video Trailer File</label><br/>
+<%= text_field 'brand', 'video_trailer_file'  %></p>
+
+<p><label for="brand_cart_fade_start_color">Cart Fade Start Color</label><br/>
+<%= text_field 'brand', 'cart_fade_start_color'  %></p>
+
+<p><label for="brand_cart_fade_end_color">Cart Fade End Color</label><br/>
+<%= text_field 'brand', 'cart_fade_end_color'  %></p>
+
+<p><label for="brand_page_background_color">Page Background Color</label><br/>
+<%= text_field 'brand', 'page_background_color'  %></p>
+
+<p><label for="brand_welcome_text_color">Welcome Text Color</label><br/>
+<%= text_field 'brand', 'welcome_text_color'  %></p>
+
+<p><label for="brand_welcome_text_background_color">Welcome Text Background Color</label><br/>
+<%= text_field 'brand', 'welcome_text_background_color'  %></p>
+
+<p><label for="brand_start_category_id">Start Category Id</label><br/>
+<%= text_field 'brand', 'start_category_id'  %></p>
+
+<p><label for="brand_image">Brand image</label><br/>
+<%= file_column_field 'brand', 'image', :multipart => true %>
+
+<p><label for="brand_flash_trailer">Flash trailer</label><br/>
+<%= file_column_field 'brand', 'flash_trailer', :multipart => true %>
+
+<p><label for="brand_flash_trailer">Flash trailer small</label><br/>
+<%= file_column_field 'brand', 'flash_trailer_small', :multipart => true %>
+
+<p><label for="brand_global_brand_access">Global brand access</label><br/>
+<select id="brand_global_brand_access" name="brand[global_brand_access]">
+<option value="false" <%= ' selected' unless @brand.global_brand_access %> >False</option><option value="true" <%= ' selected' if @brand.global_brand_access %>>True</option></select></p>
+
+<p><label for="brand_home_enabled">Home enabled</label><br/>
+<select id="brand_home_enabled" name="brand[home_enabled]">
+<option value="false" <%= ' selected' unless @brand.home_enabled %> >False</option><option value="true" <%= ' selected' if @brand.home_enabled %>>True</option></select></p>
+<!--[eoform:brand]-->

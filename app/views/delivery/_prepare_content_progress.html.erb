@@ -1,0 +1,1 @@
+<%= periodically_call_remote(:url => {:action => 'get_prepare_content_progress', :job_key => @job_key}, :frequency => 10.0) %>

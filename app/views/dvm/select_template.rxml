@@ -1,0 +1,6 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.status("OK")
+xml.html_embed_code(@dvm.get_embed_code)
+xml.js_embed_code(@dvm.get_js_embed_code)

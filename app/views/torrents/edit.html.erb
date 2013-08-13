@@ -1,0 +1,9 @@
+<h1>Editing torrent</h1>
+
+<%= form_tag( { :action => 'update', :id => @torrent },  { :multipart => true }) %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @torrent %> |
+<%= link_to 'Back', :action => 'list' %>

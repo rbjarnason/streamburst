@@ -1,0 +1,9 @@
+<h1>Editing download</h1>
+
+<%= form_tag :action => 'update', :id => @download %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @download %> |
+<%= link_to 'Back', :action => 'list' %>

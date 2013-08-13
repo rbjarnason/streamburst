@@ -1,0 +1,92 @@
+<%= render(:partial => "shared/analytics_main", :locals => {:analytics_account => analytics_account}) %>
+
+<!-- Start Bottom Bar -->
+<div id="botn">
+    <!-- Start Footer Text --><!--<div id="help-footer-text">-->
+    <div id="help-footer-text" class="footer">
+        <center>
+            <%=t :main_footer %><br>
+			LazyTown &copy; & TM 2009 LazyTown Entertainment. All related titles, logos and characters <br>are trademarks of LazyTown Entertainment. &copy; LazyTown Entertainment. All rights reserved. 
+        </center>
+    </div>
+    <!-- End Footer Text -->
+    <div id="botnwrap">
+        <div class="logo">
+            <a href="/catalogue/home">Lazytown - Digital Download Store</a>
+        </div>
+    </div>
+</div>
+<!-- End Bottom Bar --><!-- Start Top Nav Bar -->
+<div id="nav_tabs">
+    <%= render(:partial => "layouts/lazytown/tabs") unless @website_closed %>
+</div>
+<!-- End Top Nav Bar --><% tablewidth = controller_name=="catalogue" ? "1038px" : "1038px" %>
+<table width="1038px" class="table-holding">
+    <tr>
+        <td valign="top" class="td-holding">
+            <table class="main-content-table">
+                <tr>
+                    <td VALIGN="top" class="tabs">
+                        <div id="main">
+                            <%= @content_for_layout %>
+                        </div>
+						
+                        <!-- START CART -->
+                        <div id="cart">
+                            <%= render(:partial => "layouts/lazytown/cart", :object => @cart) %>
+                        </div>
+                        <!-- END CART -->
+						
+                    </td>
+                    <% unless (controller_name=="catalogue" and (action_name=="access_to_demo")) or controller_name!="catalogue" %>
+                    <td valign="top" class="video-spacer">
+                        
+						<!-- FLASH VIDEO MODULE -->
+						<br>
+                        <div class="preview_header">
+                            <%=image_tag(localized_image_filename("preview_header.png"))%>
+                        </div>
+						<div class="back_video">
+							<div id="flash_player_container">You need a <a href='http://www.flash.com'>Flash</a> plugin to view this player</div>
+							<script type="text/javascript">
+								//<![CDATA[
+									UFO.create({majorversion:"8", bgcolor:"#000000", flashvars:"javascriptid=flash_player&file=http://flv.streamburst.tv/lazytown/Splash_Screen01.png&skin=/swf/LazyTownPlayerSkin.swf&frontcolor=000000&lightcolor=000000&screencolor=000000&volume=70&stretching=none&fullscreen=false&icons=false&width=320&volume=70&align=center&color=%23FFFFFF&height=208&overstretch=exactfit&enablejs=true&autostart=true&id=flash_player", wmode:"transparent", width:"320", color:"#000000", align:"center", height:"208", allowscriptaccess:"always", build:"0", id:"flash_player", movie:"/swf/newplayer.swf"}, "flash_player_container");
+								//]]>
+							</script>
+							<div id="preview_text" class="preview_text_class"></div>
+						</div>
+						
+                        <br><br>
+                        <div class="moreways_header">
+                            <%=image_tag(localized_image_filename("moreways_header.png"))%>
+                        </div>
+                        <div class="moreways">
+                            <div class="moreways_text">
+                                <br/>
+                                <b><%=t :lt_info_1 %></b>
+                                <br/>
+                                <%=t :lt_info_2 %>
+                                <br/>
+                                <br/>
+                                <b><%=t :lt_info_3 %></b>
+                                <br/>
+                                <%=t :lt_info_4 %>
+                                <br/>
+                                <br/>
+                                <b><%=t :lt_info_5 %></b>
+                                <br/>
+                                <%=t :lt_info_6 %>
+                                <br/>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- FLASH VIDEO MODULE -->
+						
+                    </td>
+                    <% end %>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<%= javascript_include_tag 'dynamic_checkbox' %>

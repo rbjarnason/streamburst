@@ -1,0 +1,11 @@
+<h1>Editing dvm_template</h1>
+
+<%= render :partial => 'list_dvm_brands' %>
+
+<%= form_tag( { :action => 'update', :id => @dvm_template }, { :multipart => true }) %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @dvm_template %> |
+<%= link_to 'Back', :action => 'list' %>

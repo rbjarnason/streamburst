@@ -1,0 +1,8 @@
+<% for column in AdvertisementsFile.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @advertisements_file.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @advertisements_file %> |
+<%= link_to 'Back', :action => 'list' %>

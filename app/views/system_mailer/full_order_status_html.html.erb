@@ -1,0 +1,65 @@
+<body>
+  All pound values are estimated as this currently does not use paypal currency conversation rates<br>
+  <h3>Total for all: <%= number_to_currency(@total, :unit => "&pound;", :precision => 0) %></h3>
+  <h3>Paypal Charge Est.: <%= number_to_currency(@total*0.098, :unit => "&pound;", :precision => 0 ) %></h3>
+  <h3>Total after PayPal: <%= number_to_currency(@total-(@total*0.098), :unit => "&pound;", :precision => 0 ) %></h3>
+  <h3>Order count: <%= @order_count %></h3>
+  <h3>Customer count: <%= @user_count %></h3> 
+  <h3>Registered count: <%= @total_registered_user %></h3> 
+  <h3>Unit count: <%= @unit_count %></h3>
+  <h3>Inaccurate guess on split based on average percents from first calc</h3>
+  <b>Streamburst: <%= number_to_currency(@total*0.3434, :unit => "&pound;", :precision => 0 ) %><br/>
+    Company/Companies: <%= number_to_currency(@total*0.5586, :unit => "&pound;", :precision => 0 ) %><br/></b> 
+  <h3>Revenue by Month</h3>
+   <% @revenue_by_month_count.each do |key, value| %>
+     <%= key %>: <%= number_to_currency(value, :unit => "&pound;", :precision => 0 ) %> <br>
+   <% end %>
+   <br>
+   <img src="cid:<%= @revenue_by_month_content_id %>" />
+   <br>
+  <h3>Revenue by Week</h3>
+   <% @revenue_by_week_count.each do |key, value| %>
+     <%= key %>: <%= number_to_currency(value.total_gbp, :unit => "&pound;", :precision => 0 ) %> <br/>
+   <% end %> 
+   <br>
+   <img src="cid:<%= @revenue_by_week_content_id %>" />
+   <br>
+  <h3>Revenue by Day</h3>
+  <img src="cid:<%= @revenue_by_day_content_id %>" />
+  <br>
+  <h3>Revenue by Brands</h3>
+   <% @revenue_by_brand.each do |key, value| %>
+     <%= key %>: <%= number_to_currency(value, :unit => "&pound;", :precision => 0 ) %> <br>
+   <% end %>
+   <br>
+   <% @revenue_by_brand_by_week.each do |brand_key_full, value| %>
+     <%brand_key = brand_key_full.gsub(" ","_")%>
+     <img src="cid:<%= "revenue_by_brand_by_week_graph_"+brand_key %>" />
+   <% end %>
+   <img src="cid:<%= @revenue_by_brand_content_id %>" />
+   <br>
+  <h3>Orders by Week</h3>
+   <% @order_by_week_count.each do |key, value| %>
+     <%= key %>: <%= value %> <br/>
+   <% end %>
+  <h3>Category Unit Sales Count</h3>
+  <% @cat_count.each do |key, value| %>
+     <% if key %>
+       <%= key.name %>: <%= value %> <br/>
+     <% end %>
+   <% end %>
+  <h3>Brand Unit Sales Count</h3>
+   <% @brand_count.each do |key, value| %>
+   <b><%= key %><br/></b>
+   <% value.each do |key, value| %>
+      <% if key %>
+      <%= key.name %>: <%= value %> <br/>
+      <% end %>
+    <% end %><br/>
+  <% end %>
+  <h3>Country Code Order Count</h3>
+   <% p_count_a = @paypal_country_count.sort {|a,b| b[1]<=>a[1]} %>
+   <% p_count_a.each do |key, value| %>
+     <%= key %>: <%= value %><br/>
+   <% end %>
+</body>   

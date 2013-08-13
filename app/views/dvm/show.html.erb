@@ -1,0 +1,10 @@
+<%= render :partial => 'list_dvm_brands' %>
+
+<% for column in Dvm.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @dvm.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @dvm %> |
+<%= link_to 'Back', :action => 'list' %>

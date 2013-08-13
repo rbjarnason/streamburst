@@ -1,0 +1,9 @@
+Id = <%= @help.id %>
+<% for column in Help.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @help.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @help %> |
+<%= link_to 'Back', :action => 'list' %>

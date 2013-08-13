@@ -1,0 +1,15 @@
+<%= error_messages_for 'torrent' %>
+
+<!--[form:torrent]-->
+<p><label for="torrent_torrent_file"><b>Torrent</b></label><br/>
+<%= file_field 'torrent', 'tmp_file', :multipart => true %>
+
+<p><label for="torrent_file_name"><b>File name</b></label><br/>
+<%= text_field 'torrent', 'file_name'  %></p>
+
+<p><label for="torrent_des_key"><b>Des key</b></label><br/>
+<%= text_field 'torrent', 'des_key'  %></p>
+
+<p><label for="torrent_active"><b>Active</b></label><br/>
+<select id="torrent_active" name="torrent[active]"><option value="false">False</option><option value="true">True</option></select></p>
+<!--[eoform:torrent]-->

@@ -1,0 +1,40 @@
+<div class="cart_pagination">
+  <table><tr>
+  <td align="left">
+  <% if collection.current.previous -%>
+	    	    <%= link_to_remote image_tag("button_pageLeft.png", 
+                                             :border => 0,
+                                             :size=> "35x20", :alt => t(:Previous_page)), 
+             	    	           :before   => %(Element.show('spinner')),
+                                   :success  => %(Element.hide('spinner')),
+            	    	           :url => { :controller => "catalogue",
+            	    	                     :action => "page_cart",
+            	    	                     :page => collection.current.previous } -%>
+	  <%  else -%>
+         <%=image_tag("button_pageLeft_disabled.png", 
+                                             :border => 0,
+                                             :size=> "35x20", :alt => t(:Disabled))-%>
+	  <% end -%>
+	 </td>
+  <td align="center"> 
+     <b><%=t :Page%> <%=collection.current.number-%> <%=t :of%> <%=collection.page_count-%></b>
+  </td>
+  <% last_page = 0 -%>
+  <td align="right">
+      <% if collection.current.next -%>
+          <%=  link_to_remote image_tag("button_pageRight.png", 
+                                             :border => 0,
+                                             :size=> "35x20", :alt => t(:Next_page)),
+                            :before   => %(Element.show('spinner')),
+                            :success  => %(Element.hide('spinner')),
+        	    	        :url => { :controller => "catalogue",
+            	    	              :action => "page_cart",
+                                      :page => collection.current.next } -%>
+      <% else -%>
+        <%=image_tag("button_pageRight_disabled.png", 
+                                             :border => 0,
+                                             :size=> "35x20", :alt => t(:Disabled))-%>
+      <% end -%>
+  </td>
+ </tr></table>
+</div>

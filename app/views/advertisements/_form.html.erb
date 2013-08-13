@@ -1,0 +1,23 @@
+<%= error_messages_for 'advertisement' %>
+
+<!--[form:advertisement]-->
+<p><label for="advertisement_name">Name</label><br/>
+<%= text_field 'advertisement', 'name'  %></p>
+
+<p><label for="advertisement_duration">Duration (Seconds)</label><br/>
+<%= text_field 'advertisement', 'duration'  %></p>
+
+  <p><label for="company_id">Company</label><br/>
+    <select name="advertisement[company_id]">
+    <% @companies.each do |company| %>
+       <option value="<%= company.id %>"
+          <%= ' selected' if company.id == @advertisement.company_id %>>
+          <%= company.name %>
+        </option>
+      <% end %>
+   </select></p>
+    <p><label for="advertisement_image">Image</label><br/>
+    <%= file_column_field 'advertisement', 'image', :multipart => true %>
+    <br>
+<!--[eoform:advertisement]-->
+

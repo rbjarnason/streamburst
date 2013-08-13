@@ -1,0 +1,19 @@
+<% if @complete %>
+  <div class="sub-box-txt">
+    <%=t :order_confirmation_1%>
+  </div>
+  <div class="sub-box-txt">
+    <%=t :order_confirmation_2%>
+  </div>
+<% else %>
+  <div class="sub-box-txt">
+  <% unless @status == "Denied" %>
+    <%=t :order_confirmation_3_paypal%>
+  <% else %>
+    <%=t :order_confirmation_3_paypal_denial%>
+  <% end %>
+  </div>
+  <div class="sub-box-txt">
+    <%=t :order_confirmation_4%>
+  </div>
+<% end %>

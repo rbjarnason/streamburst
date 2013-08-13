@@ -1,0 +1,25 @@
+<%= error_messages_for 'download' %>
+
+<!--[form:download]-->
+<p><label for="download_file_name">File name</label><br/>
+<%= text_field 'download', 'file_name'  %></p>
+
+<p><label for="download_file_size_mb">File Size Mb</label><br/>
+<%= text_field 'download', 'file_size_mb'  %></p>
+
+<p><label for="download_sha1_hash">Sha1 hash</label><br/>
+<%= text_field 'download', 'sha1_hash'  %></p>
+
+<p><label for="download_des_key">Des key</label><br/>
+<%= text_field 'download', 'des_key'  %></p>
+
+<p><label for="download_active">Active</label><br/>
+<select id="download_active" name="download[active]"><option value="false">False</option><option value="true">True</option></select></p>
+
+<p><label for="download_created_at">Created at</label><br/>
+<%= datetime_select 'download', 'created_at'  %></p>
+
+<p><label for="download_updated_at">Updated at</label><br/>
+<%= datetime_select 'download', 'updated_at'  %></p>
+<!--[eoform:download]-->
+

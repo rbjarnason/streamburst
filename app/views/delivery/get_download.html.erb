@@ -1,0 +1,14 @@
+<% unless @active_key || @background_queuing %>
+  <%= render(:partial => "prepare_content_progress") -%>
+<% end %>
+
+<%= render(:partial => 'shared/forms_template',
+           :locals => { 
+           :title => t(:get_download_title_1),
+           :info_title => t(:Instructions),
+           :info_partial => "get_download_info",
+           :info_partial => @format.audio_only ? "get_download_info_audio_only" : "get_download_info",
+           :main_title => t(:get_download_title_2),
+           :main_partial => "get_download_main",
+           :buttons_title => t(:Options),
+           :buttons_partial => "get_download_buttons" }) %>

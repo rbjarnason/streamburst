@@ -1,0 +1,6 @@
+<div class="sub-box-txt">
+  <%=t :order_payment_confirmation_1%> <%=t :order_payment_confirmation_2%>
+</div>
+<div class="sub-box-txt">
+ <%=t :order_payment_confirmation_4, :order_price=>value_to_currency(@order.total_price), :item_count=> @order.line_items.count%>
+</div>

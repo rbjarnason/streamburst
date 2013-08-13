@@ -1,0 +1,48 @@
+<h1>Listing dvm_templates</h1>
+
+<table>
+  <tr>
+	  <th>Title</th>
+	  <th>Swf url</th>
+	  <th>Weight</th>
+	  <th>Public Access</th>
+	  <th>Child Count</th>
+	  <th>Exposures</th>
+	  <th>Orders</th>
+	  <th>Value Orders</th>
+	  <th>Closed Sales</th>
+	  <th>GBP</th>
+	  <th>USD</th>
+	  <th>EUR</th>
+	  <th>Get DVM Click Count</th>
+  </tr>
+  
+<% for dvm_template in @dvm_templates %>
+<% total_order_info = dvm_template.get_total_order_info %>
+  <tr>
+    <td><%=dvm_template.title%></td>
+    <td><%=dvm_template.swf_url%></td>
+    <td><%=dvm_template.weight%></td>
+    <td><%=dvm_template.public_access%></td>
+    <td align="right"><%=number_with_delimiter(total_order_info[10])%></td>
+    <td align="right"><%=number_with_delimiter(total_order_info[0])%></td>
+    <td align="right"><%=number_with_delimiter(total_order_info[1])%></td>
+    <td align="right"><%=number_with_delimiter(total_order_info[2])%></td>
+    <td align="right"><%=number_with_precision(total_order_info[3], 0)%></td>
+    <td align="right"><%=number_with_precision(total_order_info[4], 2)%></td>
+    <td align="right"><%=number_with_precision(total_order_info[5], 2)%></td>
+    <td align="right"><%=number_with_precision(total_order_info[6], 2)%></td>
+    <td align="right"><%=dvm_template.get_dvm_click_counter%></td>
+    <td><%= link_to 'Show', :action => 'show', :id => dvm_template %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => dvm_template %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => dvm_template }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @dvm_template_pages.current.previous } if @dvm_template_pages.current.previous %>
+<%= link_to 'Next page', { :page => @dvm_template_pages.current.next } if @dvm_template_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New dvm_template', :action => 'new' %>

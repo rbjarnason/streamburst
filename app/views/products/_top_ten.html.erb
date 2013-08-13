@@ -1,0 +1,5 @@
+
+<br>
+<% Product.top_ten(category_ids, brand_id, locale).each_with_index do |product, index| %>
+<span class="number"><%=index+1%>.</span> <%=product.title%><br>
+<% end %>

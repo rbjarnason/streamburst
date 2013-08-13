@@ -1,0 +1,271 @@
+/* Global styles */
+ a:link {color: #958900; text-decoration: underline; }
+ a:active {color: #958900; text-decoration: underline; }
+ a:visited {color: #958900; text-decoration: underline; }
+ a:hover {color: #958900; text-decoration: none; }
+/* START:notice */
+#notice {
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+/* END:notice */
+
+/* Styles for admin/list */
+
+#product-list .list-title {
+    color: #958900;
+    font:  100% sans-serif;
+}
+
+#product-list .list-image {
+  width:        160px;
+  height:       90px;
+}
+
+#product-list .list-actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}
+
+#product-list .list-line-even {
+  background:   #ccc;
+}
+
+#product-list .list-line-odd {
+  background:   #eee;
+}
+
+/* Styles for main page */
+
+#banner {
+  background: #fff;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-bottom: 2px solid;
+  color: #958900;
+  height: 130px;
+}
+
+#banner-nav {
+  float: right;
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  font-size: 60%;
+  font-family: sans-serif;
+  color: #958900;
+  height: 100px;
+  text-align: right;
+}
+
+#banner-admin {
+  float: right;
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  font-size: 60%;
+  font-family: sans-serif;
+  color: #958900;
+  height: 100px;
+  text-align: right;
+}
+
+#banner-image {
+  float: left;
+  background: #fff;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#banner-trailer {
+  float: left;
+  background: #fff;
+  padding-top: 29px;
+  padding-left: 14px;
+  padding-bottom: 0px;
+  width: 200px;
+}
+
+#columns {
+  background: #fff;
+}
+
+#main {
+  margin-left: 0em;
+  padding-top: 2ex;
+  padding-left: 0em;
+  background: white;
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 9em;
+  background: #fff;
+}
+
+#side a {
+  color: #000;
+  font-size: small;
+}
+
+h1 {
+  font:  120% sans-serif;
+  color: #958900;
+  border-bottom: 3px dotted #E7D001;
+}
+
+/* And entry in the store catalog */
+
+#store  .entry {
+  border-bottom: 1px dotted #E7D001;
+}
+
+#store  .title {
+  font-size: 120%;
+  font-family: sans-serif;
+}
+
+#store .entry img {
+  width: 160px;
+  height: 90px;
+  float: right;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+}
+
+#store .entry h3 {
+ margin-bottom: 2px;
+ color: #227;
+}
+
+#store .entry p {
+ margin-top: 0px; 
+ margin-bottom: 0.8em; 
+}
+
+#store .entry .price-line {
+}
+
+#store .entry .add-to-cart {
+  position: relative;
+}
+
+#store .entry  .price {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 2em;
+}
+
+/* START:inline */
+#store .entry form, #store .entry form div {
+  display: inline;
+}
+/* END:inline */
+
+/* START:cart */
+/* Styles for the cart in the main page and the sidebar */
+
+.cart-title {
+  font:  120% sans-serif;
+  color: #226;
+}
+
+.item-price, .total-line {
+  text-align: right;	
+}
+
+.total-line .total-cell {
+  font-weight: bold;
+  border-top: 1px solid #E7D001;
+}
+
+
+/* Styles for the cart in the sidebar */
+
+#cart {
+  font-size: normal;	
+  color:     black;
+  border-top:    2px #000;
+  border-bottom: 2px #000;
+  margin-top: 29px;
+}
+
+#cart table {
+  border-bottom: 3px dotted #E7D001;
+  border-top: 3px dotted #E7D001;
+  margin-bottom: 10px;
+}
+/* END:cart */
+
+/* Styles for order form */
+
+.depot-form fieldset {
+  background: #eef;
+}
+
+.depot-form legend {
+  color: #dfd;
+  background: #114;
+  font-style: sans-serif;
+  padding: 0.2em 1em;
+}
+
+.depot-form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block;
+}
+
+.depot-form .submit {
+  margin-left: 5.5em;
+}
+
+/* The error box */
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

@@ -1,0 +1,560 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  Included: "Included"
+  audio: "audio"
+  video: "video"
+  format: "format"
+  formats: "formats"
+  Brand: "Brand"
+  Price: "Price"
+  hr: "hr" # short for hours
+  min: "min" # short for minutes
+  sec: "sec" # short for seconds
+  Sponsor_Price: "Sponsor Price"
+  Add_to_cart: "Add to cart"
+  Help: "Help"
+  Instructions: "Instructions"
+  Watch_Now: "Watch Now"
+  logged_in_as: "logged in as"
+  not_logged_in: "not logged in"
+  Click_here_to_Browse: "Click here to Browse"
+  Disabled: "Disabled"
+  Next: "Next"
+  Previous: "Previous"
+  Close: "Close"
+  Back: "Back"
+  about_above_flash_video: "Above video is delivered in web quality and does not represent the High Quality Download to Own content"
+  Trailer: "Trailer"
+  video_welcome: "Welcome from the {{brand_name}} team"
+  Get_A_Sponsor_for: "Get A Sponsor for"
+  Get_A_Sponsor: "Get A Sponsor"
+  get_a_sponsor_product_info: "You can select a sponsor that will take down your price in return for adding a 30-45 second advertisement at the front of your download."
+  Sponsor_Discount: "Sponsor Discount"
+  Sponsor_Price: "Sponsor Price"
+  Add_to_cart_with_Sponsor: "Add to cart with Sponsor"
+  streamburst_usage_1: "Usage Instructions for this Streamburst website"
+  streamburst_usage_2: "Below are basic instruction on how to use the service:"
+  streamburst_usage_3: "Use \"ADD TO CART\" to select what you want to download"
+  streamburst_usage_4: "When ready click on \"CHECK OUT\" on the shopping cart"
+#  streamburst_usage_5: "Login or register with your name, email and password if you are a new Streamburst customer. After providing the needed information click on \"LOG IN\" or \"REGISTER NOW\" at the bottom of the screen.  Alternatively click on Facebook Connect to use your Facebook login"
+  streamburst_usage_5: "Login or register with your name, email and password if you are a new Streamburst customer. After providing the needed information click on \"LOG IN\" or \"REGISTER NOW\" at the bottom of the screen."
+  streamburst_usage_6: "Review your order and click on \"CONFIRM ORDER\" at the bottom of the screen when you are ready"
+  streamburst_usage_7: "Complete payment if needed and then click on \"GO TO DOWNLOADS\" at the bottom of the screen"
+  streamburst_usage_8: "Select what you want to download then click on \"PREPARE DOWNLOAD\""
+  streamburst_usage_9: "Wait for few seconds or minutes while your video is prepared and personalized on our server"
+  streamburst_usage_10: "When ready click on the \"START DOWNLOAD\" and select a place on your hard drive to store the download"               
+  streamburst_usage_11: "Wait while the video is downloaded or start \"PREPARE DOWNLOAD\" and \"START DOWNLOAD\" for another video"               
+  streamburst_usage_12: "When the content has been downloaded, select it from your hard drive and watch in on your PC using for example the Quicktime player, burn to DVD or watch on your Apple TV, Xbox360 or any other media extender that connects to your TV"               
+  streamburst_usage_13: "If you are unsure about anything or need further information please email support@streamburst.tv and we will respond quickly."
+  preview: "preview"
+  Preview: "Preview"
+  streamburst_website_closed_1: "THE STREAMBURST WEBSITE IS CLOSED FOR MAINTENANCE"
+  streamburst_website_closed_2: "PLEASE CHECK BACK SOON"
+  Go_to_downloads: "Go to downloads"
+  order_confirmation_1: "Thank you for your order."
+  order_confirmation_2: "Confirmation of your order will been sent to your registered email address. The email also contains a direct link to your download page. To access your download page now click on the \"Go To Downloads\" button."
+  order_confirmation_3_google: "Your order is pending at Google Checkout. We will send you an email with the download information as soon as we recive notification from Google."
+  order_confirmation_3_paypal: "Your order is pending at Paypal. We will send you an email with the download information as soon as we recive notification from Paypal. eChecks can take few days to clear."
+  order_confirmation_3_paypal_denial: "Paypal informs us that your payment has been denied."
+  order_confirmation_4: "You can retry by pressing the button below."
+  order_confirmation_5_paypal_cancel: "Paypal informs us that you have cancelled your purchase.  If this is an error please contact support@streamburst.tv.  Thank you."
+  Confirm_Order: "Confirm Order"
+  order_pre_confirmation_1: "Here is a summary of your order. If all of the following details are correct, please click on the \"Confirm Order\" button below to enter payment details for your order."
+  order_pre_confirmation_1_paypal_express: "Here is a summary of your order.  If all of the following details are correct, please click on the \"Confirm Order\" button below to confirm your payment."
+  order_pre_confirmation_2: "Payment processing is performed by Paypal and supports a wide range of credit and debit cards. You do not need to register for a Paypal account to pay."
+  order_pre_confirmation_3: "You can start downloading immediately after payment has been completed and you will receive a confirmation email shortly thereafter."
+  Title: "Title"
+  Category: "Category"
+  Confirm_discount_code: "Confirm discount code"
+  Free: "Free"
+  Discount: "Discount"
+  Total: "Total"
+  Retry: "Retry"
+  order_confirmation_title: "Order Confirmation - Order Ref."
+  order_confirmation_title_not_confirmed: "Order Not Confirmed - Order Ref."
+  Go_To_Download_Page: "Go To Download Page"
+  Checkout: "Checkout"
+  Confirm_Payment: "Confirm Payment"
+  Your_Order: "Your Order"
+  paypal_cancel_title: "Purchase has been cancelled at Paypal"
+  Back_to_downloads: "Back to downloads"
+  content_ready_audio_only_1: "Your content is now ready for download, click on \"Start Download\" below. The content can be played on any music player."
+  content_ready_audio_only_2_warning: "Be careful to keep this file away from your Internet file-sharing applications as if the file is found on illegal file-sharing networks the audio contains an encrypted serial number that can be traced back to you by Streamburst. Transcoding the audio into a different format, digitally or analog, will not remove the encrypted serial number."
+  content_ready_video_1: "Your content is now ready for download, click on \"Start Download\" below. The content can be played in any video player that supports the MPEG4 AVC standard e.g."
+  content_ready_video_2: "Streamburst recommends the following free video players"
+  content_ready_video_3_4gb_plus: "<b>Warning:</b> Currently Internet Explorer does not support downloads larger than 4GB. Please use a download manager like <u><a href=\"http://www.xi-soft.com/default.htm\" target=\"_blank\">Net Transport</a></u> or an alternative web browser like <u><a href=\"http://www.mozilla.com/en-US/firefox/\" target=\"_blank\">Firefox</a></u> with the <u><a href=\"http://www.downthemall.net/\" target=\"_blank\">DownThemAll</a></u> Download Manager Add-on."
+  content_ready_video_4_HD: "<b>Note:</b> The High Definition content needs a new fast computer to play at full frame-rate or alternatively a fast High Definition decoder like <u><a href=\"http://www.coreavc.com/\" target=\"_blank\">CoreAVC</a></u>"
+  Ready_for_download: "Ready for download"
+  Ready: "Ready"
+  Start_Download: "Start Download"
+  Email_me_when_ready: "Email me when ready"
+  Cancel: "Cancel"
+  get_download_info_1: "Your content is now being prepared and personalized on our server. After the preparation is completed click \"Start Download\" button to start your download."
+  get_download_info_2_warning: "Please note that the video file is personalized with your name.  Be careful to keep the video file away from your Internet file-sharing applications as if it is found on file-sharing networks it can be traced back to you by Streamburst."
+  get_download_info_2_warning_plural: "Please note that the video files are personalized with your name.  Be careful to keep the video files away from your Internet file-sharing applications as if they are found on file-sharing networks they can be traced back to you by Streamburst."
+  Waiting: "Waiting"
+  Disabled: "Disabled"
+  show_downloads_info_1_welcome: "Welcome to your downloads. You can optionally use a Download Manager to increase your download speeds and enable you to resume downloads if Internet connections are temporarily lost. Streamburst recommends the following free Download Managers"
+  Windows_only: "Windows only"
+  firefox_plugin_info: "Firefox plugin for Windows, Mac and Linux"
+  show_downloads_info_2: "Click on the link buttons below to start the download process in the selected format."
+  no_downloads_yet: "You don't have any downloads yet"
+  Formats: "Formats"
+  Start_Download: "Start Download"
+  Prepare_Download: "Prepare Download"
+  content_ready_title: "Content Ready for Download"
+  Content: "Content"
+  Back_to_List_of_Downloads: "Back to List of Downloads"
+  get_download_title_1: "Preparing Content for Download"
+  get_download_title_2: "Preparation Status"
+  Options: "Options"
+  My_Downloads: "My Downloads"
+  Your_Downloads: "Your Downloads"
+  Downloads_Page: "Downloads Page"
+  First_Name: "First Name"
+  Last_Name: "Last Name"
+  Email_Address: "Email"
+  Confirm_Email_Address: "Confirm Email Address"
+  Password_Min_Characters: "Password"
+  Confirm_Password: "Confirm Password"
+  Register_now: "Register now"
+  login_info_1: "Register now to download your content. It's easy and only takes a few seconds to complete. Already registered? Login using your E-mail address and password."
+  Password: "Password"  
+  Login: "Login"
+  login_title_1: "Login / Register"
+  login_title_2: "Returning Customers Login here"
+  login_title_3: "New Customers Register here"
+  dvm_recommendation_text_1: "Recommend {{dvm_title}} to your friends and earn money selling downloads from your profile."
+  dvm_preview: "Digital Vending Machine Preview"
+  dvm_preview_header: "Header"
+  dvm_preview_body: "Body"
+  dvm_preview_footer: "Footer"
+# Translation Session 2
+  main_footer: "All major credit and debit cards accepted - Support: support@streamburst.tv - <a href=\"/terms.html\" target=\"_blank\">Click here for terms of service</a>"
+  Remove_from_cart: "Remove from cart"
+  Your_Cart: "Your Cart"
+  total: "total"
+  Clear_cart: "Clear cart"
+  Show_all: "Show all"
+  Download_Categories: "Download Categories"
+  click_to_learn_to_use: "Click here to learn how to use the service"
+  Logout: "Logout"
+  logout: "logout"
+  login: "login"
+  my_downloads: "my downloads"
+  my_dvms: "my dvms"
+  dvm_signup: "dvm signup"
+  My_downloads: "My downloads"
+  Previous_page: "Previous page"
+  Next_page: "Next page"
+  Page: "Page"
+  of: "of" # In the context Page 1 of 3
+  previous: "previous"
+  next: "next"
+  Dear: "Dear"
+  download_ready_email_1: "Thank you for your order. You ordered the following"
+  item: "item"
+  items: "items"
+  download_ready_email_2: "Click here to go to the downloads page"
+  download_ready_email_3: "You can play the DRM free files on all audio players."
+  download_ready_email_4: "We recommend either the QuickTime player version 7+ (use the following download link): http://www.apple.com/quicktime/download/ or the VLC, player (use the following download link): http://www.videolan.org/vlc/"
+  download_ready_email_5: "To play the content in the Windows Media Player either install the Zune player or follow these instructions (use the following download link): http://www.afterdawn.com/guides/archive/how_to_play_mp4_files.cfm"
+  download_ready_email_6: "You can stream the videos directly from your PC if you have devices like Xbox 360, Apple TV or Playstation 3. For Xbox 360 support download Zune (use the following download link): http://www.zune.net/"
+  download_ready_email_7: "For burning the video content to DVD to watch on your TV via your DVD player we recommend the free DVD-Flick (use the following download link): http://www.dvdflick.net/download.php"
+  download_ready_email_8: "If you have any problems with your downloads or playback please contact support@streamburst.tv and we will respond promptly."
+  download_ready_email_9: "Streamburst on behalf of the {{brand_name}} team"
+  confirm_email_1: "Thank you for your recent order from The Content Store."
+  confirm_email_2: "You ordered the following items"
+  Enjoy: "Enjoy"
+  preperation_complete_email_1: "Your {{brand_name}} download is ready."
+  preperation_complete_email_2: "To access your download for {{product_title}} you can <a href=\"https://{{host}}/delivery/content_ready?job_key={{job_key}}\">click here</a> or copy the link below into your browser:<br> https://{{host}}/delivery/content_ready?job_key={{job_key}}"
+  preperation_complete_email_3: "The prepared download will expire in 6 hours, if you are too late you need to click the My Downloads button on the homepage and start the download preparation again."
+  preperation_complete_email_4: "If you have any problems with your downloads or playback please contact support@streamburst.tv and we will respond promptly."
+# Translation Session 3
+  unique_video_copy: "Unique video copy for"
+  personalized_video_intro_for: "Personalized introduction for"
+# Translation Session 4
+  discount_code_already_used: "This Discount Code has already been used"
+  discount_code_not_found: "Discount Code not found"
+  video_prep_failed: "Video Preparation Failed - Website Administrators have been notified"
+  video_job_cancelled: "Last Video Preparation Job Cancelled"
+  video_job_cancelled_failed: "Video Preparation Cancel failed"
+  email_alert_for_download: "You will receive an email when the content is ready for download."
+  email_alert_for_download_failed: "Video Preparation Email failed"
+  not_your_dvm: "This is nor your dvm"
+  invalid_email_password: "Invalid e-mail/password combination. Please make sure you have already registered."
+  problem_with_registration: "There was a problem with your registration, please review your information below."
+  not_authorized: "You are not authorized to view the page you requested"
+  Invalid_product: "Invalid product"
+  cart_empty: "Your cart is empty"
+  problem_saving_order: "There was a problem saving your order.  System Administrators have been notified"
+  this_is_not_your_order: "This is not your order, contact support@streamburst.tv for support."
+  problem_with_order: "There was a problem with your order, please contact support@streamburst.tv for support."
+  Missing_downloads_job: "Missing downloads job"
+  not_your_download_job: "This is not your downloads job"
+  order_not_fully_processed: "This order has not been fully processed. Please contact support@streamburst.tv"
+  product_not_part_of_order: "This product is not a part of this order. Please contact support@streamburs.tv"
+# Translation Session 5
+  relative_popularity: "Popularity"
+  Popularity: "Popularity"
+  Time: "Time"
+  Name: "Name"
+# SENT TO LAZYTOWN 1
+  lt_info_1: "Burn to DVD, Watch on your TV"
+  lt_info_2: "Burn your LazyTown Downloads to DVD, as many times as you need!  No need to worry about damaging retail DVD copies any more..."
+  lt_info_3: "Multiple Formats, One Price, Watch On the Go"
+  lt_info_4: "LazyTown Downloads are supplied in multiple formats - High Quality for viewing on your main TV and Portable Quality for Mobile Phones, iPod and other Portable Devices - all included in the price!"
+  lt_info_5: "Access Your Downloads"
+  lt_info_6: "Login and access your previously purchased downloads at any time you need..."
+# Translation Session 6
+  click_here_to_reset_your_password: "If you have forgotten your password please click <a href=\"/users/forgot_password\">here</a> to reset your password."
+  password_reset_email_1: "We have received a request to reset your password."
+  password_reset_email_2: "Please visit the following URL and choose a new password (your password will remain the same if no action is taken):"
+  password_reset_email_3: "Thank you"
+  password_reset_msg_1: "Password reset successfully for"
+  Reset_code_expired: "Reset code expired"
+  password_reminder_email: "Thank you. A reminder email is being sent to your registered email address."
+  Forgotten_Password: "Forgotten Password"
+  Enter_email_address: "Enter e-mail address"
+  Submit: "Submit"
+  Reset_Password_for: "Reset Password for"
+  job_in_queue: "Your job is in the Queue"
+  other_jobs_in_preperation: "You have other jobs in preparation"
+  Make_a_payment_via_PayPal: "Make a payment via PayPal"
+  You_can_also_use_the_PayPal_website: "You can also make the payment through PayPals website by clicking on this button:"
+  No_Payment_is_needed: "No Payment is needed for this order"
+  Please_enter_your_card_information_below: "Please enter your credit or debit card information below"
+  Card_number: "Card number"
+  Expiry_month: "Expiry month"
+  Expiry_year: "Expiry year"
+  Start_month: "Start month"
+  Start_year: "Start year"
+  Card_type: "Card type"
+  Issue_number: "Issue number"
+  Verification_code: "Verification code"
+  order_payment_confirmation_1: "Enter your payment details below."
+  order_payment_confirmation_2: "You will be able to download the content immediately after payment has been approved."
+  order_payment_confirmation_3: "You can either pay directly using the form below or complete the payment on the PayPal website by clicking on the PayPal button at the bottom of this page."
+  order_payment_confirmation_4: "You are paying a total of {{order_price}} for {{item_count}} downloads."
+  order_payment_confirmation_5: "Click here to authorize your payment."
+  payflow_error_1: "Timeout for Paypal Payment Processing"
+  payflow_error_2: "Please make sure all card information is entered correctly"
+  payflow_error_3: "Duplicate transaction"
+  payflow_error_4: "Insufficient funds available in account"
+  payflow_error_5: "Paypal Payment Processing System busy, please try again later"
+  payflow_error_6: "Problem with Paypal Payment Processing"
+  payflow_error_7: "Invalid card information"
+# Translation Session 6
+  Expiry_date: "Expiry date"
+  Start_date: "Start date"
+  PayNow: "Pay Now"
+  OtherPaymentOptions: "Other Payment Options"
+  PaymentDetails: "Payment Details"
+  Payment: "Payment"
+  payment_with_google_is_only_avilable_using_British_Pounds: "Google Checkout only accepts British Pounds at todays exchange rate. Total in GBP is &pound;{{gbp}}"
+  is_ready_for_download: "is ready for download"
+#
+  Includes: "Includes"
+  Details: "See details"
+  Episodes: "Episodes"
+  Bundle: "Bundle"
+  Songs: "Songs"
+  and: "and"
+  All_Seasion_1: "Everything"
+  All_Seasion_1_Episodes: "All Episodes"
+  All_Seasion_1_Songs: "All Songs"
+  Discount_compared_to_single_title_purchases: "Discount compared to purchasing individual titles"
+  Password_Reset_Information: "Password Reset Information"
+  Welcome: "Welcome"
+  user_does_not_exist: "This email is not registered in our system."
+# HELP TEXT
+  help_id_25: 
+    title: High Quality Video Format
+    text: "The High Quality video format is prepared to closely match DVD in quality. This format is ideal for watching on your HDTV, PC or laptop.\r\n\
+      \r\n\
+      You can freely burn the content to DVD for archiving or if you don't have a direct connection between your HDTV and PC and want to play the content in your DVD player.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      768 x 432 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_14: 
+    title: Portable Video Format
+    text: "The portable video format offers good visual quality with a small download size. It is designed for people who want to watch video on their portable devices and for people who have slow Internet connections.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * iPod Video\r\n\
+      * Microsoft Zune\r\n\
+      * Sony PSP (via http://www.pspvideo9.com/)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      320 x 240 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>iPod&#169; is a registered trademark of Apple Computer, Inc. Zune&#169; is a trademark of Microsoft Corporation. PSP&#169; (PlayStation Portable) is a trademark of Sony Computer Entertainment Inc.</small>"
+  help_id_26: 
+    title: Embla Trailer
+    text: "Embla is the fateful story of a young woman living in an age that saw violent clashes between the religion of old Viking gods and an increasingly militant Christianity.\xD3lafur Tryggvason, has returned from exile in England, fighting with the weapon of a new faith, the cross of the White Christ. The ancient Viking religion of Odin is collapsing and Norway is ablaze with civil war, its earls and small kings pitched in battle against \xD3lafur. \xD3lafur preaches one king on earth and one king in heaven and aims to rule over all the lands where the Vikings have settled. King \xD3lafur defeats Earl Go\xF0brand, Embla's father, and makes him to convert to Christianity. He then forces Askur, Embla's husband, to go to Iceland as a missionary of the White Christ while he holds Embla herself hostage in Norway. \xD3lafur tells Askur he will have Embla burned alive if he does not succeed in converting the Icelanders to Christianity. At the same time, King \xD3lafur wants Embla to become his queen and will stop at nothing to fulfil his desire."
+  help_id_15: 
+    title: Mobile Video Format
+    text: |-
+      The mobile format is designed for people who want to watch their content on multimedia mobile phones.
+      
+      ### Supported Mobile Phones
+      * Series60 multimedia phones like Nokia N70, E61 & N93
+      * Many others
+      
+      ### Download content to phone with PC Sync
+      It is likely that there is a USB cable with your phone that you can use for installing media to the phone.  You download the content to the PC and then sync it to the mobile phone via cable.
+      
+      ### Download content directly to phone (only available for video clips)
+      1. Purchase the content and receive confirmation
+      2. Point your mobile browser to *http://streamburst.tv/mobile* and log in using your email and password
+      3. Select which mobile clip you want to download to your phone
+      
+      ### Technical Specification
+      192 x 144 pixels - 15fps - MPEG4 3GPP Container - MPEG4 (Xvid) Video Codec - AAC Audio Codec - Mono
+  help_id_27: 
+    title: Medium Quality MP3 - 160kbps
+    text: DRM Free. 160kbps. Plays on all mp3 players.
+  help_id_16: 
+    title: David Jefferies Unseen
+    text: "Remember the much-loved and much-missed David Jefferies in this unique collection of previously unreleased films of the nine-times Isle of Man TT winner. Join irreplaceable DJ on two wheels and four. \xA31 will be donated to the David Jefferies Memorial Fund for every download purchased."
+  help_id_1: 
+    title: High Quality Video Format
+    text: "The High Quality video format is prepared to closely match DVD in quality. This format is ideal for watching on your HDTV, PC or laptop.\r\n\
+      \r\n\
+      You can freely burn the content to DVD for archiving or if you don't have a direct connection between your HDTV and PC and want to play the content in your DVD player.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      752 x 416 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_17: 
+    title: Ingmar Bergman Interview
+    text: |-
+      Ingmar Bergman, the influential and widely celebrated Swedish film director passed away on July 30 at the age of 89.  This exclusive interview was recently discovered at the archive of vikingfilms.net.  The interview was, at the time, shown both on Icelandic and Swedish television and was screened at the Berlin Film Festival in 1987.
+      
+      Director interviews director. Ingmar Bergman visited Iceland in the summer of 1987 and was interviewed by Icelandic film director Hrafn Gunnlaugsson. Bergman gives a unique explanation on what it personally means to him to be a film director and how he works creating his films by taking total control of every detail throughout the film making process.
+  help_id_2: 
+    title: Portable Video Format
+    text: "The portable video format offers good visual quality with a small download size. It is designed for people who want to watch video on their portable devices and for people who have slow Internet connections.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * iPod Video\r\n\
+      * Microsoft Zune\r\n\
+      * Sony PSP (via http://www.pspvideo9.com/)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      320 x 176 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>iPod&#169; is a registered trademark of Apple Computer, Inc. Zune&#169; is a trademark of Microsoft Corporation. PSP&#169; (PlayStation Portable) is a trademark of Sony Computer Entertainment Inc.</small>"
+  help_id_18: 
+    title: When the Raven Flies Trailer
+    text: |-
+      
+      Hrafn Gunnlaugsson's first Viking film, where he presents a new concept of the Viking era, destroying the stereotype Hollywood image.  Set in the Middle Ages, the film tells the story of the revenge of Gestur, an Irishman, who as a child witnessed the murder of his parents by two Norwegian vikings, the foster-brothers Thor and Erik, and the taking of his sister as a slave.  Gest follows their trail to Iceland and incites their mutual distrust and hatred.  His sister stands between two men: the one who once ravished her, the father of her beloved son, and her brother, whom she has also learned to love, and who now wants to rescue her and avenge their parents' death.
+      
+      Awards: The Gold Bug - "Guldbaggen 1984 for best direction, in Sweden; DV Cultural Awards 1985. First Icelandic film to be presented on the main programme of the Berlin Festival in 1985.  Selected as one of the best 30 films of the decade at the Tokyo Film Festival.  The Icelandic entry for the Oscar 1984.
+  help_id_3: 
+    title: Mobile Video Format
+    text: |-
+      The mobile format is designed for people who want to watch their content on multimedia mobile phones.
+      
+      ### Supported Mobile Phones
+      * Series60 multimedia phones like Nokia N70, E61 & N93
+      * Many others
+      
+      ### Download content to phone with PC Sync
+      It is likely that there is a USB cable with your phone that you can use for installing media to the phone.  You download the content to the PC and then sync it to the mobile phone via cable.
+      
+      ### Download content directly to phone (only available for video clips)
+      1. Purchase the content and receive confirmation
+      2. Point your mobile browser to *http://streamburst.tv/mobile* and log in using your email and password
+      3. Select which mobile clip you want to download to your phone
+      
+      ### Technical Specification
+      208 x 112 pixels - 15fps - MPEG4 3GPP Container - MPEG4 (Xvid) Video Codec - AAC Audio Codec - Mono
+  help_id_19: 
+    title: In the Shadow of the Raven Trailer
+    text: "Hrafn Gunnlaugsson's second attempt to recreate the Viking world draws on different material - the Icelandic sagas, the story of Tristan and Isolde, the Greek tragedies, brought together by the director's imagination.\r\n\
+      \r\n\
+      It tells the story of a young man, Trausti who arrives in Iceland from Norway, where he has completed his studies for the priesthood.  A man of peace, he is thrust by fate into the midst of civil strife in Iceland, where that he meets \xCDs\xF3l.  Unmarried and yet a mother, she represents the Eternal Feminine, the woman that Goethe sought in vain.  In the Shadow of the Raven is first and foremost a story of strong individuals set against the powerful workings of fate.\r\n\
+      \r\n\
+      Awards: Nominated for the Felix, the European Film Prize (Best Actress: Tinna Gunnlaugsd\xF3ttir, Best Supporting ACtor: Helgi Sk\xFAlason.  Prix special du jury at the Festival International du Film d'Action et d'Adventure, Valenciennes, 1990.  The Icelandic entry for the Oscar in 1988.\r\n"
+  help_id_4: 
+    title: Complete Episodes
+    text: These downloads offer full/complete episodes. They are here for your enjoyment if you choose to purchase them. The downloads have a variety of formats to choose from depending on what you plan to view it on; the quality does vary. It is important that you keep this in mind, for your download will be most enjoyable if the format fits the technology you plan to view it on. To understand more, please click on the question marks which follow each format style explained in greater detail.
+  help_id_20: 
+    title: The White Viking Trailer
+    text: |-
+      The White Viking is the director's third film set in the Viking era.  In this film as well as in the previous ones (When the Raven Flies, In the Shadow of the Raven), the director seeks to destroy the stereotype Viking image made in Hollywood and create a world of new concepts.
+      
+      The title recalls a certain pagan misconception at the time of Christ being a white-clad Viking conqueror, wielding the cross as a sword to impel worship.  Around 1000 A.D., King Olaf of Norway(Olafur Tryggvason) had nearly succeeded in converting the entire country to Christianity with his sword in one hand and the cross in the other.  The king had visions of a Christian empire, embracing all the lands where the Vikings had settled, including Iceland, a refuge for many pagan opponents of the royal policy in Norway.  Askur, the film's main character, is sent to Iceland, while his bride Embla, is held hostage by King Olaf.  For the love of a woman, Askur sets out on an impossible mission - the conversion of a new nation to Christianity.
+  help_id_5: 
+    title: Video Clips
+    text: The video clips are short clips purely for your amusement. Those of you out there familiar with the program who have your favourite episodes can now purchase shorts from those specific episodes.
+  help_id_21: 
+    title: High Quality MP3 - 320kbps
+    text: DRM Free. 320kbps. Highest possible MP3 quality but doesnt not play in some older/smaller mp3 players.
+  help_id_10: 
+    title: The Missing Face
+    text: "In \x98The Missing Face\" Ewan McGregor and Charley Boorman meet the children of Africa, revealing a hopeful and optimistic view on tackling the problems that children face. They demonstrate their long term commitment to raising awareness of HIV/AIDS in the worst affected region of the world, sub-Saharan Africa.<br/>\r\n\
+      <br/>\r\n\
+      What makes this show stand out from the rest is the way it doesn't focus on statistics to point out the problems. It shows the real life of children affected by HIV and its associated problems.<br/>\r\n\
+      <br/>\r\n\
+      We try to understand the children's story of their emotion, fears and thought from their viewpoint.<br/>\r\n\
+      <br/>\r\n\
+      Staying over night with the children, seeing their day to day routines and the remarkable concerns pregnant women face, makes this an extraordinary 1 hour special for World Aids Day, 1 Dec 2006."
+  help_id_6: 
+    title: VLC Video Player
+    text: |
+      The VLC player is an excellent video player for all platforms.  It's free and developed by the Open Source community.  
+      <center>
+      <img src="/images/vlc-win32.jpg" border="0" width="300" height="200">
+      
+      Download video lan here: <b><a href="http://www.videolan.org/vlc/" target="_blank">http://www.videolan.org/vlc/</a></b>
+      </center>
+
+  help_id_22: 
+    title: Uncompressed 24bit WAV format
+    text: This is the highest possible sound quality available. Regular CDs use 16bit WAV format making our 24bit files superior in sound quality.
+  help_id_11: 
+    title: Discount Codes
+    text: |
+      Discount codes are used to give discounts on downloads and are usually distributed to people as a part of marketing campaigns.
+      
+      If you have a discount code you can enter it here and click on the Confirm Code to activate your discount.
+
+  help_id_7: 
+    title: Quicktime Player
+    text: |
+      Since version 7, the Quicktime Player supports the advanced MPEG4 AVC/H264 video format.
+      The link below will open the Quicktime download page.
+      <br/>
+      <br/>
+      <center>
+      <a href="http://www.apple.com/quicktime/download/" target="_blank"><img src="/images/qt7badge_getQTfreeDownload.gif " border="0" margin="20" alt="Quicktime"></a>
+      <br/>
+      <br/>
+      </center>
+      <small>QuickTime and the QuickTime Logo are trademarks of Apple Computer, Inc., registered in the U.S. and other countries. The Get QuickTime Badge is a trademark of Apple Computer Inc., used with permission.</small>
+  help_id_23: 
+    title: Uncompressed WAV 16bit
+    text: Uncompressed 16bit CD quality audio.  Ideal for burning to physical CDs for maximum sound quality.
+  help_id_12: 
+    title: High Quality Video Format
+    text: "The High Quality video format is prepared to closely match DVD in quality. This format is ideal for watching on your HDTV, PC or laptop.\r\n\
+      \r\n\
+      You can freely burn the content to DVD for archiving or if you don't have a direct connection between your HDTV and PC and want to play the content in your DVD player.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      720 x 400 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_8: 
+    title: Nero Showtime
+    text: |
+      Nero offers two version of Showtime, both versions can play our content.
+      
+      The links below offer further information about Nero products:<br/>
+      <a href="http://www.nero.com/nero6/en/Nero_ShowTime_prev.html" target="_blank">Nero Showtime 2</a><br/>
+      <a href="http://www.nero.com/nero7/eng/Nero_ShowTime_3.html" target="_blank">Nero Showtime 3</a>
+
+  help_id_24: 
+    title: High Definition (HD 720p)
+    text: "The High Definition video format is considerably higher quality than DVD. This format is ideal for watching on your HDTV, PC or laptop.\r\n\
+      \r\n\
+      You can freely burn the content to DVD for archiving or if you don't have a direct connection between your HDTV and PC and want to play the content in your DVD player.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      1280 x 720 pixels - 25fps - MPEG4 Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_13: 
+    title: High Quality Video Format
+    text: "The High Quality video format is prepared to closely match DVD in quality. This format is ideal for watching on your HDTV, PC or laptop.\r\n\
+      \r\n\
+      You can freely burn the content to DVD for archiving or if you don't have a direct connection between your HDTV and PC and want to play the content in your DVD player.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      768 x 576 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_9: 
+    title: ffdshow
+    text: |
+      ffdshow offers filters for Windows Media Player that enable the MPEG4 AVC codec.
+      
+      Here is more information:
+      <a href="http://sourceforge.net/projects/ffdshow" target="_blank">http://sourceforge.net/projects/ffdshow</a>
+  help_id_123:
+    title: High Quality Video Format
+    text: "The High Quality video format is prepared to closely match DVD in quality. This format is ideal for watching on your HDTV, PC or laptop.\r\n\
+      \r\n\
+      You can freely burn the content to DVD for archiving or if you don't have a direct connection between your HDTV and PC and want to play the content in your DVD player.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      768 x 416 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_124: 
+    title: Portable Video Format
+    text: "The portable video format offers good visual quality with a small download size. It is designed for people who want to watch video on their portable devices and for people who have slow Internet connections.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * iPod Video\r\n\
+      * Microsoft Zune\r\n\
+      * Sony PSP (via http://www.pspvideo9.com/)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      320 x 176 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>iPod&#169; is a registered trademark of Apple Computer, Inc. Zune&#169; is a trademark of Microsoft Corporation. PSP&#169; (PlayStation Portable) is a trademark of Sony Computer Entertainment Inc.</small>"
+  

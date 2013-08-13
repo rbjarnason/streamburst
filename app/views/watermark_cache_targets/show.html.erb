@@ -1,0 +1,8 @@
+<% for column in WatermarkCacheTarget.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @watermark_cache_target.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @watermark_cache_target %> |
+<%= link_to 'Back', :action => 'list' %>

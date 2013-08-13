@@ -1,0 +1,40 @@
+<%= render(:partial => "shared/analytics_main", :locals => {:analytics_account => analytics_account}) %>
+
+<table width="1038px" class="table-holding">
+  <tr>
+    <td width="25px" class="leftEdge">
+    </td>
+    <td valign="top" class="td-holding">
+      <table class="main-content-table">
+        <tr>
+           <td width="230px" VALIGN="top" class="side-floater-holding">
+           <% unless @this_controller == "dvm" and @this_action == "home" %>
+             <%= render(:partial => "shared/side_floater", :locals => {:logo_image => logo_image, 
+                                                                       :logo_width => logo_width,
+                                                                       :logo_height => logo_height}) %>
+      	  <% end %>
+	      </td>
+	  <td VALIGN="top" class="tabs">
+		  <%= render(:partial => "shared/main_links") %>
+            <% if flash[:notice] -%>
+              <div id="notice"><%= flash[:notice] %></div>
+            <% end -%>
+              <div id="nav_tabs">
+                <%= render(:partial => tabs) unless @website_closed %>
+              </div>
+              <div id="main">
+                <%= @content_for_layout %>
+              </div>
+              <div id="help-footer-text">
+                <center><%=t :main_footer%></center>
+              </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="25px" class="rightEdge">
+    </td>
+  </tr>
+</table>
+
+<%= javascript_include_tag 'dynamic_checkbox'%>

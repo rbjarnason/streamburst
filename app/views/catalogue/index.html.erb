@@ -1,0 +1,13 @@
+<div id="forms">
+  <% if @video_welcome %>
+    <%= render(:partial => "video_welcome") %>
+  <% elsif @video_trailer %>
+    <%= render(:partial => "video_trailer") %>
+  <% else %>
+    <% if @brand.custom_products_list %>
+      <%= render(:partial => "/catalogue/products_list/#{@brand.to_home_param}_products_list") %>
+	<% else %>  
+      <%= render(:partial => "products_list") %>
+	<% end %>  
+  <% end %>
+</div>

@@ -1,0 +1,49 @@
+<%= error_messages_for 'campaigns' %>
+
+<!--[form:campaign]-->
+<p><label for="campaign_name">Name</label><br/>
+<%= text_field 'campaign', 'name'  %></p>
+
+<p><label for="company_id">Company</label><br/>
+<select name="campaign[company_id]">
+<% @companies.each do |company| %>
+   <option value="<%= company.id %>"
+      <%= ' selected' if company.id == @campaign.company_id %>>
+      <%= company.name %>
+    </option>
+  <% end %>
+</select></p>
+
+<p><label for="advertisement_id">Advertisement</label><br/>
+<select name="campaign[advertisement_id]">
+<% @advertisements.each do |advertisement| %>
+   <option value="<%= advertisement.id %>"
+      <%= ' selected' if advertisement.id == @campaign.advertisement_id %>>
+      <%= advertisement.name %>
+    </option>
+  <% end %>
+</select></p>
+
+<p><label for="territory_id">Territory</label><br/>
+<select name="campaign[territory_id]">
+<% @territories.each do |territory| %>
+   <option value="<%= territory.id %>"
+      <%= ' selected' if territory.id == @campaign.territory_id %>>
+      <%= territory.name %>
+    </option>
+  <% end %>
+</select></p>
+
+<p><label for="campaign_start_date">Start date</label><br/>
+<%= datetime_select 'campaign', 'start_date'  %></p>
+
+<p><label for="campaign_end_date">End date</label><br/>
+<%= datetime_select 'campaign', 'end_date'  %></p>
+
+<p><label for="campaign_active">Active</label><br/>
+<select id="campaign_active" name="campaign[active]"><option value="false" <%= "selected" if !@campaign.active %>>False</option><option value="true"  <%= "selected" if @campaign.active %>>True</option></select></p>
+
+<p><label for="campaign_max_daily_bid_amount">Max daily bid amount</label><br/>
+<%= text_field 'campaign', 'max_daily_bid_amount'  %></p>
+<!--[eoform:campaign]-->
+

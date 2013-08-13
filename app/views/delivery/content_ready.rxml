@@ -1,0 +1,7 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.product_image_url(url_for_image_column(@product, "small_image", :name => "normal", :absolute => true))
+xml.product_title(@product.title)
+xml.job_key(@job_key)
+xml.protected_download_url(protected_download_url(@download, @video_server_hostname))

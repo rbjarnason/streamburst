@@ -1,0 +1,54 @@
+<!--  <div class="main-header"> -->
+    <table width="100%" VALIGN="middle" class="main-header">
+   	<tr><td width="55%">
+      <span class="main-header-left-txt"><%= "#{@brand_category.name} (#{@brand_category.brands.count})" %></span>
+      &nbsp<%= image_tag("circling-ball-3-frame-fade.gif",
+                 :align => 'middle',
+                 :border=> 0,
+                 :id => "products-list-spinner",
+                 :style=>"display: none;" ) %>
+               </td>
+       <td width="45%">
+          <span class="main-header-right-txt">
+          <%= render(:partial => "shared/instructions_panel") %>
+          <%= render(:partial => "shared/paginate", :locals => {:collection => @brands }) -%>
+         </span>
+       </div>
+      </td>
+     </tr>
+     </table>
+    <%= render(:partial => "brand", :collection => @brands) %>
+ 
+  <% if @brands.page_count > 1 -%> 
+   <table width="100%" VALIGN="middle" class="main-header">
+    <tr>
+    <td width="40%">
+     <span class="main-header-left-txt">
+     <% if @brands.previous_page -%>
+     <%= link_to_remote image_localized_tag("button_previous.png", :border => 0, :alt => t(:Previous)), 
+             	    	           :before   => %(Element.show('products-list-spinner')),
+                                   :success  => %(Element.hide('products-list-spinner')),
+            	    	           :url => { :action => :index, 
+            	    	                     :page => @brands.previous_page } %>
+	  <%  else -%>
+          <%= image_localized_tag("button_previousDisabled.png", :border => 0, :alt => t(:Disabled)) %>
+	  <% end -%>
+     </span>
+    </td>
+    <td width="40%">              
+     <span class="main-header-right-txt">
+     <% if @brands.next_page? -%>
+     <%= link_to_remote image_localized_tag("button_next.png", :border => 0, :alt => t(:Next), :align => "right"), 
+             	    	           :before   => %(Element.show('products-list-spinner')),
+                                   :success  => %(Element.hide('products-list-spinner')),
+            	    	           :url => { :action => :index, 
+            	    	                     :page => @brands.next_page } %>
+    <% else -%>
+    <%= image_localized_tag("button_nextDisabled.png", :border => 0, :alt =>t(:Disabled), :align => "right") %>
+    <% end -%>
+     </span>
+
+    </tr>
+   </table>
+  <% end %>
+  

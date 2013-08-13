@@ -1,0 +1,7 @@
+<span class="sub-box-button">
+   <% if @order.total_price > 0 %>
+     <%= link_to(image_localized_tag("button_confirmOrder_1.png", :border => 0, :alt => t(:Confirm_Order)), :controller => "checkout",  :action => "payment", :id => @order.id) %>
+   <% else %>
+     <%= link_to(image_localized_tag("button_confirmOrder_1.png", :border => 0, :alt => t(:Confirm_Order)), :controller => "checkout",  :action => "complete", :id => @order.id) %>
+   <% end %>
+</span>

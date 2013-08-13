@@ -1,0 +1,35 @@
+<% if @bids.size > 0 %>
+<table cellpadding="5" cellspacing="0">
+  <th>Tag</th>
+  <th>Active</th>
+  <th>Bid amount</th>
+  <th>Today Won</th>
+  <th>Total Won</th>
+  <th>Min Top Ten</th>
+  <th>Top bid</th>
+  <th>New bid</th>
+  <th></th>
+<% for bid in @bids %>
+  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= bid.tag_names %></td>
+    <td><%= h(bid.active) %></td>
+    <td><%= bid.bid_amount %></td>
+    <td><%= h(bid.today_won_amount) %></td>
+    <td><%= h(bid.total_won_amount) %></td>
+    <td><%= bid.lowest_top_ten %></td>
+    <td><%= bid.top_bid %></td>
+    <td>
+    <%= form_tag( { :action => 'update_bid', :id => @campaign, :bid_id => bid } ) %>        
+    <input id="campaign_tag" name="campaign[bid_amount]" size="4" type="text" value="<%=bid.bid_amount%>" /></p>    
+      <%= submit_tag "Update" %>
+    </form>
+    </td> 
+    <td class="list-actions">
+    <%= link_to 'Remove', { :action  => 'remove_bid', :id => @campaign, :bid_id => bid },
+                            :confirm => "Are you sure?",
+                            :post    => true %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<% end %>

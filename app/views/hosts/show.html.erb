@@ -1,0 +1,10 @@
+<%= render :partial => 'list_host_brands' %>
+
+<% for column in Host.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @host.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @host %> |
+<%= link_to 'Back', :action => 'list' %>

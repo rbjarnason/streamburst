@@ -1,0 +1,2 @@
+module HeimdallSiteTargetsHelper
+end

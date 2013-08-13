@@ -1,0 +1,28 @@
+<div id="mobile-show-downloads">
+  <% for order in @orders %>
+    <% for line_item in order.line_items %>
+    <% found_something = false  %>
+      <% if line_item.product && line_item.product.product_formats %>
+      <% for product_format in line_item.product.product_formats %>
+          <% if product_format.format.id == @mobile_format_id && line_item.product.categories[0].id == @clip_category_id %>
+            <% found_somthing = true %>
+            <%= line_item.product.title %>
+            <br/>
+            <%= link_to image_tag("button_browserDL_1.gif", :border => 0), :action => 'download', 
+                                :downloads_key => @downloads_key, 
+                                :id => product_format.download_id,
+                                :format_id => product_format.format.id,
+                                :company_id => line_item.product.company_id,
+                                :brand_id => line_item.product.brand_id,
+                                :order_id => order.id, 
+                                :product_id => line_item.product.id  %>
+                                <br/> <br/>                   
+          <% end %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+  <% if found_something == false %>
+    No Mobile Clips found to download.
+  <% end %>  
+</div>

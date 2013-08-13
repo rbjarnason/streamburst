@@ -1,0 +1,8 @@
+<% for column in PriceClass.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @price_class.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @price_class %> |
+<%= link_to 'Back', :action => 'list' %>

@@ -1,0 +1,407 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+is:
+  Included: "Innifalið"
+  audio: "hljóð"
+  video: "mynd"
+  format: "útgáfa"
+  formats: "útgáfur"
+  Brand: "Brand"
+  Price: "Verð"
+  hr: "kl" # short for hours
+  min: "mín" # short for minutes
+  sec: "sek" # short for seconds
+  Sponsor_Price: "Auglýsinga Verð"
+  Add_to_cart: "Bæta í körfu"
+  Help: "Hjálp"
+  Instructions: "Leiðbeiningar"
+  Watch_Now: "Horfa núna"
+  logged_in_as: "innskráður sem"
+  not_logged_in: "ekki innskráður"
+  Click_here_to_Browse: "Smella til að skoða"
+  Disabled: "Óvirkt"
+  Next: "Næst"
+  Previous: "Fyrra"
+  Close: "Loka"
+  Back: "Til baka"
+  about_above_flash_video: "Vídeó að ofan er í vefgæðum og ekki sambærilegt við hágæða efni sem er keypt og á þessari vefsíðu"
+  Trailer: "Trailer"
+  video_welcome: "Verið velkomin frá {{brand_name}} teyminu"
+  Get_A_Sponsor_for: "Fáið auglýsenda fyrir"
+  Get_A_Sponsor: "Fáið auglýsenda"
+  get_a_sponsor_product_info: "Þú getur valið auglýsenda til að lækka verðið í stað þess að setja 30-45 sekúndu auglýsingu í byrjun á vídeói."
+  Sponsor_Discount: "Afsláttur með auglýsingum"
+  Sponsor_Price: "Verð með auglýsingu"
+  Add_to_cart_with_Sponsor: "Bæta í körfu með Auglýsenda"
+  streamburst_usage_1: "Leiðbeiningar fyrir þessa Streamburst vefsíðu"
+  streamburst_usage_2: "Að neðan eru upplýsingar um hvernig á að nota þessa vefsíðu:"
+  streamburst_usage_3: "Notaðu \"Bæta í körfu\" til að velja það sem þú vilt niðurhala"
+  streamburst_usage_4: "Þegar þú ert tilbúin smelltu á \"Ganga frá pöntun\" á körfunni"
+#  streamburst_usage_5: "Innskráðu þig með nafni, tölvupósti og lykilorði. Eftir að búið er að fylla út nauðsynlega reiti smelltu á \"Innskráning\" eða \"Nýskráning\". Þú getur líka smellt á \"Facebook Connect\" ef þú vilt tengja þig með þínum Facebook aðgangi"
+  streamburst_usage_5: "Innskráðu þig með nafni, tölvupósti og lykilorði. Eftir að búið er að fylla út nauðsynlega reiti smelltu á \"Innskráning\" eða \"Nýskráning\"."
+  streamburst_usage_6: "Farðu yfir pöntunina og smelltu á \"Staðfest pöntun\" þegar þú ert tilbúin"
+  streamburst_usage_7: "Gangtu frá greiðslu, ef með þarf og smelltu á \"Niðurhöl\""
+  streamburst_usage_8: "Veldu niðurhal og smelltu á \"Undirbúa niðurhal\""
+  streamburst_usage_9: "Bíddu í nokkrar sekúndur eða mínútur á meðan efni er gert tilbúið og persónugert á netþjóni okkar"
+  streamburst_usage_10: "Þegar efni er tilbúið smelltu á \"Byrja niðurhal\" og veldur stað á harða disk til að geyma niðurhal"               
+  streamburst_usage_11: "Bíddu á meðan efni er niðurhalað eða smelltu á \"Undirbúa niðurhal\" og \"Byrja niðurhal\" fyrir annað efni"               
+  streamburst_usage_12: "When the content has been downloaded, select it from your hard drive and watch in on your PC using for example the Quicktime player, burn to DVD or watch on your Apple TV, Xbox360 or any other media extender that connects to your TV"               
+  streamburst_usage_12: "Þegar efni hefur verið niðurhalað, veldu það frá þínum harða disk og horfðu á það á tölvunni þinni með t.d. Quicktime player, brenndu efni á DVD eða horfðu á það á Apple TV, XBox360 eða með öðrum tækjum sem tengjast þínu sjónvarpi"               
+  streamburst_usage_13: "Ef þú ert ekki viss um eitthvað sendu okkur endilega tölvupóst á support@streamburst.tv og við svörum fljótt."
+  preview: "sýnishorn"
+  Preview: "Sýnishorn"
+  streamburst_website_closed_1: "ÞESSI STREAMBURST VEFSÍÐA ER LOKIÐ VEGNA VIÐHALDS"
+  streamburst_website_closed_2: "KOMDU FLJÓTT AFTUR"
+  Go_to_downloads: "Niðurhöl"
+  order_confirmation_1: "Þakka þér fyrir pöntun."
+  order_confirmation_2: "Staðfesting á pöntun verður sent í tölvupósti með beinum tengli til þinnar niðurhalssíðu. Til að nálgast niðurhöl núna smelltu á \"Niðurhöl\" takkann."
+  order_confirmation_3_google: "Þín pöntun bíður hjá Google Checkout. Við munum senda þér tölvupóst með upplýsingum um þín niðurhöl um leið og staðfesting kemur frá Google."
+  order_confirmation_3_paypal: "Þín pöntun bíður hjá Paypal. Við munum senda þér tölvupóst með upplýsingum um þín niðurhöl um leið og staðfesting kemur frá Paypal. eChecks geta tekið nokkra daga að fara í gegn."
+  order_confirmation_3_paypal_denial: "Paypal hefur neitað greiðslu."
+  order_confirmation_4: "Þú getur reynt aftur með að smella hér að neðan."
+  order_confirmation_5_paypal_cancel: "Paypal segir okkur að þú hafir hætt við pöntun. Ef þetta er villa vinsamlegast hafið samband við support@streamburst.tv.  Takk fyrir."
+  Confirm_Order: "Staðfesta Pöntun"
+  order_pre_confirmation_1: "Hér er yfirlit yfir pöntun. Ef allt er rétt, smellið á \"Staðfesta Pöntun\" til að setja inn greiðsluupplýsingar fyrir þessa pöntun."
+  order_pre_confirmation_1_paypal_express: "Hér er yfirlit yfir pöntun. Ef allt er rétt, smellið á \"Staðfesta Pöntun\" að neðan til að staðfest greiðslu fyrir þessa pöntun."
+  order_pre_confirmation_2: "Paypal sér um greiðslumiðlun og styður mikið af debit og kreditkortum. Þú þarft ekki að vera skráður hjá Paypal til að kaupa."
+  order_pre_confirmation_3: "Þú getur byrjað niðurhal um leið og greitt hefur verið og síðan munt þú fá staðfestingu í tölvupósti."
+  Title: "Titill"
+  Category: "Flokkur"
+  Confirm_discount_code: "Staðfesta afsláttarkóða"
+  Free: "Frítt"
+  Discount: "Afsláttur"
+  Total: "Alls"
+  Retry: "Reyna aftur"
+  order_confirmation_title: "Staðfesting á pöntun - Pöntunarnúmer"
+  order_confirmation_title_not_confirmed: "Pöntun ekki staðfest - Pöntunarnúmer"
+  Go_To_Download_Page: "Fara á niðurhalssíðu"
+  Checkout: "Panta"
+  Confirm_Payment: "Staðfesta Greiðslu"
+  Your_Order: "Þín Pöntun"
+  paypal_cancel_title: "Hætt hefur verið við pöntun hjá Paypal"
+  Back_to_downloads: "Til baka til niðurhala"
+  content_ready_audio_only_1: "Efni er tilbúið fyrir niðurhal smelltu á \"Byrja niðurhal\" að neðan. Efnið getur spilast á hvaða tónlistarspilara sem er."
+  content_ready_audio_only_2_warning: "Passaðu þig á því að halda þessari skrá í burtu frá forritum sem dreifa efni til annarra notenda á netinu.  Ef þitt efni finnst á ólöglegum niðurhalsnetum er hljóðið með læstu raðnúmeri sem hægt er að rekja aftur beint til þín.  Umbreyting á hljóði í önnur form hvort sem er starfrænt eða hliðrænt eyðir ekki raðnúmeri."
+  content_ready_video_1: "Efni er tilbúið fyrir niðurhal smelltu á \"Byrja niðurhal\" að neðan. Efnið getur spilast á öllum vídeóspilurum sem styðja MP4 AVC staðalinn."
+  content_ready_video_2: "Streamburst mælir með eftirfarandi fríum vídeóspilurum"
+  content_ready_video_3_4gb_plus: "<b>Varúð:</b> Internet Explorer styður ekki niðurhöl stærri en 4GB. Notið niðurhalsforrit eins og <u><a href=\"http://www.xi-soft.com/default.htm\" target=\"_blank\">Net Transport</a></u> eða annan vefvafra eins og <u><a href=\"http://www.mozilla.com/en-US/firefox/\" target=\"_blank\">Firefox</a></u> með <u><a href=\"http://www.downthemall.net/\" target=\"_blank\">DownThemAll</a></u> viðbót."
+  content_ready_video_4_HD: "<b>Til athugunar:</b> HD Efni þarf hraðvirka tölvu eða hraðvirkan kódec eins og <u><a href=\"http://www.coreavc.com/\" target=\"_blank\">CoreAVC</a></u>"
+  Ready_for_download: "Tilbúið fyrir niðurhal"
+  Ready: "Tilbúið"
+  Start_Download: "Byrja Niðurhal"
+  Email_me_when_ready: "Sendu tölvupóst þegar tilbúið"
+  Cancel: "Hætta við"
+  get_download_info_1: "Þitt efni er nú undirbúið og persónugert á okkar vefþjóni. Þegar undirbúningi er lokið smellið á \"Byrja Niðurhal\" takkann."
+  get_download_info_2_warning: "Athugaðu að þetta vídeó er persónugert með þínu nafni.  Passaðu þig á því að halda þessu vídeói í burtu frá forritum sem dreifa efni til annarra notenda á netinu. Ef þitt efni finnst á ólöglegum niðurhalsnetum er vídeó með læstu raðnúmeri sem hægt er að rekja aftur beint til þín."
+  get_download_info_2_warning_plural: "Athugaðu að þessi vídeó eru persónugerð með þínu nafni.  Passaðu þig á því að halda þessum vídeóum í burtu frá forritum sem dreifa efni til annarra notenda á netinu. Ef þitt efni finnst á ólöglegum niðurhalsnetum er vídeó með læstu raðnúmeri sem hægt er að rekja aftur beint til þín."
+  Waiting: "Bíð"
+  Disabled: "Óvirkt"
+  show_downloads_info_1_welcome: "Velkomin til niðurhala.  Þú getur notað niðurhals hjálparforrit til að hraða á niðurhölum.  Streamburst mælir með eftirfarandi niðurhals hjálparforritum"
+  Windows_only: "Bara Windows"
+  firefox_plugin_info: "Firefox plugin fyrir Windows, Mac and Linux"
+  show_downloads_info_2: "Smellið á tengla að neðan til að byrja niðurhal í þeirri útgáfu sem þú vilt."
+  no_downloads_yet: "Þú átt engin niðurhöl ennþá"
+  Formats: "Útgáfur"
+  Start_Download: "Byrja Niðurhal"
+  Prepare_Download: "Undirbúa Niðurhal"
+  content_ready_title: "Efni tilbúið fyrir Niðurhal"
+  Content: "Efni"
+  Back_to_List_of_Downloads: "Til baka til niðurhala"
+  get_download_title_1: "Undirbý efni fyrir niðurhal"
+  get_download_title_2: "Staða á undirbúningi"
+  Options: "Valmöguleikar"
+  My_Downloads: "Mín Niðurhöl"
+  Your_Downloads: "Þín Niðurhöl"
+  Downloads_Page: "Niðurhalssíða"
+  First_Name: "Fyrra nafn"
+  Last_Name: "Seinna nafn"
+  Email_Address: "Tölvupóstfang"
+  Confirm_Email_Address: "Staðfesting á tölvupóstfangi"
+  Password_Min_Characters: "Lykilorð (Minnst 6 stafir)"
+  Confirm_Password: "Staðfesting á lykilorði"
+  Register_now: "Nýskrá"
+  login_info_1: "Skráðu þig til að niðurhala efni. Það er auðvelt og tekur nokkrar sekúndur að klára. Þegar skráður? Innskráðu þig með tölvupóstfangi og lykilorði."
+  Password: "Lykilorð"  
+  Login: "Innskráning"
+  login_title_1: "Innskráning / Nýskráning"
+  login_title_2: "Innskráning hér"
+  login_title_3: "Nýskráning hér"
+  dvm_recommendation_text_1: "Mæltu með {{dvm_title}} til þinna vina og græddu peninga beint frá þínum profile."
+  dvm_preview: "Digital Vending Machine Preview"
+  dvm_preview_header: "Header"
+  dvm_preview_body: "Body"
+  dvm_preview_footer: "Footer"
+# Translation Session 2
+  main_footer: "Hægt að nota kreditkort og Paypal til borga, öll verð eru með vsk - support@streamburst.tv - <a href=\"/terms.html\" target=\"_blank\">Smelltu hér fyrir skilmála</a>"
+  Remove_from_cart: "Taka úr körfu"
+  Your_Cart: "Þín Karfa"
+  total: "samtals"
+  Clear_cart: "Tæma körfu"
+  Show_all: "Sýna allt"
+  Download_Categories: "Niðurhals Flokkar"
+  click_to_learn_to_use: "Smelltu hér til að læra að nota þessa þjónustu"
+  Logout: "Aftengjast"
+  logout: "aftengjast"
+  login: "innskrá"
+  my_downloads: "mín niðurhöl"
+  my_dvms: "mínar dvms"
+  dvm_signup: "dvm skráning"
+  My_downloads: "Mín niðurhöl"
+  Previous_page: "Fyrri síða"
+  Next_page: "Næsta síða"
+  Page: "Síða"
+  of: "af" # In the context Page 1 of 3
+  previous: "fyrri"
+  next: "næsta"
+  Dear: "Kæri viðskiptavinur,"
+  download_ready_email_1: "Takk fyrir þína pöntun. Þú pantaðir eftirfarandi"
+  item: "vöru"
+  items: "vörur"
+  download_ready_email_2: "Smelltu hér til að heimsækja niðurhalssíðu"
+  download_ready_email_3: "Þú getur spilað þetta ólæsta efni á hvaða spilara sem er."
+  download_ready_email_4: "Við mælum með QuickTime player version 7+ (hér er tengill): http://www.apple.com/quicktime/download/ eða VLC player (hér er tengill): http://www.videolan.org/vlc/"
+  download_ready_email_5: "Til að spila efni í Windows Media Player annaðhvort settu inn Zune player eða fylgdu þessum leiðbeiningum (hér er tengill): http://www.afterdawn.com/guides/archive/how_to_play_mp4_files.cfm"
+  download_ready_email_6: "Þú getur sent efni beint í sjónvarpið þitt ef þú ert með Xbox 360, Apple TV eða Playstation 3. Fyrir XBox360 náðu í Zune (hér er tengill): http://www.zune.net/"
+  download_ready_email_7: "Til að brenna efni á DVD til að horfa á í sjónvarpi á DVD spilaranum þínum þá mælum við með DVD-Flick (hér er tengill): http://www.dvdflick.net/download.php"
+  download_ready_email_8: "Ef þú ert í vandræðum með niðurhal eða spilun hafðu samband við support@streamburst.tv og við svörum fljótt."
+  download_ready_email_9: "Streamburst fyrir hönd {{brand_name}} teymisins"
+  confirm_email_1: "Þakka þér fyrir pöntun."
+  confirm_email_2: "Þú pantaðir eftirfarandi"
+  Enjoy: "Njóttu"
+  preperation_complete_email_1: "{{brand_name}} niðurhal er tilbúið."
+  preperation_complete_email_2: "Til að sækja niðurhal fyrir {{product_title}} getur þú <a href=\"https://{{host}}/delivery/content_ready?job_key={{job_key}}\">smellt hér</a> eða afritað eftirfarandi tengill inní vefvafrara:<br> https://{{host}}/delivery/content_ready?job_key={{job_key}}"
+  preperation_complete_email_3: "Undirbúið niðurhal er virkt í 6 klukkutíma, ef þú ert of seinn smelltu á \"mín niðurhöl\" á heimasíðunni til að byrja undirbúning á niðurhali aftur."
+  preperation_complete_email_4: "Ef þú ert í vandræðum með niðurhal eða spilun hafðu samband við support@streamburst.tv og við svörum fljótt."
+# Translation Session 3
+  unique_video_copy: "Persónulegt vídeó fyrir"
+  personalized_video_intro_for: "Persónuleg kynning fyrir"
+# Translation Session 4
+  discount_code_already_used: "Þessi afsláttarkóði hefur þegar verið notaður"
+  discount_code_not_found: "Afsláttarkóði finnst ekki"
+  video_prep_failed: "Vídeó undirbúningur virkaði ekki - tilsjónarmenn þessarar vefsíðu hafa verið látnir vita"
+  video_job_cancelled: "Hætt var við seinasta vídeó undirbúning"
+  video_job_cancelled_failed: "Hætta við vídeó undirbúning virkaði ekki"
+  email_alert_for_download: "Þú munt fá tölvupóst þegar efni til tilbúið fyrir niðurhal."
+  email_alert_for_download_failed: "Tölvupóstur fyrir vídeó undirbúning virkaði ekki"
+  not_your_dvm: "Þetta er ekki þín dvm"
+  invalid_email_password: "Ekki rétt tölvupóstfang/lykilorð. Vertu viss um að þú sér skráður notandi."
+  problem_with_registration: "Það var vandamál með skráningu, skoðaðu að neðan."
+  not_authorized: "Þú hefur ekki réttindi til að skoða þessa síðu"
+  Invalid_product: "Ekki rétt vara"
+  cart_empty: "Karfa er tóm"
+  problem_saving_order: "Það var vandamál við að vista pöntun.  tilsjónarmenn þessarar vefsíðu hafa verið látnir vita"
+  this_is_not_your_order: "Þetta er ekki þín pöntun, hafðu samband við support@streamburst.tv fyrir hjálp."
+  problem_with_order: "Það kom upp vandamál með þessa pöntun, hafðu samband við support@streamburst.tv fyrir hjálp."
+  Missing_downloads_job: "Ekkert niðurhalsverkefni"
+  not_your_download_job: "Þetta er ekki þitt niðurhalsverkefni"
+  order_not_fully_processed: "Það kom upp vandamál með þessa pöntun, hafðu samband við support@streamburst.tv fyrir hjálp."
+  product_not_part_of_order: "Það kom upp vandamál með þessa pöntun, hafðu samband við support@streamburst.tv fyrir hjálp."
+# Translation Session 5
+  relative_popularity: "Vinsældir"
+  Popularity: "Vinsældir"
+  Time: "Tími"
+  Name: "Nafn"
+# SENT TO LAZYTOWN 1
+  lt_info_1: "Brenndu á DVD, Horfðu á í þínu Sjónvarpi"
+  lt_info_2: "Brenndu LazyTown niðurhöl á DVD, eins oft og þú þarft!  Nú þarft þú ekki að hafa áhyggjur af skemmdum DVD diskum..."
+  lt_info_3: "Margar Útgáfur, Eitt Verð, Horfðu á í ferðalögum"
+  lt_info_4: "LazyTown niðurhöl er til í mörgum útgáfum - High Quality til að horfa á í Sjónvarpinu og Portable Quality fyrir farsíma, iPod og önnur ferðatæki - allt innifalið í verðinu!"
+  lt_info_5: "Náðu í Niðurhöl aftur"
+  lt_info_6: "Innskráðu þig og náðu í niðurhöl sem hafa verið keypt hvenær sem er eins oft og þú þarft..."
+# Translation Session 6
+  click_here_to_reset_your_password: "Ef þú hefur gleymt lykilorði smelltu <a href=\"/users/forgot_password\">hér</a> til að búa til nýtt lykilorð."
+  password_reset_email_1: "Við höfum fengið beiðni um að þú viljir nýtt lykilorð."
+  password_reset_email_2: "Vinsamlegast heimsækið tengill að neðan fyrir nýtt lykilorð (lykilorð breytist ekki ef þú gerir ekkert):"
+  password_reset_email_3: "Takk fyrir"
+  password_reset_msg_1: "Lykilorð er nú breytt fyrir"
+  Reset_code_expired: "Endurræsingarkóði er útrunninn"
+  password_reminder_email: "Takk fyrir. Tölvupóstur hefur verið sendur á þitt skráða tölvupóstfang."
+  Forgotten_Password: "Gleymt Lykilorð"
+  Enter_email_address: "Tölvupóstfang"
+  Submit: "Framkvæma"
+  Reset_Password_for: "Nýtt lykilorð fyrir"
+  job_in_queue: "Undirbúningur er að byrja"
+  other_jobs_in_preperation: "Þú ert þegar að undirbúa annað niðurhal"
+  Make_a_payment_via_PayPal: "Borgaðu með Paypal"
+  You_can_also_use_the_PayPal_website: "Þú getur borgað í gegnum heimasíðu Paypal með því að smella hér:"
+  No_Payment_is_needed: "Engin greiðsla er þörf fyrir þessa pöntun"
+  Please_enter_your_card_information_below: "Skráðu debit eða kredit-kort hér að neðan"
+  Card_number: "Kortanúmer"
+  Expiry_month: "Gildir til mán"
+  Expiry_year: "Gildir til ár"
+  Start_month: "Útgáfumánuður"
+  Start_year: "Útgáfuár"
+  Card_type: "Tegund korts"
+  Issue_number: "Issue númer"
+  Verification_code: "Öryggiskóði"
+  order_payment_confirmation_1: "Setjið inn upplýsingar um greiðslu hér að neðan."
+  order_payment_confirmation_2: "Þú getur byrjað niðurhal um leið og greiðsla hefur verið samþykkt."
+  order_payment_confirmation_3: "Þú getur annaðhvort borgað beint hér að neðan eða smellt á Paypal tengill neðst á síðunni til að borga í gegnum Paypal heimasíðu."
+  order_payment_confirmation_4: "Þú ert að borga samtals {{order_price}} fyrir {{item_count}} niðurhöl."
+  order_payment_confirmation_5: "Smelltu hér til að samþykkja greiðslu."
+  payflow_error_1: "Tími rann út fyrir Paypal greiðslumiðlun"
+  payflow_error_2: "Vertu viss um að allar kortaupplýsingar séu réttar"
+  payflow_error_3: "Reynt er að greiða tvisvar fyrir það sama"
+  payflow_error_4: "Ekki til nóg inná kortinu þínu"
+  payflow_error_5: "Paypal greiðslumiðlun er upptekin, vinsamlegast reynið aftur síðar"
+  payflow_error_6: "Vandamál með Paypal greiðslumiðlun"
+  payflow_error_7: "Vertu viss um að allar kortaupplýsingar séu réttar"
+# Translation Session 6
+  Expiry_date: "Gildir til"
+  Start_date: "Útgáfudagur"
+  PayNow: "Borga Núna"
+  OtherPaymentOptions: "Aðrir Greiðslumöguleikar"
+  PaymentDetails: "Upplýsingar um greiðslu"
+  Payment: "Greiðsla"
+  payment_with_google_is_only_avilable_using_British_Pounds: "Google Checkout tekur aðeins við Breskum Pundum á gengi dagsins. Samtals í GBP er &pound;{{gbp}}"
+  is_ready_for_download: "er tilbúið fyrir niðurhal"
+  Includes: "Inniheldur"
+  Details: "Sjá nánar"
+  Episodes: "Þættir"
+  Bundle: "Pakki"
+  Songs: "Lög"
+  and: "og"
+  All_Seasion_1: "Allt"
+  All_Seasion_1_Episodes: "Allir Þættir"
+  All_Seasion_1_Songs: "Öll Lög"
+  Discount_compared_to_single_title_purchases: "Afsláttur miðað við kaup á einum titli í einu"
+  Password_Reset_Information: "Beiðni um nýtt lykilorð"
+  Welcome: "Velkomin"
+  user_does_not_exist: "Þetta tölvupóstfang er ekki á skrá."
+# HELP TEXT
+  help_id_123:
+    title: High Quality Vídeó
+    text: "High Quality vídeó er framleitt til að vera sambærilegt við DVD í gæðum. Þessi útgáfa er góð til að horfa á í sjónvarpi, borðtölvu eða fartölvu.\r\n\
+      \r\n\
+      Þú getur brennt þessa útgáfu á DVD til að spila í venjulegum DVD spilara.\r\n\
+      \r\n\
+      ### Dæmi um vídeó spilara\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Tæknilegir staðlar\r\n\
+      768 x 416 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_124: 
+    title: Portable Vídeó
+    text: "Portable vídeó gefur góð gæði miðað við lítið niðurhal. Það er framleitt fyrir fólk sem vill horfa á vídeó á ferðalögum á farsímum, iPod eða öðrum ferðaspilurum.\r\n\
+      \r\n\
+      ### Dæmi um vídeó spilara\r\n\
+      * iPod Video\r\n\
+      * Microsoft Zune\r\n\
+      * Sony PSP (via http://www.pspvideo9.com/)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Tæknilegir staðlar\r\n\
+      320 x 176 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>iPod&#169; is a registered trademark of Apple Computer, Inc. Zune&#169; is a trademark of Microsoft Corporation. PSP&#169; (PlayStation Portable) is a trademark of Sony Computer Entertainment Inc.</small>"
+      # System
+  help_id_27: 
+    title: Miðlungsgæða MP3 - 160kbps
+    text: Engar afritunarvarnir. 160kbps. Spilast á öllum mp3 spilurum.
+  help_id_21: 
+    title: Hágæða MP3 - 320kbps
+    text: Engar afritunarvarnir. 320kbps. Bestu hugsanlegu mp3 gæði en spilast ekki í öllum eldri og smærri spilurum.
+  help_id_23: 
+    title: Óþjappað WAV 16bit
+    text: Óþjappað 16bit full CD gæði. Gott til að brenna á CD fyrir bestu hugsanlegu hljómgæði.
+  support:
+      array:
+        sentence_connector: "og"
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%e. %b"
+      long: "%e. %B %Y"
+    day_names: [sunnudagur, mánudagur, þriðjudagur, miðvikudagur, fimmtudagur, föstudagur, laugardagur]
+    abbr_day_names: [sun, mán, þri, mið, fim, fös, lau]
+    month_names: [~, janúar, febrúar, mars, apríl, maí, júní, júlí, ágúst, september, október, nóvember, desember]
+    abbr_month_names: [~, jan, feb, mar, apr, maí, jún, júl, áug, sep, okt, nóv, des]
+    order: [:day, :month, :year]
+  time:
+    formats:
+      default: "%A, %e. %B %Y, %H:%M"
+      time: "%H:%M"
+      short: "%e. %B, %H:%M"
+      long: "%A, %e. %B %Y, %H:%M"
+  datetime:
+    distance_in_words:
+      half_a_minute: "hálf mínúta"
+      less_than_x_seconds:
+        one: "minna en 1 sekúnda"
+        other: "minna en {{count}} sekúndur"
+      x_seconds:
+        one: "1 sekúnda"
+        other: "{{count}} sekúndur"
+      less_than_x_minutes:
+        one: "minna en 1 mínúta"
+        other: "minna en {{count}} mínúta"
+      x_minutes:
+        one: "1 mínúta"
+        other: "{{count}} mínútur"
+      about_x_hours:
+        one: "um 1 klukkutími"
+        other: "um {{count}} klukkutímar"
+      x_days:
+        one: "1 dagur"
+        other: "{{count}} dagar"
+      about_x_months:
+        one: "um 1 mánuður"
+        other: "um {{count}} mánuðir"
+      x_months:
+        one: "1 mánuður"
+        other: "{{count}} mánuðir"
+      about_x_years:
+        one: "um 1 ár"
+        other: "um {{count}} ár"
+      over_x_years:
+        one: "yfir 1 ár"
+        other: "yfir {{count}} ár"
+  number:
+    format:
+      precision: 2
+      separator: "."
+      delimiter: ","
+    currency:
+      format:
+        unit: "kr"
+        format: "%n %u"
+    precision:
+      format:
+        delimiter: ""
+        precision: 4
+  activerecord:
+    errors:
+      template:
+        header: "Gat ekki geymt {{model}} vegna {{count}} vandamála."
+        body: "Þessi vandamál komu upp:"
+      messages:
+        inclusion: "er ekki í listanum"
+        exclusion: "er frátekið"
+        invalid: "er ógilt"
+        confirmation: "staðfesting passar ekki"
+        accepted: "er samþykkt"
+        empty: "má ekki vera tómt"
+        blank: "má ekki vera tómt"
+        too_long: "er of langt (mest {{count}} stafir)"
+        too_short: "er of stutt (minnst {{count}} stafir)"
+        wrong_length: "er ekki af réttri lengt (mest {{count}} stafir)"
+        taken: "er þegar notað"
+        not_a_number: "þetta eru ekki tölustafir"
+        greater_than: "má vera stærra en {{count}}"
+        greater_than_or_equal_to: "má vera samansem eða stærra {{count}}"
+        equal_to: "má vera samansem {{count}}"
+        less_than: "má vera minna en {{count}}"
+        less_than_or_equal_to: "má vera samansem minna en {{count}}"
+        odd: "má vera oddatala"
+        even: "má vera jöfn tala"
+      # models:
+      # attributes:
+ 
+

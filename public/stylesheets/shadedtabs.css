@@ -1,0 +1,79 @@
+.tabs{
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	padding: 5px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	height: 84px;
+	vertical-align: top;
+	background-repeat: no-repeat;
+}
+
+.tabs table{
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+#nav {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	height: 20px;
+	list-style: none;
+	display: inline;
+	overflow: hidden;
+	}
+
+#nav li {
+	vertical-align: top;
+	margin: 0; 
+	padding: 0;
+  list-style: none;
+	display: inline;
+	}
+
+#nav a {
+	vertical-align: top;
+	text-align: center;
+	font-size: 11px;
+	float: left;
+	padding:0px 7px 6px 5px;
+	overflow: hidden;
+	height: 15px !important; 
+	height /**/:20px; /* for IE5/Win only */
+	}
+	
+#nav a:hover {
+	background-position: 0 -24px;
+	}
+
+#nav a:active, #nav a.selected {
+	background-position: 0 -48px; 
+	}
+
+#tcategory a  {
+	width: 90px;
+	padding:4px 5px 4px 5px;
+	background: url(../images/tabs/tab_categories.png) top left no-repeat;
+	}	
+
+
+#tbrand a  {
+	width: 90px;
+	padding:4px 5px 4px 5px;
+	background: url(../images/tabs/tab_brand.png) top left no-repeat;
+	}	
+	
+#tbrand a.selected {
+	color: #072e4c; 
+	}	
+
+#tsystem a  {
+	width: 90px;
+	padding:4px 5px 4px 5px;
+	background: url(../images/tabs/tab_system.png) top left no-repeat;
+}
+
+
+	

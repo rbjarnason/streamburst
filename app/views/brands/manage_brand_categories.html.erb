@@ -1,0 +1,17 @@
+<h1>Brand Categories update for <%= @local_brand.name %></h1>
+
+<%= render :partial => 'list_brand_categories' %>
+
+<%= form_tag( { :action => 'manage_brand_categories' } ) %>
+  <p><label for="brand_category">Brand Category</label><br/>
+  <select name="brand_category_id">
+   <% @brand_categories.each do |brand_category| %>
+       <option value="<%= brand_category.id %>">
+         <%= brand_category.name %>
+       </option>
+   <% end %>
+   </select>
+  </p>  
+  <%= submit_tag "Add" %>
+</form>
+<%= link_to 'Back', :action => 'list' %>

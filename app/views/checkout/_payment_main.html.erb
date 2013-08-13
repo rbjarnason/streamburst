@@ -1,0 +1,173 @@
+<% if @order.total_price > 0 %>
+<script type="text/javascript">
+	//<![CDATA[
+	function setup_card_fields_all()
+	{
+		$('card_number').enable();
+		$('expiry_month').enable();
+		$('expiry_year').enable();
+		$('card_security_code').enable();
+		$('start_month').enable();
+		$('start_year').enable();
+		$('card_issue_number').enable();
+		$('pay_now_button').enable();
+	}
+
+	function setup_card_fields_credit_card()
+	{
+		$('card_number').enable();
+		$('expiry_month').enable();
+		$('expiry_year').enable();
+		$('card_security_code').enable();
+		$('start_month').disable();
+		$('start_year').disable();
+		$('card_issue_number').disable();
+		$('pay_now_button').enable();
+	}
+
+	function setup_card_fields_paypal_or_google()
+	{
+		$('card_number').disable();
+		$('expiry_month').disable();
+		$('expiry_year').disable();
+		$('card_security_code').disable();
+		$('start_month').disable();
+		$('start_year').disable();
+		$('card_issue_number').disable();		
+		$('pay_now_button').disable();
+	}
+	
+	function setup_disabled_fields(value) {
+		if (value=="visa") {
+			setup_card_fields_credit_card();						
+		} else if (value=="master") {
+			setup_card_fields_credit_card();			
+		} else if (value=="americanexpress") {
+			setup_card_fields_credit_card();
+		} else if (value=="switch") {
+			setup_card_fields_all();			
+		} else if (value=="solo") {
+			setup_card_fields_all();			
+		} else if (value=="discover") {
+			setup_card_fields_credit_card();			
+		} else if (value=="paypal") {
+			setup_card_fields_paypal_or_google();
+		} else if (value=="google") {
+			setup_card_fields_paypal_or_google();
+		}
+	}
+	//]]>
+</script>
+
+<%=t :Please_enter_your_card_information_below %>
+<span class="sub-box-txt">
+	<% if @brand.id==18 and @currency_code=="ISK" %>
+   <form action="/checkout/isk_payment/<%=@order.id%>" method="post" name="payform">
+   	<% else %>
+   <form action="/checkout/payflow_payment/<%=@order.id%>" method="post" name="payform">
+	<% end %>
+    <table width="700px">
+        <tr>
+            <td>
+                <table width="350px">
+                    <tr>
+                        <td width="35%">
+                            <label for="card_type">
+                                <%=t :Card_type %>:
+                            </label>
+                        </td>
+                        <td width="65%" align="left">
+                            <select id="card_type" name="card[card_type]" onchange="setup_disabled_fields(this.value);">
+                                <%=options_for_select_with_first_selected(@card_type_label,@card_type_data) %>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="35%">
+                            <label for="card_number">
+                                <%=t :Card_number %>:
+                            </label>
+                        </td>
+                        <td width="65%" align="left">
+                            <%= text_field_tag "card[number]", "", :size => 16, :maxlength => 16 %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="35%">
+                            <label for="expiry_date">
+                                <%=t :Expiry_date %>:
+                            </label>
+                        </td>
+                        <td width="65%" align="left">
+                            <select id="expiry_month" name="card[expiry_month]">
+                                <%=options_for_select_with_first_selected(@months,@months) %>
+                            </select>
+                            <select id="expiry_year" name="card[expiry_year]">
+                                <%=options_for_select_with_first_selected(@expiry_years,@expiry_years) %>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="35%">
+                            <label for="verification_code">
+                                <%=t :Verification_code %>:
+                            </label>
+                        </td>
+                        <td width="65%" align="left">
+                            <%= text_field_tag "card[security_code]", "", :size => 3, :maxlength => 3 %>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td valign="top">
+                <table width="350px">
+                    <tr>
+                        <td width="35%">
+                            <label for="start_date">
+                                <%=t :Start_date %>:
+                            </label>
+                        </td>
+                        <td width="65%" align="left">
+                            <select id="start_month" name="card[start_month]">
+                                <%=options_for_select_with_first_selected(@months,@months) %>
+                            </select>
+                            <select id="start_year" name="card[start_year]">
+                                <%=options_for_select_with_first_selected(@start_from_years,@start_from_years) %>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="35%">
+                            <label for="issue_number">
+                                <%=t :Issue_number %>:
+                            </label>
+                        </td>
+                        <td width="65%" align="left">
+                            <%= text_field_tag "card[issue_number]", "", :size => 6 %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="35%" align="left">
+                        </td>
+                        <td width="65%" align="left" class="button">
+                        	<% if @brand.id == 18 and @currency_code == "ISK" %>
+                              <%= image_localized_submit_tag "button_payNow_1.png", :border => 0, :id=>"pay_now_button", :action => "isk_payment", :alt => t(:PayNow) %>
+							<% else %>
+                              <%= image_localized_submit_tag "button_payNow_1.png", :border => 0, :id=>"pay_now_button", :action => "payment", :alt => t(:PayNow) %>
+							<% end %>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+   </form>
+</span>
+<script type="text/javascript">
+	//<![CDATA[
+		setup_disabled_fields(document.payform.card_type.options[document.payform.card_type.selectedIndex].value);
+	//]]>
+</script>
+<% else %>
+<%=t :No_Payment_is_needed %>
+<% end %>

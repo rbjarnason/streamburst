@@ -1,0 +1,9 @@
+<h1>Editing price_class</h1>
+
+<%= form_tag :action => 'update', :id => @price_class %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @price_class %> |
+<%= link_to 'Back', :action => 'list' %>

@@ -1,0 +1,23 @@
+    <table class="entry">
+      <tr>
+        <td colspan="3" class="header"><%= h(brand.name) %>
+          <% if brand.help_id %>
+            <%= help(brand.help_id) %>
+          <% end %>
+       </td>
+       </tr>
+       <tr>
+      <td width="500px">
+        <a href="http://<%=brand.hosts[0].name%><%=RAILS_ENV == "production" ? "" : ":3000"%><%=get_session_id_url_param%>"><img class="brand_image" alt=<%=t :Click_here_to_Browse%> border="0" width="468" height="90" src="<%=url_for_image_column(brand, "image", :name => "widescreenlarge", :absolute => true)%>"></a>
+      </td>
+      <td width="250px" style="padding: 8px">
+         <%=brand.description%>
+       </td>
+      <td>
+      </td>
+      </tr>
+       <tr>
+        <td colspan="3" class="rule">
+       </td>
+       </tr>
+    </table>

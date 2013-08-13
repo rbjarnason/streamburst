@@ -1,0 +1,47 @@
+<div id="product-list">
+  <h1>Order Listing</h1>
+
+  <table cellpadding="5" cellspacing="0">
+  <% for order in @orders %>
+    <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+
+      <td>
+        <%= order.id %>
+      </td>
+
+      <td>
+       <%= order.first_name %>
+      </td>
+
+      <td>
+       <%= order.last_name %>
+      </td>
+
+      <td>
+       <%= order.email %>
+      </td>
+
+      <td>
+       <%= order.total_price %>
+      </td>
+      
+      <td class="list-actions">
+        <%= link_to 'Show', :action => 'show', :id => order %><br/>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+</br>
+ <% if @order_pages.current.previous %>
+    <%= link_to("Previous page", { :page => @order_pages.current.previous }) %>
+ - 
+  <% end%>
+(<%=pagination_links(@order_pages, :window_size => 4) %>) -
+
+<%= if @order_pages.current.next 
+      link_to("Next page", { :page => @order_pages.current.next })
+    end
+%>
+
+<br />

@@ -1,0 +1,64 @@
+// settings file
+// pcm-watermark
+
+// ---- general parameters ----
+Frames used to embed 1 bit: 6
+Frames used to embed 1 bit of synchronism mark: 10
+Number of bits for synchronism mark: 4
+Watermark length: 32
+CRC Type: 1
+Use convolutional coding: 1
+Samples per Frame: 2048
+
+// ---- embedding parameters ----
+Masking distance: -3
+
+// ---- retrieving parameters ----
+Threshold: 0.6
+ThresholdB: 0.3
+ThresholdC: 0.3
+
+
+
+
+//----------------------------------------------------------------------------
+// DESCRIPTION OF GENARAL PARAMETERS FOR EMBEDDING *AND* DETECTION/RETRIEVAL:
+//----------------------------------------------------------------------------
+//Samples per Frame:
+//	  Length of each watermarked frame (default 2048)
+//
+//Frames used to embed 1 bit:
+//    degree of redundancy for embedding. higher values provide higher robustness but
+//    lower capacity/datarate (recommended: 3 to 6)
+//
+//Frames used to embed 1 bit of synchronism mark/ Number of bits for synchronism mark:
+//    both parameters set the length of sync watermark. product of both values
+//    should be 40 (default 10/4)
+//
+//Watermark length:
+//    fixed length of embedded watermark bit sequence (without CRC)
+//
+//Use convolutional coding:
+//    use forward error correction. improves robustness significantly and reduces
+//    datarate by approx. 50% (default: "1" ,highly recommended!)
+//
+//CRC Type:
+//    type of checksum appended to embedded watermark:
+//    0 = no watermark (discouraged), 1=CRC8, 2=CRC12, 3=CRC16-IEEE,
+//    4=CRC-16, 5=CRC32; increases reliablity and watermark length
+//
+//----------------------------------------------------------------
+//DESCRIPTION OF PARAMETERS USED FOR EMBEDDING ONLY
+//----------------------------------------------------------------
+//Masking distance:
+//    specifies the 'strength' of the watermark;
+//    positive values: below masking threshold
+//    negative values: above masking threshold
+//    recommended: -4
+//
+//----------------------------------------------------------------
+//DESCRIPTION OF PARAMETERS USED FOR DETECTION & RETRIEVAL ONLY
+//----------------------------------------------------------------
+//Threshold/ ThresholdB/ ThresholdC:
+//	sensitivity for watermark detection/retrieval; use lower values for higher sensitity;
+//	recommended: 0.6/ 0.3/ 0.3

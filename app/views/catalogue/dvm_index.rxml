@@ -1,0 +1,54 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.currency_code(@currency_code)
+xml.catalogue do
+  xml.products do
+    for product in @products
+      xml.product do
+        xml.id(product.id)
+        xml.title(product.title)
+        xml.short_title(product.short_title)
+        xml.help_id(product.help_id)
+        xml.duration(product.duration)
+        xml.description(product.description)
+        xml.flv_preview_url(product.flv_preview_url != "" ? product.flv_preview_url : "no")
+        xml.flv_preview_image(product.flv_preview_image != "" ? product.flv_preview_image : "no")
+        if product.dvm_image
+          xml.image_url(url_for_image_column(product, "dvm_image", :name => "normal", :absolute => true))
+        else
+          xml.image_url("")
+        end
+        if product.small_image
+          xml.small_image_url(url_for_image_column(product, "small_image", :name => "normal", :absolute => true))
+        else
+          xml.small_image_url("")
+        end
+        xml.price(product.get_price(@currency_code))
+        xml.product_formats do
+          for product_format in product.product_formats(:order => "id")
+            xml.product_format do
+              xml.format_id = product_format.format.id
+              xml.format_help_id = product_format.format.help_id
+              xml.format_image = get_product_format_image(product_format.format.format_type)           
+              xml.format_type = product_format.format.format_type
+            end
+          end
+        end
+        xml.categories do
+          for category in product.categories
+            xml.category do
+              xml.id(category.id)
+              xml.name(category.name)
+              xml.help_id(category.help_id)
+            end
+          end
+        end
+      end
+    end
+  end
+end   
+if @parent_product
+  xml.single_parent_product_id(@parent_product.id)
+  xml.single_parent_product_price(@parent_product.get_price(@currency_code))
+end

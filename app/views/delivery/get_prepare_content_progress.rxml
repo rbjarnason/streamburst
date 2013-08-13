@@ -1,0 +1,13 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.job_key(@job.job_key)
+if @job.complete == true && @job.success == true
+  xml.content_ready(1)
+elsif @job.complete == true
+  xml.content_ready(2) # ERROR!!!
+else
+  xml.content_ready(0)
+  xml.progress_text(@status_text)
+  xml.preparation_time_estimation_seconds(@preparation_time_estimation_seconds)  
+end

@@ -1,0 +1,525 @@
+/* ========================================================================================= */
+/* Tabs */
+/* ========================================================================================= */
+
+.tabs{
+
+}
+
+/* ========================================================================================= */
+/* START: FLV popups */
+/* ========================================================================================= */
+
+#flv td
+{
+	background-color: #000000;
+}
+
+#flv .title
+{
+	background-color: #333;
+    color: #ffffff;
+}
+
+#flv .text
+{
+	color: #ffffff;
+}
+
+#flv_rotation
+{
+	background-color: #666766;
+	color: #ffffff;
+}
+
+#streamburst_tv_header
+{
+  background-color: #666766;
+  color: #ffffff;
+}
+
+#streamburst_cart_header
+{
+  background-color: #666766;
+  color: #ffffff;
+}
+
+#top_rotation {
+	background-color: #000000;
+}
+
+/* ========================================================================================= */
+/* START: Notice from layouts/_banner.rhtml                                                  */
+/* ========================================================================================= */
+#notice {
+  border: 2px solid white;
+  background-color: #666766;
+  color: #fff;
+}
+/* END: Notice from layouts/_banner.rhtml */
+
+/* ========================================================================================= */
+/* START: Sponsor Screen Screen from app/views/catalogue/add_to_cart_with_sponsor.rhtml */
+/* ========================================================================================= */
+#sponsor_screen
+{
+  border: 2px solid white;
+}
+
+#sponsor_screen .title
+{
+  background-color: #888888;
+}
+
+/* END: Sponsor Screen from app/views/catalogue/add_to_cart_with_sponsor.rhtml */
+
+/* ========================================================================================= */
+/* START: Help Screen from helps/get_help.rhtml */
+/* ========================================================================================= */
+#help-footer-text
+{
+	color: #555555;
+}
+
+#help-footer-text a
+{
+	color: #555555;
+}
+
+#help
+{
+    border: 2px solid white;
+}   
+
+#help .title
+{
+    background-color: #888888;
+}
+
+.password {
+	color: #ffffff;
+}
+
+/* END: Helps from helps/get_help.rhtml */
+
+/* ========================================================================================= */
+/* START: Main page */
+/* ========================================================================================= */
+body { 
+  background-color: #666666;
+  color: #ffffff;
+  }
+
+h1 {
+  color: #ffffff;
+  border-bottom: 3px dotted #310000;
+}
+
+.main-content-table {
+	background: url(../images/DUKE_top_banner_3.png);
+  background-repeat: no-repeat;
+  background-position: 0px 2px;
+  background-color: #ffffff;
+}
+
+.bg {
+  background-color: #666666;
+}
+
+.leftEdge {
+  background: url(../images/DUKE_leftEdge_strip.png) repeat-y top right; 
+  background-color: #666666;
+}
+
+.rightEdge {
+  background: url(../images/DUKE_rightEdge_strip.png) repeat-y top left; 
+  background-color: #666666;
+}
+
+/* END: Main page */
+
+/* ========================================================================================= */
+/* START: Main layout from layouts/streamburst.rhtml                                         */
+/* ========================================================================================= */
+#columns {
+  background: #fff;
+}
+
+.main_links {
+	color: #ffffff;
+}
+
+.main_links a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main_links a:hover {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+ .main_links a:visited {
+ 	color: #ffffff;
+ 	text-decoration: none; 
+ }
+
+/* END: Main layout from layouts/streamburst.rhtml */
+
+/* ========================================================================================= */
+/* START: Product List from catalogue/index.rhtml, catalogue/_product.rhtml                    */
+/* ========================================================================================= */
+
+#store  .entry {
+  color: #fff;
+}
+
+#store caption {
+ /* background-color: #f00d0d; */
+  color: #fff;
+}
+
+#store .entry h3 {
+  color: #fff;
+}
+
+#store .entry-sponsor-price-header {
+  background-color: #666766;
+  color: #fff;
+}
+
+#store .entry th {
+  background-color: #666766;
+  color: #fff;
+  background-image: url(../images/DUKE_cSubHeader_grey_strip.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#store .entry-header-duration {
+  color: #ffb5b5; 
+}
+
+#store .entry td {
+  background-color: #a2a0a0;
+  color: #fff;
+  background-image: url(../images/DUKE_cContent_grey_strip_2.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+
+}
+
+#store .entry .header {
+ color: #fff;
+ background-image: url(../images/LWD_navHeader_strip_2.png);  
+}
+
+#store .entry .rule {
+ background-image: url();
+ background-color: #ffffff;
+}
+
+#store .entry tr {
+ background-color: #666766;
+ border-bottom: 2px #fff;
+ color: #fff;
+}
+
+#store .entry table {
+  background-color: #fff;
+}
+
+#store .entry  .price {
+  color: #fff;
+}
+/* END: Product List from catalogue/index.rhtml */
+
+/* ========================================================================================= */
+/* START: Pagination shared/_pagination.rhtml                                                */
+/* ========================================================================================= */
+
+.pagination a, .pagination a:visited{
+border: 1px solid #ffffff;
+color: #999999;
+}
+
+.pagination a:hover, .pagination a:active{
+border: 1px solid #ffffff;
+color: #999999;
+background-color: white;
+}
+
+.pagination li.currentpage{
+border: 1px solid white;
+background-color: #FFFFFF;
+color: #999999;
+}
+
+.pagination li.disablepage{
+border: 1px solid #aaa;
+color: #aaa;
+}
+
+/* ========================================================================================= */
+/* START: Categories Selection from catalogue/_categories_select.rhtml                           */
+/* ========================================================================================= */
+
+#categories table {
+  background-color: #363533;
+}
+
+#categories tr {
+  color: #fff;
+}
+
+
+#categories .category-td-selected {
+ color: #a2a0a0;
+}
+
+#categories .category-text {
+ color: #fff;
+}
+
+#show-download {
+  color: #fff;
+}
+
+/* ========================================================================================= */
+/* START: Cart from shared/_cart.rhtml                                                       */
+/* ========================================================================================= */
+#cart {
+  color:     #fff;
+
+}
+
+#cart caption {
+  background-image:url(../images/DUKE_navHeader_red_strip.png);
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  background-color: #666766;
+  color: #ffffff;
+}
+
+#cart th {
+  background-image:url(../images/DUKE_navSubHeader_grey_strip.png);
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  background-color: #666766;
+  color: #ffffff; 
+}
+
+#cart .cart-item-title {
+  color: #555555;
+}
+
+#cart .cart-item-price {
+  color: #555555;
+}
+
+#cart .cart_item_background {
+	background-color: #D6D6D6;
+}
+
+#cart .total-line {
+  background-image:url(../images/DUKE_navSubHeader_grey_strip.png);
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  background-color: #666766;
+}
+
+#cart .total-buttons table {
+  background-image:url(../images/DUKE_navFooter_red_strip.png);
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  background-color: #666766;
+}
+
+#cart .paging-buttons table {
+  background-image:url(../images/DUKE_navFooter_red_strip.png);
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  background-color: #666766;
+}
+
+/* END: Cart from shared/_cart.rhtml */
+
+/* ========================================================================================= */
+/* START: Forms for index, login, register, billing and download                             */
+/*                                                                                           */
+/* HTML File: app\views\catalogue\index.rhtml (.main-header only)                                */
+/* HTML File: app\views\users\login.rhtml                                                    */
+/* ========================================================================================= */
+
+#forms .leftContentEdge {
+  background: url(../images/SB_leftContentEdge_strip.png) repeat-y 0 0; 
+  background-color: #FFFFFF;
+}
+
+#forms .rightContentEdge {
+  background: url(../images/SB_rightContentEdge_strip.png) repeat-y 0 0; 
+  background-color: #FFFFFF;
+}
+
+#forms .main-header
+{
+  background-color: #f00d0d;
+  background-image: url(../images/DUKE_cHeader_red_strip.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .main-header-left-txt
+{
+  color: #ffffff;
+}
+
+#forms .main-header-right-txt
+{
+  color: #ffffff;
+}
+
+#forms .sub-header
+{
+  background-image: url(../images/DUKE_pSubHeader_grey_strip.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-header-txt
+{
+  color: #ffffff;
+}
+
+#forms .sub-box
+{
+  background-image: url(../images/DUKE_cContent_grey_strip_2.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-box-registration
+{
+  background-image: url(../images/DUKE_cContent_grey_strip_2.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-box-txt
+{
+  color: #ffffff;
+}
+
+#forms .sub-box-button-box
+{
+  background-color: #ededed;
+}
+
+
+#forms .sub-half-header
+{
+  background-color: #666766;
+  background-image: url(../images/DUKE_pSubHeader_grey_strip.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-half-txt
+{
+  background-color: #666766;
+}
+
+#forms .sub-quart-header
+{
+  background-color: #666766;
+}
+
+#forms .sub-quart-txt
+{
+  background-color: #666766;
+}
+
+#forms .sub-16-header
+{
+  background-color: #666766;
+  background-image: url(../images/DUKE_pSubHeader_grey_strip.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-16-txt
+{
+  background-color: #666766;
+}
+
+#forms .sub-16-txt-grey
+{
+  background-color: #666766;
+}
+
+#forms .sub-box-txt-red
+{
+  color: #ff0000;
+}
+
+#forms .sub-box-txt-red-links a:link
+{
+  color: #ff0000; text-decoration: underline;
+}
+
+#forms .sub-box-txt-red-links a:active
+{
+  color: #ff0000; text-decoration: underline;
+}
+
+#forms .sub-box-txt-red-links a:visited
+{
+  color: #ff0000; text-decoration: underline;
+}
+#forms .sub-box-txt-red-links a:hover
+{
+  color: #ff0000; text-decoration: underline;
+}
+
+ #forms .sub-box-txt a:link {color: #ff0000; text-decoration: none; }
+ #forms .sub-box-txt a:active {color: #ff0000; text-decoration: none; }
+ #forms .sub-box-txt a:visited {color: #ff0000; text-decoration: none; }
+ #forms .sub-box-txt a:hover {color: #ff0000; text-decoration: none; }
+ 
+ 
+/* END: Forms for login, register, billing and download */
+
+/* ========================================================================================= */
+/* START: General Rails Form Error Handling                                                  */
+/* ========================================================================================= */
+.fieldWithErrors {
+  background-color: white;
+}
+
+#errorExplanation {
+  border: 2px solid white;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  background-color: #000;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+}
+
+#errorExplanation ul li {
+  color: #333;
+}
+/* END: General Rails Form Error Handling */
+
+/* ========================================================================================= */
+/* START: Global Link Styles                                                                 */
+/* ========================================================================================= */
+ a:link {color: #fff; text-decoration: none; }
+ a:active {color: #fff; text-decoration: none; }
+ a:visited {color: #fff; text-decoration: none; }
+ a:hover {color: #fff; text-decoration: none; }
+/* END: Global Link Styles */

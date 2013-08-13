@@ -1,0 +1,1066 @@
+/* ========================================================================================= */
+/* START: FLV popups */
+/* ========================================================================================= */
+#flv {
+  width: 375px;
+  height: 385px;
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#flv tr {
+	text-align: center;
+}
+
+#flv td {
+	padding-left: 25px;
+	padding-right: 25px;
+	vertical-align: bottom;
+}
+
+#flv .title {
+	background: url(../images/SB_TV_headerBar.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-color: #000000;
+	font-size: 10px;
+	padding: 10px 0px 5px 10px;
+  text-align: left;
+}
+
+#flv .text {
+	font-size: 10px;
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+#flv .close_button {
+	height: 40px;
+	float: center;
+	padding-top: 5px;
+}
+
+#flv .footer
+{
+	background: url(../images/SB_flv_footer_strip.png);
+  background-repeat: repeat-x;
+  background-position: 0px 0px;
+  background-color: #000000;
+	font-size: 10px;
+	padding: 0px 0px 0px 0px;
+}
+
+#flv_rotation {
+    padding-top: 2px;
+	padding-left: 4px;
+	padding-bottom: 2px;
+	margin-bottom: 1px;
+	height: 16px;
+	font-size: 9px;
+}
+
+
+#flv_rotation .watch_button {
+  padding: 1px 5px 0px 0px;
+  float: right;
+}
+
+#streamburst_tv_header {
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  padding: 2px 5px 0px 5px;
+  height: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#streamburst_cart_header td {
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  padding: 2px 5px 0px 5px;
+  height: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  vertical-align:middle;
+}
+
+#top_rotation {
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+/* ========================================================================================= */
+/* START: Notice from layouts/_banner.rhtml                                                  */
+/* ========================================================================================= */
+#notice {
+  padding: 1em;
+  margin-top: 10px;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  font: bold smaller sans-serif;
+  float: top;
+}
+
+/* ========================================================================================= */
+/* START: Progress bar from delivery/_get_prepare_content_progress.rhtml                        */
+/* ========================================================================================= */
+.progress{
+  width: 200px;
+  height: 19px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #555555;
+  padding: 5px;
+}
+/* END: Progress bar from delivery/_get_prepare_content_progress.rhtml */
+
+/* ========================================================================================= */
+/* START: Sponsor Screen Screen from app/views/catalogue/add_to_cart_with_sponsor.rhtml */
+/* ========================================================================================= */
+#sponsor_screen
+{
+  width: 860px;
+  height: 600px;
+  border: 2px solid white;
+  text-align: center;
+}
+
+#sponsor_screen .title
+{
+  background-color: #888888;
+  font-size: 13px;
+  padding: 12px;
+  font-style: italic;
+}
+
+#sponsor_screen .td
+{
+	text-align: center;
+}
+
+/* END: Sponsor Screen from app/views/catalogue/add_to_cart_with_sponsor.rhtml */
+
+/* ========================================================================================= */
+/* START: Help Screen from helps/get_help.rhtml */
+/* ========================================================================================= */
+
+#help-footer-text
+{
+  font-size: 10px;
+}
+
+#help-footer-text a
+{
+}
+
+#help
+{
+  width: 640px;
+  height: 460px;
+}
+
+#help tr
+{
+	vertical-align: top;
+}
+
+
+#help .title
+{
+	background: url(../images/SB_flv_footer_strip.png);
+  background-repeat: repeat-x;
+  background-position: 0px 0px;
+  background-color: #000000;
+	font-size: 13px;
+	padding: 12px;
+	font-style: italic;
+}
+
+#help .text
+{
+	font-size: 12px;
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+#help .close_button
+{
+	float: right;
+	padding-right: 10px;
+}
+
+#help-icon
+{
+	margin-top: 0px;
+	padding-left: 4px;
+	padding-right: 1px;
+	margin-bottom: 2px;
+	vertical-align: middle;
+}
+
+#help-icon-format
+{
+	padding-top: 2px;
+	padding-left: 2px;
+}
+
+/* END: Helps from helps/get_help.rhtml */
+
+/* ========================================================================================= */
+/* START: Main page */
+/* ========================================================================================= */
+body {
+  font: sans-serif;
+  font-family: arial, "lucida console", sans-serif;
+  }
+
+h1 {
+}
+
+.bg {
+  border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px; 
+	margin: 0px 0px 0px 0px; 
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+
+.side-floater-holding {
+   margin-left: auto;
+   margin-right: auto;
+   border-collapse: collapse;
+   border-width: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+#chaser {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img, div { behavior: url(/htc/iepngfix.htc) }
+
+.pngfix img { 
+  behavior: url(/htc/iepngfix.htc);
+ }
+
+.table-holding {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.main-content-table {
+  width: 990px;
+  height: 990px;
+  vertical-align: top;
+}
+
+.td-holding {
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.leftEdge {
+  padding: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+}
+
+.rightEdge {
+  padding: 0px 0px 0px px;
+  border-width: 0px 0px 0px 0px;
+}
+
+.main_links {
+	padding: 0px;
+	padding-bottom: 54px;
+	padding-right: 14px;
+	margin: 0px;
+	text-align: right; 
+	font-size: 12px;
+	font-weight:bold;
+	height: 12px;
+	float: top;
+	vertical-align: top;
+}
+
+/* END: Main page */
+
+/* ========================================================================================= */
+/* START: Main layout from layouts/streamburst.rhtml                                         */
+/* ========================================================================================= */
+#columns {
+}
+
+#main {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 10px 0px 0px;
+}
+
+#side {
+  padding-left: 0px;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+}
+
+/* END: Main layout from layouts/streamburst.rhtml */
+
+/* ========================================================================================= */
+/* START: Product List from catalogue/index.rhtml, catalogue/_product.rhtml                    */
+/* ========================================================================================= */
+#store .p
+{
+	font-family: arial, "lucida console", sans-serif
+}
+
+#store table
+{
+}
+
+#products-list-spinner
+{
+  margin-top: 9px;
+  padding-left: 0px;
+}
+
+
+
+#store  .entry {
+  border-bottom: 0px;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 744px;
+}
+
+#store  .title {
+  font-size: 120%;
+  font-family: arial;
+}
+
+#store .entry img {
+}
+
+#store .list-image-catalogue {
+  float: left;
+  width:        160px;
+  height:	90px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 2px;
+    }
+
+#store caption {
+ caption-side:top;
+ text-align: left;
+ padding-left: 3;
+ margin-left: 0;
+}
+
+#store .entry h3 {
+ margin-bottom: 2px;
+}
+
+#store .entry-sponsor-price-header {
+  text-align: left;
+  font-size: 100%;
+  padding: 5px;
+  text-align: left;
+  width: 100%;
+}
+
+#store .entry th {
+ padding-left: 5px;
+ padding-right: 5px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ text-align: left;
+ font-size: 100%;
+}
+
+#store .entry-header-small {
+ font-size: 80%;
+ float: top;
+}
+
+#store .entry-add-to-cart-button {
+ vertical-align: bottom;
+ margin-top: 4px;
+}
+
+.brand_image {
+  margin-left: 19px;
+}
+#store .entry-header-duration {
+}
+
+#store .entry td {
+ padding-left: 5px;
+ padding-right: 5px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ text-align: left;
+ vertical-align: top;  
+ border-left: 0px;
+ border-right: 0px;
+ background-position: bottom left;
+ background-repeat: repeat-x;
+}
+
+#store .entry .header {
+ padding-left: 5px;
+ padding-right: 5px;
+ padding-top: 4px;
+ padding-bottom: 5px;
+ text-align: left;
+ vertical-align: top;  
+ border-left: 0px;
+ border-right: 0px;
+}
+
+#store .entry .rule {
+ padding: 0px 0px 1px 0px;
+}
+
+#store .entry tr {
+}
+
+#store .entry p {
+ margin-top: 0px; 
+ margin-bottom: 0px; 
+}
+
+#store .entry table {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+
+#store .entry .price-line {
+}
+
+#store .entry .add-to-cart {
+  position: relative;
+}
+
+#store .entry-description {
+  width: 650px;
+}
+
+#store .entry-format {
+  width: 180px; 
+}
+
+#store .entry-format-table {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  vertical-align: top;  
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#store .entry-format-entry {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#store .entry-price {
+  width: 100px;
+  position: top;
+}
+
+#store .entry-help-icon
+{
+}
+
+#store .entry-price-entry {
+ float: top;
+}
+
+#store .entry  .price {
+  font-weight: bold;
+  margin-right: 10px;
+  float: top;
+}
+
+#store .entry form, #store .entry form div {
+  display: inline;
+}
+/* END: Product List from catalogue/index.rhtml */
+
+/* ========================================================================================= */
+/* START: Pagination shared/_pagination.rhtml                                                */
+/* ========================================================================================= */
+.pagination{
+ vertical-align: middle;
+}
+
+.pagination ul{
+margin: 0;
+padding-top: 4px;
+padding-bottom: 2px;
+text-align: right; /*Set to "right" to right align pagination interface*/
+font-size: 11px;
+}
+
+.pagination li{
+list-style-type: none;
+display: inline;
+padding-bottom: 2px;
+}
+
+.pagination a, .pagination a:visited{
+padding: 0 5px;
+text-decoration: none; 
+}
+
+.pagination a:hover, .pagination a:active{
+}
+
+.pagination li.currentpage{
+font-weight: bold;
+padding: 0 5px;
+margin-right: 0px;
+}
+
+.pagination li.disablepage{
+padding: 0 5px;
+}
+
+.pagination li.nextpage{
+font-weight: bold;
+}
+
+* html .pagination li.currentpage, * html .pagination li.disablepage{ /*IE 6 and below. Adjust non linked LIs slightly to account for bugs*/
+margin-right: 0px;
+padding-right: 0;
+}
+
+/* ========================================================================================= */
+/* START: Categories Selection from catalogue/_categories_select.rhtml                           */
+/* ========================================================================================= */
+#categories {
+  font-size: normal;
+}
+
+#categories table {
+  width: 100%;
+  border-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 5px;
+  height: 22px;
+}
+
+
+#categories tr {
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  margin-left: 0px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  vertical-align: middle;
+}
+
+#categories img {
+ padding-right: 3px;
+ padding-left: 10px;
+} 
+
+#categories .category-td-selected {
+ text-align: left;
+ vertical-align: middle;
+}
+
+#categories .category-text {
+ font-size: 10px;
+ padding-right: 5px;
+ padding-left: 5px;
+}
+
+#show-download {
+  font-size: normal;
+}
+
+/* ========================================================================================= */
+/* START: Cart from shared/_cart.rhtml                                                       */
+/* ========================================================================================= */
+#cart {
+  font-size: normal;
+  margin-left: auto;
+  margin-right: auto;
+  float: middle;
+  margin-top: 7px;
+}
+
+#cart table {
+  font-size: 10pt;
+  width: 208px;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cart caption {
+  height: 20px;
+  font-size: 12pt;
+  text-align: left;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#cart tr
+{
+  padding: 10px;
+}
+
+#cart th {
+ text-align: left;
+ margin-bottom: 2px;
+ margin-top: 0px;
+ padding: 5px;
+}
+
+#cart .centeredImage {
+  text-align:center;
+  vertical-align:middle;
+}
+
+#cart .clear-cart
+{
+}
+
+#cart .cart_price_header
+{
+  text-align: center;
+}
+
+#cart .cart-item-title {
+  width: 65%;
+  text-align: left;
+  padding: 5px;
+}
+
+#cart .cart-item-price {
+  text-align: center;
+  width: 25%;
+  padding: 5px;
+}
+
+#cart .cart-item-remove {
+  vertical-align: middle;
+  margin-top: 0px auto;
+  margin-top: 0px auto;
+  border: 0px;
+}
+
+#cart .cart_item_background {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+#cart .cart-item-remove-image {
+  height: 14px;
+  width: 12px;
+  margin-top: 0px auto;
+  margin-bottom: 0px auto;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+#cart .total-line {
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+#cart .total-cell
+{
+ /* float: left;*/
+  font-weight: bold;
+  vertical-align: center;
+  padding-top: 3px;
+}
+
+#cart .total-cell-text
+{
+  text-align: right;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#cart .total-buttons table {
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  font-weight: bold;
+  text-align=center;
+  margin-bottom: 0px;
+  padding-top: 7px;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+#cart .paging-buttons  table
+{  
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  font-weight: bold;
+  text-align=center;
+  margin-bottom: 0px;
+  font-size: 12px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
+#cart .paging-buttons image
+{ 
+  padding: 0px;
+  margin: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
+.paging-table
+{       margin-bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#cart .total-buttons image
+{
+	margin-bottom: 0px;
+	padding-top: 7px;
+	padding-bottom: 2px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+/* END: Cart from shared/_cart.rhtml */
+
+/* ========================================================================================= */
+/* START: Forms for index, login, register, billing and download                             */
+/*                                                                                           */
+/* HTML File: app\views\catalogue\index.rhtml (.main-header only)                                */
+/* HTML File: app\views\users\login.rhtml                                                    */
+/* ========================================================================================= */
+
+#forms
+{
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#forms .leftContentEdge {
+  margin: 0px 0px 0px 0px;
+  border-width: 0px 0px 0px 0px;
+}
+
+#forms .rightContentEdge {
+  margin: 0px 0px 0px 0px;
+  border-width: 0px 0px 0px 0px;
+}
+
+#forms .main-header
+{
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 5px;
+  width: 100%;
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+#forms .main-header-left-txt
+{
+  padding: 5px 0px 5px 10px;
+  font-size: 13pt;
+  font-weight: bold;
+  float: left;
+  vertical-align: middle;
+}
+
+#forms .main-header-right-txt
+{
+  padding: 5px 5px 5px 5px;
+  font-size: 8pt;
+  font-weight: bold;
+  float:right;
+  vertical-align: middle;
+}
+
+.info_help_button
+{  
+   padding: 3px;
+   margin-right: 2px;
+   vertical-align: middle;
+}
+
+#forms .sub-header
+{
+  margin-bottom: 0px;
+  padding: 7px;
+  width: 100%;
+  height: 22px;
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+.sub-header td
+{
+	padding: 5px 5px 5px 5px;
+}
+
+#forms .sub-header-txt
+{
+  padding: 7px 7px 7px 7px;
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+#forms .sub-header-arrow
+{
+	padding-left: 3px;
+}
+
+#forms .sub-size-text
+{
+	margin-top: 0px;
+	font-size: 18px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: middle;
+	text-align: middle;
+}
+
+#forms table
+{
+  padding: 5px;
+  font-size: 10pt;
+}
+
+#forms .sub-box
+{
+  margin-bottom: 10px;
+  padding: 7px;
+  width: 100%;
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-box td
+{
+	padding: 3px;
+}
+
+#forms .sub-box-registration
+{
+  padding: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+
+#forms .sub-box-txt
+{
+  font-size: 10pt;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: 6px;
+}
+
+#forms .sub-box-button-box
+{
+  margin-bottom: 10px;
+  height: 0px;
+  padding: 0px;
+}
+
+#forms .sub-box-button
+{
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  float: right;
+}
+
+#forms .sub-box .button {
+  padding: 25px 0px 0px 0px;
+}
+
+#forms .sub-box td
+{
+ /* width: 195px;*/
+ margin: 1px;
+}
+
+#forms .sub-box-black
+{
+  margin-bottom: 10px;
+}
+
+#forms .sub-box-black table
+{
+	margin: 5px 0px 0px 0px;
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+}
+
+#forms .sub-half-header
+{
+  width: 50%;
+  padding: 6px;
+  margin-left: 0px;
+  margin-bottom: 3px;
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-half-txt
+{
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+#forms .sub-quart-header
+{
+  width: 25%;
+  padding: 5px;
+}
+
+#forms .sub-quart-txt
+{
+  width: 25%;
+  padding: 5px;
+}
+
+#forms .sub-16-header
+{
+  width: 16.66%;  
+  padding: 5px;
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-16-txt
+{
+  width: 16.66%;  
+  padding: 15px;
+}
+
+#forms .sub-16-txt-grey
+{
+  width: 16.66%;  
+  padding: 15px;
+}
+
+#forms .sub-box-txt-red-links
+{
+  padding-left: 6px;
+  font-size: 80%;
+}
+
+#forms .sub-box-txt-red
+{
+}
+
+#forms .sub-box-txt-red-links a:link
+{
+}
+
+#forms .sub-box-txt-red-links a:active
+{
+}
+
+#forms .sub-box-txt-red-links a:visited
+{
+}
+
+#forms .sub-box-txt-red-links a:hover
+{
+}
+
+#forms .list-image {
+  float: left;
+  width: 80px;
+  height: 45px;
+  padding: 5px;
+}
+
+#forms .list-image-big {
+  float: left;
+  width: 160px;
+  height: 90px;
+  padding: 5px;
+}
+
+/* END: Forms for login, register, billing and download */
+
+/* ========================================================================================= */
+/* START: General Rails Form Error Handling                                                  */
+/* ========================================================================================= */
+.fieldWithErrors {
+  padding: 2px;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+}
+
+#errorExplanation p {
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* END: General Rails Form Error Handling */
+
+

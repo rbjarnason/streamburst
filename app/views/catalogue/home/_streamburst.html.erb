@@ -1,0 +1,61 @@
+<div id="forms">
+<table id="home">
+ <tr>
+  <td class="header">Welcome to Streamburst</td>
+  <td class="header">&nbsp;</td>
+ </tr>
+ <tr>
+   <td class="content"><b>Browse our catalogue of High Quality, DRM Free downloads...</b><br/><br/>Available in multiple formats to play on multiple devices. Watch while on the move... or on your Widescreen TV at home...</td>
+   <td class="button"><a href="/catalogue/index"><img src="/images/buttonLarge_browseCatalogue_1.png" width="200" height="48" border="0"></a></td>
+ </tr>
+</table>
+
+<!-- START COMING SOON SECTION --> 
+<table id="home">
+<tr>
+  <td class="subheader">The Viking Film Trilogy</td>
+  <td class="subheader">&nbsp;</td>
+ </tr>
+ 
+ <tr>
+    <td class="comingSoonLeft"><img src="/images/VF_home_image.png" width="300" height="110"></td>
+   <td class="content">The most realistic Viking Films ever made available now for exclusive Internet download.  The Viking Film Trilogy, includes the cult hit The Raven Flies and the recently released Embla featuring Marie Bonnevie...<br/><br/><a href="http://vikingfilms.streamburst.tv/">CLICK HERE >></a></td>
+ </tr>
+
+ </table>
+ <!-- END COMING SOON SECTION -->
+
+<!-- START RECOMMENDED SECTION --> 
+<table id="home">
+<tr>
+  <td class="subheader">Recommended: Free To Adventure </td>
+  <td class="subheader">&nbsp;</td>
+ </tr>
+ 
+ <tr>
+   <td class="content">Experience the vast open plains and mighty rivers of Africa from the unique vantage point of a microlight...<br/><br/><a href="http://www.freetoadventure.tv/">CLICK HERE >></a></td>
+   <td class="recommendedRight"><img src="/images/F2A_home_image.png" width="450" height="110"></td>
+ </tr>
+
+ </table>
+ <!-- END RECOMMENDED SECTION -->
+ 
+ <!-- START DVM SECTION -->
+ <table id="home">
+ <tr>
+   <td class="subheader" colspan="2">New: Digital Vending Machine </td>
+   <td class="subheader">&nbsp;</td>
+ </tr>
+ <tr>
+   <td class="dvm"><img src="/images/DVM_GroupImage.png" width="250" height="110" border="0"></td>
+   <td class="content">Earn Money Selling Downloads directly from your website, blog or social networking page...<br><br>
+   Its simple and quick to setup, start earning right away!</td>
+   <td class="button">
+       <% if @user and @user.has_role?("DVM Affiliate") %>
+      <a href="/dvm/home"><img src="/images/buttonLarge_manageDVM_1.png" width="200" height="48" border="0"></a><br>
+    <% else %>
+      <a href="/dvm/home"><img src="/images/buttonLarge_signUpDVM_1.png" width="200" height="48" border="0"></a><br>
+    <% end %>   </td>
+ </tr>
+</table>    
+</div>

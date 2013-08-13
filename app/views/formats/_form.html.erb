@@ -1,0 +1,103 @@
+<%= error_messages_for 'format' %>
+
+<!--[form:format]-->
+<p><label for="format_name">Name</label><br/>
+<%= text_field 'format', 'name', "size" => 60  %></p>
+
+<p><label for="help_id">Help Id</label><br/>
+<%= text_field 'format', 'help_id', "size" => 3 %></p>
+
+<p><label for="format_standard">Standard</label><br/>
+<%= text_field 'format', 'standard'  %></p>
+
+<p><label for="format_px_width">Px width</label><br/>
+<%= text_field 'format', 'px_width'  %></p>
+
+<p><label for="format_px_height">Px height</label><br/>
+<%= text_field 'format', 'px_height'  %></p>
+
+<p><label for="format_created_at">Created at</label><br/>
+<%= datetime_select 'format', 'created_at'  %></p>
+
+<p><label for="format_updated_at">Updated at</label><br/>
+<%= datetime_select 'format', 'updated_at'  %></p>
+
+<p><label for="format_video_codec">Video codec</label><br/>
+<%= text_field 'format', 'video_codec'  %></p>
+
+<p><label for="format_pass_1_video_codec_options">Pass 1 Video Codec Options</label><br/>
+<%= text_area 'format', 'pass_1_video_codec_options'  %></p>
+
+<p><label for="format_pass_2_video_codec_options">Pass 2 Video Codec Options</label><br/>
+<%= text_area 'format', 'pass_2_video_codec_options'  %></p>
+
+<p><label for="format_avs_field_deinterlace">avs_field_deinterlace</label><br/>
+<%= text_field 'format', 'avs_field_deinterlace'  %></p>
+
+<p><label for="format_avs_lancoz_resize">avs_lancoz_resize</label><br/>
+<%= text_field 'format', 'avs_lancoz_resize'  %></p>
+
+<p><label for="format_audio_codec">Audio codec</label><br/>
+<%= text_field 'format', 'audio_codec'  %></p>
+
+<p><label for="format_audio_codec_options">Audio codec options</label><br/>
+<%= text_field 'format', 'audio_codec_options'  %></p>
+
+<p><label for="format_audio_channels">Audio channels</label><br/>
+<%= text_field 'format', 'audio_channels'  %></p>
+
+<p><label for="format_audio_delay">Audio delay</label><br/>
+<%= text_field 'format', 'audio_delay'  %></p>
+
+<p><label for="format_text">Text</label><br/>
+<%= text_field 'format', 'text'  %></p>
+
+<p><label for="format_text_width">Text width</label><br/>
+<%= text_field 'format', 'text_width'  %></p>
+
+<p><label for="format_text_truncate_len">Text Truncate Length</label><br/>
+<%= text_field 'format', 'text_truncate_len'  %></p>
+
+<p><label for="format_text_height">Text height</label><br/>
+<%= text_field 'format', 'text_height'  %></p>
+
+<p><label for="format_text_pointsize">Text pointsize</label><br/>
+<%= text_field 'format', 'text_pointsize'  %></p>
+
+<p><label for="format_text_font">Text font</label><br/>
+<%= text_field 'format', 'text_font'  %></p>
+
+<p><label for="format_text_main_pos_x">Text main pos x</label><br/>
+<%= text_field 'format', 'text_main_pos_x'  %></p>
+
+<p><label for="format_text_main_pos_y">Text main pos y</label><br/>
+<%= text_field 'format', 'text_main_pos_y'  %></p>
+
+<p><label for="format_text_gaussian_value">Text gaussian value</label><br/>
+<%= text_field 'format', 'text_gaussian_value'  %></p>
+
+<p><label for="format_text_fill">Text fill</label><br/>
+<%= text_field 'format', 'text_fill'  %></p>
+
+<p><label for="format_text_stroke">Text stroke</label><br/>
+<%= text_field 'format', 'text_stroke'  %></p>
+
+<p><label for="format_text_background_pos_x">Text background pos x</label><br/>
+<%= text_field 'format', 'text_background_pos_x'  %></p>
+
+<p><label for="format_text_background_pos_y">Text background pos y</label><br/>
+<%= text_field 'format', 'text_background_pos_y'  %></p>
+
+<p><label for="format_intro_total_frames">Intro total frames</label><br/>
+<%= text_field 'format', 'intro_total_frames'  %></p>
+
+<p><label for="format_intro_position">Intro position</label><br/>
+<%= text_field 'format', 'intro_position'  %></p>
+
+<p><label for="format_format_type">Type (1 - HD, 2 - HQ, 3 - PQ, 4 - MQ, 5 - MP3 160, 6 - MP3 320, 7 - WAV 16, 8 - WAV 24/label, 9 - Cover Artwork><br/>
+<%= text_field 'format', 'format_type', "size" => 3 %></p>
+
+<p><label for="audio_only">Audio Only</label><br/>
+<select id="audio_only" name="format[audio_only]">
+<option value="false" <%= ' selected' unless @format.audio_only %> >False</option><option value="true" <%= ' selected' if @format.audio_only %>>True</option></select></p>
+<!--[eoform:format]-->

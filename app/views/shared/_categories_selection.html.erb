@@ -1,0 +1,35 @@
+<table>
+    <tr>
+    <td align="left"><%=t :Download_Categories%>:</td>
+    <% starting = true %>
+    <% for category in @categories %> 
+      <% category_product_count = category.products.count(:conditions => @brand_filter) %>
+      <% if category_product_count > 0 && category.name != "Staging" %>
+        <% if category.id == session["category_id_#{@brand.id.to_s}".to_sym] %>
+          <td class="category-td-selected" align="left">
+        <% else %>
+          <td>
+        <% end %>
+        <span class="category-text" align="left">
+          <% if starting %>
+            <% starting = false %>
+          <% else %>
+             &nbsp;|&nbsp;
+          <% end %>
+          <% if @this_controller != "casstalogue" %>
+            <%= link_to_remote h(category.name),
+                               :before   => %(Element.show('products-list-spinner')),
+                               :success  => %(Element.hide('products-list-spinner')),
+                               :url => { :protocol => "http://",
+                                         :controller => "catalogue", 
+                                         :action => "index", 
+                                         :category_id => category.id } %> (<%= category_product_count %>)
+          <% else %>
+            <%= image_tag("navArrow01.gif", :border => 0, :size => "8x9") %> <%= link_to h(category.name), :controller => "catalogue", :action => :index, :id => category.id %>
+          <% end %>
+        </span>
+        </td>
+      <% end %>
+    <% end %>
+   </tr>
+</table>

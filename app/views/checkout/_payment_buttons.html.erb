@@ -1,0 +1,21 @@
+<span class="sub-box-payment-button">
+   <% if @order.total_price > 0 %>
+     <table>
+     	<tr>
+     		<td align="left" width="200px">
+     			<a href="/checkout/google_checkout/<%=@order.id%>"><img src="/images/google_checkout_button.gif" border=0></a>
+				<% unless @currency_code == "GBP" and RAILS_ENV=="production" %>
+				<br><small><%=t :payment_with_google_is_only_avilable_using_British_Pounds, :gbp=>@order.total_price_real_gbp %></small>
+				<% end %>
+     		</td>
+     		<td align="left" valign="top">
+                          <% unless @currency_code == "ISK" %>
+			     <%= paypal_button(@order.total_price) %>
+                          <% end %>
+     		</td>
+     	</tr>
+     </table>
+   <% else %>
+     <%= link_to(image_localized_tag("button_confirmOrder_1.png", :border => 0, :alt => t(:Confirm_Order)), :controller => "checkout",  :action => "complete", :id => @order.id) %>
+   <% end %>
+</span>

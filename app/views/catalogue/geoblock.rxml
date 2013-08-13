@@ -1,0 +1,6 @@
+xml.instruct!
+if @block_customer
+  xml.geoblocked("true")
+else
+  xml.geoblocked("false")
+end

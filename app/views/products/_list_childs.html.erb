@@ -1,0 +1,14 @@
+<% if @product.child_products %>
+<table cellpadding="5" cellspacing="0">
+<% for product in @product.child_products %>
+  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= product.title %></td>
+    <td class="list-actions">
+    <%= link_to 'Remove', { :action  => 'remove_child', :product_id => product, :id => @product},
+                            :confirm => "Are you sure?",
+                            :post    => true %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<% end %>

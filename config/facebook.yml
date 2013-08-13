@@ -1,0 +1,33 @@
+
+development:
+    key: 7ece08ba7211be22a28852683eae5382
+    secret: d7a4b81ad48adef4f414dbc776ad6cae
+    canvas_path: /dvm_app/
+    callback_path: /dvm/facebook_app/
+    tunnel:
+      username: yourLoginName
+      host: www.yourexternaldomain.com
+      port: 1234
+      local_port: 5678
+
+test:
+    key: 7ece08ba7211be22a28852683eae5382
+    secret: d7a4b81ad48adef4f414dbc776ad6cae
+    canvas_path: /yourAppName/
+    callback_path: /path/to/your/callback/
+    tunnel:
+      username: yourLoginName
+      host: www.yourexternaldomain.com
+      port: 1234
+      local_port: 5678
+
+production:
+    key: 7ece08ba7211be22a28852683eae5382
+    secret: d7a4b81ad48adef4f414dbc776ad6cae
+    canvas_path: /dvm_app/
+    callback_path: /dvm/facebook_app/
+    tunnel:
+      username: yourLoginName
+      host: www.yourexternaldomain.com
+      port: 1234
+      local_port: 5678

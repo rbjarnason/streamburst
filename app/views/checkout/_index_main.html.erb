@@ -1,0 +1,49 @@
+ <table width="739px" border="0">
+  <th class="sub-half-header"><%=t :Title%></th>
+  <th class="sub-16-header" align="center"><%=t :Category%></th>
+  <th class="sub-16-header"></th>
+  <th class="sub-16-header" align="center"><%=t :Price%> (<%=@currency_code%>)</th>
+  
+  <% for line_item in @order.line_items %>
+   <tr>
+     <td class="sub-half-txt" valign="middle">
+       <img class="list-image" width="80" height="45" style="padding: 6px" src="<%= url_for_image_column(line_item.product, "image", :name => "widescreenthumb", :absolute => true)%>">
+       <br>
+       <b><%= line_item.product.title %></b>
+     </td>
+     <td class="sub-16-txt" align="center" valign-"middle">
+       <%= line_item.product.categories[0].tname %>
+     </td>
+     <td class="sub-16-txt" align="center" valign="middle">
+       <% if line_item.product.discount_voucher_enabled == true and not line_item.discount_voucher%>
+       <form action="/checkout/index?line_item=<%= line_item.id %>" method="post">      
+           <input type="text" id="discount_voucher" name="discount_voucher" size="8" maxsize="8" value="" />
+           <%= image_localized_submit_tag "button_discountCode_1.png", :style => "padding-top: 4px", :border => 0, :alt => t(:Confirm_discount_code), :size => "90x20" %>
+        </form>
+       <% end %>
+     </td>
+     <td class="sub-16-txt" align="center" valign="middle">
+       <% if line_item.price > 0.0 %>
+       <%= line_item.price_with_currency %><br>
+       <% else %>
+       <%=t :Free%><br>
+       <% end %>
+       <% if line_item.product.discount_voucher_enabled == true and line_item.discount_voucher %>
+         <%=t :Discount%>: <%= line_item.discount_with_currency %>
+       <% end %>
+     </td>
+   </tr>
+  <% end %>
+  <% if @currency_code == "ISK" %>
+  <tr>
+    <td class="sub-box-black" colspan="2"></td>
+    <td class="sub-16-txt-grey" align="center"><b>VSK (25.5%)</b></td>
+    <td class="sub-16-txt" align="center"><b><%= value_to_currency(@order.total_price*0.2) %></b></td>
+  </tr>
+  <% end %>
+  <tr>
+    <td class="sub-box-black" colspan="2"></td>
+    <td class="sub-16-txt-grey" align="center"><b><%=t :Total%> (<%= @currency_code %>)</b></td>
+    <td class="sub-16-txt" align="center"><b><%= value_to_currency(@order.total_price) %></b></td>
+  </tr>
+ </table>

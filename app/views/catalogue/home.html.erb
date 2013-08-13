@@ -1,0 +1,3 @@
+<% cache "home_page_#{@brand.id}_#{@currency_code}_#{I18n.locale.to_s}", :expires_in=>5.minutes do %>
+  <%= render(:partial => "/catalogue/home/#{@brand.to_home_param}") %>
+<% end %>

@@ -1,0 +1,47 @@
+<% if collection.page_count > 1 -%>
+<div class="pagination">
+  <ul>
+  <% if collection.previous_page -%>
+         <li class="nextpage">
+	    	    <%= link_to_remote "&#171; #{t(:previous)}", 
+             	    	           :before   => %(Element.show('products-list-spinner')),
+                                   :success  => %(Element.hide('products-list-spinner')),
+            	    	           :url => { :action => :index, 
+            	    	                     :page => collection.previous_page } %>
+	    	 </li>
+	  <%  else -%>
+         <li class="disablepage">&#171; <%=t :previous%></li>
+	  <% end -%>
+ 
+    <% last_page = 0 -%>
+    <% windowed_pagination_links(collection, :window_size => 2, :link_to_current_page => true, :always_show_anchors => true) do |n| -%>
+       <% if collection.page == n -%>
+            <li class="currentpage"><%= n %></li>
+       <% else -%>
+	          <li><%= "..." if last_page+1 < n %>
+	           <%= link_to_remote n, 
+                                     :before   => %(Element.show('products-list-spinner')),
+                                     :success  => %(Element.hide('products-list-spinner')),
+                    	             :url => { :id => params[:id], 
+                    	                       :action => :index, 
+                    	                       :page => n } %>
+	          </li>
+	       <% end -%>
+	      <% last_page = n -%>
+	  <% end -%>
+ 
+    <% if collection.next_page? -%>
+     <li class="nextpage">
+        <%=  link_to_remote "#{t(:next)} &#187;", 
+                            :before   => %(Element.show('products-list-spinner')),
+                            :success  => %(Element.hide('products-list-spinner')),
+                            :url => { :action => :index, 
+                                      :page => collection.next_page } %>
+     </li>
+    <% else -%>
+      <li class="disablepage">&#171; <%=t :next%></li>
+    <% end -%>
+  </ul>
+</div>
+<% end -%>
+

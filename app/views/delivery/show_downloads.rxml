@@ -1,0 +1,49 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.order do
+  xml.id(@order.id)
+  xml.currency_code(@currency_code)
+  for line_item in @order.line_items
+    product_list = []
+    if line_item.product.parent_flag
+      product_list = line_item.product.child_products
+    else
+      product_list << line_item.product
+    end
+    for current_product in product_list
+      xml.line_item do
+        xml.title(current_product.title)
+        xml.image_url(url_for_image_column(current_product, "small_image", :name => "normal", :absolute => true))
+        if current_product.categories.length > 0
+          xml.category(current_product.categories[0].name)
+        end
+        for product_format in current_product.product_formats
+          xml.product_format do
+            xml.name(product_format.format.name)
+            xml.help_id(product_format.format.help_id)
+            xml.format_type(product_format.format.format_type)
+            if product_format.download_id && product_format.download_id
+              if product_format.format.format_type == 9
+                xml.download_url(getCoverArtworkDownloadUrl(product_format.download.file_name))
+              elsif current_product.direct_download
+                xml.download_url(getDirectDownloadUrl(current_product, product_format.format.id, product_format.download.file_name))
+              else
+                xml.download_url(url_for(:action => 'get_download', 
+                                     :downloads_key => @order.downloads_key, 
+                                     :id => product_format.download_id,
+                                     :format_id => product_format.format.id,
+                                     :company_id => current_product.company_id,
+                                     :brand_id => current_product.brand_id,
+                                     :product_id => current_product.id,
+                                     :line_item_id => line_item.id,
+                                     :parent_product_id => line_item.product.parent_flag ? "#{line_item.product.id}" : ""))
+              end
+              xml.file_size_mb(product_format.download.file_size_mb.to_s)
+            end
+          end
+        end
+      end
+    end
+  end
+end

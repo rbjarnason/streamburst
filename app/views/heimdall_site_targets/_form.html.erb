@@ -1,0 +1,31 @@
+<%= error_messages_for 'heimdall_site_target' %>
+
+<!--[form:heimdall_site_target]-->
+<p><label for="heimdall_site_target_title">Title</label><br/>
+<%= text_field 'heimdall_site_target', 'title'  %></p>
+
+<p><label for="heimdall_site_target_url">Url</label><br/>
+<%= text_field 'heimdall_site_target', 'url'  %></p>
+
+<p><label for="heimdall_site_target_url_type">Url Type</label><br/>
+<%= text_field 'heimdall_site_target', 'url_type'  %></p>
+
+<p><label for="heimdall_site_target_processing_time_interval">Processing time interval</label><br/>
+<%= text_field 'heimdall_site_target', 'processing_time_interval'  %></p>
+
+<p><label for="heimdall_site_target_last_processing_time">Last processing time</label><br/>
+<%= datetime_select 'heimdall_site_target', 'last_processing_time'  %></p>
+
+<p><label for="heimdall_site_target_active">Active</label><br/>
+<select id="heimdall_site_target_active" name="heimdall_site_target[active]"><option value="false">False</option><option value="true">True</option></select></p>
+
+<p><label for="heimdall_site_target_heimdall_content_target_id">Content Target Id (if needed)</label><br/>
+<%= text_field 'heimdall_site_target', 'heimdall_content_target_id'  %></p>
+
+<p><label for="heimdall_site_target_created_at">Created at</label><br/>
+<%= datetime_select 'heimdall_site_target', 'created_at'  %></p>
+
+<p><label for="heimdall_site_target_updated_at">Updated at</label><br/>
+<%= datetime_select 'heimdall_site_target', 'updated_at'  %></p>
+<!--[eoform:heimdall_site_target]-->
+

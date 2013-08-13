@@ -1,0 +1,47 @@
+<div id="sponsor_screen">
+  <div class="title">
+    <%=:Get_A_Sponsor_for%> <%= @product.title %>
+  </div>
+  <table width="100%">
+  <tr>
+  <td>
+  <div class="text">
+   <%=t :get_a_sponsor_product_info%>
+  </div>
+      <table>
+      <th><%=t :Brand%></th>
+      <th><%=t :Price%></th>
+      <th><%=t :Sponsor_Discount%></th>
+      <th><%=t :Sponsor_Price%></th>
+      <th></th>
+      <% for sponsor_brand in @sponsor_brands %>
+      <tr>
+      <td>
+        <img src="<%= url_for_image_column sponsor_brand.advertisement, "image", :absolute => true %>">
+      </td>
+      <td>
+        <%= sponsor_brand.price %>
+      </td>
+      <td>
+        <%= sponsor_brand.sponsor_discount %>
+      </td>
+      <td>
+        <%= sponsor_brand.sponsor_price %>
+      </td>
+      <td>
+       <%= form_remote_tag :url => { :action => :add_to_cart, :id => sponsor_brand.product_id, :sponsor_bid_id => sponsor_brand.bid_id, :sponsor_bid_amount => sponsor_brand.sponsor_bid_amount}, :complete=>"Element.hide('spinner')", :before=>"RedBox.close(); Element.show('spinner')" %>
+          <%= image_localized_submit_tag "button_addToCart_1.gif", :border => 0, :size => '73x19', :class => "entry-add-to-cart-button", :alt => t(:Add_to_cart_with_Sponsor) %>
+       </form><br>
+      </td>
+      <% end %>
+  </td>
+  </tr></table></td>
+  <tr height="20px">
+  <td>
+  <div class="close_button">
+    <%= link_to_close_redbox image_localized_tag("button_close_1.gif", :border => 0, :alt => t(:Close) %>
+  </div>
+  </td>
+  </tr>
+  </table>
+</div>

@@ -1,0 +1,14 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.error do
+  xml.error_code(@xml_error_code)
+  xml.error_message(@xml_error_message)
+#  if @xml_error_details and @xml_error_details != []
+#    for detail in @xml_error_details
+#      xml.error_detail do
+#        xml.message(detail)
+#      end
+#    end
+#  end
+end

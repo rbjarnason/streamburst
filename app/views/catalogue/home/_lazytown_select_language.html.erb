@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+ 
+ <head>
+    <title>LazyTown - Digital Download Store</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="Content-Language" content="en">
+	<meta name="description" content="LazyTown - Digital Download Store">
+	<meta name="keywords" content="LazyTown - Digital Download Store">
+	<meta name="url" content="http://digitalstore.lazytown.com">
+	<meta name="rating" content="Safe For Kids">
+	<meta name="revisit-after" content="25 days">
+	<meta name="robots" content="all">
+	<meta name="distribution" content="global">
+	<meta name="author" content="Streamburst Limited">
+	<meta name="copyright" content="Copyright (c) 2009 Streamburst Limited, All Rights Reserved">
+    
+    <%= render(:partial => "shared/default_includes") %>       
+    <%= stylesheet_link_tag "lazytown", :media => "all" %>
+
+    <%= render(:partial => "shared/analytics_main", :locals => {:analytics_account => "UA-1085096-13"}) %>
+ </head>
+  
+ <body class="language">
+
+<!-- Start Bottom Bar -->
+<div id="botn"></div>
+<!-- End Bottom Bar -->
+
+<!-- Start Top Nav Bar -->
+<div id="top"></div>
+<!-- End Top Nav Bar -->
+
+<!-- Start Language Select -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%" align="center">
+  <tr>
+    <td valign="center" align="center">
+
+	<table width="300px" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="4" align="center">
+    	<img src="../images/Language_Landing_Logo.png" /></td>
+  </tr>
+  <tr>
+    <td><a href="/catalogue/home?locale=en"><img border=0 src="../images/Language_Landing_English.png" /></a></td>
+    <td><a href="/catalogue/home?locale=es"><img border=0 src="../images/Language_Landing_Spanish.png" /></td>
+    <td><a href="/catalogue/home?locale=is"><img border=0 src="../images/Language_Landing_Icelandic.png" /></td>
+    <td><a href="/catalogue/home?locale=fr"><img border=0 src="../images/Language_Landing_French-1.png" /></td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+<!-- End Language Select -->
+
+</body> 
+</html>

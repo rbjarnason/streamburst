@@ -1,0 +1,12 @@
+<table height="122px"><tr><td>
+  <div class="sub-box-txt">
+    <%=t :get_download_info_1%><br><br>
+    <% if @order.total_price > 0 %>
+	  <% if @order.line_items.count > 1 %>
+        <%=t :get_download_info_2_warning_plural%><p>
+      <% else %>
+        <%=t :get_download_info_2_warning%><p>
+      <% end %>
+    <% end %>
+  </div>
+</td></tr></table>

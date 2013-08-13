@@ -1,0 +1,27 @@
+<h1>Listing heimdall_content_targets</h1>
+
+<table>
+  <tr>
+  <% for column in HeimdallContentTarget.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for heimdall_content_target in @heimdall_content_targets %>
+  <tr>
+  <% for column in HeimdallContentTarget.content_columns %>
+    <td><%=h heimdall_content_target.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => heimdall_content_target %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => heimdall_content_target %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => heimdall_content_target }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @heimdall_content_target_pages.current.previous } if @heimdall_content_target_pages.current.previous %>
+<%= link_to 'Next page', { :page => @heimdall_content_target_pages.current.next } if @heimdall_content_target_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New heimdall_content_target', :action => 'new' %>

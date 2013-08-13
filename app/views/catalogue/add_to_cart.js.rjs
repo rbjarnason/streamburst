@@ -1,0 +1,9 @@
+page.select('div#notice').each { |div| div.hide }
+
+page.replace_html("cart", :partial => @cart_filename, :object => @cart)
+page << "float_menu();" unless @brand.custom_products_list
+page << "document.getElementById('basket_id').style.height=#{@cart.get_cart_bottom_height(@brand.id,@cart_items)}+'px';" if @brand.custom_products_list
+
+page << "check = document.getElementById('show_all_brands_in_cart'); if (check) {check.onclick = onSelectChange};"
+
+page[:current_item].visual_effect :highlight, :startcolor => @brand.cart_fade_start_color, :endcolor => @brand.cart_fade_end_color

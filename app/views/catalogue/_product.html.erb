@@ -1,0 +1,53 @@
+    <table class="entry">
+      <tr>
+        <th><%= h(product.title) %>
+          <% if product.help_id %>
+            <%= help(product.help_id) %>
+          <% end %>  
+       <span class="entry-header-small"> 
+       <span class="entry-header-duration"> (<%=to_duration_long_s(product.duration)%>)</span>
+      </span></th>
+      <th><%=t :Included%> <%= product.audio_only == true ? t(:audio) : t(:video)%> <%= product.product_formats.count > 1 ? t(:formats) : (:format) %></th>
+      <th><%=t :Price%></th>
+      </tr>
+
+      <td class="entry-description">
+        <img class="list-image-catalogue" width="160" height="90" src="<%=url_for_image_column(product, "image", :name => "widescreenthumb", :absolute => true)%>">
+       <%= truncate(product.description, :length=>270) %><br>
+      </td>
+      <td class="entry-format">
+          <% for product_format in product.product_formats.sort_by { |pf| pf.format.format_type } %>
+            <% if product_format.format.help_id %>
+                <%= help(product_format.format.help_id, { :image_file_name => get_product_format_image(product_format.format.format_type), 
+                                                          :image_size => "117x20" } ) %>
+              <br/>
+            <% end %>
+          <% end %>
+      </td>
+
+      <td class="entry-price">
+      
+        <% if product.get_price(@currency_code) > 0.0 %>
+           <%= product.price_class_to_currency(@currency_code) %>
+        <% else %>
+           <b><%=t :Free%></b>
+        <% end %>
+        <br/>
+        <%= form_remote_tag(:url => {:action => :add_to_cart, :id => product}, :complete=>"Element.hide('spinner')", :before=>"Element.show('spinner')")%>
+        <%= image_localized_submit_tag("button_addToCart_1.png", :border => 0, :height => 20, :width => 96, :class => "entry-add-to-cart-button", :alt => t(:Add_to_cart))%>
+        </form><br><br>
+        <% if product.watch_now_filename and product.watch_now_filename != ""%>
+            <%= watch_now_button(product.watch_now_filename, product.title) %>
+        <% end %>
+        <% @sponsor_price = product.get_best_sponsor_price_in_currency(@currency_code, @territory_id, session) %>
+        <% if @sponsor_price %>
+          <br>
+          <span class="entry-sponsor-price-header"><%=t :Sponsor_Price%></span><br>
+          <%= @sponsor_price %><br>
+          
+          <%= get_a_sponsor_link(product.id) %>
+        <% end %>  
+      </td>
+      </tr>
+    </table>
+

@@ -1,0 +1,19 @@
+<%= error_messages_for 'advertisements_file' %>
+
+<!--[form:advertisements_file]-->
+<p><label for="advertisements_file_file_name">File name</label><br/>
+<%= text_field 'advertisements_file', 'file_name'  %></p>
+
+<p><label for="advertisements_file_sha1_hash">Sha1 hash</label><br/>
+<%= text_field 'advertisements_file', 'sha1_hash'  %></p>
+
+<p><label for="advertisements_file_des_key">Des key</label><br/>
+<%= text_field 'advertisements_file', 'des_key'  %></p>
+
+<p><label for="advertisements_file_created_at">Created at</label><br/>
+<%= datetime_select 'advertisements_file', 'created_at'  %></p>
+
+<p><label for="advertisements_file_updated_at">Updated at</label><br/>
+<%= datetime_select 'advertisements_file', 'updated_at'  %></p>
+<!--[eoform:advertisements_file]-->
+

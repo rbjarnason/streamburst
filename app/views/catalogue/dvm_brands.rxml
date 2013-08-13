@@ -1,0 +1,23 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.currency_code(@currency_code)
+xml.brands do
+  for brand in @brands
+    xml.brand do
+      xml.id(brand.id)
+      xml.name(brand.name)
+      xml.description(brand.description)
+      xml.dvm_main_help(brand.dvm_main_help)
+      xml.image_url(brand.image ? url_for_image_column(brand, "image", :name => "widescreenthumb", :absolute => true) : "")
+      xml.logo_url(brand.logo ? url_for_image_column(brand, "logo", :name => "widescreensmall", :absolute => true) : "")
+      xml.flash_trailer_url(brand.flash_trailer ? url_for_file_column(brand, "flash_trailer", :absolute => true) : "")
+      xml.flash_trailer_small_url(brand.flash_trailer_small ? url_for_file_column(brand, "flash_trailer_small", :absolute => true) : "")
+      xml.dvm_template_id(@dvm.dvm_template.id)
+      xml.dvm_affiliate_percent(@dvm.dvm_template.affiliate_percent)
+      if @dvm.myspace_hack==true
+        xml.myspace_hack("1")
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+<h1>Editing host</h1>
+
+<%= render :partial => 'list_host_brands' %>
+
+<%= form_tag :action => 'update', :id => @host %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @host %> |
+<%= link_to 'Back', :action => 'list' %>

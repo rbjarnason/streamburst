@@ -1,0 +1,10 @@
+<%= render(:partial => 'shared/forms_template',
+          :locals => { 
+          :title => t(:Payment),
+          :info_title => t(:Instructions),
+          :info_partial => "payment_info",
+          :main_title => t(:PaymentDetails),
+          :main_partial => "payment_main",
+          :buttons_title => t(:OtherPaymentOptions),
+          :buttons_partial => "payment_buttons" }) %>
+<center>

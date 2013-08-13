@@ -1,0 +1,51 @@
+<h1>Possible Matches Status</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>url</th>
+    <th>Detection count</th>
+    <th>Processing stage</th>
+    <th>sha1</th>
+    <th>md5sum</th>
+    <th>Category</th>
+    <th>Description</th>
+    <th>Active</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>First detected</th>
+    <th>Last detected</th>
+    <th>Download_started</th>
+    <th>Download_completed</th>
+    <th>Published date</th>
+    <th>Indicated filesize</th>
+    <th>Multiple files</th>
+    <th>Num pieces</th>
+    <th>Real filesize</th>
+  </tr>
+  
+<% for heimdall_content_target in @heimdall_possible_matches %>
+  <tr>
+    <td><%=heimdall_content_target.title%></td>
+    <td><%=heimdall_content_target.url%></td>
+    <td><%=heimdall_content_target.detection_count%></td>
+    <td><%=heimdall_content_target.processing_stage%></td>
+    <td><%=heimdall_content_target.sha1%></td>
+    <td><%=heimdall_content_target.md5sum%></td>
+    <td width="50"><%=heimdall_content_target.category%></td>
+    <td><%=heimdall_content_target.description%></td>
+    <td><%=heimdall_content_target.active%></td>
+    <td align="center"><%=get_short_date(heimdall_content_target.created_at)%></td>
+    <td align="center"><%=get_short_date(heimdall_content_target.updated_at)%></td>
+    <td align="center"><%=get_short_date(heimdall_content_target.first_detected_at)%></td>
+    <td align="center"><%=get_short_date(heimdall_content_target.last_detected_at)%></td>
+    <td align="center"><%=get_short_date(heimdall_content_target.download_started_at)%></td>
+    <td align="center"><%=get_short_date(heimdall_content_target.download_completed_at)%></td>
+    <td align="center"><%=get_short_date(heimdall_content_target.published_date)%></td>
+    <td><%=heimdall_content_target.indicated_file_size%></td>
+    <td><%=heimdall_content_target.multiple_files%></td>
+    <td><%=heimdall_content_target.num_pieces%></td>
+    <td><%=heimdall_content_target.real_file_size%></td>
+  </tr>
+<% end %>
+</table>

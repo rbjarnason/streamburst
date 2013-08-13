@@ -1,0 +1,9 @@
+<%= render(:partial => 'shared/forms_template',
+           :locals => { 
+           :title => t(:content_ready_title),
+           :info_title => t(:Instructions),
+           :info_partial => @format.audio_only ? "content_ready_info_audio_only" : "content_ready_info",
+           :main_title => t(:Content),
+           :main_partial => "content_ready_main",
+           :buttons_title => t(:Back_to_List_of_Downloads),
+           :buttons_partial => "content_ready_buttons" }) %>

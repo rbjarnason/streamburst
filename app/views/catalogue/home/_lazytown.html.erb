@@ -1,0 +1,72 @@
+<div id="forms" class="mainwindow">
+    <!-- START TOP 10s + PREVIEW -->
+    <table>
+        <tr>
+            <td class="top10-spacer" <%="colspan=2" if I18n.locale.to_s=="fr"%>>
+                <div class="tv_header">
+                    <%=image_tag(localized_image_filename("top10episodes_header.png"))%>
+                </div>
+                <div class="back_top10 pt-15 pl-10 mb-10">
+                    <div class="tv">
+                    </div>
+                    <div class="top10">
+                        <%= render :partial => 'products/top_ten',
+			                        :locals => {
+			                        :title => "Top 10 episodes",
+			                        :category_ids => [24,25],
+			                        :brand_id => @brand.id,
+			                        :locale => I18n.locale.to_s
+			                        } %>
+                    </div>
+                </div>
+				
+				<% unless I18n.locale.to_s=="fr" %>
+				<!-- SINGLE EPISODE -->
+			    <div class="episode">
+					<%=link_to image_tag(localized_image_filename_with_currency("episode.png"), :border=>0), :controller=>"catalogue", :category_id=>24%>
+				</div>
+				
+				<!-- OFFER 1 -->
+				<div class="offer1_header">
+                    <%=image_tag(localized_image_filename("offer1_header.png"))%>
+                </div>
+			    <div class="offer1">
+					<%=link_to image_tag(localized_image_filename_with_currency("offer_1.png"), :border=>0), :controller=>"catalogue", :category_id=>21%>
+				</div>
+            </td>
+            <td class="top10-spacer-notes">
+                <div class="notes_header">
+                    <%=image_tag(localized_image_filename("top10songs_header.png"))%>
+                </div>
+                <div class="back_top10 pt-15 pl-10 mb-10">
+                    <div class="notes">
+                    </div>
+                    <div class="top10">
+	                    <%= render :partial => 'products/top_ten',
+				                    :locals => {
+				                    :title => "Top 10 music",
+				                    :category_ids => [20],
+				                    :brand_id => @brand.id,
+				                    :locale => I18n.locale.to_s
+				                    } %>
+					</div>
+                </div>
+				
+			    <!-- SINGLE SONG -->
+			    <div class="song">
+					<%=link_to image_tag(localized_image_filename_with_currency("song.png"), :border=>0), :controller=>"catalogue", :category_id=>20%>
+				</div>
+				
+				<!-- OFFER 2 -->
+			    <div class="offer2_header">
+                    <%=image_tag(localized_image_filename("offer2_header.png"))%>
+                </div>
+			    <div class="offer2">
+					<%=link_to image_tag(localized_image_filename_with_currency("offer_2.png"), :border=>0), :controller=>"catalogue", :category_id=>21%>
+				</div>
+				<% end %>
+            </td>
+        </tr>
+    </table>
+    <!-- END TOP 10s + PREVIEW -->
+</div>

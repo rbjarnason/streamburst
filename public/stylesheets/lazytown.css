@@ -1,0 +1,1387 @@
+
+/* ========================================================================================= */
+/* Tabs */
+/* ========================================================================================= */
+
+img.percentImage {
+  background: url(/images/PopularityBarBlue.png) top left no-repeat;
+  padding: 0;
+  display: block;
+  margin: 2px 0 0 0;
+  background-position: 5px 0;
+ }
+
+.percent{
+	display: block;
+	float: left;
+	background:url(/images/PopularityBarGrey.png) top left no-repeat;
+	height: 9px;
+	width:56px;
+}
+.percent span{
+	background:url(/images/PopularityBarBlue.png) bottom right no-repeat;
+	display:block;
+	float:left;
+	height:9px;
+}
+
+.preview_text_class {
+	padding-top: 6px;
+	text-align: center;
+	font-weight: bold;
+	color: #666666;
+}
+
+
+.tabs{
+  background-repeat: no-repeat;
+  background-position: right top; 
+  padding: 5px 0px 0px 0px;
+  
+}
+
+/* ========================================================================================= */
+/* START: FLV popups */
+/* ========================================================================================= */
+
+#flv td
+{
+	background-color: #000000;
+}
+
+#flv .title
+{
+	background-color: #333;
+    color: #ffffff;
+}
+
+#flv .text
+{
+	color: #ffffff;
+}
+
+#flv_rotation
+{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+#streamburst_tv_header
+{
+    background-image: url(../images/VF_navHeader_strip.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+#streamburst_cart_header
+{
+    color: #666666;
+}
+
+#top_rotation {
+	background-color: #000000;
+}
+
+/* ========================================================================================= */
+/* START: Notice from layouts/_banner.rhtml                                                  */
+/* ========================================================================================= */
+
+#notice {
+  width: 700px;
+  position: relative;
+  top: 10px;
+  right: 233px;
+  border: 2px solid white;
+  background-color: #990000;
+  color: #fff;
+  padding: 0.8em;
+  margin: 11px 0px 0px 0px;
+  font: bold smaller sans-serif;
+  float: left;
+  text-align: center;
+  
+}
+
+/* END: Notice from layouts/_banner.rhtml */
+
+/* ========================================================================================= */
+/* START: Sponsor Screen Screen from app/views/catalogue/add_to_cart_with_sponsor.rhtml */
+/* ========================================================================================= */
+#sponsor_screen
+{
+  border: 2px solid white;
+}
+
+#sponsor_screen .title
+{
+  background-color: #888;
+}
+
+/* END: Sponsor Screen from app/views/catalogue/add_to_cart_with_sponsor.rhtml */
+
+/* ========================================================================================= */
+/* START: Help Screen from helps/get_help.rhtml */
+/* ========================================================================================= */
+#help-footer-text {
+	color: #fff;
+}
+
+#help-footer-text a {
+	color: #fff;
+}
+
+#help {
+    border: 2px solid white;
+    color: #fff;
+}   
+
+#help .title {
+	background: url(../images/lazytown/popup_header_strip.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    background-color: #000000;
+	font-size: 13px;
+	padding: 12px;
+	font-style: normal;
+    font-weight: bold;
+}
+
+#help .text {
+	font-size: 12px;
+	padding-right: 7px;
+	padding-left: 7px;
+	color: #003399;
+}
+
+.footer {
+	color: #666;
+    position: fixed;
+    bottom: 0;
+	text-align: center;
+	/*left:200px;*/
+	width:100%;
+}
+
+.footer a
+{
+	color: #666;
+}
+
+#RB_window {
+  background-image: url(../images/LT_panel_bg_strip.png);
+  background-position: top left;
+  background-repeat: repeat-x;
+  z-index: 402;
+  /*background-color: #000;*/
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  margin: 10px auto 0 auto;
+  position: absolute;  
+}
+
+.password {
+	color: ##003399;
+}
+
+/* END: Helps from helps/get_help.rhtml */
+
+
+/* ========================================================================================= */
+/* START: LAZY TOWN - Language Select */
+/* ========================================================================================= */
+
+.language {
+	background:#0066cc url(../images/lazytown/background.jpg) 0% 75% repeat-x;
+	color:#000000;
+	font-family:Arial,Helvetica,sans-serif;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	position:relative;
+	font-size: 67.65%;
+}
+
+.language table{
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	vertical-align:top;
+}
+
+.language td{
+	margin:0px 0px 0px 0px;
+	padding:0px 5px 5px 5px;
+	vertical-align:top;
+}
+
+
+.language #botn {
+	background:url(../images/botn.png) 50% 50% no-repeat;  
+	position: fixed;
+    bottom: 0;
+	left:0px;
+	z-index:200;
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+	height:100px;
+}
+
+.language #top {
+	background:url(../images/top_bar.png) 0% 0% repeat-x;
+	text-align:center;
+	width:100%;
+	height:48px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:200;
+} 
+
+/* ========================================================================================= */
+/* START: LAZY TOWN - Main page */
+/* ========================================================================================= */
+
+
+/* Flash Player */
+.back_video {
+	background:url(../images/back_video_2.png) 0px 0px no-repeat;
+	position:relative;
+	top:0px;
+	width:391px;
+	height:230px; 
+	padding: 5px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	float: left;
+}
+
+.video-spacer {
+	padding: 0px 0px 0px 0px;
+}
+
+#flash_player_container {
+    padding: 0px 0px 0px 34px;
+	margin: 0px 0px 0px 0px;
+	vertical-align: top;
+	visibility: visible;
+	height: 205px;
+}
+
+
+.table-holding {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.td-holding {
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.mainwindow {
+	font-size:1.0em;
+	float:left;
+	width:635px;
+	margin-top:70px;
+	padding: 0px 0px 0px 0px;
+} 
+
+.mainwindow h1 {
+    font-size:1.6em;
+	text-align: left;
+    color:#fff;
+    margin:0 auto;
+    padding:0;
+}
+
+.main-content-table {
+	padding:0px 0px 0px 26px;
+	margin:28px 0px 0px 0px;
+    width: 100%;
+    height: 750px;
+    vertical-align: top;
+	text-align: left;
+}
+
+img { 
+    border:0; 
+}
+  
+#botn {
+	background:url(../images/botn.png) 50% 50% no-repeat;  
+	position: fixed;
+    bottom: 0;
+	left:0px;
+	z-index:200;
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+	height:154px;
+} 
+
+#botnwrap {
+	margin:0 auto;
+	text-align:left;
+	width:980px;
+	height:93px;
+} 
+
+.logo 
+{
+    float:left; 
+    margin-top:45px;   
+    float:left;
+}
+
+.logo a 
+{
+    background:url(../images/logo.png) 0 0 no-repeat;
+    width:167px;
+    height:103px;
+    display:block; 
+    text-indent:-3000px;
+}
+
+.back_top10 {
+    background:url(../images/back_top10.png) no-repeat;
+    position:relative;
+    top:0px;
+	width:306px;
+	height:200px; 
+	margin-top:25px;
+	font-size:1.2em;
+	color:#5f5f5f;
+}
+
+.top10 {
+	font-size:0.9em;
+	font-weight:normal;
+	color:#900;
+	text-decoration:none;
+}
+
+.top10-spacer {
+    padding: 10px 0px 0px 0px;
+}
+
+.top10-spacer-notes {
+    padding: 10px 0px 0px 0px;
+	vertical-align: top;
+}
+
+.top10 .number {
+	font-size:1.0em;
+	font-weight:normal;
+	color:#5f5f5f;
+	text-decoration:none;
+}
+
+.top10 a{
+	font-size:0.9em;
+	font-weight:normal;
+	color:#900;
+	text-decoration:none;
+}
+
+ .top10 a:link {color: #900; font-size:0.9em; text-decoration: none; }
+ .top10 a:active {color: #900; font-size:0.9em; text-decoration: none; }
+ .top10 a:visited {color: #5f5f5f; font-size:0.9em; text-decoration: none; }
+ .top10 a:hover {color: #5f5f5f; font-size:0.9em; text-decoration: none; }
+
+.pt-15 {
+    padding-top:15px;
+}
+
+.pl-10 {
+    padding-left:10px;
+	padding-right:0px;
+}
+
+.mb-10 {
+    margin-bottom:0px;
+}
+
+
+
+.tv_header {
+	float:left;
+	padding:0px 0px 0px 0px;
+}
+
+.tv {
+    background:url(../images/tv.png) no-repeat;
+    position:absolute;
+    top:-30px;
+    right:2px;
+    width:94px;
+    height:88px;
+}
+
+.notes_header {
+	float:left;
+}
+
+.notes {
+    background:url(../images/notes.png) no-repeat;
+    position:absolute;
+    top:-20px;
+    right:5px;
+    width:80px;
+    height:64px;
+}
+
+.preview_header {
+	float:left;
+}
+
+.episode {
+	float:left;
+	width:300px;
+}
+
+.song {
+	float:left;
+	width:300px;
+}
+
+.offer1_header {
+	float:left;
+    margin-top:10px;
+	margin-bottom:2px;
+}
+
+.offer1 {
+	float:left;
+	width:300px;
+}
+
+.offer2_header {
+	float:left;
+	margin-top:10px;
+	margin-bottom:2px;
+}
+
+.offer2 {
+	float:left;
+	width:300px;
+}
+
+.delta {
+	float:left;
+	width:350px;
+}
+
+.moreways_header {
+    padding: 10px 0px 0px 0px;
+	float:left;
+}
+
+.moreways {
+	background:url(../images/back_moreways.png) no-repeat;
+    position:relative;
+    top:0px;
+    right:2px;
+    width:391px;
+    height:205px;
+	float:left;
+}
+
+.moreways_text {
+    color:#333;
+    font-size:0.9em;
+	text-align:left;
+	padding: 0px 8px 0px 8px;
+}
+
+.moreways b {
+    color:#003366;
+    font-size:1.1em;
+}
+
+ .moreways a:link {color: #900; text-decoration: none; font-size:1.1em;}
+ .moreways a:active {color: #900; text-decoration: none; font-size:1.1em;}
+ .moreways a:visited {color: #900; text-decoration: none; font-size:1.1em;}
+ .moreways a:hover {color: #900; text-decoration: none; font-size:1.1em;}
+
+/* ========================================================================================= */
+/* START: LAZY TOWN - Top Navigation */
+/* ========================================================================================= */
+
+#top {
+	background:url(../images/top_bar.png) 0% 0% repeat-x;
+	text-align:center;
+	width:100%;
+	height:48px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:200;
+} 
+
+#topwrap {
+	margin:0 auto;
+	text-align:left;
+	width:980px;
+	height:45px;
+}
+
+* html ul {
+	margin-left:-0px;
+}
+
+.menu {
+	padding:10px 0 0 0;
+	float:left;
+	width:550px;
+}
+
+.menu_padding {
+	padding:3px 0 0 0;
+	float:left;
+}
+
+.menu ul {	
+	list-style:none; 
+	display:inline;
+}
+
+.menu li {
+    background: url(../images/tabs/li_mid_off.png);
+	height:23px;
+	padding:0;
+	float:left;
+	text-align:center;
+	color:#333;
+	margin-right:6px;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.menu li a {
+	color:#333;
+	text-decoration:none;
+}
+
+.menu .current { 
+	background: url(../images/tabs/li_mid_on.png);
+	color:#fff;
+}
+
+.menu li .right { 
+	background: url(../images/tabs/li_right_off.png);
+	height:23px;
+	width:9px;
+	float:left;
+}
+
+.menu .current .right { 
+	background: url(../images/tabs/li_right_on.png) !important;
+}
+
+.menu li .left { 
+	background: url(../images/tabs/li_left_off.png);
+	height:23px;
+	width:9px;
+	float:left;
+}
+
+.menu .current .left { 
+	background: url(../images/tabs/li_left_on.png);
+}
+
+
+/* Menu Item Off */
+.menu .menu_item_off {
+    background: url(../images/tabs/li_mid_off.png);
+	height:23px;
+	padding:0;
+	float:left;
+	text-align:center;
+	color:#333;
+	margin-right:6px;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.menu .menu_item_off .left { 
+	background: url(../images/tabs/li_left_off.png);
+	height:23px;
+	width:9px;
+	float:left;
+}
+
+.menu .menu_item_off .right { 
+	background: url(../images/tabs/li_right_off.png);
+	height:23px;
+	width:9px;
+	float:left;
+}
+
+/* Menu Item On */
+
+.menu .menu_item_on { 
+	background: url(../images/tabs/li_mid_on.png);
+	height:23px;
+	padding:0;
+	float:left;
+	text-align:center;
+	color:#fff;
+	margin-right:6px;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.menu .menu_item_on .left { 
+	background: url(../images/tabs/li_left_on.png);
+    height:23px;
+	width:9px;
+	float:left;
+}
+
+.menu .menu_item_on .right { 
+	background: url(../images/tabs/li_right_on.png) !important;
+	height:23px;
+	width:9px;
+	float:left;
+}
+
+
+
+.userinfo {
+	font-size:1.2em;
+	color:#333;
+	float:left;
+	width:250px;
+	height:30px;
+	text-align:right;
+	margin-top:13px;
+} 
+
+.userinfo a {
+	color:#990000;
+	text-decoration:none;
+} 
+
+.lang {
+    font-size:1.0em;
+	float:left;
+	width:150px;
+	height:45px; 
+	text-align:right;
+	margin-left:30px;
+}
+
+.usa 
+{
+    float:left;
+	margin-right:6px;
+	margin-top:9px;
+}
+
+.usa a {
+    background:url(../images/usa.png) 0 -23px no-repeat;
+	width:22px;
+	height:23px; 
+	display:block;
+	text-indent:-3000px;
+}
+
+.usa a:hover, .usa .current {
+    background-position: 0 0 !important;
+}
+
+.esp 
+{
+    float:left;
+	margin-right:6px;
+	margin-top:9px;
+}
+
+.esp a {
+    background:url(../images/esp.png) 0 -23px no-repeat;
+	width:22px;
+	height:23px; 
+	display:block;
+	text-indent:-3000px;
+}
+
+.esp a:hover, .esp .current {
+    background-position: 0 0 !important;
+}
+
+.fra 
+{
+    float:left;
+	margin-right:6px;
+	margin-top:9px;
+}
+
+.fra a {
+    background:url(../images/fr.png) 0 -23px no-repeat;
+	width:22px;
+	height:23px; 
+	display:block;
+	text-indent:-3000px;
+}
+
+.fra a:hover, .fra .current {
+    background-position: 0 0 !important;
+}
+
+.isl 
+{
+    float:left;
+	margin-right:6px;
+	margin-top:9px;
+}
+
+.isl a {
+    background:url(../images/isl.png) 0 -23px no-repeat;
+	width:22px;
+	height:23px; 
+	display:block;
+	text-indent:-3000px;
+}
+
+.isl a:hover, .isl .current {
+    background-position: 0 0 !important;
+}
+
+/* ========================================================================================= */
+/* START: LAZY TOWN - Cart */
+/* ========================================================================================= */
+.basket 
+{
+    background:url(../images/basket_back.png) no-repeat;
+    
+	position: fixed;
+    bottom: 0;
+
+    right:20px;
+    width:219px;
+    height:30px;
+    z-index:300;
+    text-align:left;
+    color:#666666;
+    font-size:1.1em;
+}
+
+.basketdiv 
+{
+    position:relative;
+    width:200px;
+    min-height:75px;
+    margin-top:10px; 
+    margin-left:10px;
+	float: left;          
+}
+
+.opnaloka_basket 
+{
+    position:absolute;
+    width:23px;
+    height:23px;
+    top:0px;
+    right:5px;       
+}
+
+.basket h1 
+{ 
+  color: #00365b;
+  border-bottom: 3px dotted #310000;
+
+    font-size:1.6em;
+    padding:0;
+    margin:0 auto;
+    padding-bottom:10px;
+}
+
+.items 
+{
+    width:120px;
+    float:left;
+}
+
+.price 
+{
+    width:80px;
+    float:left;
+    text-align:right;
+}
+
+.Checkout 
+{
+    margin-top:5px;
+    width:200px;
+    float:left;
+    text-align:right;  
+}
+
+.Checkout a 
+{
+    color:#009900;
+    text-decoration:none;
+}
+
+/* ========================================================================================= */
+/* START: STREAMBURST - Main page */
+/* ========================================================================================= */
+
+h1 {
+
+}
+
+.main_links {
+	color: #333;
+    padding: 0px 14px 10px 0px;
+	margin: 0px;
+	text-align: right; 
+	font-size: 12px;
+	font-weight:bold;
+	height: 12px;
+	float: top;
+	vertical-align: top;
+}
+
+.main_links a:link {
+	color: #333;
+	text-decoration: none;
+}
+
+.main_links a:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+/* END: Main page */
+
+/* ========================================================================================= */
+/* START: Main layout from layouts/streamburst.rhtml                                         */
+/* ========================================================================================= */
+#columns {
+}
+
+#main {
+}
+
+/* END: Main layout from layouts/streamburst.rhtml */
+
+/* ========================================================================================= */
+/* START: Product List from catalogue/index.rhtml, catalogue/_product.rhtml                    */
+/* ========================================================================================= */
+
+.back_catalogue {
+    background:url(../images/back_catalogue.png) no-repeat;
+    position:relative;
+    top:0px;
+	width:635px;
+	height:406px; 
+	margin:0px 0px 0px 0px;
+	font-size:1.2em;
+	color:#5f5f5f;
+}
+
+#store .entry {
+  color: #fff;
+  padding: 0px 0px 0px 0px; 
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 0px;
+  width: 600px;
+}
+
+#store .entry_header {
+  color: #fff;
+  padding: 0px 0px 0px 0px; 
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 0px;
+  width: 600px;
+}
+
+#store .entry_header th {
+  color: #003399; 
+  padding: 20px 0px 5px 0px;
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+  font-size: 100%;
+}
+
+#store .entry td {
+ color: #003399;
+ font-weight:normal;
+ border-collapse: collapse;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+ text-align: left;
+ vertical-align: top; 
+}
+
+#store .entry .popularity {
+ padding: 4px 0px 0px 0px;
+ 
+}
+
+#store caption {
+ /* background-color: #f00d0d; */
+  color: #00365b;
+}
+
+#store .entry h3 {
+  color: #fff;
+}
+
+#store .entry-sponsor-price-header {
+  background-color: #666766;
+  color: #fff;
+}
+
+
+
+#store .entry-header-duration {
+ padding: 0px 0px 0px 0px;
+ color: #003399; 
+}
+
+
+
+#store .entry .header {
+ color: #fff;
+}
+
+#store .entry .rule {
+ background-image: url();
+ background-color: #fff;
+}
+
+#store .entry tr {
+ color: #fff;
+}
+
+#store .entry table {
+  background-color: #fff;
+}
+
+#store .entry  .price {
+  color: #fff;
+}
+
+#store .entry .buy {
+   border-collapse: collapse;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+   text-align: left; 
+}
+
+#store .entry .add_to_cart_button {
+   color: #990000;
+   font-weight:normal;
+   font-size: 11px;
+   background-color: transparent;
+   text-decoration: underline;
+   border: none;
+   cursor: pointer;
+   cursor: hand;
+   text-align: left; 
+}
+
+#store .entry .preview {
+   color: #009900;
+   font-weight:normal;
+   font-size: 11px;
+}
+
+#store .entry a:link {color: #009900; text-decoration: none; }
+#store .entry a:active {color: #009900; text-decoration: none; }
+#store .entry a:visited {color: #009900; text-decoration: none; }
+#store .entry a:hover {color: #009900; text-decoration: none; }
+
+/* END: Product List from catalogue/index.rhtml */
+
+/* ========================================================================================= */
+/* START: Pagination shared/_pagination.rhtml                                                */
+/* ========================================================================================= */
+
+.pagination a, .pagination a:visited{
+border: 1px solid #305679;
+color: #999999;
+}
+
+.pagination a:hover, .pagination a:active{
+border: 1px solid #305679;
+color: #999999;
+background-color: white;
+}
+
+.pagination li.currentpage{
+border: 1px solid #305679;
+background-color: #FFF;
+color: #999;
+}
+
+.pagination li.disablepage{
+border: 1px solid #aaa;
+color: #aaa;
+}
+
+/* ========================================================================================= */
+/* START: Categories Selection from catalogue/_categories_select.rhtml                           */
+/* ========================================================================================= */
+
+#categories table {
+  background-color: #363533;
+}
+
+#categories tr {
+  color: #fff;
+}
+
+
+#categories .category-td-selected {
+ color: #a2a0a0;
+}
+
+#categories .category-text {
+ color: #fff;
+}
+
+#show-download {
+  color: #fff;
+}
+
+/* ========================================================================================= */
+/* START: Cart from shared/_cart.rhtml                                                       */
+/* ========================================================================================= */
+
+#streamburst_cart_header td {
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  padding: 2px 9px 0px 0px;
+  height: 25px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#cart {
+  color: #666;
+}
+
+#cart table {
+  font-size: 8pt;
+  width: 208px;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cart caption {
+  color: #666;
+}
+
+#cart th {
+  color: #666;
+  font-size: 11px; 
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  padding: 5px 0px 5px 0px;
+}
+
+#cart .cart_price_header {
+  text-align: left;
+}
+
+#cart .cart_item_background {
+  text-align: left;
+  vertical-align: middle;
+  padding: 0px 0px 0px 0px;
+}
+
+#cart .cart-item-title {
+  color: #666;
+  font-size: 11px; 
+  width: 75%;
+  text-align: left;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#cart .cart-item-price {
+  color: #666;
+  font-size: 11px; 
+  text-align: left;
+  width: 15%;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#cart .cart-item-remove-image {
+  height: 14px;
+  width: 12px;
+  vertical-align: middle;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 5px 0px 0px;
+}
+
+#cart .total-line {	
+  color: #666;
+  font-weight: bold;
+}
+
+#cart .total-cell
+{
+  font-weight: bold;
+  text-align: left;
+  padding: 5px 0px 5px 0px;
+}
+
+#cart .total-cell-text {
+  text-align: left;
+  padding: 5px 0px 5px 0px;
+  vertical-align: middle;
+}
+
+#cart .total-buttons table {
+}
+
+
+#cart .paging-table td{
+  padding: 0px 20px 0px 0px;
+}
+
+#cart .paging-buttons table {
+  color: #666;
+  padding: 0px 10px 0px 0px;
+}
+
+/* END: Cart from shared/_cart.rhtml */
+
+/* ========================================================================================= */
+/* START: Forms for index, login, register, billing and download                             */
+/*                                                                                           */
+/* HTML File: app\views\catalogue\index.rhtml (.main-header only)                                */
+/* HTML File: app\views\users\login.rhtml                                                    */
+/* ========================================================================================= */
+
+#forms
+{
+  padding: 0px 0px 175px 0px;
+}
+
+#forms table {
+  color: #003399;
+  font-size: 9pt;
+  font-weight: bold;
+  padding: 0px 0px 0px 0px;
+}
+
+#forms .main-header
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+#forms .main-header-left-txt
+{
+  color: #fff;
+  padding: 5px 0px 5px 10px;
+  font-size: 13pt;
+  font-weight: bold;
+  float: left;
+  vertical-align: middle;
+}
+
+#forms .main-header-right-txt
+{
+  color: #fff;
+  padding: 1px 5px 5px 5px;
+  font-size: 8pt;
+  font-weight: bold;
+  float:right;
+  vertical-align: middle;
+}
+
+#forms .sub-header
+{
+  margin: 0px 0px 2px 0px;
+  padding: 3px 7px 3px 7px;
+  width: 100%;
+  height: 22px;
+  background-image: url(../images/LT_panelHeader_bg_strip2.png);
+  background-position: top left;
+  background-repeat: repeat-x;
+}   
+
+.sub-header td
+{
+	padding: 5px 5px 5px 5px;
+}
+
+#forms .sub-header-txt {
+  color: #fff;
+  padding: 7px 7px 7px 7px;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+#forms .sub-box {
+  background-image: url(../images/LT_panel_bg_strip.png);
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-box td {
+  padding: 2px 5px 2px 5px;  
+}
+
+#forms .sub-box-button
+{
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  float: right;
+}
+
+#forms .sub-box-black
+{
+  /*background-color: #cccccc;*/
+  margin-bottom: 10px;
+}
+
+#forms .sub-box-payment-button
+{
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  float: left;
+  vertical-align: top;
+}
+
+#forms .sub-box-registration {
+  background-image: url(../images/LT_panel_bg_strip.png);
+  background-position: top left;
+  background-repeat: repeat-x;  
+}
+
+#forms .sub-box-txt {
+  color: #003399;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 5px 0px 5px 0px;
+  margin-left: 6px;
+}
+
+#forms .sub-box .button {
+  padding: 30px 5px 2px 5px;
+}
+
+
+#forms .sub-half-header
+{
+}
+
+#forms .sub-half-txt
+{
+}
+
+#forms .sub-quart-header
+{
+  background-color: #6b7b91;
+}
+
+#forms .sub-quart-txt
+{
+  background-color: #6b7b91;
+}
+
+#forms .sub-16-header
+{
+}
+
+#forms .sub-16-txt
+{
+}
+
+#forms .sub-16-txt-grey
+{
+}
+
+#forms .sub-box-txt-red
+{
+  color: #ff0000;
+}
+
+#forms .sub-box-txt-red-links a:link
+{
+  color: #ff0000; text-decoration: underline;
+}
+
+#forms .sub-box-txt-red-links a:active
+{
+  color: #ff0000; text-decoration: underline;
+}
+
+#forms .sub-box-txt-red-links a:visited
+{
+  color: #ff0000; text-decoration: underline;
+}
+#forms .sub-box-txt-red-links a:hover
+{
+  color: #ff0000; text-decoration: underline;
+}
+/* END: Forms for login, register, billing and download */
+
+/* ========================================================================================= */
+/* START: General Rails Form Error Handling                                                  */
+/* ========================================================================================= */
+.fieldWithErrors {
+  background-color: white;
+}
+
+#errorExplanation {
+  border: 2px solid white;
+  background-color: #f0f0f0;
+  width: 421px;
+  padding: 7px 7px 12px 7px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+#errorExplanation h2 {
+  background-color: #990000;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #666;
+}
+
+#errorExplanation ul li {
+  color: #666;
+  padding: 0px 0px 0px 5px;
+  font-size: 12px;
+  list-style: square;
+  list-style-position: inside;
+}
+
+/* END: General Rails Form Error Handling */
+
+/* ========================================================================================= */
+/* START: Global Link Styles                                                                 */
+/* ========================================================================================= */
+ a:link {color: #990000; text-decoration: none; }
+ a:active {color: #990000; text-decoration: none; }
+ a:visited {color: 990000; text-decoration: none; }
+ a:hover {color: #990000; text-decoration: none; }
+/* END: Global Link Styles */

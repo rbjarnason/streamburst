@@ -1,0 +1,23 @@
+<h1>Administrators</h1>
+<ul>
+  <% for user in @all_users %>
+    <li>
+        <%= user.id %>
+        - <%= h(user.email) %>
+        - <%= h(user.first_name) %> <%= h(user.last_name) %>
+        <% if user.admin_flag == true %>
+        <b>- Admin</b>
+        <% end %>
+        <%= link_to "[X]", { # link_to options
+                             :controller => 'users', 
+                             :action => 'destroy',
+                             :id => user},
+                           { # html options
+                           :method => :post,
+                             :confirm => "Really delete #{user.email}?"
+                           } %>
+    </li>
+  <% end %>
+  <br/>
+  <%= link_to "Create Admin User", :controller => 'users', :action => 'create_admin' %> <br/>
+</ul>

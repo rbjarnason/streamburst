@@ -1,0 +1,14 @@
+<% if @tags.length > 0 %>
+<table cellpadding="5" cellspacing="0">
+<% for tag in @tags %>
+  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= tag %></td>
+    <td class="list-actions">
+    <%= link_to 'Remove', { :action  => 'remove_tag', :tag => tag, :id => @product},
+                            :confirm => "Are you sure?",
+                            :post    => true %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<% end %>

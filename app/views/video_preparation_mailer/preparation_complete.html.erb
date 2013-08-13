@@ -1,0 +1,17 @@
+<%=t :Dear%> <%= @order.first_name %> <%= @order.last_name %>,<br>
+<br>
+<%=t :preperation_complete_email_1, :brand_name=> @brand_name%><br><br>
+
+<%=t :preperation_complete_email_2, :product_title=> @product_title, :host=>@host, :job_key=>@job_key%><br>
+<p>
+<%=t :preperation_complete_email_3%>
+<p>
+<%=t :preperation_complete_email_4%>
+<p>
+<%=t :Enjoy%>,<br/>
+<% unless @brand_name == "Streamburst" %>
+    <%=t :download_ready_email_9, :brand_name=>@brand_name %></br>
+<% else %>
+    Streamburst</br>
+<% end %>
+support@streamburst.tv

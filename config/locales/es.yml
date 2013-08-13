@@ -1,0 +1,581 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+  Included: "Incluído"
+  audio: "audio"
+  video: "video"
+  format: "formato"
+  formats: "formatos"
+  Brand: "Marca"
+  Price: "Precio"
+  hr: "hrs." # short for hours
+  min: "mins" # short for minutes
+  sec: "segs" # short for seconds
+  Sponsor_Price: "Precio patrocinador"
+  Add_to_cart: "Añadir a bolsa"
+  Help: "Ayuda"
+  Instructions: "Instrucciones"
+  Watch_Now: "Véalo ahora"
+  logged_in_as: "accesar como"
+  not_logged_in: "no se ha iniciado ninguna sesión"
+  Click_here_to_Browse: "Dar click aqui para buscar"
+  Disabled: "Deshabilitado"
+  Next: "Siguiente"
+  Previous: "Previo"
+  Close: "Cerrar"
+  Back: "Negro"
+  about_above_flash_video: "El video que se presenta aqui posee calidad web, no optima para descarga y uso apropiado del contenido"
+  Trailer: "Trailer"
+  video_welcome: "Bienvenida por parte del equipo {{brand_name}}"
+  Get_A_Sponsor_for: "Consiga patrocinador para"
+  Get_A_Sponsor: "Consiga patrocinador"
+  get_a_sponsor_product_info: "Usted puede seleccionar un patrocinador que abaratará su precio al adicionar de 30 a 45 segundos de su commercial al inicio de su descarga."
+  Sponsor_Discount: "Descuento de patrocinador"
+  Sponsor_Price: "Precio de patrocinador"
+  Add_to_cart_with_Sponsor: "Descuento de patrocinador"
+  streamburst_usage_1: "Instrucciones de uso para este sitio web Streamburst"
+  streamburst_usage_2: "Debajo encuentre las instrucciones basicas de como usar este servicio:"
+  streamburst_usage_3: "Use \"Añadir a bolsa\" para seleccionar lo que desee seleccionar"
+  streamburst_usage_4: "Cuando haya terminado oprima click en \"CHECAR SALIDA\" en su bolsa de compra"
+#  streamburst_usage_5: "Inicie sesión o registre su nombre, dirección de correo electrónico y contraseña si es usted un nuevo cliente de Streamburst. Tras introducir la información necesaria, haga clic en \"INICIAR SESIÓN\" o \"REGISTRARSE AHORA\" en la parte inferior de la pantalla. También puede hacer clic en Facebook Connect para utilizar su nombre de usuario de Facebook."
+  streamburst_usage_5: "Inicie sesión o registre su nombre, dirección de correo electrónico y contraseña si es usted un nuevo cliente de Streamburst. Tras introducir la información necesaria, haga clic en \"INICIAR SESIÓN\" o \"REGISTRARSE AHORA\" en la parte inferior de la pantalla."
+  streamburst_usage_6: "Cuando haya terminado, revise su orden y de click en \"CONFIRMAR ORDEN\" en la parte inferior de su pantalla"
+  streamburst_usage_7: "Complete el pago si se requiere y de click en \"VAYA A DESCARGAS\" en la parte inferior de su pantalla"
+  streamburst_usage_8: "Seleccione aquello que desee descargar y de click en \"PREPARAR DESCARGA\""
+  streamburst_usage_9: "Espere unos segundos o minutos mientras su video se prepara y personaliza en nuestro servidor"
+  streamburst_usage_10: "Cuando esté listo, de click en \"INICIAR DESCARGA\" y seleccione un lugar en su disco duro para iniciar la descarga"               
+  streamburst_usage_11: "Espere hasta que la descarga haya terminado o inicie \"PREPARE DESCARGA\" e \"INICIE DESCARGA\" para otro video"               
+  streamburst_usage_12: "Cuando el contenido se haya descargado, selecciónelo desde su disco duro y véalo desde su ordernador usando por ejemplo: Quicktime player, cópielo en un DVD o véalo en su televisor Apple, Xbox360 o cualquier otro equipo multimedia que pueda ser conectado a su televisor"               
+  streamburst_usage_13: "Si está inseguro acerca de cualquier función o necesita mayores informes, envíe un mail a support@streamburst.tv y le responderémos a la brevedad."
+  preview: "vista previa"
+  Preview: "Vista previa"
+  streamburst_website_closed_1: "EL SITIO STREAMBURST ESTÁ CERRADO DEBIDO A MANTENIMIENTO"
+  streamburst_website_closed_2: "FAVOR DE ACCESAR MAS TARDE"
+  Go_to_downloads: "Ir a descargas"
+  order_confirmation_1: "Gracias por su orden."
+  order_confirmation_2: "La confirmación de su orden sera enviada a las direcciones electronicas registradas. El correo también incluirá una liga directa a su página de descarga. Para accesar a la página de descarga de un click en el botón: \"Ir a descargas\"."
+  order_confirmation_3_google: "Su orden está pendiente en Google Checkout. La información de descarga será enviada a su correo electrónico a partir de que recibamos notificación por parte de Google."
+  order_confirmation_3_paypal: "Su orden está pendiente en Paypal. La información de descarga será enviada a su correo electrónico a partir de que recibamos notificación por parte de Paypal. Cheques electronicos pueden tardar más tiempo para ser aclarados."
+  order_confirmation_3_paypal_denial: "Paypal nos informa que su pago ha sido rechazado."
+  order_confirmation_4: "Reintente oprimiendo el siguiente botón."
+  order_confirmation_5_paypal_cancel: "Paypal nos informa que usted a cancelado su compra. Si esto es un error favor de escribir al siguiente contacto: support@streamburst.tv. Gracias."
+  Confirm_Order: "Confirmar orden"
+  order_pre_confirmation_1: "A continuación se presenta un resumen de su orden. Si la información presentada aquí es correcta, favor de dar click en \"Confirmar orden\" Botón que se encuentra debajo de entrar a detalles de pago para su orden."
+  order_pre_confirmation_1_paypal_express: "A continuación se presenta un resumen de su orden. Si la información presentada aquí es correcta, favor de dar click en / Confirmar orden/ Botón que se encuentra debajo de su pago."
+  order_pre_confirmation_2: "El proceso de pago es realizado por Paypal que posee el respaldo de un gran rango de planes de crédito y tarjetas de crédito. No es necesario registrarse en un cuenta de Paypal para realizar su pago."
+  order_pre_confirmation_3: "Puede iniciar la descarga inmediatamente después de haber completado su pago a la brevedad."
+  Title: "Título"
+  Category: "Categoría"
+  Confirm_discount_code: "Confirmar código de descuento"
+  Free: "Gratis"
+  Discount: "Descuento"
+  Total: "Total"
+  Retry: "Reintentar"
+  order_confirmation_title: "Orden de confirmación – Ref. de orden"
+  order_confirmation_title_not_confirmed: "Orden no confirmada – Ref. de orden"
+  Go_To_Download_Page: "Ir a página de descarga"
+  Checkout: "Salir"
+  Confirm_Payment: "Confirmar pago"
+  Your_Order: "Su orden"
+  paypal_cancel_title: "Su compra ha sido cancelada por Paypal"
+  Back_to_downloads: "Regresar a descargas"
+  content_ready_audio_only_1: "Su contenido está ahora disponible para descarga, de click en \"Iniciar descarga\" abajo. Después de haber terminado la descarga, el contenido puede ejecutado en cualquier procesador de música."
+  content_ready_audio_only_2_warning: "Favor de mantener este archivo fuera de sus aplicaciones compartidas de Internet, ya que si el archivo se encuentra de manera illegal en redes compartidas, el audio contiene el número serial encriptado que puede identificar el origen del mismo por medio de Streamburst. Descodificar el audio con un formato distinto, digital o análogo no desaparecerá el número serial encriptado."
+  content_ready_video_1: "Su contenido está ahora disponible para descarga, de click en \"Iniciar Descargas\" abajo. Después de que la descarga ha sido completada, el contenido puede ser ejecutado en cualquier procesador que soporte MPEG4 AVC standard"
+  content_ready_video_2: "Streamburst recomienda los siguientes videos gratuitos"
+  content_ready_video_3_4gb_plus: "<b>Advertencia:</b> Internet Explorer no soporta descargas mayores a 4GB. Favor de usar un administrador de descarga, como por ejemplo: <u><a href=\"http://www.xi-soft.com/default.htm\" target=\"_blank\">Transporte de red</a></u> o un browser alterno como sería: <u><a href=\"http://www.mozilla.com/en-US/firefox/\" target=\"_blank\">Firefox</a></u> with the <u><a href=\"http://www.downthemall.net/\" target=\"_blank\">Descargar todo</a></u> Administrador de descarga Anadir."
+  content_ready_video_4_HD: "<b>Note:</b> El contenido en alta definición requiere de un ordenador de alta capacidad para reproducir un rango de cuadros completos o decodificaciones alternas de rápida y alta definición, tal como sería: <u><a href=\"http://www.coreavc.com/\" target=\"_blank\">CoreAVC</a></u>"
+  Ready_for_download: "Listo para descargar"
+  Ready: "Listo"
+  Start_Download: "Iniciar descarga"
+  Email_me_when_ready: "Enviar correo electrónico al terminar"
+  Cancel: "Cancelar"
+  get_download_info_1: "Su contenido sera ahora procesado y personalizado en nuestro servidor. Después de terminar este proceso dar click en \"Iniciar descarga\" botón para iniciar descarga."
+  get_download_info_2_warning: "El contenido del video será procesado y personalizado en nuestro servidor bajo su nombre. Por favor mantenga este archivo de video fuera de sus aplicaciones compartidas de Internet. Si el archivo se encuentra de manera ilegal en redes compartidas, el origen de éste podrá ser idenificado por medio de Streamburst."
+  get_download_info_2_warning_plural: "El contenido de estos videos será procesado y personalizado en nuestro servidor bajo su nombre. Por favor mantenga estos archivos de video fuera de sus aplicaciones compartidas de Internet. Si los archivos se encuentran de manera ilegal en redes compartidas, el origen de éstos podrá ser idenificado por medio de Streamburst."
+  Waiting: "Esperando"
+  Disabled: "Deshabilitado"
+  show_downloads_info_1_welcome: "Bienvenido a sus descargas. Usted puede opcionalmente usar su Administrador de Descargas para incrementar la rapidez y habilitar el resumen de descargas si la conexión de Internet son interrumpidas o perdidas temporalmente. Streamburst recomienda el siguiente Administrador de Descargas gratuito"
+  Windows_only: "Ventanas solo"
+  firefox_plugin_info: "Conexión de Firefox para Windows, Mac y Linux"
+  show_downloads_info_2: "Dar click en botones de liga en la parte inferior para iniciar proceso de descarga en el formato seleccionado."
+  no_downloads_yet: "Usted no ha generado ninguna descarga aún"
+  Formats: "Formatos"
+  Start_Download: "Iniciar descarga"
+  Prepare_Download: "Preparar descarga"
+  content_ready_title: "Contenido listo para descarga"
+  Content: "Contenido"
+  Back_to_List_of_Downloads: "Regresar a lista de descargas"
+  get_download_title_1: "Procesando contenido de descarga"
+  get_download_title_2: "Preparando status"
+  Options: "Opciones"
+  My_Downloads: "Mis descargas"
+  Your_Downloads: "Tus descargas"
+  Downloads_Page: "Página de descargas"
+  First_Name: "Nombre"
+  Last_Name: "Apellido"
+  Email_Address: "Correo electronico"
+  Confirm_Email_Address: "Confirmar correo electronico"
+  Password_Min_Characters: "Clave (6 letras mínimo)"
+  Confirm_Password: "Confirmar clave"
+  Register_now: "Registrarse ahora"
+  login_info_1: "Registrarse ahora para descargar su contenido. Es fácil y tan sólo tomará unos segundos. Ya se ha registrado? Regístrese usando su dirección de correo electrónico y clave."
+  Password: "Clave"  
+  Login: "Accesar"
+  login_title_1: "Accesar / Registrarse"
+  login_title_2: "Clientes frecuentes Accesar aquí"
+  login_title_3: "Clientes nuevos Registrarse aquí"
+  dvm_recommendation_text_1: "Recomienda {{dvm_title}} a tus amigos y gana dinero vendiendo descargas desde tu perfil."
+  dvm_preview: "Visual de la Máquina Digital Expendedora"
+  dvm_preview_header: "Título de cabeza"
+  dvm_preview_body: "Cuerpo de texto"
+  dvm_preview_footer: "Pie de página"
+# Translation Session 2  
+  main_footer: "La mayoría tarjetas de crédito y débito serán aceptadas - support@streamburst.tv - <a href=\"/terms.html\" target=\"_blank\">De click aqui para aviso legal</a>"
+  Remove_from_cart: "Remover the bolsa"
+  Your_Cart: "Su bolsa"
+  total: "total"
+  Clear_cart: "Limpiar carrito"
+  Show_all: "Mostrar todo"
+  Download_Categories: "Descargar categorías"
+  click_to_learn_to_use: "De click aquí para aprender a usar este servicio"
+  logout: "salir"
+  Logout: "Salir"
+  login: "accesar"
+  my_downloads: "mis descargas"
+  my_dvms: "mis dvms"
+  dvm_signup: "Accesar a mis dvm"
+  My_downloads: "Mis descargas"
+  Previous_page: "Página anterior"
+  Next_page: "Página siguiente"
+  Page: "Pág."
+  of: "de" # In the context Page 1 of 3
+  previous: "anterior"
+  next: "siguiente"
+  Dear: "Querido"
+  download_ready_email_1: "Gracias por su orden. Usted ha ordenado lo siguiente"
+  item: "artículo"
+  items: "artículos"
+  download_ready_email_2: "De click aquí para ir a página de descargas"
+  download_ready_email_3: "Usted puede escuchar los archivos DRM gratuitamente en todos los procesadores de audio."
+  download_ready_email_4: "Se recomienda QuickTime player versión 7+ (use la siguiente liga para su descarga): http://www.apple.com/quicktime/download/ o VLC, procesador (use la siguiente liga para su descarga): http://www.videolan.org/vlc/"
+  download_ready_email_5: "Para procesar el contenido en Windows Media Player instale Zune player o lea las siguientes instrucciones (use la siguiente liga para su descarga): http://www.afterdawn.com/guides/archive/how_to_play_mp4_files.cfm"
+  download_ready_email_6: "Puede reproducir los videos directamente desde su ordenador si posee dispositivos como Xbox 360, Apple TV o Playstation 3. Para Xbox 360 la descarga de soporte Zune (use la siguiente liga para su descarga): http://www.zune.net/"
+  download_ready_email_7: "Para quemar el contenido a DVD para reproducirlo en su televisor vía procesador de DVD recomendamos descargue gratuitamente DVD-Flick (use la siguiente liga para su descarga): http://www.dvdflick.net/download.php"
+  download_ready_email_8: "Si tiene problemas con sus descargas favor de contactar support@streamburst.tv y le responderemos a la brevedad."
+  download_ready_email_9: "Streamburst en representación del equipo {{brand_name}}"
+  confirm_email_1: "Gracias por su reciente orden de la Tienda de Contenido."
+  confirm_email_2: "Usted ha ordenado los siguientes artículos"
+  Enjoy: "Disfrute"
+  preperation_complete_email_1: "Su descarga de {{brand_name}} está lista."
+  preperation_complete_email_2: "Para accesar a su descarga {{product_title}} usted puede <a href=\"https://{{host}}/delivery/content_ready?job_key={{job_key}}\">Dar click aquí</a> o copiar la liga siguiente y localizarla con su correspondiente browser: <br>https://{{host}}/delivery/content_ready?job_key={{job_key}}"
+  preperation_complete_email_3: "Esta descarga expirará en las próximas 6 horas, si su tiempo ha pasado necesitará accesar nuevamente a la página principal e iniciar el proceso de descarga."
+  preperation_complete_email_4: "Si tiene problemas con sus descargas favor de contactar a support@streamburst.tv y le responderemos a la brevedad."
+# Translation Session 3
+  unique_video_copy: "Video único copia para"
+  personalized_video_intro_for: "Introducción personalizada para"
+# Translation Session 4
+  discount_code_already_used: "Este código de descuento ha sido usado previamente"
+  discount_code_not_found: "Código de descuento no reconocible"
+  video_prep_failed: "El procesamiento del video ha fallado – Los administradores de web han sido notificados"
+  video_job_cancelled: "Ultima descarga de video cancelada"
+  video_job_cancelled_failed: "Descarga de video cancelada por fallo"
+  email_alert_for_download: "Usted recibirá un correo electrónico cuando el contenido de descarga esté listo. Por favor asegúrese  de revisar su bandeja personal de correos no deseados ya que algunos correos pueden direccionarse ahí."
+  email_alert_for_download_failed: "El procesamiento de video vía correo electrónico ha fallado"
+  not_your_dvm: "Este no es su dvm"
+  invalid_email_password: "Favor de asegurarse de haberse registrado previamente."
+  problem_with_registration: "Ha habido un problema de registro, favor de revisar la información abajo."
+  not_authorized: "Usted no está autorizado para visualizar la página que ha seleccionado"
+  Invalid_product: "Producto inválido"
+  cart_empty: "Su bolsa está vacía"
+  problem_saving_order: "Ha ocurrido un problema al salvar su orden. El Sistema Administrador  ha sido notificado."
+  this_is_not_your_order: "Esta no es su orden, contacte support@streamburst.tv para solicitar ayuda."
+  problem_with_order: "Ha ocurrido  un problema con su orden, favor de contactar support@streamburst.tv"
+  Missing_downloads_job: "Falta tarea de descarga"
+  not_your_download_job: "Esta no es su tarea de descarga"
+  order_not_fully_processed: "Esta orden no has sido procesada exitosamente, favor de contactar support@streamburst.tv"
+  product_not_part_of_order: "Este producto no es parte de su orden. Favor de contactar support@streamburst.tv"  
+# Translation Session 5
+  relative_popularity: "Popularidad"
+  Popularity: "Popularidad"
+  Time: "Tiempo"
+  Name: "Nombre"
+# SENT TO LAZYTOWN 1 - Homegrown hack
+  lt_info_1: "Realice grabaciones en DVD y véalas en su televisión"
+  lt_info_2: "Grabe sus descargas de LazyTown en DVD tantas veces como necesite! Olvídese de las preocupaciones por dañar las copias adquiridas en DVD para siempre.."
+  lt_info_3: "Múltiples formatos, un precio, Experiencia que al viajar"
+  lt_info_4: "Descargas LazyTown son ofrecidos en múltiples formatos - de alta calidad para ver programas de TV en su portátil y de calidad para teléfonos móviles, iPod y otros dispositivos portátiles - todo incluido en el precio!"
+  lt_info_5: "Acceda a sus descargas"
+  lt_info_6: "Identifíquese y acceda a las descargas que haya adquirido previamente siempre que lo necesite..."
+# Translation Session 6
+  click_here_to_reset_your_password: "Si ha olvidado su contraseña, haga clic <a href=\"/users/forgot_password\">aquí</a> para restablecer su contraseña."
+  password_reset_email_1: "Hemos recibido una solicitud para restablecer su contraseña."
+  password_reset_email_2: "Visite el siguente URL y seleccione una nueva contraseña (su contraseña no cambiará si no se realiza ninguna acción):"
+  password_reset_email_3: "Gracias"
+  password_reset_msg_1: "Contraseña restablecida con éxito para"
+  Reset_code_expired: "Código de restablecimiento caducado"
+  password_reminder_email: "Gracias. Se ha enviado un correo electrónico de recordatorio a la cuenta de correo que usted haya registrado."
+  Forgotten_Password: "Contraseña olvidada"
+  Enter_email_address: "Introduzca su dirección de correo electrónico"
+  Submit: "Enviar"
+  Reset_Password_for: "Restablecer la contraseña para"
+  job_in_queue: "Su trabajo se encuentra en la lista de trabajos pendientes"
+  other_jobs_in_preperation: "Usted tiene otros trabajos en preparación"
+  Make_a_payment_via_PayPal: "Realizar un pago a través de PayPal"
+  You_can_also_use_the_PayPal_website: "También puede realizar el pago a través del sitio web de PayPal haciendo clic en este botón:"
+  No_Payment_is_needed: "No es necesario ningún pago para este pedido"
+  Please_enter_your_card_information_below: "Introduzca a continuación la información de su tarjeta de crédito o débito"
+  Card_number: "Número de tarjeta"
+  Expiry_month: "Mes de caducidad"
+  Expiry_year: "Año de caducidad"
+  Start_month: "Mes de inicio"
+  Start_year: "Año de inicio"
+  Card_type: "Tipo de tarjeta"
+  Issue_number: "Número de emisión"
+  Verification_code: "Código de verificación"
+  order_payment_confirmation_1: "Introduzca sus detalles de pago a continuación."
+  order_payment_confirmation_2: "Podrá descargar el contenido inmediatamente después de la aprobación del pago."
+  order_payment_confirmation_3: "Puede pagar tanto directamente, utilizando el formulario que se muestra a continuación, o terminar el pago en el sitio web de PayPal, haciendo clic en el botón de PayPal situado en la parte inferior de esta página."
+  order_payment_confirmation_4: "Está usted pagando un importe total de {{order_price}} por {{item_count}} descargas."
+  order_payment_confirmation_5: "Haga clic aquí para autorizar su pago."
+  payflow_error_1: "Tiempo agotado para el procesamiento del pago a través de Paypal"
+  payflow_error_2: "Asegúrese de que la información de su tarjeta se ha introducido correctamente"
+  payflow_error_3: "Transacción duplicada"
+  payflow_error_4: "No hay suficientes fondos disponibles en la cuenta"
+  payflow_error_5: "El sistema de procesamiento de pago de Paypal está ocupado, inténtelo de nuevo más tarde"
+  payflow_error_6: "Problema con el procesamiento del pago a través de Paypal"
+  payflow_error_7: "Información de la tarjeta inválida"
+#
+  Expiry_date: "Fecha de caducidad"
+  Start_date: "Fecha de inicio"
+  PayNow: "Pagar ahora"
+  OtherPaymentOptions: "Otras Opciones de Pago"
+  PaymentDetails: "Detalles de pago"
+  Payment: "Pago"
+  payment_with_google_is_only_avilable_using_British_Pounds: "Google Checkout sólo acepta libras esterlinas en el actual tipo de cambio. Total en libras esterlinas se &pound;{{gbp}}"
+  is_ready_for_download: "está listo para descargar"
+#
+  Includes: "Incluye"
+  Details: "Ver detalles"
+  Episodes: "Episodios"
+  Bundle: "Paquete"
+  Songs: "Canciones"
+  and: "y"
+  All_Seasion_1: "Todo"
+  All_Seasion_1_Episodes: "Todos los Episodios"
+  All_Seasion_1_Songs: "Todas las canciones"
+  Discount_compared_to_single_title_purchases: "De descuento en comparación con títulos individuales compras"
+  Password_Reset_Information: "Restablecer la contraseña de Información"
+  Welcome: "Bienvenida"
+  user_does_not_exist: "Este mensaje de correo electrónico no está registrada en nuestro sistema."
+# SENT TO LAZYTOWN 1
+  help_id_25:
+    title: Formato Video de Alta Calidad
+    text: "El formato de video de alta calidad es compatible con calidad  DVD. Este formato es ideal para ser reproducido en HDTV, PC o laptop.\r\n\
+      \r\n\
+      Usted puede quemar libremente en DVD para archivar o bien dado que no posea conexión directa con HDTV o PC y requiera visualizar el contenido en un reproductor de DVD.\r\n\
+      \r\n\
+      ### Reproductores de video recomendados\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+      * Otros\r\n\
+      \r\n\
+      ### Especificaciones técnicas\r\n\
+      768 x 432 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_14: 
+    title: Formato de video portable
+    text: "El formato de video portable ofrece Buena calidad de visualización en descargas de peso reducido. Está dise.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * iPod Video\r\n\
+      * Microsoft Zune\r\n\
+      * Sony PSP (via http://www.pspvideo9.com/)\r\n\
+      * Otros\r\n\
+      \r\n\
+      ### Especificaciones técnicas\r\n\
+      320 x 240 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>iPod&#169; is a registered trademark of Apple Computer, Inc. Zune&#169; is a trademark of Microsoft Corporation. PSP&#169; (PlayStation Portable) is a trademark of Sony Computer Entertainment Inc.</small>"
+  help_id_27: 
+    title: Calidad del Medio MP3 - 160kbps
+    text: DRM Free. 160kbps. Desempeña en todos los reproductores de mp3.
+  help_id_4: 
+    title: Episodios completos
+    text: Estas descargas ofrecen los episodios completos cuyo contenido le garantiza sano entretenimiento en su compra. Las descargas existen en una variedad de formatos, dependiendo en el plan que desee visualizarlos; la calidad variará. Es importante que tenga en mente que su descarga será más satisfactoria en tanto esta se ajuste más apropiadamente al formato y tecnología del equipo en donde desee visualisualizarlos. Para mayor comprensión de formatos, favor de dar click en los signos de interrogación de cada uno de ellos para obtener información más detallada.
+  help_id_5: 
+    title: Video Clips
+    text: Los video clips son cortos y garantizan sano entretenimiento. Todo aquel familiarizado con el programa y episodios favoritos podrán ahora adquirir cortos de episodios especificos.
+  help_id_21: 
+    title: Alta Calidad MP3 - 320kbps
+    text: DRM Free. 320kbps. La más alta calidad MP3, no reproducibles en procesadores antiguos o mp3.
+  help_id_6: 
+    title: Reproductor de video VLC
+    text: |
+      El reproductor de video VLC es un excelente dispositivo para todas las plataformas. Es gratuito y desarrollado por Open Source community.  
+      <center>
+      <img src="/images/vlc-win32.jpg" border="0" width="300" height="200">
+      
+      Download video lan here: <b><a href="http://www.videolan.org/vlc/" target="_blank">http://www.videolan.org/vlc/</a></b>
+      </center>
+  help_id_11: 
+    title: Códigos de descuento
+    text: |
+      Los códigos de descuento son utilizados al adquirir un descuento en descargar y son regularmente distribuídos a clientes como parte de campañas publicitarias.
+      
+      Si usted tiene un códig de descuento, ingréselo aquí y de click en Confirmar Código para activar su descuento.
+  help_id_7: 
+    title: Quicktime Player
+    text: |
+      A partir de la version 7, Quicktime Player soorta el formato de video MPEG4 AVC/H264.
+      El link en la parte inferior le conducirá a la liga de descarga de Quicktime
+      <br/>
+      <br/>
+      <center>
+      <a href="http://www.apple.com/quicktime/download/" target="_blank"><img src="/images/qt7badge_getQTfreeDownload.gif " border="0" margin="20" alt="Quicktime"></a>
+      <br/>
+      <br/>
+      </center>
+      <small>QuickTime and the QuickTime Logo are trademarks of Apple Computer, Inc., registered in the U.S. and other countries. The Get QuickTime Badge is a trademark of Apple Computer Inc., used with permission.</small>
+  help_id_23: 
+    title: WAV 16bit No comprimido
+    text: Calidad audio de 16bit CD no comprimido. Ideal para quemar CD´s de maxima calidad de sonido.
+  help_id_12: 
+    title: Formato de video de alta calidad
+    text: "El formato de video de alta calidad es compatible con calidad DVD. Este formato es ideal para ser visualizado en HDTV, PC or laptop.\r\n\
+      \r\n\
+      Usted puede quemar libremente el contenido a DVD para archivar o para conexión directa entre su HDTV y su PC al querer reproducir el contenido en un reproductor de DVD.\r\n\
+      \r\n\
+      ### Especificaciones técnicas\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      720 x 400 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_8: 
+    title: Nero Showtime
+    text: |
+      Nero ofrece dos versiones de Showtime, ambas versiones pueden reproducir nuestro contenido.
+      
+      Las ligas siguientes ofrecen mayores informes acerca de los productos Nero:<br/>
+      <a href="http://www.nero.com/nero6/en/Nero_ShowTime_prev.html" target="_blank">Nero Showtime 2</a><br/>
+      <a href="http://www.nero.com/nero7/eng/Nero_ShowTime_3.html" target="_blank">Nero Showtime 3</a>
+  help_id_9: 
+    title: ffdshow
+    text: |
+      ffdshow ofrece filtros para Windows Media Player que habilitan MPEG4 AVC codec.
+      
+      Para mayor información:
+      <a href="http://sourceforge.net/projects/ffdshow" target="_blank">http://sourceforge.net/projects/ffdshow</a>
+  help_id_123:
+    title: Formato Video de Alta Calidad
+    text: "El formato de video de alta calidad es compatible con calidad  DVD. Este formato es ideal para ser reproducido en HDTV, PC o laptop.\r\n\
+      \r\n\
+      Usted puede quemar libremente en DVD para archivar o bien dado que no posea conexión directa con HDTV o PC y requiera visualizar el contenido en un reproductor de DVD.\r\n\
+      \r\n\
+      ### Reproductores de video recomendados\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+      * Otros\r\n\
+      \r\n\
+      ### Especificaciones técnicas\r\n\
+      768 x 416 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; is a registered trademark of Apple Computer, Inc. Nero&#169; is the Registered Trademark of NERO International, Inc. Windows Media Player is a trademark of Microsoft Corporation.</small>\r\n"
+  help_id_124: 
+    title: Formato de video portable
+    text: "El formato de video portable ofrece Buena calidad de visualización en descargas de peso reducido. Está dise.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * iPod Video\r\n\
+      * Microsoft Zune\r\n\
+      * Sony PSP (via http://www.pspvideo9.com/)\r\n\
+      * Otros\r\n\
+      \r\n\
+      ### Especificaciones técnicas\r\n\
+      320 x 176 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>iPod&#169; is a registered trademark of Apple Computer, Inc. Zune&#169; is a trademark of Microsoft Corporation. PSP&#169; (PlayStation Portable) is a trademark of Sony Computer Entertainment Inc.</small>"
+
+
+# Already translated to Spanish
+  number:
+    # Used in number_with_delimiter()
+    # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
+    format:
+      # Sets the separator between the units, for more precision (e.g. 1.0 / 2.0 == 0.5)
+      separator: "," 
+      # Delimets thousands (e.g. 1,000,000 is a million) (always in groups of three)
+      delimiter: "." 
+      # Number of decimals, behind the separator (1 with a precision of 2 gives: 1.00)
+      precision: 3
+
+    # Used in number_to_currency()
+    currency:
+      format:
+        # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
+        format: "%n %u" 
+        unit: "€" 
+        # These three are to override number.format and are optional
+        separator: "," 
+        delimiter: "." 
+        precision: 2
+
+    # Used in number_to_percentage()
+    percentage:
+      format:
+        # These three are to override number.format and are optional
+        # separator: 
+        delimiter: "" 
+        # precision: 
+
+    # Used in number_to_precision()
+    precision:
+      format:
+        # These three are to override number.format and are optional
+        # separator:
+        delimiter: "" 
+        # precision:
+
+    # Used in number_to_human_size()
+    human:
+      format:
+        # These three are to override number.format and are optional
+        # separator: 
+        delimiter: "" 
+        precision: 1
+      # Rails <= v2.2.2
+      # storage_units: [Bytes, KB, MB, GB, TB]
+      # Rails >= v2.3
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+
+  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
+  datetime:
+    distance_in_words:
+      half_a_minute: "medio minuto" 
+      less_than_x_seconds:
+        one:  "menos de 1 segundo" 
+        other: "menos de {{count}} segundos"
+      x_seconds:
+        one:  "1 segundo" 
+        other: "{{count}} segundos" 
+      less_than_x_minutes:
+        one:  "menos de 1 minuto" 
+        other: "menos de {{count}} minutos" 
+      x_minutes:
+        one:  "1 minuto" 
+        other: "{{count}} minutos" 
+      about_x_hours:
+        one:  "alrededor de 1 hora" 
+        other: "alrededor de {{count}} horas" 
+      x_days:
+        one:  "1 día" 
+        other: "{{count}} días" 
+      about_x_months:
+        one:  "alrededor de 1 mes" 
+        other: "alrededor de {{count}} meses" 
+      x_months:
+        one:  "1 mes" 
+        other: "{{count}} meses" 
+      about_x_years:
+        one:  "alrededor de 1 año" 
+        other: "alrededor de {{count}} años" 
+      over_x_years:
+        one:  "más de 1 año" 
+        other: "más de {{count}} años" 
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:   "no se pudo guardar este {{model}} porque se encontró 1 error" 
+          other:  "no se pudo guardar este {{model}} porque se encontraron {{count}} errores" 
+        # The variable :count is also available
+        body: "Se encontraron problemas con los siguientes campos:" 
+
+      # The values :model, :attribute and :value are always available for interpolation
+      # The value :count is available when applicable. Can be used for pluralization.
+      messages:
+        inclusion: "no está incluido en la lista" 
+        exclusion: "está reservado" 
+        invalid: "no es válido" 
+        confirmation: "no coincide con la confirmación"
+        accepted: "debe ser aceptado"
+        empty: "no puede estar vacío"
+        blank: "no puede estar en blanco"
+        too_long: "es demasiado largo ({{count}} caracteres máximo)"
+        too_short: "es demasiado corto ({{count}} caracteres mínimo)"
+        wrong_length: "no tiene la longitud correcta ({{count}} caracteres exactos)"
+        taken: "ya está en uso"
+        not_a_number: "no es un número"
+        greater_than: "debe ser mayor que {{count}}"
+        greater_than_or_equal_to: "debe ser mayor que o igual a {{count}}"
+        equal_to: "debe ser igual a {{count}}"
+        less_than: "debe ser menor que {{count}}"
+        less_than_or_equal_to: "debe ser menor que o igual a {{count}}"
+        odd: "debe ser impar"
+        even: "debe ser par"
+
+        # Append your own errors here or at the model/attributes scope.
+
+      models:
+        # Overrides default messages
+
+      attributes:
+        # Overrides model and default messages.
+
+  date:
+    formats:
+      # Use the strftime parameters for formats.
+      # When no format has been given, it uses default.
+      # You can provide other formats here if you like!
+      default: "%e/%m/%Y"
+      short: "%e de %b" 
+      long: "%e de %B de %Y" 
+
+    day_names: [Domingo, Lunes, Martes, Miércoles, Jueves, Viernes, Sábado]
+    abbr_day_names: [Dom, Lun, Mar, Mie, Jue, Vie, Sab]
+
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Setiembre, Octubre, Noviembre, Diciembre]
+    abbr_month_names: [~, Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Set, Oct, Nov, Dic]
+    # Used in date_select and datime_select.
+    order: [ :day, :month, :year ]
+
+  time:
+    formats:
+      default: "%A, %e de %B de %Y %H:%M:%S %z"
+      short: "%e de %b %H:%M" 
+      long: "%e de %B de %Y %H:%M" 
+    am: "am" 
+    pm: "pm" 
+
+# Used in array.to_sentence.
+  support:
+    array:
+      # Rails <= v.2.2.2
+      # sentence_connector: "y"
+      # Rails >= v.2.3
+      words_connector: ", "
+      two_words_connector: " y "
+      last_word_connector: " y "

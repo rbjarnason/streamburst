@@ -1,0 +1,20 @@
+<% if @product.product_formats %>
+<table cellpadding="5" cellspacing="0">
+<% for product_format in @product.product_formats %>
+  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= product_format.format.name %></td>
+    <% if product_format.torrent %>
+      <td><%= product_format.torrent.file_name %></td>
+    <% end %>
+    <% if product_format.download %>
+      <td><%= product_format.download.file_name %></td>
+    <% end %>
+    <td class="list-actions">
+    <%= link_to 'Destroy', { :action  => 'destroy_product_format', :product_format_id => product_format, :id => @product},
+                             :confirm => "Are you sure?",
+                             :post    => true %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<% end %>

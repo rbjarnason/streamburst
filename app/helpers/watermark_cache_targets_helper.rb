@@ -1,0 +1,2 @@
+module WatermarkCacheTargetsHelper
+end

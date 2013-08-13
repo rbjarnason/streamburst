@@ -1,0 +1,69 @@
+<div class="sub-box-txt">
+ <table>
+  <tr>
+    <td width="15%" align="center">
+      <img class="list-image-big" width="160" height="90" src="<%= url_for_image_column(@product, "image", :name => "widescreenthumb", :absolute => true)%>">         
+      </td>
+      <td width="30%" align="center">
+      <b><%= @product.title %></b> <br/> <br/><%= help(@format.help_id, { :image_file_name => get_product_format_image(@format.format_type), 
+                                                                          :image_size => "117x20" } ) %>
+    </td>
+    <td width="55%" align="center">
+        <table>
+        <tr height="40px">
+          <td colspan="2">
+           <div class="hack" style="text-align: left">
+              <b><div class="preparation_text" style="text-align: left" id='progresstext'><%=@status_text%></div></b>
+           </div>
+          </td>
+        </tr> 
+        <tr>
+          <td>
+            <%= image_tag("sb_waitBarSmall.gif", :border => 0, :alt => "#{t(:Waiting)}...") %>
+          </td>
+          <td>
+            <b><span class="preparation_counter" style="align=center" id="counter"></span></b>
+          </td>
+        </tr>
+        <tr height="45px">
+          <td width="55%">
+            <%= link_to( image_localized_tag("button_emailMeWhenReady_1.png", :border => 0, :alt => t(:Email_me_when_ready)), :action => :email_when_ready, :job_key => @job_key ) %>
+          </td>
+          <td width="45%">
+            <%= image_localized_tag("button_startDownloadDisabled.png", :border => 0, :alt => t(:Disabled)) %>
+          </td>        
+        </tr>
+        </table>
+       <script type="text/javascript"> 
+          var milisec=0;
+          var seconds=<%= @preparation_time_estimation_seconds %>
+		  var sec_trans = '<%=t(:sec)%>';
+		  var min_trans = '<%=t(:min)%>';
+          function display()
+          {
+            if (seconds==0)
+            {
+              <%= remote_function(:url => {:action => 'get_prepare_content_progress', :job_key => @job_key}) %>         
+            }
+            else
+            {
+              seconds-=1;
+              minutes = parseInt(seconds / 60);
+              if (minutes > 0)
+              {
+                count_text = minutes + ' ' + min_trans + ' ' + seconds % 60 + ' ' + sec_trans;
+              }
+              else
+              {
+                count_text = seconds + ' ' + sec_trans;
+              }
+              document.getElementById('counter').innerHTML = count_text;
+              setTimeout("display()",1000);
+            }
+          }
+          display();
+      </script>
+    </td>
+  </tr>
+ </table>
+</div>

@@ -1,0 +1,2 @@
+module DvmTemplatesHelper
+end

@@ -1,0 +1,14 @@
+xml.discount_voucher_range(@range_name) do
+  for v in @vouchers
+    xml.discount_vouchers do
+      xml.token(v.token)
+      xml.product_id(v.product_id)
+      xml.discount_gbp(v.discount_gbp)
+      xml.discount_eur(v.discount_gbp)
+      xml.discount_usd(v.discount_gbp)
+      xml.order_id(v.order_id)
+      xml.user_id(v.user_id)
+      xml.used(v.used)
+    end
+  end
+end

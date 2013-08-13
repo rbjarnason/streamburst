@@ -1,0 +1,125 @@
+<% cache "product_page_#{@current_page}_#{@category.id}_#{@brand.id}_#{@currency_code}_#{I18n.locale.to_s}", :expires_in=>5.minutes do %>
+    <% offers_categories = [21,26] %>
+    <table width="100%" VALIGN="middle" class="main-header">
+    <tr>
+    <td width="50%">
+      <span class="main-header-left-txt"><%= "#{@category.tname} (#{@category.products.count(:conditions => @brand_filter)})" %></span>
+      &nbsp<%= image_tag("circling-ball-3-frame-fade.gif",
+                 :align => 'middle',
+                 :border=> 0,
+                 :id => "products-list-spinner",
+                 :style=>"display: none;" ) %>
+    </td>
+    <td width="50%">
+         <span class="main-header-right-txt">
+          <%= render(:partial => "shared/instructions_panel") %>
+         </span>
+       </div>
+    </td>
+     </tr>
+     </table>
+	 
+<div class="back_catalogue">	
+ <!-- Start Product header -->
+   	<table class="entry_header">	
+   	    <tr>
+    		<th width="<%=[21,26].include?(@category.id) ? '280' : '210'%>"><%=t :Name%></th>
+		  <%if offers_categories.include?(@category.id) %>
+			<th width="74"><%=t :Includes%></th>
+		  <% else %>
+			<th width="94"><%=t :Time%></th>
+		  <% end %>
+		  <%if offers_categories.include?(@category.id) %>
+			<th width="74"><%=t :Price%></th>
+		  <% else %>
+			<th width="64"><%=t :Price%></th>
+		  <% end %>
+		  <%if offers_categories.include?(@category.id) %>
+			<th width="74"><%=t :Popularity%></th>
+		  <% else %>
+			<th width="74"><%=t :Popularity%></th>
+		  <% end %>
+		  <%if offers_categories.include?(@category.id) %>
+			<th width="94"></th>
+		  <% else %>
+			<th width="94"></th>
+		  <% end %>
+		  <%if offers_categories.include?(@category.id) %>
+			<th width="4"></th>
+		  <% else %>
+			<th width="64"></th>
+		  <% end %>
+		</tr>
+	</table>
+	
+<div style="width: 627px; height: 350px; overflow-y: scroll; scrollbar-arrow-color: blue; scrollbar-face-color: #e7e7e7; scrollbar-3dlight-color: #a0a0a0; scrollbar-darkshadow-color: #888888">
+	
+ <!-- Start Product List -->
+    <% @products.each do |product| %>
+    <table class="entry">
+      <tr onMouseOver="this.bgColor='#cccccc';" onMouseOut="this.bgColor='transparent';">
+      <td width="<%=[21,26].include?(@category.id) ? '280' : '210'%>">    	
+          <%= h(product.title) %>
+          <% if product.help_id %>
+          <%= help(product.help_id) %>
+          <% end %>  		  
+	  </td>
+	  <%if offers_categories.include?(@category.id) %>
+	      <td width="74" class="preview">
+	            	    <%=link_to_remote_redbox t(:Details), :url => {:controller => 'helps', 
+                                                      :action => 'get_offer_details', 
+                                                      :id => product.id} %>
+	            	
+			</td>
+	 <% else %>
+	      <td width="94">
+	      	  <span class="entry-header-small"> 
+	            <span class="entry-header-duration"> <%=to_duration_long_s(product.duration)%></span>
+	          </span>
+			</td>
+	 <% end %>
+	  <%if offers_categories.include?(@category.id) %>
+  	    <td width="74">  
+	 <% else %>
+  	    <td width="64">  
+	 <% end %>
+	    <% if product.get_price(@currency_code) > 0.0 %>
+           <%= product.price_class_to_currency(@currency_code) %>
+        <% else %>
+           <%=t :Free%>
+        <% end %>
+		
+	  </td>
+	  <%if offers_categories.include?(@category.id) %>
+	    <td width="74" class="popularity">
+	  <% else %>
+	    <td width="74" class="popularity">
+	  <% end %>
+         <span class="percent"><span style="width:<%=(product.relative_popularity(@category.id, I18n.locale.to_s)*100).to_i%>%"></span></span>
+	  </td>
+	  
+	  <%if offers_categories.include?(@category.id) %>
+	  <td width="94" class="buy">
+	 <% else %>
+	  <td width="94" class="buy">
+     <% end %>
+	   <%= form_remote_tag(:url => {:action => :add_to_cart, :id => product}, :complete=>"Element.hide('spinner')", :before=>"Element.show('spinner')")%>
+             <%= submit_tag(t(:Add_to_cart), :class=>"add_to_cart_button")%>
+           </form>
+	  </td>
+	  <%if offers_categories.include?(@category.id) %>
+	  <td width="4" class="preview">
+	  <% else %>
+	  <td width="64" class="preview">
+	  <% end %>
+	  	<% if product.flv_preview_url and product.flv_preview_url!="" %>
+	  	  <a href="#" onclick="$('flash_player').sendEvent('LOAD', {file:'<%=product.flv_preview_url%>',image:'http://flv.streamburst.tv/lazytown/Splash_Screen01.png',title:'<%=escape_javascript(h(product.title))%>'<%=@category.id==20 ? ', duration:30' : ''%>});$('flash_player').sendEvent('PLAY','true'); $('preview_text').innerHTML='<%=escape_javascript(product.title)%>';return false;"><%=t :Preview%></a>
+	    <% end %>
+	  </td>
+      </tr>
+  </table>
+  <% end %>
+  <!-- End Product List -->
+  </div>
+  </div>
+<% end %>

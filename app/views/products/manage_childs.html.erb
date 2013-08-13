@@ -1,0 +1,19 @@
+<h1>Childs update for <%= @product.title %></h1>
+
+<%= render :partial => 'list_childs' %>
+
+<%= form_tag( { :action => 'manage_childs' } ) %>
+  <p><label for="product">Child Product</label><br/>
+  <select name="product_id">
+   <% @products.each do |product| %>
+     <% unless product.parent_flag %>
+	       <option value="<%= product.id %>">
+	         <%= product.title %>
+	       </option>
+	<% end %>
+   <% end %>
+   </select>
+  </p>  
+  <%= submit_tag "Add" %>
+</form>
+<%= link_to 'Back', :action => 'list' %>

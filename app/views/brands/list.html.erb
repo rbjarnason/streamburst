@@ -1,0 +1,26 @@
+<eh1>Listing brands</h1>
+
+<table>
+  <tr>
+	<th>Name</th>
+	<th>Global Brand Access</th>
+  </tr>
+  
+<% for brand in @brands %>
+  <tr>
+	<td><%=brand.name%></td>
+	<td><%=brand.global_brand_access%></td>
+    <td><%= link_to 'Show', :action => 'show', :id => brand %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => brand %></td>
+    <td><%= link_to 'Brand Categories', :action => 'manage_brand_categories', :id => brand %><br/>
+      <td><%= link_to 'Destroy', { :action => 'destroy', :id => brand }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @brand_pages.current.previous } if @brand_pages.current.previous %>
+<%= link_to 'Next page', { :page => @brand_pages.current.next } if @brand_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New brand', :action => 'new' %>

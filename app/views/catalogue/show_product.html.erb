@@ -1,0 +1,25 @@
+<table>
+  <tr>
+  <td>
+   <div id="player"></div>
+   <em><%=t :preview%></em> </br>
+   <script type="text/javascript">
+    function playMovie(file) {
+      var FO = { movie:"/flash/flvplayer.swf",
+                width:"520px",
+                height:"300px",
+                majorversion:"7",
+                build:"0",
+                flashvars:"file="+file+"&autoStart=true" };
+      UFO.create(FO, 'player');
+    }
+    playMovie('<%= url_for_file_column @product, "flash_movie", :absolute => true.to_s %>');
+   </script>
+   <%= render(:partial => "product", :collection => [@product]) %>
+   <%= link_to t(:Back), :action => 'index' %>
+  </td>
+  </tr>
+  <caption><%= @product.title %></caption>
+</table>
+
+

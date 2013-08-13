@@ -1,0 +1,31 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.currency_code(@currency_code)
+xml.order do
+  xml.id(@order.id)
+  for line_item in @order.line_items
+    xml.line_item do
+      xml.title(line_item.product.title)
+      xml.short_title(line_item.product.short_title)
+      if line_item.product.small_image
+        xml.image_url(url_for_image_column(line_item.product, "small_image", :name => "normal", :absolute => true))
+      end
+      if line_item.product.categories.length > 0
+        xml.category(line_item.product.categories[0].name)
+      end
+      xml.price(line_item.price_with_currency)
+      xml.discount()
+      if line_item.product.discount_voucher_enabled == true
+        xml.discount_enabled(true)
+        if line_item.discount_voucher
+          xml.discount(line_item.discount_with_currency)
+        end
+      end
+    end
+  end
+  xml.total_price(@order.total_price)
+  xml.total_items(@order.line_items.length)
+  xml.currency_code(@currency_code)
+  xml.payflow_express_button_url(@payflow_express_button_url)
+end

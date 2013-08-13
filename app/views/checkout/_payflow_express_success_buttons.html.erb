@@ -1,0 +1,3 @@
+<span class="sub-box-button">
+  <%= link_to(image_localized_tag("button_confirmOrder_1.png", :border => 0, :alt => t(:Confirm_Order), :size => "112x20"), :controller => "checkout",  :action => "payflow_express_confirm", :order_id => @order.id, :token => @token, :payerid => @payerid) %>
+</span>

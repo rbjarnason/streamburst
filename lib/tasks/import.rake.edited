@@ -1,0 +1,95 @@
+require 'pathname'
+
+#video:
+#  h264_track_id: 2
+
+class MediaFormatException < StandardError
+end
+
+class Shell
+  def log_time
+    t = Time.now
+    "%02d:%02d:%02d.%06d" % [t.hour, t.min, t.sec, t.usec]
+  end
+
+  def execute(command)
+    puts "Execute: #{command}"
+    IO.popen(command) do |pipe|
+      pipe.each("\r") do |line|
+        puts line
+        $defout.flush
+      end
+    end
+    raise MediaFormatException if $?.exitstatus != 0
+  end
+end
+
+def lookup_names(program_id)
+  name_file = File.open("/home/robert/lazytown_2_imports/names.csv","r")
+  FasterCSV.parse(name_file.read) do |row|
+    if row[0].to_i==program_id
+<<<<<<< .mine
+      return {:program_id=>row[0].strip.to_i, :running_order=>row[1].strip.to_i, :name_en=>row[2],
+              :name_is=>row[3], :name_sp=>row[4], :name_fr=>row[5],
+=======
+      return {:program_id=>row[0].to_i, :running_order=>row[1].to_i, :name_en=>row[2].strip,
+              :name_is=>row[3].strip, :name_sp=>row[4].strip, :name_fr=>row[5].strip,
+>>>>>>> .r5937
+              :base_filename=>"LazyTown-S2-#{row[1]}-#{row[2].gsub(" ","-")}" }
+      break
+    end
+  end  
+end
+
+namespace :import do
+  desc "rename audio"
+  task(:rename_all => :environment) do
+    [Dir["/var/content/imports/Streamburst/video/*"],
+     Dir["/var/content/imports/Streamburst/audio/*"]].each do |folder|
+      folder.each do |file|
+        pathname = Pathname.new(file)
+        dir = pathname.dirname.to_s
+        basename = pathname.basename.to_s
+        if basename.include?(".h264") or basename.include?(".wav")
+          program_id = basename[0..2].to_i
+          episode = lookup_names(program_id)
+          if basename.include?(".wav")
+            if basename.include?("French")
+              locale = "fr"
+            elsif basename.include?("French")
+
+            puts "mv /"#{file}/" /"#{dir}/#{episode[:base_filename]}/""
+          else
+            puts "mv /"#{file}/" /"#{dir}/#{episode[:base_filename]}/""
+          end
+        end
+      end
+    end
+  end
+
+  desc "encode video"
+  task(:encode_video => :environment) do
+    h264_track_id = 2
+    @shell = Shell.new
+    Dir["/var/content/imports/Streamburst/video/*.mov"].each do |infile|
+      puts "processing: #{infile}"
+      cleanup = []
+      pathname = Pathname.new(infile)
+      dir = pathname.dirname.to_s      
+      basename = pathname.basename.to_s
+      basename_no_ext_original = basename[0..basename.length-5]
+      basename_no_ext = basename_no_ext_original.gsub(" ","_").gsub(".","")
+      cleanup << infile_h264 = "#{dir}/#{basename_no_ext_original}_track2.h264"
+      @shell.execute("MP4BoxNew -raw \"#{h264_track_id}\" \"#{infile}\"")
+      [Format.find(26),Format.find(24)].each do |f|
+        cleanup << file_y4m = "#{dir}/#{basename_no_ext}_#{f.id}.y4m"
+        @shell.execute("ffmpeg -i \"#{infile_h264}\" -s #{f.px_width}x#{f.px_height} \"#{file_y4m}\"")
+        outfile_h264 = "#{dir}/#{basename_no_ext.gsub(" ","_")}_#{f.id}.h264"
+        cleanup << stats = "#{dir}/#{basename_no_ext}_#{f.id}.stats"
+        @shell.execute("x264_1153 --pass 1 --stats \"#{stats}\" #{f.pass_1_video_codec_options} --output NUL \"#{file_y4m}\" #{f.px_width}x#{f.px_height}")
+        @shell.execute("x264_1153 --pass 2 --stats \"#{stats}\" #{f.pass_2_video_codec_options} --output \"#{outfile_h264}\" \"#{file_y4m}\" #{f.px_width}x#{f.px_height}")
+      end
+      cleanup.each do |f| File.delete(f) end
+    end
+  end
+end

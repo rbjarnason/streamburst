@@ -1,0 +1,25 @@
+<div class="shadedtabs">
+  <table>
+    <tr>
+      <td valign="bottom" width="100%">
+        <ul id="nav">
+          <% for category in @categories %> 
+            <% category_product_count = category.products.count(:conditions => @brand_filter) %>
+            <% if category_product_count > 0 && category.name != "Staging" %>
+              <li id="tcategory" class="<%= category.id == session["category_id_#{@brand.id.to_s}".to_sym] ? 'selected' : '' %>">
+              <% if @this_controller == "catalogue" -%>
+                <a href="#" class="<%=category.id == session["category_id_#{@brand.id.to_s}".to_sym] ? "selected" : ""%>" onclick="Element.show('products-list-spinner'); new Ajax.Request('/catalogue?category_id=<%=category.id%>', {asynchronous:true, evalScripts:true, onSuccess:function(request){Element.hide('products-list-spinner')}}); return false;"><%="#{h(category.name)} (#{category_product_count})"%></a>
+              <% else -%>
+              <a href="/catalogue?category_id=<%=category.id%>"><%="#{h(category.name)} (#{category_product_count})"%></a>
+              <% end -%>
+              </li>
+            <% end -%>
+          <% end %>
+          <li id="tsystem">
+          <a href="<%=RAILS_ENV == "production" ? "http://streamburst.tv" : "http://app2.streamburst.net:3000"%><%=get_session_id_url_param%>" class="<%=@this_action == "brands" ? "selected" : ""%>">streamburst.tv</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>

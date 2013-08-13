@@ -1,0 +1,41 @@
+<div id="flv">
+  <div class="title">
+    <%=truncate(@watch_now_title,:length=>34)%>
+  </div>
+  <table width="100%">
+  <tr align="center" valign="middle">
+  <td width="320" height="270" align="center" valign="middle">
+     <%= flv_player :file => "http://flv.streamburst.tv/#{@watch_now_filename}",
+                    :enablejs => true,
+                    :autostart => true,
+                    :javascriptid => "flash_player",
+                    :width => 320,
+                    :height => 270,
+                    :align => "center",
+                    :bgcolor => '#000000',
+                    :usefullscreen => false,
+                    :volume => 70,
+                    :overstretch => "none",
+                    :id => "flash_player"
+                    %>
+       <div class="text" style="padding-top: 5px; padding-bottom: 3px">
+         <%t :about_above_flash_video%><br/>
+       </div>
+  </td>
+  </tr>
+  <tr>
+  <td>
+   <table width="100%"><tr>
+       <td align=<%= @store_host ? "left" : "center" %>>
+     <%= link_to_close_redbox_and_flv image_tag(localized_image_filename("button_close_1.png"), :border => 0, :style =>  @store_host ? "padding-right: 34px" : "", :size => "55x20") %>
+   </td>
+     <% if @store_host %>
+     <td align="right">
+       <a href="http://<%=@store_host%><%=RAILS_ENV == "production" ? "" : ":3000"%><%=get_session_id_url_param%>"><%=image_tag("button_visitStore.png", :border => 0, :size => "89x20")%></a>
+     </td>  
+     <% end %>
+   </tr></table>
+  </td>
+  </tr>
+  </table>
+</div>

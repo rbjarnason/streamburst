@@ -1,0 +1,15 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.dvm_templates do
+  for dvm_template in @dvm_templates
+    xml.dvm_template do
+      xml.id(dvm_template.id)
+      xml.title(dvm_template.title)
+      xml.description(dvm_template.description)
+      xml.preview_dvm_id(dvm_template.preview_dvm_id)
+      xml.affiliate_percent(dvm_template.affiliate_percent)
+      xml.image_url(url_for_image_column(dvm_template, "image", :name => "widescreen", :absolute => true))
+    end
+  end
+end

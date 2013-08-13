@@ -1,0 +1,28 @@
+<h1>Format update for <%= @advertisement.name %></h1>
+
+<%= render :partial => 'list_formats' %>
+
+<%= form_tag( { :action => 'manage_formats' }, { :multipart => true }) %>
+<p><label for="format">Format</label><br/>
+  <select name="format_id">
+   <% @formats.each do |format| %>
+       <option value="<%= format.id %>">
+         <%= format.name %>
+       </option>
+   <% end %>
+   </select>
+</p>  
+
+<p><label for="download">Advertisements File</label><br/>
+  <select name="advertisements_file_id">
+       <option value="nil" selected>None</option>
+   <% @advertisements_files.each do |advertisements_file| %>
+       <option value="<%= advertisements_file.id %>">
+         <%= advertisements_file.file_name %>
+       </option>
+   <% end %>
+   </select>
+</p>  
+  <%= submit_tag "Add" %>
+</form>
+<%= link_to 'Back', :action => 'list' %>

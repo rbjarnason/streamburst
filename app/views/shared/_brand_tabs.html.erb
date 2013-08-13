@@ -1,0 +1,25 @@
+<div class="shadedtabs">
+  <table class="pngfix">
+    <tr>
+      <td valign="bottom" width="100%">
+        <ul id="nav" class="pngfix">
+          <li id="tsystem">
+             <a href="/" <%=@this_action == "home" && @this_controller == "catalogue" ? "class=\"selected\"" : ""%>>Home</a>
+          </li>
+          <% for brand_category in @brand_categories %> 
+            <% brand_category_brand_count = brand_category.brands.count %>
+            <% if brand_category_brand_count > 0 && brand_category.name != "Staging" %>
+              <li id="tbrand">
+                <% if @this_action == "brands" %>
+                  <a href="#" class="<%=brand_category.id == session[:brand_category_id] ? "selected" : ""%>" onclick="Element.show('products-list-spinner'); new Ajax.Request('/catalogue/brands?brand_category_id=<%=brand_category.id%>', {asynchronous:true, evalScripts:true, onSuccess:function(request){Element.hide('products-list-spinner')}}); return false;"><%="#{h(brand_category.name)} (#{brand_category_brand_count})"%></a>
+                <% else %>
+                  <a href="/catalogue/brands?brand_category_id=<%=brand_category.id%>"><%="#{h(brand_category.name)} (#{brand_category_brand_count})"%></a>
+                <% end %>
+              </li>
+            <% end -%>
+          <% end %>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>

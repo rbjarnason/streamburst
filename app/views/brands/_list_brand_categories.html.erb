@@ -1,0 +1,14 @@
+<% if @local_brand.brand_categories.count > 0 %>
+<table cellpadding="5" cellspacing="0">
+<% for brand_category in @local_brand.brand_categories %>
+  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= brand_category.name %></td>
+    <td class="list-actions">
+    <%= link_to 'Remove', { :action  => 'remove_brand_category', :brand_category_id => brand_category, :id => @local_brand},
+                            :confirm => "Are you sure?",
+                            :post    => true %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<% end %>

@@ -1,0 +1,27 @@
+<b>Preview</b> </br>
+<div id="player"></div>
+<script type="text/javascript">
+  function playMovie(file) {
+    var FO = { movie:"/flash/flvplayer.swf",
+                width:"320px",
+                height:"180px",
+                majorversion:"7",
+                build:"0",
+                flashvars:"file="+file+"&autoStart=true" };
+    UFO.create(FO, 'player');
+  }
+  playMovie('<%= url_for_file_column @product, "flash_movie", :absolute => true.to_s %>');
+</script>
+
+<% for column in Product.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @product.send(column.name) %>
+</p>
+<% end %>
+
+Duration: <%= to_duration_s(@product.duration) %>
+
+<%= render :partial => 'list_formats' %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @product %> |
+<%= link_to 'Back', :action => 'list' %>

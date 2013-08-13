@@ -1,0 +1,3 @@
+rails_env: development
+video_server_id: 1
+sleep_for: 3

@@ -1,0 +1,16 @@
+<%= error_messages_for 'heimdall_content_target' %>
+
+<!--[form:heimdall_content_target]-->
+<p><label for="heimdall_content_target_search_titles">Search titles</label><br/>
+<%= text_field 'heimdall_content_target', 'search_titles'  %></p>
+
+<p><label for="heimdall_content_target_active">Active</label><br/>
+<select id="heimdall_content_target_active" name="heimdall_content_target[active]"><option value="false">False</option><option value="true">True</option></select></p>
+
+<p><label for="heimdall_content_target_created_at">Created at</label><br/>
+<%= datetime_select 'heimdall_content_target', 'created_at'  %></p>
+
+<p><label for="heimdall_content_target_updated_at">Updated at</label><br/>
+<%= datetime_select 'heimdall_content_target', 'updated_at'  %></p>
+<!--[eoform:heimdall_content_target]-->
+

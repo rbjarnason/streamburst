@@ -1,0 +1,9 @@
+<h1>Editing heimdall_site_target</h1>
+
+<%= form_tag :action => 'update', :id => @heimdall_site_target %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @heimdall_site_target %> |
+<%= link_to 'Back', :action => 'list' %>

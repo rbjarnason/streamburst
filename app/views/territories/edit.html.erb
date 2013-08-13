@@ -1,0 +1,9 @@
+<h1>Editing territory</h1>
+
+<%= form_tag :action => 'update', :id => @territory %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @territory %> |
+<%= link_to 'Back', :action => 'list' %>

@@ -1,0 +1,27 @@
+<!--[form:dvms]-->
+<% if @dvm.dvm_template.global_brand_access%>
+   <% @brands.each do |brand| %>
+    <%= check_box('brand_'+brand.title, 'checked', {}, brand.name, '') %>
+   <% end %>
+<% end %>
+
+Add hostnames:
+<p><label for="dvm_host_name1">Hostname 1</label><br/>
+<%= text_field 'dvm_host', 'host_name_1'  %>
+<label for="dvm_host_name2">Hostname 2</label><br/>
+<%= text_field 'dvm_host', 'host_name_2'  %>
+<label for="dvm_host_name2">Hostname 3</label><br/>
+<%= text_field 'dvm_host', 'host_name_3'  %></p>
+
+<% if @has_admin_role %>
+<p><label for="company_id">Company</label><br/>
+<select name="dvm[company_id]">
+<% @companies.each do |company| %>
+   <option value="<%= company.id %>"
+      <%= ' selected' if company.id == @dvm.company_id %>>
+      <%= company.name %>
+    </option>
+  <% end %>
+   </select></p>
+<% end %>
+<!--[eoform:dvms]-->

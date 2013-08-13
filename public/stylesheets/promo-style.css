@@ -1,0 +1,101 @@
+body {
+	scrollbar-arrow-color:#FFFFFF;
+	scrollbar-base-color:#401e0e;
+	scrollbar-shadow-color:#fdebad;
+	scrollbar-face-color:#401e0e;
+	scrollbar-highlight-color:#fdebad;
+	scrollbar-dark-shadow-color:401e0e;
+	scrollbar-3d-light-color:#fdebad;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	margin: 0px;
+	background-color: #00539b;
+}
+
+td {
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+
+a {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a:hover {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #fffff;
+	text-decoration: underline;
+}
+
+.entry a  {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.entry a:hover  {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #E4AFA3;
+	text-decoration: none;
+}
+
+
+
+.landing {
+	text-align: center;
+	background-image: url(/images/challenge/LazyTown-Promo-BG.jpg);
+	background-repeat: no-repeat;
+}
+
+table.layout {
+}
+	
+table.layout td.col1 {
+	width: 25%;
+	vertical-align: top;
+	padding: 100px 0px 0px 100px;
+}	
+
+table.layout td.col2 {
+	width: 50%;
+}
+
+table.layout td.col3 {
+	width: 25%;
+}
+
+.header-image {
+	text-align: center;
+}
+
+.episode-image {
+	text-align: center;
+}
+
+.logo {
+	padding: 0px 10px 0px 0px;
+}
+
+.text-image {
+	text-align: center;
+}
+
+.download-code {
+	text-align: center;
+}
+

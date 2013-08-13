@@ -1,0 +1,41 @@
+<h1>Format update for <%= @product.title %></h1>
+
+<%= render :partial => 'list_formats' %>
+
+<%= form_tag( { :action => 'manage_formats' }, { :multipart => true }) %>
+<p><label for="format">Format</label><br/>
+  <select name="format_id">
+   <% @formats.each do |format| %>
+       <option value="<%= format.id %>">
+         <%= format.name %>
+       </option>
+   <% end %>
+   </select>
+</p>  
+
+<p><label for="torrent">Torrent</label><br/>
+  <select name="torrent_id">
+       <option value="nil" selected>None</option>
+   <% @torrents.each do |torrent| %>
+       <option value="<%= torrent.id %>">
+         <%= torrent.file_name %>
+       </option>
+   <% end %>
+   </select>
+</p>
+
+<p><label for="download">Download</label><br/>
+  <select name="download_id">
+       <option value="nil" selected>None</option>
+   <% @downloads.each do |download| %>
+       <option value="<%= download.id %>">
+         <%= download.file_name %>
+       </option>
+   <% end %>
+   </select>
+</p>  
+  <%= submit_tag "Add" %>
+</form>
+<%= link_to 'Back', :action => 'list' %>
+
+

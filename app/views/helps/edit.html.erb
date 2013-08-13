@@ -1,0 +1,19 @@
+<h1>Editing help</h1>
+
+<table>
+  <tr>
+    <td>
+<%= form_tag :action => 'update', :id => @help %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+</td>
+<td>
+  <%= render :partial => 'markdown' %>
+</td>
+</tr>
+</table>
+
+
+<%= link_to 'Show', :action => 'show', :id => @help %> |
+<%= link_to 'Back', :action => 'list' %>

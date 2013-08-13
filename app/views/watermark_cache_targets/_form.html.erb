@@ -1,0 +1,24 @@
+<%= error_messages_for 'watermark_cache_target' %>
+
+<!--[form:watermark_cache_target]-->
+<p><label for="watermark_cache_target_weight">Weight</label><br/>
+<%= text_field 'watermark_cache_target', 'weight'  %></p>
+
+<p><label for="watermark_cache_target_cache_type">Type (aac, mp4)</label><br/>
+<%= text_field 'watermark_cache_target', 'cache_type'  %></p>
+
+<p><label for="watermark_cache_target_max_per_cache_server">Max Per Cache Server</label><br/>
+<%= text_field 'watermark_cache_target', 'max_per_cache_server'  %></p>
+
+<p><label for="watermark_cache_target_download_id">Download</label><br/>
+  <select name="watermark_cache_target[download_id]">
+       <option value="nil">None</option>
+   <% @downloads.each do |download| %>
+       <option value="<%= download.id %>" <%= (@watermark_cache_target.download and @watermark_cache_target.download.id == download.id) ? "selected" : "" %>>
+         <%= download.file_name %>
+       </option>
+   <% end %>
+   </select>
+</p>
+<!--[eoform:watermark_cache_target]-->
+

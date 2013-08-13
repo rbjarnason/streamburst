@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>streamburst.tv</title>
+    
+  	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="Content-Language" content="en">
+	<meta name="description" content="Streamburst.TV Download Store">
+	<meta name="keywords" content="Long Way Round, Race To Dakar, Vikingfilms, TT, Isle of Man, TT Races, Isle of Man TT Races 2007, TT Races 2007, Centenary, Superstock, Superstock TT, Bruce Anstey, Supersport, Supersport TT, Ian Hutchinson, Sidecar, Sidecar B, Dave Molyneux, John McGuinness, Shaun Harris">
+	<meta name="url" content="http://www.streamburst.tv">
+	<meta name="rating" content="Safe For Kids">
+	<meta name="revisit-after" content="25 days">
+	<meta name="robots" content="all">
+	<meta name="distribution" content="global">
+	<meta name="author" content="Streamburst Limited">
+	<meta name="copyright" content="Copyright © 2007-08 Streamburst Limited, All Rights Reserved">
+
+    <%= render(:partial => "shared/default_includes") %>
+    <%= stylesheet_link_tag "streamburst", :media => "all" %>
+  </head>
+
+  <body id="store" class="bg">
+    <%= render(:partial => "shared/body", :locals => {:logo_image => "Streamburst_Logo_Small.png",
+                                                      :logo_width => 212,
+                                                      :logo_height => 82,
+                                                      :tabs => "shared/brand_tabs",
+                                                      :analytics_account => "UA-1085096-7"}) %>  
+  </body>
+</html>

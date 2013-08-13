@@ -1,0 +1,9 @@
+<h1>Range "<%= @range_name %>"</h1>
+  <% for voucher in @vouchers -%>
+  <%=voucher.token%>
+  <% if voucher.used %>
+  - USED
+  <% end %>
+     <br/>
+  <% end %>
+<br/>

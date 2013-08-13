@@ -1,0 +1,86 @@
+<div id="streamburst_cart_header" class="streamburst_cart_header">
+  <table valign="top"><tr>
+    <td aling="left"><%=t :Your_Cart%></td>
+    <td align="middle">
+        <%= image_tag("circling-ball-3-frame-fade.gif",
+              :align => 'absmiddle',
+              :border=> 0, :alt => "Wait",
+              :id => "spinner",
+              :style=>"display: none;" ) %>              
+    </td>
+    <td align="right">
+      <% if @cart.items.length > 0 %>
+      (<%=@cart.items.length%>) item<%=@cart.items.length > 1 ? 's' : ''%>
+      <% end %>
+    </td></tr>
+  </table>
+</div>
+
+<% if @cart_pages.page_count > 1%>
+  <table class="paging-table">
+    <tr class="paging-buttons">
+      <td>
+        <%= render(:partial => "shared/paginate_cart", :locals => {:collection => @cart_pages }) -%>
+      </td>
+    </tr>
+  </table>
+<% end %>
+
+<table>
+  <tr>
+   <th><%=t :Title%></th>
+   <th class="cart_price_header"><%=t :Price%></th>
+    <th></th>
+  </tr>
+    <%= render(:partial => "shared/cart_item", :collection => @cart_items) %>
+  <% if not @brand.global_brand_access and cart.is_multi_brand?(@brand.id) %>
+   <tr class="total-line">
+     <td class="total-cell-text"><%=@brand.name%> <%=t :total%></td>
+     <td class="total-cell"><%= value_to_currency(cart.total_price_for_brand(@brand.id)) %></td>
+     <td></td>
+   </tr>
+   <tr class="total-line">
+     <td class="total-cell-text">
+     <%=t :Show_all%> <input id="show_all_brands_in_cart" name="show_all_brands_in_cart" type="checkbox" <%=session[:cart_show_all_brands] ? "checked" : ""%>/>
+     <%=t :Total%></td>
+     <td class="total-cell"><%= value_to_currency(cart.total_price) %></td>
+     <td></td>
+   </tr>
+  <% else %>
+   <tr class="total-line">
+     <td class="total-cell-text"><%=t :Total%></td>
+     <td class="total-cell"><%= value_to_currency(cart.total_price) %></td>
+     <td></td>
+    </tr>
+  <% end %>
+  <tr>
+   <td colspan="3">
+     <% unless cart.items.empty? %>
+     <div class="paging-buttons">
+       <table><tr>
+       <td align="left">
+        <%= link_to(image_localized_tag("button_checkOut_1.png", :border => 0, 
+	                       :alt => t(:Checkout), :size => "80x20"),{:controller => "checkout"})-%>
+       </td>
+       <td align="right">
+        <%= link_to_remote image_localized_tag("button_clearCart_1.png", :border => 0, 
+   	                    	                                   :alt => t(:Clear_cart), :size => "86x20"), 
+                                	    	                   :before   => %(Element.show('spinner')),
+                                                               :success  => %(Element.hide('spinner')),
+            	    	                                       :url => { :controller => "catalogue",
+            	    	                                                 :action => "empty_cart"} -%>
+        </td>
+        </tr></table>
+     </div>
+     <% end %>
+   </td>
+  </tr> 
+</table>
+<script type="text/javascript">
+//<!--
+  window.onload = function() {
+  var selectOne = document.getElementById('show_all_brands_in_cart');
+  if (selectOne) { selectOne.onclick = onSelectChange; }
+}
+//-->
+</script>

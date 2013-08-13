@@ -1,0 +1,506 @@
+/* ========================================================================================= */
+/* Tabs */
+/* ========================================================================================= */
+
+.tabs{
+  background: url(../images/onedayfilms_tab_image.png);
+  background-repeat: no-repeat;
+  background-position: right top; 
+}
+
+/* ========================================================================================= */
+/* START: FLV popups */
+/* ========================================================================================= */
+
+#flv td
+{
+	background-color: #000000;
+}
+
+#flv .title
+{
+	background-color: #333;
+    color: #ffffff;
+}
+
+#flv .text
+{
+	color: #ffffff;
+}
+
+#flv_rotation
+{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+#streamburst_tv_header
+{
+    background-image: url(../images/ODF_navHeader_strip.png);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+    color: #fff;
+}
+
+#streamburst_cart_header
+{
+    background-image: url(../images/ODF_navHeader_strip.png);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+    color: #fff;
+}
+
+#top_rotation {
+	background-color: #000000;
+}
+
+/* ========================================================================================= */
+/* START: Notice from layouts/_banner.rhtml                                                  */
+/* ========================================================================================= */
+#notice {
+  border: 2px solid white;
+  background-color: #666766;
+  color: #fff;
+}
+/* END: Notice from layouts/_banner.rhtml */
+
+/* ========================================================================================= */
+/* START: Sponsor Screen Screen from app/views/catalogue/add_to_cart_with_sponsor.rhtml */
+/* ========================================================================================= */
+#sponsor_screen
+{
+  border: 2px solid white;
+}
+
+#sponsor_screen .title
+{
+  background-color: #888888;
+}
+
+/* END: Sponsor Screen from app/views/catalogue/add_to_cart_with_sponsor.rhtml */
+
+/* ========================================================================================= */
+/* START: Help Screen from helps/get_help.rhtml */
+/* ========================================================================================= */
+#help-footer-text
+{
+	color: #555555;
+}
+
+#help-footer-text a
+{
+	color: #555555;
+}
+
+#help
+{
+    border: 2px solid white;
+}   
+
+#help .title
+{
+    background-color: #888888;
+}
+/* END: Helps from helps/get_help.rhtml */
+
+/* ========================================================================================= */
+/* START: Main page */
+/* ========================================================================================= */
+body {
+  background-color: #ffffff;
+  color: #2e2e2e;
+  }
+
+h1 {
+  color: #ffffff;
+  border-bottom: 3px dotted #310000;
+}
+
+.main-content-table {
+	background: url(../images/ODF_top_banner.png);
+  background-repeat: no-repeat;
+  background-position: 0px 2px;
+  background-color: #ffffff;
+}
+
+.bg {
+	background: url(../images/ODF_bg_strip.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-color: #2e2e2e;
+}
+
+.leftEdge {
+  background: url(../images/ODF_leftEdge_strip.png) repeat-y top right; 
+  background-color: #FFFFFF;
+}
+
+.rightEdge {
+  background: url(../images/ODF_rightEdge_strip.png) repeat-y top left; 
+  background-color: #FFFFFF;
+}
+
+/* END: Main page */
+
+/* ========================================================================================= */
+/* START: Main layout from layouts/streamburst.rhtml                                         */
+/* ========================================================================================= */
+#columns {
+  background: #FFFFFF;
+}
+
+#main {
+  background: #FFFFFF;
+}
+
+/* END: Main layout from layouts/streamburst.rhtml */
+
+/* ========================================================================================= */
+/* START: Product List from catalogue/index.rhtml, catalogue/_product.rhtml                    */
+/* ========================================================================================= */
+
+#store  .entry {
+  color: #fff;
+}
+
+#store caption {
+ /* background-color: #6b7b91; */
+  color: #fff;
+}
+
+#store .entry h3 {
+  color: #fff;
+}
+
+#store .entry-sponsor-price-header {
+  background-color: #666766;
+  color: #fff;
+}
+
+#store .entry th {
+ background-color: #666766;
+ color: #fff; 
+ background-image: url(../images/ODF_cSubHeader_grey_strip.png);
+ background-position: bottom left;
+ background-repeat: repeat-x;
+}
+
+#store .entry-header-duration {
+ color: #ffffff; 
+}
+
+#store .entry td {
+ background-color: #a2a0a0;
+ color: #2e2e2e;
+ background-image: url(../images/ODF_cContent_grey_strip_2.png);
+ background-position: bottom left;
+ background-repeat: repeat-x;
+}
+
+#store .entry .header {
+ color: #fff;
+ background-image: url(../images/LWD_navHeader_strip_2.png);  
+}
+
+#store .entry .rule {
+ background-image: url();
+ background-color: #ffffff;
+}
+
+#store .entry tr {
+ background-color: #363533;
+ border-bottom: 2px #fff;
+ color: #fff;
+}
+
+#store .entry table {
+  background-color: #FFFFFF;
+}
+
+#store .entry  .price {
+  color: #fff;
+}
+/* END: Product List from catalogue/index.rhtml */
+
+/* ========================================================================================= */
+/* START: Pagination shared/_pagination.rhtml                                                */
+/* ========================================================================================= */
+
+.pagination a, .pagination a:visited{
+border: 1px solid #ffffff;
+color: #999999;
+}
+
+.pagination a:hover, .pagination a:active{
+border: 1px solid #ffffff;
+color: #999999;
+background-color: white;
+}
+
+.pagination li.currentpage{
+border: 1px solid white;
+background-color: #FFFFFF;
+color: #999999;
+}
+
+.pagination li.disablepage{
+border: 1px solid #aaa;
+color: #aaa;
+}
+
+/* ========================================================================================= */
+/* START: Categories Selection from catalogue/_categories_select.rhtml                           */
+/* ========================================================================================= */
+
+#categories table {
+  background-color: #363533;
+}
+
+#categories tr {
+  color: #fff;
+}
+
+
+#categories .category-td-selected {
+ color: #a2a0a0;
+}
+
+#categories .category-text {
+ color: #fff;
+}
+
+#show-download {
+  color: #fff;
+}
+
+/* ========================================================================================= */
+/* START: Cart from shared/_cart.rhtml                                                       */
+/* ========================================================================================= */
+#cart {
+  color:     #fff;
+
+}
+
+#cart caption {
+  background-color: #6b7b91;
+  /*background-image: url(../images/ODF_navHeader_strip.png);*/
+  background-position: top left;
+  background-repeat: repeat-x;
+  color: #ffffff;
+}
+
+#cart th {
+	color: #ffffff; 
+  background-color: #6b7b91;
+  /*background-image: url(../images/ODF_navSubHeader_strip.png);*/
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+#cart .cart-item-title {
+  color: #ffffff;
+}
+
+#cart .cart-item-price {
+  color: #ffffff;
+}
+
+#cart .cart_item_background {
+	background-color: #6b7b91;
+}
+
+#cart .total-line {
+	background-color: #6b7b91;
+  /*background-image: url(../images/ODF_navSubHeader_strip.png);*/
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#cart .total-buttons table {
+  background-color: #6b7b91;
+  /*background-image: url(../images/ODF_navFooter_red_strip.png);*/
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  background-color: #6b7b91;
+}
+
+#cart .paging-buttons table {
+  background-color: #6b7b91;
+  /*background-image: url(../images/ODF_navFooter_red_strip.png);*/
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  background-color: #6b7b91;
+}
+
+/* END: Cart from shared/_cart.rhtml */
+
+/* ========================================================================================= */
+/* START: Forms for index, login, register, billing and download                             */
+/*                                                                                           */
+/* HTML File: app\views\catalogue\index.rhtml (.main-header only)                                */
+/* HTML File: app\views\users\login.rhtml                                                    */
+/* ========================================================================================= */
+
+#forms .leftContentEdge {
+  background: url(../images/SB_leftContentEdge_strip.png) repeat-y 0 0; 
+  background-color: #FFFFFF;
+}
+
+#forms .rightContentEdge {
+  background: url(../images/SB_rightContentEdge_strip.png) repeat-y 0 0; 
+  background-color: #FFFFFF;
+}
+
+#forms .main-header
+{
+  background-color: #6b7b91;
+  background-image: url(../images/toolbar_bg_strip.png);
+}
+
+#forms .main-header-left-txt
+{
+  color: #ffffff;
+}
+
+#forms .main-header-right-txt
+{
+  color: #ffffff;
+}
+
+#forms .sub-header
+{
+  background-color: #535353;
+  background-image: url(../images/ODF_pSubHeader_grey_strip.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-header-txt
+{
+  color: #ffffff;
+}
+
+#forms .sub-box
+{
+  background-color: #e5e9ee;
+  background-image: url(../images/ODF_cContent_grey_strip_2.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-box-registration
+{
+  background-color: #2e2d3b;
+  background-image: url(../images/DUKE_cContent_grey_strip_2.png);
+}
+
+#forms .sub-box-txt
+{
+  color: #ffffff;
+}
+
+#forms .sub-box-button-box
+{
+}
+
+
+#forms .sub-half-header
+{
+  background-color: #6b7b91;
+  background-image: url(../images/ODF_pSubHeader_grey_strip.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-half-txt
+{
+  background-color: #6b7b91;
+}
+
+#forms .sub-quart-header
+{
+  background-color: #6b7b91;
+}
+
+#forms .sub-quart-txt
+{
+  background-color: #6b7b91;
+}
+
+#forms .sub-16-header
+{
+  background-color: #6b7b91;
+  background-image: url(../images/ODF_pSubHeader_grey_strip.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#forms .sub-16-txt
+{
+  background-color: #6b7b91;
+}
+
+#forms .sub-16-txt-grey
+{
+  background-color: #6b7b91;
+}
+
+#forms .sub-box-txt-red
+{
+  color: #ff0000;
+}
+
+#forms .sub-box-txt-red-links a:link
+{
+  color: #ff0000; text-decoration: underline;
+}
+
+#forms .sub-box-txt-red-links a:active
+{
+  color: #ff0000; text-decoration: underline;
+}
+
+#forms .sub-box-txt-red-links a:visited
+{
+  color: #ff0000; text-decoration: underline;
+}
+#forms .sub-box-txt-red-links a:hover
+{
+  color: #ff0000; text-decoration: underline;
+}
+/* END: Forms for login, register, billing and download */
+
+/* ========================================================================================= */
+/* START: General Rails Form Error Handling                                                  */
+/* ========================================================================================= */
+.fieldWithErrors {
+  background-color: white;
+}
+
+#errorExplanation {
+  border: 2px solid white;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  background-color: #000;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+}
+
+#errorExplanation ul li {
+  color: #333;
+}
+/* END: General Rails Form Error Handling */
+
+/* ========================================================================================= */
+/* START: Global Link Styles                                                                 */
+/* ========================================================================================= */
+ a:link {color: #fff; text-decoration: none; }
+ a:active {color: #fff; text-decoration: none; }
+ a:visited {color: #fff; text-decoration: none; }
+ a:hover {color: #fff; text-decoration: none; }
+/* END: Global Link Styles */

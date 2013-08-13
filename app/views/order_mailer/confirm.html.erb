@@ -1,0 +1,7 @@
+<%=t :Dear%> <%= @order.name %>
+
+<%=t :confirm_email_1%>
+
+<%=t :confirm_email_2%>:
+
+<%= render(:partial => "./line_item", :collection => @order.line_items) %>

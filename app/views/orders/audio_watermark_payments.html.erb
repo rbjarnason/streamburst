@@ -1,0 +1,11 @@
+    <%= form_tag( { :action => 'audio_watermark_payments' }, { :multipart => true }) %>
+      <!--[form:csv_data-->
+        <p><label>USD Exchange Rate (example 0.483053)</label><br/>
+        <input type="text" name="usd_ex_rate" /><br/>
+        <p><label>EUR Exchange Rate (example 0.696397)</label><br/>
+        <input type="text" name="eur_ex_rate" /><br/><br/>
+        <p><label>ISK Exchange Rate (example 123.22)</label><br/>
+        <input type="text" name="isk_ex_rate" /><br/><br/>
+        <!--[eoform:form:csv_data]-->
+      <%= submit_tag "Create Report" %>
+      </form>

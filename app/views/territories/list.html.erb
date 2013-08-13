@@ -1,0 +1,27 @@
+<h1>Listing territories</h1>
+
+<table>
+  <tr>
+  <% for column in Territory.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for territory in @territories %>
+  <tr>
+  <% for column in Territory.content_columns %>
+    <td><%=h territory.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => territory %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => territory %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => territory }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @territory_pages.current.previous } if @territory_pages.current.previous %>
+<%= link_to 'Next page', { :page => @territory_pages.current.next } if @territory_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New territory', :action => 'new' %>

@@ -1,0 +1,56 @@
+<div id="product-list">
+<h1>People Who Bought "<%= @product.title %>"</h1>
+<% total_sold = 0 %>
+<table width="100%" cellpadding="5" cellspacing="0">
+  <th align="left" width="10%">Order id</th>
+  <th align="left" width="20%">Email</th>
+  <th align="left" width="20%">Name</th>
+  <th align="left" width="5%">Country</th>
+  <th align="left" width="10%">Order Price</th>
+  <th align="left" width="10%">Status</th>
+  <th align="left" width="5%">PayPal Country</th>
+  <th align="left" width="10%">PayPal Order Price</th>
+  <th align="left" width="10%">PayPal Status</th>
+
+  <% for order in @orders -%>
+  <% if order.paypal_payment_status=="Completed" %>
+    <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+     <td width="10%">
+       <%= order.id %>
+       </td>
+       <td width="20%">
+       <%= mail_to order.email, order.email %> 
+       </td>
+       <td width="20%">
+       <%= order.first_name %> <%=order.last_name %> 
+       </td>
+       <td width="5%">
+       <%= order.country_code %>
+       </td>
+       <td width="10%">
+       <%= number_to_currency(order.total_price, :unit => "&pound;" ) %>
+       </td>
+       <td width="10%">
+       <%= order.status %>
+       </td>
+       <td width="5%">
+       <%= order.paypal_residence_country %>
+       </td>
+       <td width="10%">
+       <%= number_to_currency(order.paypal_mc_gross, :unit => "&pound;" ) %>
+       </td>
+       <td width="10%">
+       <%= order.paypal_payment_status %>
+     </td>
+   </tr>
+        <% if order.total_price == nil %>
+          <% order.recalculate_total_price_and_save %>
+        <% end %>
+        <% total_sold += order.total_price %>
+    <%  end -%>
+    <% end %>
+  </table>
+  <br/>
+<b>Total sales price: <%= number_to_currency(total_sold, :unit => "&pound;" ) %></b>
+</div>
+<br/>

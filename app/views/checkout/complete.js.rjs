@@ -1,0 +1,2 @@
+page.replace_html("cart", :partial => @cart_filename, :object => @cart)
+page << "document.getElementById('basket_id').style.height=#{@cart.get_cart_bottom_height(@brand.id,@cart_items)}+'px';" if @brand.custom_products_list

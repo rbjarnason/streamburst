@@ -1,0 +1,49 @@
+<div id="product-list">
+<h1>Listing advertisements</h1>
+
+  <table cellpadding="5" cellspacing="0">
+  <% for advertisement in @advertisements %>
+    <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+
+      <td width="20%">
+        <span class="list-title"><%= h(advertisement.name) %></span><br />
+      </td>
+
+      <td>
+        <img src="<%= url_for_image_column advertisement, "image", :absolute => true %>">
+      </td>
+
+      <td width="15%">
+        <%= h(advertisement.total_exposures) %><br />
+      </td>
+
+      <td width="15%">
+        Duration: <%= h(advertisement.duration) %><br />
+      </td>
+
+      <td class="list-actions">
+        <%= link_to 'Show', :action => 'show', :id => advertisement %><br/>
+        <%= link_to 'Edit', :action => 'edit', :id => advertisement %><br/>
+        <%= link_to 'Formats', :action => 'manage_formats', :id => advertisement %><br/>
+        <%= link_to 'Destroy', { :action  => 'destroy', :id => advertisement },
+                                 :confirm => "Are you sure?",
+                                 :post    => true %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+
+<%=  if @advertisements_pages.current.previous 
+       link_to("Previous page", { :page => @advertisements_pages.current.previous })
+     end
+%>
+
+<%= if @advertisements_pages.current.next 
+      link_to("Next page", { :page => @advertisements_pages.current.next })
+    end
+%>
+
+<br />
+
+<%= link_to 'New advertisements', :action => 'new' %>

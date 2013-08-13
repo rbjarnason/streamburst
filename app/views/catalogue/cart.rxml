@@ -1,0 +1,16 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.currency_code(@currency_code)
+xml.cart do
+  for cart_item in @cart.items
+    xml.cart_item do
+      xml.current_item(cart_item == @current_item ? "true" : "false")
+      xml.title(cart_item.title)
+      xml.price(cart_item.price)
+      xml.brand_id(@brand.id)
+      xml.product_id(cart_item.product.id)
+    end
+  end
+  xml.total_price(@cart.total_price)
+end

@@ -1,0 +1,43 @@
+<%=t :Dear%> <%= @order.first_name %> <%= @order.last_name %>,<br/>
+<br/>
+<%=t :download_ready_email_1%> <%= @order.line_items.count > 1 ? t(:items) : t(:item)%>:<br/>
+<%= render(:partial => "line_item", :collection => @order.line_items) %>
+<br>
+<% if RAILS_ENV=="production" %>
+  <a href="https://<%= @host %>/delivery/show_downloads?downloads_key=<%= @order.downloads_key %>"><%=t :download_ready_email_2%></a>
+<% else %>
+  <a href="http://app2.streamburst.net:3000/delivery/show_downloads?downloads_key=<%= @order.downloads_key %>"><%=t :download_ready_email_2%></a>
+<% end %>
+<br><br>
+  <% if @order.has_audio %>
+    <%=t :download_ready_email_3%>
+    <br><br>
+  <% end %>
+
+  <% if @order.has_video %>
+    <%=t :download_ready_email_4%><br><br>
+    <%=t :download_ready_email_5%><br><br>
+    <%=t :download_ready_email_6%><br><br>
+    <%=t :download_ready_email_7%><br><br>
+  <% end %>
+<% if @order.total_price > 0 %>
+  <% if @order.has_video %>
+    <% if @order.line_items.count > 1 %>
+      <%=t :get_download_info_2_warning_plural%><br><br>
+    <% else %>
+      <%=t :get_download_info_2_warning%><br><br>
+    <% end %>
+  <% end %>
+<% end %>
+<% if @brand.email_marketing_message != nil && @brand.email_marketing_message != "" %>
+  <%=  @brand.email_marketing_message %>
+  <p>
+<% end %>
+    <%=t :download_ready_email_8%><br><br>
+<%=t :Enjoy%>,<br/>
+<% unless @brand.name == "Streamburst" %>
+    <%=t :download_ready_email_9, :brand_name=>@brand.name %>.<br>
+<% else %>
+    Streamburst<br>
+<% end %>
+support@streamburst.tv

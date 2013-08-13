@@ -1,0 +1,9 @@
+<h1>Editing watermark_cache_target</h1>
+
+<%= form_tag :action => 'update', :id => @watermark_cache_target %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @watermark_cache_target %> |
+<%= link_to 'Back', :action => 'list' %>

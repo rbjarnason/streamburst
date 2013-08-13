@@ -1,0 +1,21 @@
+<% if cart_item == @current_item %>
+  <tr id="current_item" class="cart_item_background">
+<% else %>
+  <tr class="cart_item_background">
+<% end %>
+  <td class="cart-item-title"><%= truncate(cart_item.title,:length=>60) %></td>
+  <td class="cart-item-price"><%= cart_item.price_with_currency %></td>
+  <td class="cart-item-remove">
+    <% if cart_item.sponsor_bid_id %>  
+      <%= image_tag "icon_sponsor_1.png", :border => 0, :size => '24x24', :alt => "Sponsor selected" %>
+    <% end %>
+    <%= link_to_remote image_tag("icon_trash_1.png", :border => 0, 
+  	                    	                         :alt => t(:Remove_from_cart), 
+  	                    	                         :class => "cart-item-remove-image"), 
+                                	    	         :before   => %(Element.show('spinner')),
+                                                     :success  => %(Element.hide('spinner')),
+            	    	                             :url => { :controller => "catalogue",
+            	    	                                       :action => "remove_from_cart",
+            	    	                                       :id => cart_item.product.id } -%>
+  </td>
+</tr>

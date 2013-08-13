@@ -1,0 +1,534 @@
+﻿# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+fr:
+  login: "Connexion"
+  Included: "Inclus"
+  audio: "Audio"
+  video: "Vidéo"
+  format: "Format"
+  formats: "Formats"
+  Brand: "Marque"
+  Price: "Prix"
+  hr: "hr"
+  min: "min"
+  sec: "sec"
+  Sponsor_Price: "Prix sponsor"
+  Add_to_cart: "Ajouter au panier"
+  Help: "Aide"
+  Instructions: "Instructions"
+  Watch_Now: "Regarder maintenant"
+  logged_in_as: "Se Connecter "
+  not_logged_in: "Pas connecté"
+  Click_here_to_Browse: "Cliquer ici pour naviguer"
+  Disabled: "Invalide"
+  Next: "Suivant"
+  Previous: "Avant"
+  Close: "Fermer"
+  Back: "Retour"
+  about_above_flash_video: "La vidéo est fournie en qualité web et ne représente pas le téléchargement Haute qualité pour votre contenu personnalisé"
+  Trailer: "Bande-Annonce"
+  video_welcome: "Soyez les bienvenus de la part de l’équipe {{brand_name}}"
+  Get_A_Sponsor_for: "Prenez un sponsor"
+  Get_A_Sponsor: "Prenez un sponsor"
+  Get_a_sponsor_product_info: "Vous pouvez sélectionner un sponsor ce qui fera baisser le prix en échange d’une publicité de 30-45 secondes au début de votre téléchargement."
+  Sponsor Discount: "Réduction sponsor"
+  Sponsor_Price: "Prix sponsor"
+  Add_to_cart_with_Sponsor: "Ajouter au panier avec un sponsor"
+  streamburst_usage_1: "Mode d’emploi pour ce site internet de Streamburst"
+  streamburst_usage_2: "Ci-dessous mode d’emploi basique sur la façon d’utiliser ce site"
+  streamburst_usage_3: "Utiliser \"AJOUTER AU PANIER\" pour sélectionner ce que vous voulez ajouter."
+  streamburst_usage_4: "Quand vous êtes prêt cliquer sur\"Payer\" sur la liste des achats"
+  streamburst_usage_5: "Se connecter ou s’enregistrer avec votre nom, courriel et mot secret si vous êtes un nouveau client de Streamburst. Après avoir fourni les informations nécessaires cliquer sur\SE CONNECTER\ou\S’ENREGISTRER\en bas de la page. Vous pouvez aussi cliquer sur Facebook Connect en utilisant  vos détails de connections de Facebook."
+  streamburst_usage_6: "Vérifier votre commande et cliquer sur \"CONFIRMER COMMANDE\" en bas de la page quand vous êtes prêts"
+  streamburst_usage_7: "Terminer le paiement si nécessaire et cliquer sur \"ALLEZ AU TÉLÉCHARGEMENT\" en bas de l’écran"
+  streamburst_usage_8: "Sélectionner ce que vous voulez télécharger et cliquer sur \"PRÉPARER TÉLÉCHARGEMENT\""
+  streamburst_usage_9: "Attendre quelques secondes ou minutes pendant que votre vidéo est préparée et personnalisée par notre serveur."
+  streamburst_usage_10: "Lorsqu’elle est  prête \"commencer le téléchargement\" et sélectionner un endroit sur votre disque dur pour le stocker"
+  streamburst_usage_11: "Attendre  que la vidéo soit téléchargée ou commencer \"PRÉPARER TÉLÉCHARGEMENT\" et \"COMMENCER TÉLÉCHARGEMENT\" pour une autre vidéo"
+  streamburst_usage_12: "Une fois que la vidéo a été téléchargée, sélectionnez la dans votre disque dur et regardez la sur votre PC en utilisant par exemple: le QuickTime player, copiez sur un DVD ou regardez sur votre TV Apple,Xbox360 ou sur n’importe quel autre support media connectable à votre télé"
+  streamburst_usage_13: "Si nous n’êtes pas sûr de quelque-chose ou vous avez besoin de plus d’informations, envoyez-nous un courriel à  support@streamburst.tv et nous répondrons dans les plus bref délais."
+  preview: "Aperçu"
+  Preview: "Aperçu"
+  streamburst_website_closed_1: "LE SITE STREAMBURST EST FERMÉ POUR MAINTENANCE"
+  streamburst_website_closed_2: "S’IL VOUS PLAÎT REVENEZ BIENTÔT"
+  Go_to_downloads: "ALLEZ A TÉLÉCHARGEMENT"
+  order_confirmation_1: "Merci de votre commande."
+  order_confirmation_2: "Un reçu de votre commande sera envoyé à l’adresse courrielle fournie. Le courriel contient un lien direct vers la page de téléchargement .Pour accéder à votre téléchargement cliquer sur le bouton\"Allez au téléchargement\."
+  order_confirmation_3_google: "Votre commande est en attente à la caisse de Google. Un courriel vous sera envoyé avec les informations pour le téléchargement dès réception de  la notification de Google."
+  order_confirmation_3_paypal: "Votre commande est en attente à la caisse de Paypal. Un courriel vous sera envoyé avec les informations pour le téléchargement dès réception de la notification de Paypal . La vérification electronique peut prendre quelques jours."
+  order_confirmation_3_paypal_denial: "Paypal nous informe que votre payement a été refusé."
+  order_confirmation_4: "Vous pouvez réessayer en cliquant sur le bouton en-dessous."
+  order_confirmation_5_paypal_cancel: "Paypal nous informe que vous avez annulé votre commande. Si c’est une erreur merci de contacter support@streamburst.tv."
+  Confirm_Order: "Confirmer commande"
+  order_pre_confirmation_1: "Voici un récapitulatif de votre commande. Si tout les détails sont corrects, merci de cliquer sur \"Confirmer Commande\" sur le bouton en-dessous pour finaliser les détails de votre commande."
+  order_pre_confirmation_1_paypal_express: "Voici un récapitulatif de votre commande. Si tout les détails sont corrects, merci de cliquer sur \"Confirmer Commande\" sur le bouton en-dessous pour finaliser le paiement de votre commande."
+  title: "Titre"
+  Category: "Catégorie"
+  Confirm_discount_code: "Confirmer le code de réduction"
+  Free: "Gratuit"
+  Discount: "Réduction"
+  Total: "Totale"
+  Retry: "Réessayer"
+  order_confirmation_title: "Confirmation de la commande – Commande Réf."
+  order_confirmation_title_not_confirmed: "Commande non confirmée – Commande Réf."
+  Go_To_Download_Page: "Allez à la page de téléchargement"
+  Checkout: "Caisse"
+  Confirm_Payment: "Confirmer Paiement"
+  Your_Order: "Votre commande"
+  paypal_cancel_title: "Achat annulé par Paypal"
+  Back_to_downloads: "Retour au téléchargement"
+  content_ready_audio_only_1: "Votre contenu est maintenant prêt a être téléchargé, cliquer sur \"Commencer à télécharger\" ci-dessous. Le contenu peut être lu par n’importe quel type de lecteur audio."
+  content_ready_audio_only_2_warning: "Prenez soin de garder ce fichier hors des applications de partage de fichier internet. Car si le fichier est détecté sur des réseaux illégaux de partage de fichiers, le contenu audio est gravé d’un numéro de série encrypté qui fera remonter Streamburst jusqu'à vous. Transcoder le fichier audio dans un format différent : digital ou analogique n’effacera pas le numéro de série encrypté."
+  content_ready_video_1: "Votre vidéo est maintenant prête à être téléchargée, cliquer sur \"Commencer à télécharger\" ci-dessous. La vidéo peut-être visionnée par n’importe quel type de lecteur vidéo qui accepte par exemple: le standard MPEG4 AVC"
+  content_ready_video_2: "Streamburst recommande les lecteurs vidéo gratuits suivants"
+  content_ready_video_3_4gb_plus: "<b>Warning:</b> Internet Explorer n’accepte pas des téléchargements plus importants que 4GB .S’il vous plaît utilisez un gestionnaire de téléchargement comme <u><a href=\"http://www.xi-soft.com/default.htm\" target=\"_blank\">Net Transport</a></u> ou un moteur de recherche tel que <u><a href=\"http://www.mozilla.com/en-US/firefox/\" target=\"_blank\">Firefox</a></u> with the <u><a href=\"http://www.downthemall.net/\" target=\"_blank\">DownThemAll</a></u> Télécharger le gestionnaire des ajouts."
+  content_ready_video_4_HD: "<b>Note:</b> Le contenu Haute-Définition a besoin d’un ordinateur rapide pour un taux d’image optimum ou un décodeur rapide HD comme <u><a href=\"http://www.coreavc.com/\" target=\"_blank\">CoreAVC</a></u>"
+  Ready_for_download: "Prêt a télécharger"
+  Ready: "Prêt"
+  Start_Download: "Commencer le téléchargement"
+  Email_me_when_ready: "Envoyez moi un courriel lorsque c’est prêt"
+  Cancel: "Annulé"
+  get_download_info_1: "Votre vidéo est maintenant personnalisée par notre serveur. Quand la préparation sera terminée cliquer sur \"Commencer le téléchargement\" pour commencer le téléchargement."
+  get_download_info_2_warning: "Nota Bene: Le fichier vidéo est personnalisé avec votre nom. Prenez soin de garder ce fichier hors des applications de partage de fichier internet.Car si le fichier est détecté sur des réseaux illégaux de partage de fichiers, le contenu audio est gravé d’un numéro de série encrypté qui fera remonter Streamburst jusqu'à vous.
+  get_download_infor_2_warning_plural : » Nota Bene: Les fichier vidéos sont personnalisés avec votre nom. Prenez soin de garder ces fichiers hors des applications de partage de fichier internet. Car si les fichiers sont détectés sur des réseaux illégaux de partage de fichiers, le contenu audio est gravé d’un numéro de série encrypté qui fera remonter Streamburst jusqu'à vous.
+Waiting: "En Attente »
+  Disabled: "Invalide"
+  show_downloads_info_1_welcome: "Bienvenue dans  vos téléchargements. Vous pouvez utiliser un gestionnaire de téléchargement pour augmenter votre vitesse de téléchargement et vous permettre de reprendre les téléchargements si la connections à internet est temporairement coupée. Streamburst recommande les gestionnaires de téléchargements gratuit suivant"
+  Windows_only: "Seulement Windows "
+  firefox_plugin_info: "Branchement Firefox pour Windows, Mac et Linux"
+  show_downloads_info_2: "Cliquer sur le lien ci-dessous pour commencer le téléchargement dans le format sélectionné."
+  no_downloads_yet: "Vous n’avez aucun téléchargement"
+  Formats: "Formats"
+  Start_Download: "Commencer le téléchargement"
+  Prepare_Download: "Préparer le téléchargement"
+  content_ready_title: "Contenu prêt a être téléchargé"
+  Content: "Contenu"
+  Back_to_List_of_Downloads: "Retour à la liste de téléchargement"
+  get_download_title_1: "Préparer contenu pour téléchargement"
+  get_download_title_2: "Statut de préparation"
+  Options: "Options"
+  My_Downloads: "Mes téléchargements"
+  Your_Downloads: "Vos téléchargements"
+  Downloads_Page: "Page de téléchargements"
+  First_Name: "Prénom"
+  Last_Name: "Nom"
+  Email_Address: "Courriel"
+  Confirm_Email_Address: "Confirmer Adresse courrielle"
+  Password_Min_Characters: "Mot secret"
+  Confirm_Password: "Confirmer mot secret"
+  Register_now: "S’inscrire maintenant"
+  login_info_1: "S’inscrire maintenant pour télécharger votre contenu. C’est facile et ne prend que quelques secondes. Déjà inscrit? Se connecter en utilisant votre adresse courrielle et votre mot secret"
+  Password: "Mot secret"
+  Login: "Se connecter"
+  login_title_1: "Se connecter /S’inscrire"
+  login_title_2: "Déjà inscrit, se connecter"
+  login_title_3: "Nouveau clients s’inscrire ici"
+  dvm_recommendation_text_1: "Recommander {{dvm_titre}} à vos amis et gagner de l’argent en vendant des téléchargements depuis votre profil."
+  dvm_preview: "Aperçu du kiosque digital"
+  dvm_preview_header: "En- Tête"
+  dvm_preview_body: "Partie principale"
+  dvm_preview_footer: "Bas de page"
+# Translation Session 2
+  main_footer: "Principales cartes de débits et carte de crédits acceptées - Support: support@streamburst.tv - <a href=\"/terms.html\" target=\"_blank\">Cliquer ici pour les termes de services.</a>"
+  Remove_from_cart: "Enlever du panier"
+  Your_Cart: "Votre panier"
+  total: "Total"
+  Clear_cart: "Vider panier"
+  Show_all: "Montrer tout"
+  Download_Categories: "Télécharger les Catégories"
+  click_to_learn_to_use: "Cliquer ici pour savoir comment utiliser le service"
+  my_downloads: "Mes téléchargements"
+  my_dvms: "Mon kiosque digital"
+  dvm_signup: "Enregistrement du kiosque digital"
+  My_downloads: "Mes téléchargements"
+  Previous_page: "Page précédente"
+  Next_page: "Page suivante"
+  Page: "Page"
+  of: "de"
+  previous: "Précédente"
+  next: "Suivant"
+  Dear: "Cher(e)"
+  download_ready_email_1: "Merci de votre commande. Vous avez commandé les articles suivants"
+  item: "Article"
+  items: "Articles"
+  download_ready_email_2: "Cliquer ici pour aller à la page de téléchargement"
+  download_ready_email_3: "Vous pouvez écouter les fichiers gratuits (Gestion. Droits. Numériques) sur tous les lecteurs audio"
+  download_ready_email_4: "Nous recommandons soit le lecteur QuickTime version 7+ (suivre le lien suivant): http://www.apple.com/quicktime/download/ ou le lecteur VLC, (suivre le lien suivant): http://www.videolan.org/vlc/"
+  download_ready_email_5: "Pour lire le contenu avec le lecteur Windows Media installer soit le lecteur Zune player or suivre les instructions (utilisé): http://www.afterdawn.com suivre le lien suivant): /guides/archive/how_to_play_mp4_files.cfm"
+  download_ready_email_6: "Vous pouvez importer les vidéos directement de votre PC    si vous avez l’une des consoles suivantes: Xbox 360, Apple TV or Playstation 3. Pour le support Xbox 360 télécharger Zune (suivre le lien suivant: http://www.zune.net/"
+  download_ready_email_7: "Pour graver la vidéo sur un DVD et la regarder sur votre TV grâce a votre lecteur DVD nous recommandons le DVD-Flick – qui est gratuit- (suivre le lien suivant): http://www.dvdflick.net/download.php"
+  download_ready_email_8: "Si vous avez un problème avec vos téléchargements s’il vous plaît contacter support@streamburst.tv et nous vous répondrons dans les plus bref délais."
+  download_ready_email_9: "Streamburst pour {{brand_name}} équipe"
+  confirm_email_1: "Merci de votre commande au magasin."
+  confirm_email_2: "Vous avez commandé les articles suivants"
+  Enjoy: "Amusez-vous bien"
+  preperation_complete_email_1: "Votre {{marque_nom}} téléchargement est prêt."
+  preperation_complete_email_2: "Pour accéder {{product_titre}} vous pouvez <a href=\"https://{{host}}/delivery/content_ready?job_key={{job_key}}\">click here</a> ou copier le lien dans votre moteur de recherche:<br> https://{{host}}/delivery/content_ready?job_key={{job_key}}"
+  preperation_complete_email_3: "Expiration du contenu dans les six heures : si vous dépassez ce temps vous aurez besoin de cliquer sur \"Mes téléchargements\" sur la page d’accueil."
+  preperation_complete_email_4: "Si vous avez un problème avec votre téléchargement ou re-diffusion;contacter s’il vous plaît support@streamburst.tv , nous vous répondrons dans les plus bref délais."
+# Translation Session 3
+  discount_code_already_used: "La réduction a déjà été utilisée"
+  discount_code_not_found: "Code de réduction non trouvé"
+  video_prep_failed: "La préparation de la vidéo a échoué – Les administrateurs du site ont été avertis"
+  video_job_cancelled: "Préparation de la dernière vidéo a été annulée"
+  video_job_cancelled_failed: "L’annulation de la préparation de la vidéo a échoué"
+  email_alert_for_download: "Vous recevrez un courriel lorsque le contenu est prêt."
+  email_alert_for_download_failed: "Le courriel de la préparation de la vidéo a échouée"
+  not_your_dvm: "Ce n’est pas votre kiosque digital"
+  invalid_email_password: " Combinaison courriel/mot secret invalide. S’il vous plaît assurez vous que vous êtes déjà inscrit."
+  problem_with_registration: "Il y a un problème avec votre inscription, vérifier les informations ci-dessous."
+  not_authorized: "Vous n’êtes pas autorisé à naviguer sur cette page."
+  Invalid_product: Produit invalide"
+  cart_empty: "Votre panier est vide"
+  problem_saving_order: "Il y un problème pour sauvegarder votre commande .Les administrateurs du système ont été avertis."
+  this_is_not_your_order: "Ce n’est pas votre commande, contacter support@streamburst.tv pour support."
+  problem_with_order: "Il y a un problème avec votre commande, s-il- vous plaît contacter support@streamburst.tv pour support."
+  Missing_downloads_job: "Téléchargement manquant"
+  not_your_download_job: "Ce n’est pas votre téléchargement"
+  order_not_fully_processed: "Cette commande n’a pas été entièrement validée .S’il vous plaît contacter support@streamburst.tv"
+  product_not_part_of_order: "Ce produit ne fait pas partie de votre commande. S’il vous plaît contacter support@streamburs.tv"
+# Translation Session 5
+  relative_popularity: "Popularité"
+  Popularity: "Popularité"
+  Time: "Temps"
+  Name: "Titre"
+# SENT TO LAZYTOWN 1
+  lt_info_1: "Graver sur un DVD, regarder sur votre TV"
+  lt_info_2: "Graver votre LazyTown sur un DVD, autant de fois que vous voulez ! Plus de soucis à avoir si votre DVD est rayé"
+  lt_info_3: "Formats Multiples, Un prix, Regarder en marchant"
+  lt_info_4: "Les téléchargements de LazyTown sont fournis dans de multiples formats- Haute Qualité pour regarder sur votre TV et   Qualité Portable pour téléphones cellulaires, iPod et autres lecteurs portables – tous inclus dans le prix!"
+  lt_info_5: "Accéder à vos téléchargement"
+  lt_info_6: "Connectez vous et accédez à vos téléchargements précédemment achetés quand vous le voulez"
+# Translation Session 6
+  click_here_to_reset_your_password: "Si vous avez oublié votre mot secret s’il vous plaît cliquer ici<a href=\"/users/forgot_password\">here</a> pour récupérer votre mot secret."
+  password_reset_email_1: "Vous avez reçu un courriel pour récupérer votre mot secret."
+  Forgotten_Password: "Mot secret oublié"
+  Enter_email_address: "Inscrivez votre adresse courrielle ici"
+  Submit: "Valider"
+  Reset_Password_for: "Récupération du mot secret pour"
+  job_in_queue: "Votre contenu est dans la queue"
+  other_jobs_in_preperation: Vous avez d’autres contenus en préparation"
+  Make_a_payment_via_PayPal: "Payé via Paypal"
+  You_can_also_use_the_PayPal_website: "Vous pouvez également effectuer un paiement en accédant au site de Paypal en cliquant sur ce bouton:"
+  No_Payment_is_needed: "Pas de paiement nécessaire pour cette commande"
+  Please_enter_your_card_information_below: "S’il vous plaît entrer votre numéro de cartes de débit ou de crédit "
+  Card_number: "Numéro de cartes"
+  Expiry_month: "Mois d’expiration"
+  Expiry_year: "Année d’expiration"
+  Start_month: "Mois de commencement"
+  Start_year: "Année de commencement"
+  Card_type: "Type de carte"
+  Issue_number: "Numéro"
+  Verification_code: "Code de vérification"
+  order_payment_confirmation_1: "Entrer vos détails ci-dessous."
+  order_payment_confirmation_2: "Vous serez capable de télécharger votre contenu tout de suite après que votre paiement aura été accepté."
+  order_payment_confirmation_3: "Vous pouvez payer directement en utilisant le formulaire suivant ou en finissant le paiement sur le site internet de Paypal en cliquant sur le bouton Paypal en bas de cette page."
+  order_payment_confirmation_4: "Vous payez un total de {{order_price}} pour {{item_count}} téléchargements."
+  order_payment_confirmation_5: "Cliquer ici pour autoriser votre paiement."
+  payflow_error_1: "Temps expiré pour le paiement Paypal"
+  payflow_error_2: "S’il vous plait soyez sûr que toutes les informations de la carte sont correctes."
+  payflow_error_3: "Copie de la transaction."
+  payflow_error_4: "Fonds disponibles dans le compte insuffisants."
+  payflow_error_5: "Système de paiement Paypal occupé, s’il vous plait essayez plus tard."
+  payflow_error_6: "Problème avec le traitement de paiement Paypal"
+  payflow_error_7: "Information de la carte invalide"
+# Translation Session 6
+  Expiry_date: "Date d’expiration"
+  Start_date: "Date de commencement"
+  PayNow: "Payer maintenant"
+  OtherPaymentOptions: "Autres options de paiement"
+  PaymentDetails: "Détails du paiement"
+  Payment: "Paiement"
+  payment_with_google_is_only_avilable_using_British_Pounds: "Google La caisse Google accepte seulement les Livres Sterlings anglaises au cours du change d’aujourd’hui .Total en Livres Sterlings.;{{gbp}}"
+  is_ready_for_download: "est prêt pour téléchargement"
+#
+  Includes: "Inclus"
+  Details: "Voir détails"
+  Episodes: "Episodes"
+  Bundle: "Paquet"
+  All_Seasion_1_Songs: "Toutes les chansons"
+  Discount_compared_to_single_title_purchases: "Réduction par rapport à l’achat de titres individuels."
+  Password_Reset_Information: «  Réinitialisation du mot secret"
+  Welcome: "Bienvenue"
+  user_does_not_exist: "Ce courriel n’est pas enregistré dans notre système."
+# HELP TEXT
+  help_id_25:
+    title: Format Haute Qualité vidéo
+    text: "La vidéo de format haute qualité est préparée pour atteindre
+        un niveau de qualité proche d’un DVD.Ce format est idéal pour être
+        visionné sur votre télé en Haute Définition, PC ou ordinateur portable
+        haute qualité.\r\n\
+              \r\n\
+              Vous pouvez librement graver le contenu sur un DVD pour archives
+        ou si vous n’avez pas une connexion directe entre votre télé Haute
+        Définition et PC et voulez le regarder sur votre lecteur DVD.\r\n\
+              \r\n\
+              ### Supported Vidéo Players\r\n\
+              * Quicktime&#169; Player\r\n\
+              * The VLC Player\r\n\
+              * Nero Showtime Player\r\n\
+              * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+              * Many others\r\n\
+              \r\n\
+              ### Technical Spécification\r\n\
+              768 x 432 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC
+        (H264) Video Codec - AAC Audio Codec\r\n\
+              \r\n\
+              <small>Quicktime&#169; est une marque déposée de Apple Computer,
+        Inc. Nerot&#169; est une marque déposée de NERO International, Inc.
+        Windows Media Player est une marque de Microsoft
+        Corporation.</small>\r\n"
+  help_id_14:
+    title: Portable Vidéo Format
+    text: "Le format vidéo portable offre une bonne qualité visuelle.
+        Il est conçu pour les utilisateurs qui souhaitent regarder la vidéo sur
+        leurs lecteurs portables et pour ceux qui ont une connexion à internet
+        lente.\r\n\
+              \r\n\
+      ### Supported Video Players\r\n\
+      * iPod Video\r\n\
+      * Microsoft Zune\r\n\
+      * Sony PSP (via http://www.pspvideo9.com/)\r\n\
+      * Many others\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      320 x 240 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC
+(H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>iPod&#169; est une marque déposée de Apple Computer, Inc.
+Zune&#169; est une marque de Microsoft Corporation. PSP&#169;
+(PlayStation Portable) est une marque déposée de Sony Computer
+Entertainment Inc. </small>"
+  help_id_26:
+    title: "Embla bande-annonce"
+    text: d’exil d’Angleterre, se battant avec l’arme d’une nouvelle foi , la croix du Christ. L’ancienne religion Viking d’Odin s’effondre et la Norvège est à feu et à sang avec une guerre civile : ses Comtes et petits Rois lancent une bataille contre Olafur.Olafur prêche un roi sur terre et un seul Dieu au  ciel et veut régner sur toutes les terres où les Vikings se sont établis.Le Roi Olafur bat le Comte Go\xF0brand, le père d’Embla et le force à se convertir au Christianisme. Puis il force Askur, le mari d’Embla à partir en Islande comme missionnaire du Christ ayant pris Embla en otage en Norvège .Olafur prévient Askar qu’il  fera brûler Embla vivante sur un bûcher s’il ne parvient pas à convertir les Islandais. Au même moment, le Roi Olafur veut qu'Embla devienne sa  Reine et rien ne l’arrêtera dans la réalisation de son désir."
+  help_id_15:
+    title: "Format vidéo portable"
+    text: |-
+       Le format portable est conçu pour les utilisateurs qui souhaitent regarder les contenus sur leur téléphone portable multimédia.
+          ### Téléphones portable acceptés
+       * Series60 multimedia phones like Nokia N70, E61 & N93
+       * Beaucoup d’autres.
+       ### Télécharger le contenu vers le téléphone avec la Sync.PC
+ Il y a sûrement un câble USB avec votre téléphone qui sert à installer des medias sur celui-ci .Vous téléchargez le contenu vers le PC et le synchronisez avec votre téléphone portable grâce au câble.
+       ### Télécharger directement vers votre téléphone (accessible seulement pour les vidéos clips)
+       1. Achetez le contenu et recevez la confirmation
+       2. Naviguez sur *http://streamburst.tv/mobile* et connectez vous en utilisant votre courriel et mot secret.
+       3. Sélectionnez le clip que vous voulez télécharger sur votre téléphone.
+       ### Spécification Technique
+       192 x 144 pixels - 15fps - MPEG4 3GPP Container - MPEG4 (Xvid)
+        Vidéo Codec - AAC Audio Codec - Mono
+  help_id_27:
+    title: Qualité moyenne MP3 - 160kbps
+    text: DRM libre. 160kbps. Ecoutables sur tous les lecteurs mp3 .
+  help_id_16:
+    title: David Jefferies comme vous ne l’avez jamais vu.
+    text: "Rappelez-vous David Jefferies très aimé et regretté dans cette collection unique de films inédits « du neuf fois champion de la course » TT de l’Ile de Man .Rejoignez l’irremplaçable David Jefferies sur deux roues ou quatre. \xA31 sera donnée pour le fond du Mémorial D.Jefferies pour chaque vidéo achetée."
+  help_id_1:
+    title: Format vidéo Haute Qualité
+    text: "Le format vidéo Haute Qualité est préparé pour atteindre un niveau de qualité DVD. Ce format est idéal pour regarder sur votre télé Haute Definition, PC ou ordinateur portable.\r\n\
+               \r\n\
+               Vous pouvez librement graver le contenu sur un DVD pour archives ou si vous n’avez pas une connexion directe entre votre télé Haute Définition et PC et voulez le regarder sur votre lecteur DVD.\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin)\r\n\
+      * Beaucoup d’autres\r\n\
+      \r\n\
+      ### Spécification Technique\r\n\
+      752 x 416 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC
+(H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; est une marque déposée de Apple Computer,
+Inc. Nero&#169; est une marque déposée NERO International, Inc. Windows Media Player est une marque déposé de Microsoft
+Corporation.</small>\r\n"
+  help_id_17:
+    title: "Entretien avec Ingmar Bergman"
+    text: |-
+      Ingmar Bergman, l’influent réalisateur suédois internationalement reconnu est décédée le 30 Juillet 2007, âgé de 89 ans. Cet entretien exclusif a été récemment retrouvé dans les archives de vikingfilms.net. A  l’époque l’entretien fut diffusé à la télévision Islandaise et Suédoise et également diffusé au Festival du film de Berlin en 1987.Un réalisateur interviewe un autre réalisateur. Ingmar Bergman visita l’Islande dans l’été 1987 et fut interviewé par le réalisateur islandais Hrafn Gunnlaugsson. Bergman nous livre son point de vue unique sur la signification d'être un réalisateur et sur sa façon de travailler lorsqu'il tournait ,prenant un contrôle total sur tous les détails lors de la création d’un film.
+  help_id_2:
+    title: "Format vidéo portable"
+    text: "Le format vidéo portable offre une bonne qualité visuelle. Il est conçu pour les utilisateurs qui souhaitent regarder la vidéo sur leurs lecteurs portables et pour ceux qui ont une connexion à internet lente.\r\n\
+          \r\n\
+      ### Lecteurs vidéos compatibles\r\n\
+      * iPod Video\r\n\
+      * Microsoft Zune\r\n\
+      * Sony PSP (via http://www.pspvideo9.com/)\r\n\
+      * Beaucoup d’autres\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      320 x 176 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC
+(H264) Vidéo Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>iPod&#169; est une marque déposée de Apple Computer, Inc.
+Zune&#169; est une marque déposée Microsoft Corporation. PSP&#169 ;(PlayStation Portable) est une marque déposée Sony Computer Entertainment Inc.</small>"
+  help_id_18:
+    title: "Quand le corbeau s’envole ,bande annonce"
+    text: |-
+      Le premier film Viking de Hrafn Gunnlaugsson, où il introduit un nouveau concept sur l’ère Viking, détruisant l’image stéréotypée d’Hollywood. Situé au Moyen-âge, le film raconte l’histoire de la vengeance de Gestur, un Irlandais qui enfant, fut témoin du meurtre de ses parents par deux vikings norvégiens,Thor et Erik,frères de lait. Et le rapt de sa sœur comme esclave. Gest suit leur trace jusqu’en Islande et suscite la haine et défiance entre les deux hommes.Sa sœur est entre les deux, celui qui un jour l’enleva et le père de son fils adoré et l’autre son frère qu’elle a appris à aimer et qui veut maintenant la libérer et  venger  la mort de leurs parents.
+ Awards: The Gold Bug - Guldbaggen 1984 pour meilleure direction, en Suède; DV Cultural Awards 1985. Premier film Islandais à être présenté dans le principal programme du Festival du Film de Berlin en 1985.Sélectionné comme l’un des 30 meilleurs films de la décade au Festival du Film de Tokyo. .Entrée islandaise pour les Oscars en 1984.
+    help_id_19:
+    title: Dans l’ombre du corbeau,Bande Annonce 
+    text: Hrafn Gunnlaugsson essaie,pour la seconde fois, de recréer le monde Viking mais basé cette fois sur les Sagas Islandaises et (sur l’histoire de Tristan et Isolde,) les tragédies Grecques réunies par l’imagination du réalisateur.\r\n\
+               \r\n\
+               C’est l’histoire de Trausti qui arrive en Irlande de Norvège après avoir achevé sa prêtrise Homme de paix, il est poussé par le  destin dans le milieu de luttes civiles en Islande où il rencontre \xCDs\xF3l. Non mariée et pourtant mère, elle représente l’éternel féminin, la femme que Goethe chercha en vain. Dans L’ombre du Corbeau est avant tout l’histoire d’individus forts en lutte contre les forces malfaisantes du destin.\r\n\
+               \r\n\
+  help_id_20:
+    title: "Le Viking Blanc ,Bande Annonce"
+    text: Le Viking Blanc est le troisième film de la série sur l'ère Viking. Dans ce film comme dans les précédents (Quand le Corbeaux vole, Dans L’ombre du corbeau), le réalisateur cherche à détruire l’image stéréotypée Hollywoodienne des Vikings et à introduire un nouveau concept.
+              Le titre fait référence à une époque où une fausse idée païenne
+    pensait que le Christ était un Viking vêtu de blanc, brandissant la croix telle une épée pour promouvoir le culte. .Aux alentours de l’an 1000 A.D, le Roi Olaf de Norvège (Olafur Tryggvason) avait presque réussi à convertir le pays entier au Christianisme avec son épée dans une main et la croix dans l’autre. Le Roi avait la vision d’un empire Chrétien, embrassant toutes les terres où les Vikings s’étaientétablis, incluant l’Islande, terre de refuge pour les païens opposés à la politique de Norvège. Askur, le personnage principal du film, est envoyé en Islande, pendant que sa femme Embla, est retenue en otage par le Roi Olaf. Pour l’amour d’une femme, Askur se lance dans une mission impossible, la conversion d’une nation entière au Christianisme.
+  help_id_5:
+    title: Vidéo Clips
+    text: Les vidéos clips sont des clips courts uniquement pour votre plaisir. Ceux d’entre vous, déjà familiers du programme et qui ont des épisodes favoris peuvent maintenant acheter des petits passages de ces épisodes précis.
+  help_id_21:
+    title: Haute Qualité MP3 - 320kbps
+    text: DRM Free. 320kbps.Qualite MP3 maximum mais non lisible par
+        des lecteurs mp3 plus anciens ou petits
+  help_id_10:
+    title: "Le visage manquant"
+    text: | 
+        Dans le visage manquant Ewan McGregor et Charley Boorman rencontrent des enfants Africains, révélant une vue pleine d’espoir et d’optimise sur la façon de relever les défis auxquels ces enfants sont confrontés. Ils nous montrent ici leurs engagements sur le  long terme en nous sensibilisants sur le SIDA dans l’un des pays les plus touchés du continent Sub-Sarahrien.<br/>\r\n\
+              <br/>\r\n\
+             La différence de ce programme est que le focus ne sont pas des statistiques pour souligner les problemes .Il montre la vie réelle des enfants atteints du SIDA et leur problèmes associés.<br/>\r\n\
+              <br/>\r\n\
+              Nous essayons de comprendre l’histoire des enfants à travers leurs émotions, peurs et pensées d’après leurs points de vue.<br/>\r\n\
+              <br/>\r\n\
+              Passant la nuit avec les enfants, voyant leur routine quotidienne et les préoccupations que les femmes enceintes ont, ce programme est une heure exceptionnelle pour le journée mondiale sur le SIDA du 1 decembre 2006 ».
+              <center>
+              <img src="/images/vlc-win32.jpg" border="0" width="300" height="200">
+              Download video lan here: <b><a href="http://www.videolan.org/vlc/" target="_blank">http://www.videolan.org/vlc/</a></b>
+              </center>
+  help_id_22:
+    title: Format 24bit WAV non compressé.
+    text: C’est le meilleur niveau de qualité de son disponible. Les CDs utilisent un format 16bit WAV rendant notre fichier 24bit supérieur dans la qualité son.
+  help_id_11:
+    title: Codes de réduction
+    text: |
+      Les codes de réduction offrent des réductions sur les téléchargements et font généralement partie d’une compagne marketing.Si vous avez un code de réduction pour pouvez l’écrire ici et cliquer sur "confirmer code "pour activé votre réduction.
+  help_id_7:
+    title: Lecteur Quicktime
+    text: |
+      Depuis la version 7, le lecteur Quicktime accepte le format vidéo
+        MPEG4 AVC/H264 .
+      Le lien ci-dessous ouvrira la page de téléchargement QuickTime
+      <br/>
+      <br/>
+      <center>
+      <a href="http://www.apple.com/quicktime/download/"target="_blank"><img src="/images/qt7badge_getQTfreeDownload.gif" border="0" margin="20" alt="Quicktime"></a>
+      <br/>
+      <br/>
+      </center>
+      <small>QuickTime et le QuickTime Logo sont des marques déposées de Apple Computer, Inc., déposés aux U.S.A et autres pays. Le QuickTime Badge est une marque déposée de Apple Computer Inc., utilisé avec permission.</small>
+  help_id_23:
+    title: WAV 16bit non-compressé
+    text: 16bit CD gravé sur un CD pour une qualité de son optimum.
+  help_id_12:
+    title: Format Vidéo Haute Qualité
+    text: "Format vidéo Haute qualité format est préparé pour avoir une qualité proche d’un DVD. Ce format est idéal pour être regardé sur votre télé Haute Définition ,PC ,ordinateur portable.\r\n\
+      \r\n\
+      Vous pouvez librement graver le contenu du DVD pour archives où si vous n’avez pas une connexion directe entre votre télé HD et votre PC et voulez lire le contenu dans sur lecteur DVD.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin)\r\n\
+      * Beaucoup d’autres\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      720 x 400 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; est une marque déposée de Apple Computer, Inc. Nero&#169; est une marque déposée de NERO International, Inc. Windows Media Player est une marque déposée Microsoft Corporation.</small>\r\n"
+  help_id_8:
+    title: Nero Showtime
+    text: |
+      Nero offrent deux versions de Showtime, les deux versions peuvent lire notre contenu.
+      Le lien ci-dessous offrent de plus amples informations sur les produits de Nero :<br/>
+      <a href="http://www.nero.com/nero6/en/Nero_ShowTime_prev.html" target="_blank">Nero Showtime 2</a><br/>
+      <a href="http://www.nero.com/nero7/eng/Nero_ShowTime_3.html" target="_blank">Nero Showtime 3</a>
+  help_id_24:
+    title: Haute Définition (HD 720p)
+    text: "Le format vidéo Haute Définition est considérablement de plus grande qualité qu’un DVD. Ce format est idéal pour regarder sur votre télé HD, PC ou ordinateur portable.\r\n\
+      \r\n\
+      Vous pouvez librement graver le contenu sur un DVD pour archives où si vous n’avez pas une connexion directe entre votre télé HD et votre PC et voulez regarder le contenu sur votre lecteur de DVD.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+      * Beaucoup d’autres\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      1280 x 720 pixels - 25fps - MPEG4 Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; est une marque déposée Apple Computer, Inc. Nero&#169; est une marque déposée NERO International, Inc. Windows Media Player est une marque déposée Microsoft Corporation.</small>\r\n"
+  help_id_13:
+    title:Format vidéo Haute Qualité
+    text: |
+      Format vidéo Haute qualité est préparé pour avoir une qualité proche d’un DVD. Ce format est idéal pour être regardé sur votre télé Haute Definition, PC, ordinateur portable .\r\n\
+      \r\n\
+            Vous pouvez librement graver le contenu du DVD pour archives où si vous n’avez pas une connexion directe entre votre télé HD et votre PC et voulez lire le contenu dans votre lecteur DVD.\r\n\
+      * iPod Video\r\n\
+      * Microsoft Zune\r\n\
+      * Sony PSP (via http://www.pspvideo9.com/)\r\n\
+      * Beaucoup d’autres\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      320 x 176 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>iPod&#169;est une marque déposée de Apple Computer, Inc. Zune&#169; est une marque deposée de Microsoft Corporation. PSP&#169; (PlayStation Portable) est une marque deposée de Sony Computer Entertainment Inc.</small>"
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin)\r\n\
+      * Beaucoup d’autres\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      768 x 576 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; est une marque déposée de Apple Computer, Inc. Nero&#169; est une marque déposée NERO International, Inc. Windows Media Player est une marque déposée Microsoft Corporation.</small>\r\n"
+  help_id_9:
+    title: ffdshow
+    text: |
+      ffdshow offers filters for Windows Media Player that enable the MPEG4 AVC codec.
+      Ici plus d’informations:
+      <a href="http://sourceforge.net/projects/ffdshow" target="_blank">http://sourceforge.net/projects/ffdshow</a>
+  help_id_123:
+    title: Format Vidéo Haute Qualité
+    text: | 
+      Format vidéo Haute qualité format est préparé pour avoir une qualité proche d’un DVD. Ce format est idéal pour être regardé sur votre télé Haute Definition, PC, ordinateur portable. \r\n\
+      \r\n\
+      Vous pouvez librement graver le contenu du DVD pour archives où si vous n’avez pas une connexion directe entre votre télé HD et votre PC et voulez lire le contenu dans votre lecteur DVD \r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+      * Beaucoup d’autres\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      768 x 416 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; est une marque déposée de Apple Computer, Inc. Nero&#169; est une marque déposée de NERO International, Inc. Windows Media Player est une marque déposée de Microsoft Corporation.</small>\r\n
+  help_id_124:
+    title: Format vidéo portable
+    text: | 
+      Le format vidéo portable offre une bonne qualité visuelle pour les téléchargements de petites tailles .Il est conçu pour les utilisateurs qui souhaitent regarder les vidéos sur des lecteurs portables et pour ceux qui ont une connexion lente à internet.\r\n\
+      \r\n\
+      ### Supported Video Players\r\n\
+      * Quicktime&#169; Player\r\n\
+      * The VLC Player\r\n\
+      * Nero Showtime Player\r\n\
+      * Window Media Player (with the ffdshow plugin or CoreAVC)\r\n\
+      * Beaucoup d’autres\r\n\
+      \r\n\
+      ### Technical Specification\r\n\
+      768 x 416 pixels - 25fps - MPEG4 ISMA Container - MPEG4 AVC (H264) Video Codec - AAC Audio Codec\r\n\
+      \r\n\
+      <small>Quicktime&#169; est une marque déposée de Apple Computer, Inc. Nero&#169; est une marque déposée de NERO International, Inc. Windows Media Player est une marque déposée de Microsoft Corporation.</small>\r\n"
+

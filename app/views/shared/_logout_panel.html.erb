@@ -1,0 +1,10 @@
+  <% if session[:user_id] %>
+      <tr class="total-line">
+      <td align="center" colspan="3">
+        <br/>
+        <em> <small> <%= session[:user_email] ? session[:user_email] : "missing email" %> </small> </em> <br/>
+        <br/>
+        <%= link_to(image_localized_tag("button_logout_1.gif", :border => 0, :alt => t(:Logout)), :controller => "users", :action => "logout") %>
+      </td>
+      </tr>
+  <% end %>

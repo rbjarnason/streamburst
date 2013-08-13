@@ -1,0 +1,130 @@
+<br><br>
+    <div id="top">
+         <div id="topwrap">
+            <div class="menu">
+			<ul>				
+                <li <%=controller_name == "catalogue" and action_name=="home" ? "class=\"current\"" : ""%> >
+                    <div class="left"></div>
+					<div class="menu_padding"><a href="/catalogue/home"><%=Category.translate(I18n.locale.to_s,"Home")%></a></div>
+					<div class="right"></div>
+				</li>
+				
+				<% unless I18n.locale.to_s=="fr" %>						
+                <li <%=controller_name == "catalogue" and action_name=="index" and @category.id==20 ? "class=\"current\"" : ""%> >
+                <div class="left"></div>
+				<div class="menu_padding">
+                       <% if controller_name == "catalogue" and action_name=="index" %>
+                         <%= link_to_remote h(Category.translate(I18n.locale.to_s,"Songs")),
+                               :before   => %(Element.show('products-list-spinner')),
+                               :success  => %(Element.hide('products-list-spinner')),
+                               :url => { :protocol => "http://",
+                                         :controller => "catalogue",
+                                         :action => "index",
+                                         :category_id => 20 } %>
+                       <% else %>
+                         <a href="/catalogue/index?category_id=20"><%=Category.translate(I18n.locale.to_s,"Songs")%></a>
+                       <% end %>
+                </div>
+				<div class="right"></div>
+				</li>
+				
+                <li <%=controller_name == "catalogue" and action_name=="index" and @category.id==24 ? "class=\"current\"" : ""%> >
+                <div class="left"></div>
+				<div class="menu_padding">
+                      <% if controller_name == "catalogue" and action_name=="index" %>
+                       <%= link_to_remote h(Category.translate(I18n.locale.to_s,"Season 1")),
+                               :before   => %(Element.show('products-list-spinner')),
+                               :success  => %(Element.hide('products-list-spinner')),
+                               :url => { :protocol => "http://",
+                                         :controller => "catalogue",
+                                         :action => "index",
+                                         :category_id => 24 } %>
+                       <% else %>
+                         <a href="/catalogue/index?category_id=24"><%=Category.translate(I18n.locale.to_s,"Season 1")%></a>
+                       <% end %>
+                 </div>
+				 <div class="right"></div>
+				 </li>
+				<% end %>
+				 
+
+				<% unless I18n.locale.to_s=="is" %>						
+                <li <%=controller_name == "catalogue" and action_name=="index" and @category.id==25 ? "class=\"current\"" : ""%> >
+                <div class="left"></div>
+				<div class="menu_padding">
+                      <% if controller_name == "catalogue" and action_name=="index" %>
+                       <%= link_to_remote h(Category.translate(I18n.locale.to_s,"Season 2")),
+                               :before   => %(Element.show('products-list-spinner')),
+                               :success  => %(Element.hide('products-list-spinner')),
+                               :url => { :protocol => "http://",
+                                         :controller => "catalogue",
+                                         :action => "index",
+                                         :category_id => 25 } %>
+                       <% else %>
+                         <a href="/catalogue/index?category_id=25"><%=Category.translate(I18n.locale.to_s,"Season 2")%></a>
+                       <% end %>
+                 </div>
+				 <div class="right"></div>
+				 </li>
+				<% end %>				 
+
+				<% unless I18n.locale.to_s=="fr" %>						
+                 <li <%=controller_name == "catalogue" and action_name=="index" and @category.id==21 ? "class=\"current\"" : ""%> >
+                 <div class="left"></div>
+				 <div class="menu_padding">
+                     <% if controller_name == "catalogue" and action_name=="index" %>
+                       <%= link_to_remote h(Category.translate(I18n.locale.to_s,"Season 1 Offers")),
+                               :before   => %(Element.show('products-list-spinner')),
+                               :success  => %(Element.hide('products-list-spinner')),
+                               :url => { :protocol => "http://",
+                                         :controller => "catalogue",
+                                         :action => "index",
+                                         :category_id => 21 } %>
+                      <% else %>
+                         <a href="/catalogue/index?category_id=21"><%=Category.translate(I18n.locale.to_s,"Season 1 Offers")%></a>
+                       <% end %>
+                 </div>
+				 <div class="right"></div>
+				 </li>
+				 <% end %>
+				<% unless I18n.locale.to_s=="is" %>						
+                 <li <%=controller_name == "catalogue" and action_name=="index" and @category.id==26 ? "class=\"current\"" : ""%> >
+                 <div class="left"></div>
+				 <div class="menu_padding">
+                     <% if controller_name == "catalogue" and action_name=="index" %>
+                       <%= link_to_remote h(Category.translate(I18n.locale.to_s,"Season 2 Offers")),
+                               :before   => %(Element.show('products-list-spinner')),
+                               :success  => %(Element.hide('products-list-spinner')),
+                               :url => { :protocol => "http://",
+                                         :controller => "catalogue",
+                                         :action => "index",
+                                         :category_id => 26 } %>
+                      <% else %>
+                         <a href="/catalogue/index?category_id=26"><%=Category.translate(I18n.locale.to_s,"Season 2 Offers")%></a>
+                       <% end %>
+                 </div>
+				 <div class="right"></div>
+				 </li>
+				 <% end %>
+            </ul>					
+            </div>
+			
+			<!-- START SB LINKS -->
+            <!--<div class="userinfo">Hello. <a href="#">Sign In</a> - New Customer? <a href="#">Start Here</a></div>-->
+			<div class="userinfo">				      
+			  <%= render(:partial => "layouts/lazytown/main_links") %>
+              <% if flash[:notice] -%>
+              <div id="notice"><%= flash[:notice] %></div>
+              <% end -%>
+			</div> 
+			<!-- END SB LINKS -->
+			
+            <div class="lang">
+                <div class="usa"><a href="<%=create_current_url_with_locale("en")%>" <%=I18n.locale == "en" ? "class=\"current\"" : ""%>></a></div>
+                <div class="esp"><a href="<%=create_current_url_with_locale("es")%>" <%=I18n.locale == "es" ? "class=\"current\"" : ""%>></a></div>
+                <div class="isl"><a href="<%=create_current_url_with_locale("is")%>" <%=I18n.locale == "is" ? "class=\"current\"" : ""%>></a></div>
+                <div class="fra"><a href="<%=create_current_url_with_locale("fr")%>" <%=I18n.locale == "fr" ? "class=\"current\"" : ""%>></a></div>
+            </div>
+        </div>
+    </div>
+

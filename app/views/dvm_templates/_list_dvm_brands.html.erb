@@ -1,0 +1,18 @@
+<% if @dvm_template.brands %>
+<b>Brands</b>
+<br>
+<table cellpadding="5" cellspacing="0">
+<% for brand in @dvm_template.brands %>
+  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= brand.name %></td>
+    <td class="list-actions">
+    <% if @dvm_template.brands.count > 1 %>
+      <%= link_to 'Destroy', { :action  => 'destroy_dvm_brand', :set_brand_id => brand.id, :id => @dvm_template},
+                               :confirm => "Are you sure?",
+                               :post    => true %>
+    <% end %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<% end %>

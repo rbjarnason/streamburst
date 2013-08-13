@@ -1,0 +1,86 @@
+  <div id="banner-image">
+    <%= image_tag('streamburst_docs') %>
+  </div>
+  
+  <div id="banner-trailer">
+  </div>  
+  <div id="banner-nav">
+    <%= logged_in? %> <br/>
+    <br/>
+    <%= link_to "Store",   :controller => 'catalogue', :action => 'index' %> <br/>
+    <%= link_to "Admin",   :controller => 'products', :action => 'list' %> <br/>
+    <br/>
+    <%= link_to "Logout",     :controller => 'users', :action => 'logout' %> <br/>
+  </div>
+  <% if am_i_admin? %>
+    <div id="banner-admin">
+      <em>Products Admin</em> <br/>
+      <br/>
+      <%= link_to "Categories",   :controller => 'categories', :action => 'list' %> <br/>
+      <%= link_to "Products",   :controller => 'products', :action => 'list' %> <br/>
+      <%= link_to "Orders",   :controller => 'orders', :action => 'list' %> <br/>
+      <%= link_to "Users", :controller => 'users', :action => 'list' %> <br/>
+    </div>
+    <div id="banner-admin">
+      <em>Products Admin</em> <br/>
+      <br/>
+      <%= link_to "Brand Categories",   :controller => 'brand_categories', :action => 'list' %> <br/>
+      <%= link_to "Price Classes",   :controller => 'price_classes', :action => 'list' %> <br/>      
+      <%= link_to "Discount Vouchers",   :controller => 'discount_vouchers', :action => 'list' %> <br/>
+    </div>
+    <div id="banner-admin">
+      <em>DVM Admin</em> <br/>
+      <br/>
+      <%= link_to "Dvm",   :controller => 'dvm', :action => 'list' %> <br/>
+      <%= link_to "Dvm Templates",   :controller => 'dvm_templates', :action => 'list' %> <br/>      
+      <%= link_to "Top Dvms",   :controller => 'dvm_templates', :action => 'show_top_dvms' %> <br/>      
+    </div>
+    <div id="banner-admin">
+      <em>SponsorBids Admin</em> <br/>
+      <br/>
+      <%= link_to "Advertisements",   :controller => 'advertisements', :action => 'list' %> <br/>
+      <%= link_to "Campaigns",   :controller => 'campaigns', :action => 'list' %> <br/>
+      <%= link_to "Territories",   :controller => 'territories', :action => 'list' %> <br/>
+      <%= link_to "Advertisements Files",   :controller => 'advertisements_files', :action => 'list' %> <br/>
+    </div>
+    <div id="banner-admin">
+      <em>Content Admin</em> <br/>
+      <br/>
+      <%= link_to "Downloads", :controller => 'downloads', :action => 'list' %> <br/>
+      <%= link_to "Formats",   :controller => 'formats', :action => 'list' %> <br/>
+      <%= link_to "Helps",   :controller => 'helps', :action => 'list' %> <br/>
+      </br>
+    </div>
+    <div id="banner-admin">
+      <em>Heimdall Admin</em> <br/>
+      <br/>
+      <%= link_to "Heimdall Site Targets", :controller => 'heimdall_site_targets', :action => 'list' %> <br/>
+      <%= link_to "Heimdall Content Targets", :controller => 'heimdall_content_targets', :action => 'list' %> <br/>
+      <%= link_to "Heimdall Portal", :controller => 'heimdall_content_targets', :action => 'portal' %> <br/>
+      </br>
+    </div>
+    <div id="banner-admin">
+      <em>Watermark Admin</em> <br/>
+      <br/>
+      <%= link_to "Watermark Cache", :controller => 'watermark_cache_targets', :action => 'list' %> <br/>
+      <%= link_to "Watermark Cache Status", :controller => 'watermark_cache_targets', :action => 'cache_status' %> <br/>
+      <%= link_to "Watermark Used Status", :controller => 'watermark_cache_targets', :action => 'used_status' %> <br/>
+      </br>
+    </div>
+    <div id="banner-admin">
+      <em>Setup Admin</em> <br/>
+      <br/>
+      <%= link_to "Companies", :controller => 'companies', :action => 'list' %> <br/>
+      <%= link_to "Brands",   :controller => 'brands', :action => 'list' %> <br/>
+      <%= link_to "Hosts", :controller => 'hosts', :action => 'list' %> <br/>
+      <%= link_to "Rights",   :controller => 'rights', :action => 'list' %> <br/>
+      <%= link_to "Roles",   :controller => 'roles', :action => 'list' %> <br/>
+    </div>
+    <div id="banner-admin">
+      <em>Accounting</em> <br/>
+      <br/>
+      <%= link_to "Paypal Processing", :controller => 'orders', :action => 'add_dvm_brands_to_paypal_csv' %> <br/>
+      <%= link_to "Watermark Payments",   :controller => 'orders', :action => 'audio_watermark_payments' %> <br/>
+      <%= link_to "H.264 Payments",   :controller => 'orders', :action => 'h264_payments' %> <br/>
+    </div>
+  <% end %>

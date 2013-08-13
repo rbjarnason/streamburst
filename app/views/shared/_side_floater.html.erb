@@ -1,0 +1,34 @@
+<table id="chaser" class="pngfix">
+  <tr>
+    <td align="center">
+      <img alt="<%=@brand.name%>" width="<%=logo_width%>" height="<%=logo_height%>" src="/images/<%=logo_image%>" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" id="streamburst_tv_header">streamburst.tv</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <div id="top_rotation">
+        <%= render(:partial => "shared/top_rotation") %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <div id="flv_rotation">
+        <div id="flv_rotation_title" style="float: left; padding-top: 3px; padding-left: 2px;"></div>
+        <div id="flv_rotation_watch_now"></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id="cart">
+        <%= render(:partial => "shared/cart", :object => @cart) %>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<%= javascript_include_tag 'chaser' %>

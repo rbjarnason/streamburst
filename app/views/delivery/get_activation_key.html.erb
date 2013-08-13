@@ -1,0 +1,22 @@
+<div style="width: 400px">
+  <b>Torrent Download and Activation</b>
+  </br>
+  </br>
+  You are about to download a torrent.  After the download you need to activate the content with this key:
+  </br>
+  </br>
+  <center><h1><%= @activation_key.activation_key %></h1></center>
+  </br>
+  </br>
+  <center>
+  <%= link_to image_tag("button_startDownload_1.gif", :border => 0), {:action => 'get_torrent', 
+                          :downloads_key => @downloads_key, 
+                          :id => @torrent.id,
+                          :format_id => @format.id, 
+                          :company_id => 2,
+                          :brand_id  => 2 }%>
+  
+  <%= link_to_close_redbox('Cancel') %>
+  </center>
+  </br>
+</div>

@@ -1,0 +1,56 @@
+<% form_for :user do |form| %>
+<table width="70%" style="vertical-align: top;margin-top:7px;">
+    <tr>
+        <td colspan="2">
+            <%= error_messages_for 'user' %>
+        </td>
+    </tr>
+    <tr>
+        <td width="40%">
+            <label for="first_name">
+                <%=t :First_Name %>:
+            </label>
+        </td>
+        <td width="60%" align="right">
+            <%= form.text_field :first_name, :style=>"width:250px;" %>
+        </td>
+    </tr>
+    <tr>
+        <td width="40%">
+            <label for="last_name">
+                <%=t :Last_Name %>:
+            </label>
+        </td>
+        <td width="60%" align="right">
+            <%= form.text_field :last_name, :style=>"width:250px;" %>
+        </td>
+    </tr>
+    <tr>
+        <td width="40%">
+            <label for="last_name">
+                <%=t :Email_Address %>:
+            </label>
+        </td>
+        <td width="60%" align="right">
+            <%= form.text_field :email, :style=>"width:250px;" %>
+        </td>
+    </tr>
+    <tr>
+        <td width="40%">
+            <label for="password">
+                <%=t :Password_Min_Characters %>:
+            </label>
+        </td>
+        <td width="60%" align="right">
+            <%= form.password_field :password, :style=>"width:250px;" %>
+        </td>
+    </tr>
+    <tr>
+        <td width="40%">
+        </td>
+        <td width="60%" align="right">
+            <%= image_localized_submit_tag "button_registerNow_1.png",  :border => 0, :name => "create", :alt => t(:Register_now), :size => "105x20" %>
+        </td>
+    </tr>
+</table>
+<% end %>

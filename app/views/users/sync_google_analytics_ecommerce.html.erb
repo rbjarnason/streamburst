@@ -1,0 +1,7 @@
+<% if @my_orders.length > 0 %>
+  Total unsynced orders: <%=@my_orders.length%><br>
+  <% order = @my_orders[0] %>
+  Syncing Order: <%=order.id %> for User: <%=order.user_id%> Created: <%=order.created_at.strftime("%Y-%W")%> Price: <%=order.total_price_gbp%>Paypal gross: <%=order.paypal_mc_gross%><br>
+<% else %>
+  No orders in this brand to sync
+<% end %>

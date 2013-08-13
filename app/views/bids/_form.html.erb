@@ -1,0 +1,11 @@
+<%= error_messages_for 'bids' %>
+
+<!--[form:bids]-->
+<p><label for="bids_bid_amount">Bid amount</label><br/>
+<%= text_field 'bids', 'bid_amount'  %></p>
+
+<p><label for="bids_active">Active</label><br/>
+<select id="bids_active" name="bids[active]"><option value="false">False</option><option value="true">True</option></select></p>
+
+<!--[eoform:bids]-->
+

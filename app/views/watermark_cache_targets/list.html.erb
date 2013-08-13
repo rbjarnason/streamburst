@@ -1,0 +1,29 @@
+<h1>Listing watermark_cache_targets</h1>
+
+<table>
+  <tr>
+    <th>Download File</th>
+    <th>Type</th>
+    <th>Weight</th>
+    <th>Max Per Server</th>
+  </tr>
+  
+<% for watermark_cache_target in @watermark_cache_targets %>
+  <tr>
+    <td><%=watermark_cache_target.download.file_name%></td>
+    <td><%=watermark_cache_target.cache_type%></td>
+    <td><%=watermark_cache_target.weight%></td>
+    <td><%=watermark_cache_target.max_per_cache_server%></td>
+    <td><%= link_to 'Show', :action => 'show', :id => watermark_cache_target %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => watermark_cache_target %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => watermark_cache_target }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @watermark_cache_target_pages.current.previous } if @watermark_cache_target_pages.current.previous %>
+<%= link_to 'Next page', { :page => @watermark_cache_target_pages.current.next } if @watermark_cache_target_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New watermark_cache_target', :action => 'new' %>

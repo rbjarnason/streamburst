@@ -1,0 +1,57 @@
+<h1>Watermark Cache Status</h1>
+<table>
+  <tr>
+    <th align="left">Download File</th>
+    <th>Type</th>
+    <th>Date</th>
+    <th align="right">Watermark</th>
+  </tr>
+<% last_video_server = "" %>  
+<% for watermark in @watermarks %>
+   <% if watermark.cache_video_server_id != last_video_server%>
+       <tr>
+         <td colspan="4"></td>
+       </tr>
+       <tr>
+         <td colspan="4"><b>Video Server <%=watermark.cache_video_server_id%></b></td>
+       </tr>
+     <% last_video_server = watermark.cache_video_server_id %>
+   <% end %>
+   <tr>
+    <td width="300" align="left"><%=watermark.download.file_name%></td>
+    <td width="50" align="center"><%=watermark.cache_type%></td>
+    <td width="90" align="center"><%="%02d/%02d/%04d" % [watermark.created_at.day, watermark.created_at.month, watermark.created_at.year]%></td>
+    <td width="120" align="right"><%=watermark.watermark%></td>
+  </tr>
+<% end %>
+</table>
+
+<% if @disabled_watermarks.length > 0 %>
+<h1>Watermarks in Progress or Disabled (Reserved but not used)</h1>
+<table>
+  <tr>
+    <th align="left">Download File</th>
+    <th>Type</th>
+    <th>Date</th>
+    <th align="right">Watermark</th>
+  </tr>
+<%last_video_server = ""%>  
+<% for watermark in @disabled_watermarks %>
+   <% if watermark.cache_video_server_id != last_video_server%>
+       <tr>
+         <td colspan="4"></td>
+       </tr>
+       <tr>
+         <td colspan="4"><b>Video Server <%=watermark.cache_video_server_id%></b></td>
+       </tr>
+     <% last_video_server = watermark.cache_video_server_id %>
+   <% end %>
+   <tr>
+    <td width="300" align="left"><%=watermark.download.file_name%></td>
+    <td width="50" align="center"><%=watermark.cache_type%></td>
+    <td width="90" align="center"><%="%02d/%02d/%04d" % [watermark.created_at.day, watermark.created_at.month, watermark.created_at.year]%></td>
+    <td width="120" align="right"><%=watermark.watermark%></td>
+  </tr>
+<% end %>
+</table>
+<% end %>

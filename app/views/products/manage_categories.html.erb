@@ -1,0 +1,17 @@
+<h1>Categories update for <%= @product.title %></h1>
+
+<%= render :partial => 'list_categories' %>
+
+<%= form_tag( { :action => 'manage_categories' } ) %>
+  <p><label for="category">Category</label><br/>
+  <select name="category_id">
+   <% @categories.each do |category| %>
+       <option value="<%= category.id %>">
+         <%= category.name %>
+       </option>
+   <% end %>
+   </select>
+  </p>  
+  <%= submit_tag "Add" %>
+</form>
+<%= link_to 'Back', :action => 'list' %>

@@ -1,0 +1,80 @@
+<div id="product-list">
+<h1>Listing campaigns</h1>
+
+  <table cellpadding="5" cellspacing="0">
+    <th>Name</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Advertisement</th>
+    <th>Territory</th>
+    <th>Active</th>
+    <th>Max daily bid</th>
+    <th>Today total bids</th>
+    <th>Total bids</th>
+    <th>Options</th>
+  <% for campaign in @campaigns %>
+    <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+
+      <td width="25%">
+        <span class="list-title"><%= h(campaign.name) %></span><br />
+      </td>
+
+      <td>
+        <%= h(campaign.start_date) %><br />
+      </td>
+
+      <td>
+        <%= h(campaign.end_date) %><br />
+      </td>
+
+      <td>
+        <%= h(campaign.advertisement.name) %><br />
+      </td>
+
+      <td>
+        <%= h(campaign.territory.name) %><br />
+      </td>
+
+      <td>
+        <%= h(campaign.active) %><br />
+      </td>
+
+      <td>
+        <%= h(campaign.max_daily_bid_amount) %><br />
+      </td>
+
+      <td>
+        <%= h(campaign.today_total_bid_won_amount) %><br />
+      </td>
+
+      <td>
+        <%= h(campaign.total_bid_won_amount) %><br />
+      </td>
+
+      <td class="list-actions">
+        <%= link_to 'Show', :action => 'show', :id => campaign %><br/>
+        <%= link_to 'Edit', :action => 'edit', :id => campaign %><br/>
+        <%= link_to 'Bids', :action => 'manage_bids', :id => campaign %><br/>
+        <%= link_to 'Toggle Active', :action => 'toggle_active', :id => campaign %><br/>
+        <%= link_to 'Destroy', { :action  => 'destroy', :id => campaign },
+                                 :confirm => "Are you sure?",
+                                 :post    => true %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+
+<%=  if @campaigns_pages.current.previous 
+       link_to("Previous page", { :page => @campaigns_pages.current.previous })
+     end
+%>
+
+<%= if @campaigns_pages.current.next 
+      link_to("Next page", { :page => @campaigns_pages.current.next })
+    end
+%>
+
+<br />
+
+<%= link_to 'New campaign', :action => 'new' %>

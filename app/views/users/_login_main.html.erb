@@ -1,0 +1,36 @@
+	<% form_for :login_user do |login_form| %>
+    <table width="70%" style="vertical-align: top;margin-top:7px;">
+	    <tr>
+	        <td colspan="2">
+	        	
+	        </td>
+	    </tr>
+        <tr style="vertical-align: top">
+            <td width="50%">
+                <label for="name">
+                    <%=t :Email_Address %>:
+                </label>
+            </td>
+            <td width="50%" align="right">
+                <%= login_form.text_field :login_email, :style=>"width:250px;" %>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%">
+                <label for="password">
+                    <%=t :Password %>:
+                </label>
+            </td>
+            <td width="50%" align="right">
+                <%= login_form.password_field :login_password, :style=>"width:250px;" %>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%">
+            </td>
+            <td width="50%" align="right">
+                <%= image_localized_submit_tag "button_login_1.png", :border => 0, :name => "login", :alt => t(:Login), :size => "54x20" %>
+            </td>
+        </tr>
+    </table>
+    <% end %>

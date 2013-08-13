@@ -1,0 +1,9 @@
+<% if RAILS_ENV=="development" %>
+  <% url_prefix = "http://app2.streamburst.net:3000" %>
+<% else %>
+  <% url_prefix = "http://streamburst.tv" %>
+  <% end %>
+<center>
+<sn:swf swfbgcolor="000000" imgstyle="border-width:3px; border-color:white;" swfsrc='<%=@dvm.dvm_template.swf_url%>?token=<%=@dvm.token%>' imgsrc='<%=url_prefix%><%=url_for_image_column(@dvm.dvm_template, "large_click_image", :name => "widescreen", :absolute => true)%>' width='180' height='600' />
+<br>
+<a href="http://apps.bebo.com/dvm"><%=t :dvm_recommendation_text_1, :dvm_title=> @dvm.dvm_template.title%></a></center>

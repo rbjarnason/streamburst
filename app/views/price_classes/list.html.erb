@@ -1,0 +1,27 @@
+<h1>Listing price_classes</h1>
+
+<table>
+  <tr>
+  <% for column in PriceClass.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for price_class in @price_classes %>
+  <tr>
+  <% for column in PriceClass.content_columns %>
+    <td><%=h price_class.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => price_class %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => price_class %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => price_class }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @price_class_pages.current.previous } if @price_class_pages.current.previous %>
+<%= link_to 'Next page', { :page => @price_class_pages.current.next } if @price_class_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New price_class', :action => 'new' %>

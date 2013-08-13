@@ -1,0 +1,11 @@
+<%= render(:partial => 'shared/forms_template',
+          :locals => { 
+          :title => "#{@complete ==true ? t(:order_confirmation_title) : t(:order_confirmation_title_not_confirmed)} - #{@order.id}",
+          :info_title => t(:Instructions),
+          :info_partial => "google_checkout_complete_info",
+          :main_title => nil,
+          :main_partial => nil,
+          :buttons_title => t(:Go_To_Download_Page),
+          :buttons_partial => "google_checkout_complete_buttons" }) %>
+          
+          <%= google_analytics_e_commerce(@order) %>

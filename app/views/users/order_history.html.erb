@@ -1,0 +1,131 @@
+<% total = 0 %>
+<% cat_count = Hash.new() %>
+<% brand_count = Hash.new() %>
+<% order_count = 0 %>
+<% user_count = 0 %>
+<% country_count = Hash.new() %>
+<% paypal_country_count = Hash.new() %>
+<% order_by_week_count = Hash.new() %>
+<% revenue_by_week_count = Hash.new() %>
+<% revenue_by_month_count = Hash.new() %>
+
+<% for user in @users %>
+<% total_user = 0 %>
+<% if user.orders.count("orders.paypal_payment_status=\"Completed\"") > 0 %>
+ <% if @filter_by_brand %>
+    <%@orders = Order.find_all_by_user_id(user.id, :conditions => "complete = 1")%>
+    <%@my_orders = []%>
+    <%for order in @orders%>
+      <%first_line_item = order.line_items[0]%>
+      <%if first_line_item.product.brand.id == @brand.id%>
+        <%@my_orders << order%>
+      <%end%>
+    <%end%>
+ <% else %>
+   <%@my_orders = user.orders%>
+ <% end %>
+   <% next if @my_orders.length == 0 %>
+   <% user_count += 1 %>
+   <h1>User: <%= user.id %> - <%= user.first_name %> <%= user.last_name %> - <%= user.email %></h1>
+   <% for order in @my_orders %>
+    <% if order.paypal_payment_status=="Completed" %>
+     <% order_count += 1 %>
+     <% total_user += order.total_price_gbp %>
+     <% total += order.total_price_gbp %>
+     
+     <% unless order_by_week_count[order.created_at.strftime("%Y-%W")] %>
+     <%   order_by_week_count[order.created_at.strftime("%Y-%W")] = 0 %>
+     <% end %>
+     <% order_by_week_count[order.created_at.strftime("%Y-%W")] += 1 %>
+
+     <% unless revenue_by_week_count[order.created_at.strftime("%Y-%W")] %>
+     <%   revenue_by_week_count[order.created_at.strftime("%Y-%W")] = 0.0 %>
+     <% end %>
+     <% revenue_by_week_count[order.created_at.strftime("%Y-%W")] += order.total_price_gbp %>
+
+     <% unless revenue_by_month_count[order.created_at.strftime("%Y-%m")] %>
+     <%   revenue_by_month_count[order.created_at.strftime("%Y-%m")] = 0.0 %>
+     <% end %>
+     <% revenue_by_month_count[order.created_at.strftime("%Y-%m")] += order.total_price_gbp %>
+
+     <% unless country_count[order.country_code] %>
+     <%  country_count[order.country_code] = 0 %>
+     <% end %>
+     <% country_count[order.country_code] += 1 %>
+
+     <% unless paypal_country_count[order.paypal_residence_country] %>
+     <%  paypal_country_count[order.paypal_residence_country] = 0 %>
+     <% end %>
+     <% paypal_country_count[order.paypal_residence_country] += 1 %>
+
+     <b>Order: <%= order.id %> - <%= order.created_at.strftime("%A %B %d, %Y") %> - <%= order.country_code %> - <%= order.paypal_residence_country %> - <%= number_to_currency(order.total_price_gbp, :unit => "&pound;" ) %></b><br/>
+     <% for li in order.line_items %>
+       <% unless li.product == nil %>
+       <%   category = li.product.categories[0] %>
+       <%   unless cat_count[category] %>
+       <%     cat_count[category] = 0 %>
+       <%   end %>
+       <%   cat_count[category] += 1 %> 
+
+       <%   unless brand_count[li.product.brand] %>
+       <%     brand_count[li.product.brand] = Hash.new() %>
+       <%   end %>
+       <%   unless brand_count[li.product.brand][category] %>
+       <%      brand_count[li.product.brand][category] = 0 %>
+       <%   end %>
+       <%   brand_count[li.product.brand][category] += 1 %>
+            Product: <%= li.product.id %> - <%= li.product.title %> - Price: <%= li.price_with_currency %><br/>
+         <% end %>
+         <% end %>
+         </br>
+       <% end %>
+      <% end %>
+      <b>Total for user: <%= number_to_currency(total_user, :unit => "&pound;" ) %></b>
+      <br/>   
+  <% end %>
+  <% end %>
+  <br/>
+  <h1>Total for all: <%= number_to_currency(total, :unit => "&pound;" ) %></h1>
+  <h1>Paypal Charge Est.: <%= number_to_currency(total*0.098, :unit => "&pound;" ) %></h1>
+  <h1>Total after PayPal: <%= number_to_currency(total-(total*0.098), :unit => "&pound;" ) %></h1>
+  <h1>Orders by Week</h1>
+  <% ow = order_by_week_count.sort {|a,b| a[0]<=>b[0]} %>
+   <% ow.each do |key, value| %>
+   <%= key %>: <%= value %> <br/>
+   <% end %>
+  <h1>Revenue by Month</h1>
+   <% revenue_by_month_count.each do |key, value| %>
+   <%= key %>: <%= number_to_currency(value, :unit => "&pound;" ) %> <br/>
+   <% end %> 
+  <h1>Revenue by Week</h1>
+  <% rw = revenue_by_week_count.sort {|a,b| a[0]<=>b[0]} %>
+   <% rw.each do |key, value| %>
+   <%= key %>: <%= number_to_currency(value, :unit => "&pound;" ) %> <br/>
+   <% end %> 
+  <h1>Category count totals</h1>
+   <% cat_count.each do |key, value| %>
+   <%= key.name %>: <%= value %> <br/>
+   <% end %>
+  <h1>Brand Category Count</h1>
+   <% brand_count.each do |key, value| %>
+   <b><%= key.name %><br/></b>
+    <% value.each do |key, value| %>
+     <%= key.name %>: <%= value %> <br/>
+    <% end %><br/>
+   <% end %>
+  <h1>Order count: <%= order_count %></h1>
+  <h1>Customer count: <%= user_count %></h1> 
+  <h1>Inaccurate guess on split based on average percents from first calc</h1>
+  <b>Streamburst: <%= number_to_currency(total*0.3434, :unit => "&pound;" ) %><br/>
+    Company/Companies: <%= number_to_currency(total*0.5586, :unit => "&pound;" ) %><br/></b> 
+  <h1>Country Code Order Count</h1>
+   <% country_count.sort {|a,b| a[1]<=>b[1]} %>
+   <% country_count.each do |key, value| %>
+    <%= key %>: <%= value %><br/>
+   <% end %>
+   <h1>Paypal Country Code Order Count</h1>
+   <% paypal_country_count.sort {|a,b| a[1]<=>b[1]} %>
+   <% paypal_country_count.each do |key, value| %>
+    <%= key %>: <%= value %><br/>
+   <% end %>
+

@@ -1,0 +1,80 @@
+<script type="text/javascript">
+    var currentItem;
+    var theID; 
+    function sendFlvPlayerEvent(thePlayer, typ, prm) { thisMovie(thePlayer).sendEvent(typ,prm); };   
+
+	// This is a javascript handler for the player and is always needed.
+  function thisMovie(movieName) {
+            var array = navigator.userAgent.match(new RegExp(/AppleWebKit\/([\d\.\+]*)/));
+            iswebkit =  array && array.length == 2 ? parseFloat(array[1]) >= 420 : false; 
+	    if(navigator.appName.indexOf("Microsoft") != -1 || iswebkit) {
+			return window[movieName];
+            } else {
+			return document[movieName];
+		}
+	};
+
+    function getUpdate(typ,pr1,pr2,pid) { 
+    	theID=pid; 
+    	if(typ == "time") { currentPosition = pr1; }
+    	else if(typ == "volume") { currentVolume = pr1; } 
+    	else if(typ == "item" && theID=="top_rotation_player") { currentItem = pr1; setTimeout("getItemData(theID, currentItem)",100); }
+    };
+
+	// These functions are caught by the feeder object of the player.
+    function getItemData(pid, idx) {
+    	var nodes = "";
+    	if(pid != "null") {  
+    	  if (pid=="top_rotation_player")
+          {     var movie = thisMovie(pid)
+    		var obj = movie.itemData(idx); 
+            document.getElementById("flv_rotation_watch_now").innerHTML = '';
+    		for(var i in obj) { 
+                  if (i=='title')
+                  { 
+                    if (obj[i])
+                    {
+                      document.getElementById("flv_rotation_title").innerHTML = obj[i]
+                    }
+                    else
+                    {
+                      document.getElementById("flv_rotation_title").innerHTML = ''
+                    }
+                  }
+                <% if @this_action != "website_closed"%>
+                  else if (i=='link')
+                  {
+                    document.getElementById("flv_rotation_watch_now").innerHTML = '<a href=\"#\" onClick=\"'+obj[i]+'\"><img class="watch_button" height="14" width="50" alt=\"Watch\" border="0" src="/images/button_watchNowSlim_1.png"></a><div id=\"watch_now_redbox\"></div>'
+                  }
+                <% end %>
+                }
+          }
+        }
+	};
+</script>
+
+<div id="flv-rotator" style="width: 176px">
+     <%= flv_player :file => "/playlists/Brand-#{@brand.id}-Rotation.xml",
+                    :enablejs => true,
+                    :autostart => true,
+                    :backcolor => "#000000",
+                    :width => 176,
+                    :showdigits => false,
+                    :autoscroll => false,
+                    :shuffle => (@this_controller == "catalogue" and @this_action != "brands") ? false : true,
+                    :repeat => "list",
+                    :linkfromdisplay => false,
+                    :displaywidth => 176,
+                    :displayheight => 96,
+                    :wmode => "transparent",
+                    :height => 96,
+                    :align => "center",
+                    :bgcolor => '#000000',
+                    :usefullscreen => false,
+                    :volume => 0,
+                    :shownavigation => false,
+                    :overstretch => "none",
+                    :id => "top_rotation_player",
+                    :javascriptid => "top_rotation_player"
+                    %>
+</div>

@@ -1,0 +1,33 @@
+    <table width="100%" VALIGN="middle" class="main-header">
+    <tr><td width="65%">
+      <span class="main-header-left-txt"><%= @brand.name %> <%=t :Trailer%>
+      </span>
+      &nbsp<%= image_tag("circling-ball-3-frame-fade.gif",
+                 :align => 'middle',
+                 :border=> 0,
+                 :id => "products-list-spinner",
+                 :style=>"display: none;" ) %>
+       </td>
+       <td width="35%" valign="middle">      
+         <span class="main-header-right-txt" valign="middle">
+           <%= link_to(image_localized_tag("button_skip_1.gif", :border => 0), :controller => "catalogue", :action => :index, :protocol => 'http://') %>
+         </span>
+       </div>
+      </td>
+     </tr>
+     </table>
+     <center>
+          <object width="598" height="352" BGCOLOR="<%=@brand.page_background_color%>" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
+            codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
+            <param name="flashvars" value="file=http://<%=request.host%>/flash/<%=@brand.video_trailer_file%>&autostart=true&volume=70&image=http://<%=request.host%>/images/<%=request.host%>_video_welcome_help.png" />
+            <param name="movie" value="http://<%=request.host%>/flash/flvplayer.swf" />
+            <param name="wmode" value="transparent" />
+            <embed src="/flash/flvplayer.swf" width="598" height="352" wmode="transparent" bgcolor="<%=@brand.page_background_color%>" type="application/x-shockwave-flash" 
+            pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="file=http://<%=request.host%>/flash/<%=@brand.video_trailer_file%>&autostart=true&volume=70&image=http://<%=request.host%>/images/<%=request.host%>_video_welcome_help.png"> </object>
+          <br/><br/>
+          <div id="help-footer-text">
+          <small><small><%=t :about_above_flash_video%></small></small><br/>
+        </div>
+        </center>
+        <br/>
+        <br/>

@@ -1,0 +1,7 @@
+<span class="sub-box-button">
+  <% if @complete %>
+    <%= link_to(image_localized_tag("button_goToDownloads_1.png", :border => 0, :alt => t(:Go_to_downloads)), :controller => "delivery",  :action => :show_downloads, :downloads_key => @order.downloads_key) %>
+  <% else %>
+    <%= link_to( image_localized_tag("button_retry_1.gif", :border => 0, :alt => t(:Retry)), url_for(params) ) %>
+  <% end %>
+</span>

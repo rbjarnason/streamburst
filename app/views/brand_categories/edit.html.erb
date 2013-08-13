@@ -1,0 +1,9 @@
+<h1>Editing brand category</h1>
+
+<%= form_tag :action => 'update', :id => @brand_category %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @brand_category %> |
+<%= link_to 'Back', :action => 'list' %>

@@ -1,0 +1,17 @@
+<% if @advertisement.advertisements_formats %>
+<table cellpadding="5" cellspacing="0">
+<% for advertisements_format in @advertisement.advertisements_formats %>
+  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= advertisements_format.format.name %></td>
+    <% if advertisements_format.advertisements_file %>
+      <td><%= advertisements_format.advertisements_file.file_name %></td>
+    <% end %>
+    <td class="list-actions">
+    <%= link_to 'Destroy', { :action  => 'destroy_advertisements_format', :advertisements_format_id => advertisements_format, :id => @advertisement},
+                             :confirm => "Are you sure?",
+                             :post    => true %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<% end %>

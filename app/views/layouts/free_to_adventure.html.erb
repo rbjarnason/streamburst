@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>Free To Adventure - Download Store</title>
+    
+  	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="Content-Language" content="en">
+	<meta name="description" content="Free To Adventure">
+	<meta name="keywords" content="Free To Adventure">
+	<meta name="url" content="http://www.freetoadventure.com">
+	<meta name="rating" content="Safe For Kids">
+	<meta name="revisit-after" content="7 days">
+	<meta name="robots" content="all">
+	<meta name="distribution" content="global">
+	<meta name="author" content="Streamburst Limited">
+	<meta name="copyright" content="Copyright © 2007 Streamburst Limited, All Rights Reserved">
+    
+    <%= render(:partial => "shared/default_includes") %>       
+    <%= stylesheet_link_tag "free_to_adventure", :media => "all" %>
+  </head>
+
+  <body id="store" class="bg">
+    <%= render(:partial => "shared/body", :locals => {:logo_image => "F2A_Logo.png",
+                                                      :logo_width => 210,
+                                                      :logo_height => 75,
+                                                      :tabs => "shared/tabs",
+                                                      :analytics_account => "UA-1085096-12"}) %>
+  </body> 
+</html>

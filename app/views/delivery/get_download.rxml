@@ -1,0 +1,10 @@
+xml.instruct!
+xml.streamburst_xml_api_version(STREAMBURST_XML_API_VERSION)
+xml.sessionId(session.session_id)
+xml.product_image_url(url_for_image_column(@product, "small_image", :name => "normal", :absolute => true))
+xml.product_title(@product.title)
+xml.status_text(@status_text)
+xml.job_key(@job_key)
+xml.email_me_when_ready_url(url_for(:action => :email_when_ready, :job_key => @job_key))
+xml.preparation_time_estimation_seconds(@preparation_time_estimation_seconds)
+xml.format_type(@format.format_type)
